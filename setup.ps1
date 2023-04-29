@@ -30,6 +30,7 @@ New-Item -Path "$env:APPDATA\tabby\config.yaml" -ItemType SymbolicLink -Value "$
 #Install scoop 
 Invoke-WebRequest get.scoop.sh -UseBasicParsing | Invoke-Expression
 Add-MpPreference -ExclusionPath "$($env:programdata)\scoop", "$($env:scoop)"
+scoop install git emacs
 scoop bucket known | ForEach-Object{ scoop bucket add $_ }
 scoop bucket add sarvex https://github.com/sarvex/scoop
 scoop install sudo aria2 curl grep sed less touch search-multisource terminal-icons oh-my-posh ripgrep fd llvm
