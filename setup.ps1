@@ -33,7 +33,7 @@ Add-MpPreference -ExclusionPath "$($env:programdata)\scoop", "$($env:scoop)"
 scoop bucket known | ForEach-Object{ scoop bucket add $_ }
 scoop bucket add sarvex https://github.com/sarvex/scoop
 scoop install sudo aria2 curl grep sed less touch search-multisource terminal-icons oh-my-posh ripgrep fd llvm
-sccop install CascadiaCode-NF CascadiaCode-NF-Mono Hack-NF Hack-NF-Mono Delugia-Nerd-Font-Complete Delugia-Mono-Nerd-Font-Complete Hasklig-NF Hasklig-NF-Mono SourceCodePro-NF SourceCodePro-NF-Mono LiberationMono-NF LiberationMono-NF-Mono AnonymousPro-NF AnonymousPro-NF-Mono FiraCode-NF-Mono FiraCode-NF Iosevka-NF Iosevka-NF-Mono Meslo-NF-Mono Meslo-NF Noto-NF-Mono Noto-NF RobotoMono-NF-Mono RobotoMono-NF UbuntuMono-NF-Mono UbuntuMono-NF JetBrainsMono-NF-Mono JetBrainsMono-NF
+sccop install CascadiaCode-NF CascadiaCode-NF-Mono Hack-NF Hack-NF-Mono Delugia-Nerd-Font-Complete Delugia-Mono-Nerd-Font-Complete Hasklig-NF Hasklig-NF-Mono SourceCodePro-NF SourceCodePro-NF-Mono LiberationMono-NF LiberationMono-NF-Mono AnonymousPro-NF AnonymousPro-NF-Mono FiraCode-NF-Mono FiraCode-NF Iosevka-NF Iosevka-NF-Mono Meslo-NF-Mono Meslo-NF Noto-NF-Mono Noto-NF RobotoMono-NF-Mono RobotoMono-NF UbuntuMono-NF-Mono UbuntuMono-NF JetBrainsMono-NF-Mono JetBrainsMono-NF DejaVuSansMono-NF-Mono DejaVuSansMono-NF
 
 
 # Install all apps
