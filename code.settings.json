@@ -1,0 +1,301 @@
+{
+  "FSharp.suggestGitignore": false,
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "aws.telemetry": false,
+  "cSpell.userWords": [
+    "Comptime",
+    "divriots",
+    "fontsource",
+    "gizlang",
+    "imagetools",
+    "jampack",
+    "metaprogramming",
+    "postbuild",
+    "qwik",
+    "Rendle",
+    "stackoverflow",
+    "subfont",
+    "tabler",
+    "tailwindcss",
+    "Webp"
+  ],
+  "code-runner.enableAppInsights": false,
+  "codeQL.telemetry.enableTelemetry": false,
+  "dart.flutterSdkPath": "/Users/sarvex/Library/Android/flutter",
+  "dart.lineLength": 120,
+  "dart.maxLogLineLength": 10000,
+  "dart.normalizeFileCasing": true,
+  "dart.openDevTools": "flutter",
+  "dart.renameFilesWithClasses": "prompt",
+  "dotnetAcquisitionExtension.enableTelemetry": false,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.defaultFormatter": "rome.rome",
+  "editor.experimental.pasteActions.enabled": true,
+  "editor.foldingImportsByDefault": true,
+  "editor.fontFamily": "'CaskaydiaCode NF', 'Cascadia Code PL', 'CascadiaCodePL', 'Cascadia Code', 'CascadiaCode', 'MesloLGMDZ Nerd Font', Menlo, Monaco, Consolas,  'Courier New', monospace",
+  "editor.fontLigatures": "'aalt', 'gdi', 'liga', 'clig', 'calt', 'falt', 'halt', 'jalt', 'ltra', 'nalt', 'palt', 'rvrn', 'salt', 'valt', 'dlig', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09', 'ss10', 'ss11', 'ss12', 'ss13', 'ss14', 'ss15', 'ss16', 'ss17', 'ss18', 'ss19', 'ss20'",
+  "editor.formatOnPaste": true,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.bracketPairsHorizontal": true,
+  "editor.indentSize": "tabSize",
+  "editor.linkedEditing": true,
+  "editor.parameterHints.cycle": true,
+  "editor.rulers": [
+    120
+  ],
+  "editor.semanticHighlighting.enabled": true,
+  "editor.tabCompletion": "on",
+  "editor.tabSize": 2,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          //following will be in italic (=FlottFlott)
+          "comment",
+          "string",
+          "parameter",
+          "entity.name.type.class", //class names
+          "keyword", //import, export, return…
+          "constant", //String, Number, Boolean…, this, super
+          "storage.modifier", //static keyword
+          "storage.type.class.js" //class keyword
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          //following will be excluded from italics (VSCode has some defaults for italics)
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json"
+        ],
+        "settings": {
+          "fontStyle": "bold"
+        }
+      }
+    ]
+  },
+  "editor.wordWrapColumn": 120,
+  "eslint.experimental.useFlatConfig": true,
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true,
+  "eslint.packageManager": "pnpm",
+  "eslint.probe": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "vue",
+    "markdown",
+    "svelte",
+    "astro"
+  ],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "vue",
+    "markdown",
+    "svelte",
+    "astro"
+  ],
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "files.associations": {
+    "*.ASM*": "hlasm",
+    "*.ASSEMBLE*": "hlasm",
+    "*.COB*": "cobol",
+    "*.COBCOPY*": "cobol",
+    "*.COBOL*": "cobol",
+    "*.COPY*": "cobol",
+    "*.COPYBOOK*": "cobol",
+    "*.EXEC*": "rexx",
+    "*.HLA*": "hlasm",
+    "*.HLASM*": "hlasm",
+    "*.INC*": "pl1",
+    "*.INCLUDE*": "pl1",
+    "*.JCL*": "jcl",
+    "*.MACLIB*": "hlasm",
+    "*.PL1*": "pl1",
+    "*.PLI*": "pl1",
+    "*.REXX*": "rexx",
+    "*.REXXINC*": "rexx",
+    "*.bms": "hlasm",
+    "*.copyasm": "hlasm",
+    "*.embeddedhtml": "html",
+    "*.macasm": "hlasm",
+    "*.rex": "rexx",
+    "*.rexx": "rexx",
+    "MLTable": "yaml"
+  },
+  "files.autoSave": "onWindowChange",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.factorypath": true,
+    "**/.git": false,
+    "**/.hg": false,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.svn": false,
+    "**/CVS": false
+  },
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "git.autofetch": true,
+  "git.branchRandomName.dictionary": [
+    "adjectives",
+    "animals",
+    "colors"
+  ],
+  "git.branchRandomName.enable": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.statusBar.enabled": false,
+  "gitlens.telemetry.enabled": false,
+  "go.toolsManagement.autoUpdate": true,
+  "julia.enableTelemetry": false,
+  "julia.symbolCacheDownload": true,
+  "mdb.sendTelemetry": false,
+  "okteto.telemetry": false,
+  "omnisharp.enableRoslynAnalyzers": true,
+  "partialDiff.enableTelemetry": false,
+  "peacock.affectActivityBar": false,
+  "peacock.affectStatusBar": false,
+  "peacock.affectTabActiveBorder": true,
+  "peacock.showColorInStatusBar": false,
+  "peacock.surpriseMeOnStartup": true,
+  "prettier.bracketSameLine": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.printWidth": 120,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.vueIndentScriptAndStyle": true,
+  "python.analysis.inlayHints.pytestParameters": true,
+  "python.condaPath": "C:/Tools/Miniconda3/_conda.exe",
+  "python.formatting.provider": "black",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "remote.SSH.remotePlatform": {
+    "DeveloperArm": "linux"
+  },
+  "restructuredtext.experimental": true,
+  "scm.diffDecorationsGutterPattern": {
+    "added": true
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "settingsSync.ignoredSettings": [
+    "configurationSync.store"
+  ],
+  "solidity.telemetry": false,
+  "sonarlint.connectedMode.connections.sonarcloud": [
+    {
+      "connectionId": "sarvex",
+      "disableNotifications": true,
+      "organizationKey": "sarvex"
+    }
+  ],
+  "sortJSON.contextMenu": {
+    "sortJSON": false,
+    "sortJSONAlphaNum": false,
+    "sortJSONAlphaNumReverse": false,
+    "sortJSONKeyLength": false,
+    "sortJSONKeyLengthReverse": false,
+    "sortJSONReverse": false,
+    "sortJSONType": false,
+    "sortJSONTypeReverse": false,
+    "sortJSONValues": false,
+    "sortJSONValuesReverse": false
+  },
+  "stylelint.packageManager": "pnpm",
+  "stylelint.snippet": [
+    "css",
+    "less",
+    "postcss",
+    "scss",
+    "sass"
+  ],
+  "stylelint.validate": [
+    "css",
+    "less",
+    "postcss",
+    "scss",
+    "sass"
+  ],
+  "svelte.enable-ts-plugin": true,
+  "svelte.plugin.svelte.format.config.printWidth": 120,
+  "svelte.plugin.svelte.format.config.singleQuote": true,
+  "svelte.plugin.svelte.format.config.svelteBracketNewLine": false,
+  "svelte.plugin.svelte.format.config.svelteStrictMode": true,
+  "telemetry.telemetryLevel": "off",
+  "terminal.external.windowsExec": "pwsh.exe",
+  "terminal.integrated.allowMnemonics": true,
+  "terminal.integrated.commandsToSkipShell": [
+    "language-julia.interrupt"
+  ],
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.fontFamily": "LiterationMono NF",
+  "terminal.integrated.minimumContrastRatio": 7,
+  "terminal.integrated.scrollback": 99999,
+  "terminal.integrated.shellIntegration.history": 999,
+  "terminal.integrated.shellIntegration.suggestEnabled": true,
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.tabStopWidth": 2,
+  "terminal.integrated.tabs.showActions": "always",
+  "terminal.integrated.tabs.showActiveTerminal": "always",
+  "window.autoDetectColorScheme": true,
+  "workbench.colorTheme": "Tokyo Night Storm",
+  "workbench.iconTheme": "file-icons",
+  "workbench.preferredDarkColorTheme": "Tokyo Night",
+  "workbench.preferredLightColorTheme": "Tokyo Night Storm",
+  "workbench.productIconTheme": "flippidippi-product-icons",
+  "yaml.customTags": [
+    "!And",
+    "!And sequence",
+    "!If",
+    "!If sequence",
+    "!Not",
+    "!Not sequence",
+    "!Equals",
+    "!Equals sequence",
+    "!Or",
+    "!Or sequence",
+    "!FindInMap",
+    "!FindInMap sequence",
+    "!Base64",
+    "!Join",
+    "!Join sequence",
+    "!Cidr",
+    "!Ref",
+    "!Sub",
+    "!Sub sequence",
+    "!GetAtt",
+    "!GetAZs",
+    "!ImportValue",
+    "!ImportValue sequence",
+    "!Select",
+    "!Select sequence",
+    "!Split",
+    "!Split sequence"
+  ],
+  "yaml.format.printWidth": 120
+}
