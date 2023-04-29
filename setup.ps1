@@ -44,16 +44,17 @@ sccop install CascadiaCode-NF CascadiaCode-NF-Mono Hack-NF Hack-NF-Mono Delugia-
 $doom_emacs = "$env:APPDATA\.emacs.d"
 git clone --depth 1 https://github.com/doomemacs/doomemacs.git $doom_emacs
 New-Item -Path $HOME\.emacs.d -ItemType SymbolicLink -Value $doom_emacs
-New-Item -Path "$HOME\.doom.d" -ItemType SymbolicLink -Value "$dotfiles\.doom.d"
+New-Item -Path "$HOME\.doom.d" -ItemType SymbolicLink -Value "$dotfiles\doom"
 $env:Path += "; $HOME\.emacs.d\bin" 
 
 # Install SpaceVim
 $space_vim = "$env:LOCALAPPDATA\SpaceVim"
 git clone https://github.com/SpaceVim/SpaceVim.git $space_vim
 New-Item -Path $HOME\vimfiles -ItemType SymbolicLink -Value $space_vim
-New-Item -Path "$HOME\.SpaceVim.d" -ItemType SymbolicLink -Value "$dotfiles\.SpaceVim.d"
+New-Item -Path "$HOME\.SpaceVim.d" -ItemType SymbolicLink -Value "$dotfiles\space"
 
 # Install AstroNvim
 $astro_nvim = "$env:LOCALAPPDATA\nvim"
 git clone --depth 1 https://github.com/AstroNvim/AstroNvim $astro_nvim
-git clone --depth 1 https://github.com/sarvex/astro-user "$astro_nvim\lua\user"
+git clone --depth 1 https://github.com/sarvex/astro-user 
+New-Item -Path "$astro_nvim\lua\user" -ItemType SymbolicLink -Value "$dotfiles\astro"
