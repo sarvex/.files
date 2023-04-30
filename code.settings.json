@@ -57,15 +57,14 @@
     "textMateRules": [
       {
         "scope": [
-          //following will be in italic (=FlottFlott)
           "comment",
           "string",
           "parameter",
-          "entity.name.type.class", //class names
-          "keyword", //import, export, return…
-          "constant", //String, Number, Boolean…, this, super
-          "storage.modifier", //static keyword
-          "storage.type.class.js" //class keyword
+          "entity.name.type.class", 
+          "keyword", 
+          "constant", 
+          "storage.modifier", 
+          "storage.type.class.js" 
         ],
         "settings": {
           "fontStyle": "italic"
@@ -73,7 +72,6 @@
       },
       {
         "scope": [
-          //following will be excluded from italics (VSCode has some defaults for italics)
           "invalid",
           "keyword.operator",
           "constant.numeric.css",
@@ -190,7 +188,6 @@
   "prettier.trailingComma": "all",
   "prettier.vueIndentScriptAndStyle": true,
   "python.analysis.inlayHints.pytestParameters": true,
-  "python.condaPath": "C:/Tools/Miniconda3/_conda.exe",
   "python.formatting.provider": "black",
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
@@ -263,7 +260,7 @@
   "terminal.integrated.tabs.showActions": "always",
   "terminal.integrated.tabs.showActiveTerminal": "always",
   "window.autoDetectColorScheme": true,
-  "workbench.colorTheme": "Tokyo Night Storm",
+  "workbench.colorTheme": "Tokyo Night",
   "workbench.iconTheme": "file-icons",
   "workbench.preferredDarkColorTheme": "Tokyo Night",
   "workbench.preferredLightColorTheme": "Tokyo Night Storm",
@@ -297,5 +294,28 @@
     "!Split",
     "!Split sequence"
   ],
-  "yaml.format.printWidth": 120
+  "yaml.format.printWidth": 120,
+  "snyk.advanced.cliPath": "C:\\Users\\Yoga\\AppData\\Local\\snyk-ls\\snyk-win.exe",
+  "snyk.yesWelcomeNotification": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[properties]": {
+    "editor.defaultFormatter": "lkrms.inifmt"
+  },
+  "[ignore]": {
+    "editor.defaultFormatter": "lkrms.inifmt"
+  },
+  "[powershell]": {
+    "editor.defaultFormatter": "ms-vscode.powershell"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

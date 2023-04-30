@@ -1,0 +1,9 @@
+clear
+ls
+clea
+rclear
+clear
+cd bucket\
+..\scripts\update-readme.nu .
+nu 
+nu ..\scripts\update-readme.nu .
