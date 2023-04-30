@@ -14,6 +14,9 @@ scoop bucket add sarvex https://github.com/sarvex/scoop
 scoop install sudo aria2 curl grep sed less touch search-multisource terminal-icons oh-my-posh ripgrep fd llvm emacs python julia go make cmake premake 
 sccop install CascadiaCode-NF CascadiaCode-NF-Mono Hack-NF Hack-NF-Mono Delugia-Nerd-Font-Complete Delugia-Mono-Nerd-Font-Complete Hasklig-NF Hasklig-NF-Mono SourceCodePro-NF SourceCodePro-NF-Mono LiberationMono-NF LiberationMono-NF-Mono AnonymousPro-NF AnonymousPro-NF-Mono FiraCode-NF-Mono FiraCode-NF Iosevka-NF Iosevka-NF-Mono Meslo-NF-Mono Meslo-NF Noto-NF-Mono Noto-NF RobotoMono-NF-Mono RobotoMono-NF UbuntuMono-NF-Mono UbuntuMono-NF JetBrainsMono-NF-Mono JetBrainsMono-NF DejaVuSansMono-NF-Mono DejaVuSansMono-NF
 
+# Install all apps
+winget import --import-file "$dotfiles\winget.apps.json" --disable-interactivity
+scoop import "$dotfiles\scoop.apps.json"
 
 #Fetch DotFiles 
 $dotfiles = "$HOME\.files"
@@ -40,10 +43,6 @@ New-Item -Path "$env:APPDATA\tabby\config.yaml" -ItemType SymbolicLink -Value "$
 $profile_path = $PROFILE.CurrentUserAllHosts
 New-Item -Path "$profile_path" -ItemType SymbolicLink -Value "$dotfiles\Profile.ps1" -Force
 . $profile_path
-
-# Install all apps
-winget import --import-file "$dotfiles\winget.apps.json"
-scoop import "$dotfiles\scoop.apps.json"
 
 # Install Doom 
 $doom_emacs = "$env:APPDATA\.emacs.d"

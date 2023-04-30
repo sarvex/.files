@@ -1,701 +1,28 @@
 {
-    // scoop export -c > scoop.apps
-    "apps": [
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "3270-NF",
-            "Updated": "2023-04-20T11:45:36.6876719+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "3270-NF-Mono",
-            "Updated": "2023-04-20T11:45:56.9303146+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Version": "22.01",
-            "Name": "7zip",
-            "Updated": "2023-04-18T13:19:54.2526248+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "Agave-NF",
-            "Updated": "2023-04-20T12:05:06.0795105+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "Agave-NF-Mono",
-            "Updated": "2023-04-20T12:05:08.2976109+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "AnonymousPro-NF",
-            "Updated": "2023-04-20T12:05:11.4116693+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "AnonymousPro-NF-Mono",
-            "Updated": "2023-04-20T12:05:13.8200207+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Version": "1.36.0-1",
-            "Name": "aria2",
-            "Updated": "2023-04-16T00:59:10.339662+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "Arimo-NF",
-            "Updated": "2023-04-22T08:48:06.7525039+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "Arimo-NF-Mono",
-            "Updated": "2023-04-22T08:48:11.5786498+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "AurulentSansMono-NF",
-            "Updated": "2023-04-22T08:48:15.1807985+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "AurulentSansMono-NF-Mono",
-            "Updated": "2023-04-22T08:48:19.1196197+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "BigBlueTerminal-NF",
-            "Updated": "2023-04-22T02:11:24.3692042+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "BigBlueTerminal-NF-Mono",
-            "Updated": "2023-04-22T02:11:28.404563+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "sarvex",
-            "Version": "0.16.2",
-            "Name": "bin",
-            "Updated": "2023-04-18T20:46:17.1757557+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "BitstreamVeraSansMono-NF",
-            "Updated": "2023-04-22T08:48:25.2950195+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "BitstreamVeraSansMono-NF-Mono",
-            "Updated": "2023-04-22T08:48:32.7100343+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "CascadiaCode-NF",
-            "Updated": "2023-04-15T17:23:36.0479096+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Version": "2.33.3",
-            "Name": "chezmoi",
-            "Updated": "2023-04-23T22:19:19.3987926+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Version": "3.26.3",
-            "Name": "cmake",
-            "Updated": "2023-04-17T10:23:58.8859401+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Version": "3.11.2",
-            "Name": "dark",
-            "Updated": "2023-04-18T13:22:54.5597322+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Version": "1.21.6",
-            "Name": "ddev",
-            "Updated": "2023-04-18T20:49:18.7659967+05:30"
-        },
-        {
-            "Info": "Install failed",
-            "Source": null,
-            "Version": null,
-            "Name": "defold",
-            "Updated": "2023-04-23T17:23:30.4141978+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "DejaVuSansMono-NF",
-            "Updated": "2023-04-17T11:29:23.4522297+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "DejaVuSansMono-NF-Mono",
-            "Updated": "2023-04-19T20:12:18.6900676+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2111.01.2",
-            "Name": "Delugia-Nerd-Font-Complete",
-            "Updated": "2023-04-16T12:00:45.9973281+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Version": "0.19.2",
-            "Name": "elvish",
-            "Updated": "2023-04-23T23:09:36.6597924+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "extras",
-            "Version": "28.2",
-            "Name": "emacs",
-            "Updated": "2023-04-21T12:28:38.552807+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Version": "8.7.0",
-            "Name": "fd",
-            "Updated": "2023-04-21T12:25:41.4112127+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Version": "6.0",
-            "Name": "ffmpeg",
-            "Updated": "2023-04-20T17:13:53.0156067+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "6.2",
-            "Name": "FiraCode",
-            "Updated": "2023-04-23T08:44:45.7020639+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "FiraCode-NF",
-            "Updated": "2023-04-15T17:37:29.364216+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "FiraCode-NF-Mono",
-            "Updated": "2023-04-23T08:45:07.9469647+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "0.0.28",
-            "Name": "FiraCode-Script",
-            "Updated": "2023-04-23T08:45:13.8019662+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "FiraMono-NF",
-            "Updated": "2023-04-23T08:45:24.0969182+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "FiraMono-NF-Mono",
-            "Updated": "2023-04-23T08:45:35.1471474+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "sarvex",
-            "Version": "4.3",
-            "Name": "fonts-fira-sans",
-            "Updated": "2023-04-23T14:49:39.4017191+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "sarvex",
-            "Version": "0.11.0-dev.2837",
-            "Name": "giz-dev",
-            "Updated": "2023-04-28T08:51:50.2637609+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "extras",
-            "Version": "4.0.2",
-            "Name": "godot",
-            "Updated": "2023-04-15T17:34:08.3035965+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "extras",
-            "Version": "0.2.1",
-            "Name": "godot-manager",
-            "Updated": "2023-04-15T17:34:16.4193166+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "extras",
-            "Version": "4.0.2",
-            "Name": "godot-mono",
-            "Updated": "2023-04-15T17:34:30.4228194+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Version": "2.0.6",
-            "Name": "gsudo",
-            "Updated": "2023-04-15T17:20:53.7863886+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "Hack-NF",
-            "Updated": "2023-04-24T08:16:27.1431205+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "Hack-NF-Mono",
-            "Updated": "2023-04-24T08:16:34.53509+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "Hasklig-NF",
-            "Updated": "2023-04-15T17:37:43.2280151+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "Hasklig-NF-Mono",
-            "Updated": "2023-04-24T08:14:58.2571773+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "Hermit-NF",
-            "Updated": "2023-04-15T17:38:00.7485897+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Version": "2.14.2",
-            "Name": "hub",
-            "Updated": "2023-04-18T13:29:04.0393667+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "IBMPlexMono-NF",
-            "Updated": "2023-04-22T08:50:42.3384423+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "IBMPlexMono-NF-Mono",
-            "Updated": "2023-04-22T08:50:51.0204423+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "InconsolataGo-NF",
-            "Updated": "2023-04-15T17:38:03.4177422+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "Iosevka-NF",
-            "Updated": "2023-04-15T17:39:08.2302795+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "Iosevka-NF-Mono",
-            "Updated": "2023-04-24T08:13:12.0812191+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Version": "1.8.5",
-            "Name": "julia",
-            "Updated": "2023-04-15T21:36:55.9589505+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "extras",
-            "Version": "0.37.0",
-            "Name": "lazygit",
-            "Updated": "2023-04-15T20:55:56.9956862+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "LiberationMono-NF",
-            "Updated": "2023-04-15T17:25:30.397176+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "extras",
-            "Version": "11.4",
-            "Name": "love",
-            "Updated": "2023-04-20T14:27:18.6493284+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Version": "5.4.2",
-            "Name": "lua",
-            "Updated": "2023-04-20T14:27:23.2605445+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Version": "3.6.19",
-            "Name": "lua-language-server",
-            "Updated": "2023-04-27T13:01:22.9368943+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Version": "1.1.0",
-            "Name": "luacheck",
-            "Updated": "2023-04-20T14:27:31.6177549+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Version": "2.1.0_beta3-4",
-            "Name": "luajit",
-            "Updated": "2023-04-20T14:27:41.2397223+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Version": "3.9.2",
-            "Name": "luarocks",
-            "Updated": "2023-04-20T14:27:44.6410404+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Version": "0.573",
-            "Name": "luau",
-            "Updated": "2023-04-22T08:40:44.5455737+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Version": "4.4.1",
-            "Name": "make",
-            "Updated": "2023-04-17T10:24:02.2487389+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "Meslo-NF",
-            "Updated": "2023-04-15T17:39:22.881531+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "Monoid-NF",
-            "Updated": "2023-04-24T08:13:51.5136009+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "Monoid-NF-Mono",
-            "Updated": "2023-04-24T08:14:01.1182585+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "Mononoki-NF",
-            "Updated": "2023-04-23T22:21:11.0941511+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "Mononoki-NF-Mono",
-            "Updated": "2023-04-23T22:21:14.8294687+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "Noto-NF",
-            "Updated": "2023-04-25T09:00:08.9928185+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "Noto-NF-Mono",
-            "Updated": "2023-04-25T09:01:00.9740517+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "sarvex",
-            "Version": "2.038",
-            "Name": "NotoColorEmoji",
-            "Updated": "2023-04-18T13:26:30.7553978+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "versions",
-            "Version": "2023-04",
-            "Name": "odin-dev",
-            "Updated": "2023-04-15T20:56:56.4957428+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "sarvex",
-            "Version": "nightly-20230417",
-            "Name": "ols",
-            "Updated": "2023-04-17T20:45:37.0283533+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Version": "5.0.0-beta2",
-            "Name": "premake",
-            "Updated": "2023-04-17T10:24:04.7633863+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "sarvex",
-            "Version": "0.139.0",
-            "Name": "pscale",
-            "Updated": "2023-04-27T13:01:25.2987143+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Version": "3.11.3",
-            "Name": "python",
-            "Updated": "2023-04-18T13:23:45.0144646+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Version": "2023.04-01",
-            "Name": "rakudo-moar",
-            "Updated": "2023-04-25T08:42:08.3452257+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Version": "2023.04-01",
-            "Name": "rakudo-star",
-            "Updated": "2023-04-25T08:42:24.0987497+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Version": "13.0.0",
-            "Name": "ripgrep",
-            "Updated": "2023-04-21T12:25:05.5765229+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Version": "1.26.0",
-            "Name": "rustup",
-            "Updated": "2023-04-27T13:05:41.7643688+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "extras",
-            "Version": "0.2.4",
-            "Name": "scoop-completion",
-            "Updated": "2023-04-15T21:32:24.98603+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "https://raw.githubusercontent.com/plicit/scoop-search-multisource/master/scoop-search-multisource.json",
-            "Version": "0.1.20220804",
-            "Name": "scoop-search-multisource",
-            "Updated": "2023-04-15T17:17:38.0785741+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "SourceCodePro-NF",
-            "Updated": "2023-04-17T10:56:39.6773696+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Version": "5.4.4",
-            "Name": "srlua",
-            "Updated": "2023-04-20T14:27:49.6275429+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Version": "0.17.1",
-            "Name": "stylua",
-            "Updated": "2023-04-17T11:20:31.8464197+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "14.0.2",
-            "Name": "twemoji-color-font",
-            "Updated": "2023-04-18T13:24:33.2337691+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "VictorMono-NF",
-            "Updated": "2023-04-24T08:17:42.3593077+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Version": "2.3.3",
-            "Name": "VictorMono-NF-Mono",
-            "Updated": "2023-04-24T08:17:57.3574763+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Version": "1.73.0",
-            "Name": "wakatime-cli",
-            "Updated": "2023-04-20T14:34:21.3383011+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "sarvex",
-            "Version": "0.4.0",
-            "Name": "wren",
-            "Updated": "2023-04-15T20:57:04.2770421+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Version": "2.7.8",
-            "Name": "xmake",
-            "Updated": "2023-04-17T10:24:26.0477093+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Version": "1.8.16",
-            "Name": "z.lua",
-            "Updated": "2023-04-20T14:27:51.1006935+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "versions",
-            "Version": "0.11.0-dev.2837",
-            "Name": "zig-dev",
-            "Updated": "2023-04-28T08:55:52.1797162+05:30"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Version": "1.5.5",
-            "Name": "zstd",
-            "Updated": "2023-04-20T14:27:33.4548056+05:30"
-        }
-    ],
-    "config": {
-        "aria2-warning-enabled": false,
-        "scoop_repo": "https://github.com/ScoopInstaller/Scoop",
-        "scoop_branch": "master"
-    },
     "buckets": [
         {
             "Name": "extras",
             "Source": "https://github.com/ScoopInstaller/Extras",
-            "Updated": "2023-04-28T06:03:23+05:30",
-            "Manifests": 1860
+            "Updated": "2023-04-30T13:56:15+05:30",
+            "Manifests": 1861
         },
         {
             "Name": "games",
             "Source": "https://github.com/Calinou/scoop-games",
-            "Updated": "2023-04-28T06:03:49+05:30",
-            "Manifests": 269
+            "Updated": "2023-04-30T13:57:44+05:30",
+            "Manifests": 270
         },
         {
             "Name": "java",
             "Source": "https://github.com/ScoopInstaller/Java",
-            "Updated": "2023-04-28T01:35:12+05:30",
+            "Updated": "2023-04-29T15:44:39+05:30",
             "Manifests": 253
         },
         {
             "Name": "main",
             "Source": "https://github.com/ScoopInstaller/Main",
-            "Updated": "2023-04-28T06:04:14+05:30",
-            "Manifests": 1195
+            "Updated": "2023-04-30T13:55:57+05:30",
+            "Manifests": 1196
         },
         {
             "Name": "nerd-fonts",
@@ -712,20 +39,20 @@
         {
             "Name": "nonportable",
             "Source": "https://github.com/ScoopInstaller/Nonportable",
-            "Updated": "2023-04-28T07:19:30+05:30",
+            "Updated": "2023-04-30T07:20:39+05:30",
             "Manifests": 127
         },
         {
             "Name": "php",
             "Source": "https://github.com/ScoopInstaller/PHP",
-            "Updated": "2023-04-12T07:18:50+05:30",
-            "Manifests": 385
+            "Updated": "2023-04-29T11:25:53+05:30",
+            "Manifests": 387
         },
         {
             "Name": "sarvex",
             "Source": "https://github.com/sarvex/scoop",
-            "Updated": "2023-04-28T07:40:43+05:30",
-            "Manifests": 1346
+            "Updated": "2023-04-30T14:01:16+05:30",
+            "Manifests": 2017
         },
         {
             "Name": "sysinternals",
@@ -736,8 +63,491 @@
         {
             "Name": "versions",
             "Source": "https://github.com/ScoopInstaller/Versions",
-            "Updated": "2023-04-28T07:17:50+05:30",
+            "Updated": "2023-04-30T14:00:39+05:30",
             "Manifests": 424
         }
-    ]
+    ],
+    "apps": [
+        {
+            "Info": "",
+            "Version": "22.01",
+            "Source": "main",
+            "Updated": "2023-04-30T00:27:14.5877837+05:30",
+            "Name": "7zip"
+        },
+        {
+            "Info": "",
+            "Version": "2.3.3",
+            "Source": "nerd-fonts",
+            "Updated": "2023-04-30T09:58:02.6345948+05:30",
+            "Name": "AnonymousPro-NF"
+        },
+        {
+            "Info": "",
+            "Version": "2.3.3",
+            "Source": "nerd-fonts",
+            "Updated": "2023-04-30T09:58:03.9469374+05:30",
+            "Name": "AnonymousPro-NF-Mono"
+        },
+        {
+            "Info": "",
+            "Version": "1.36.0-1",
+            "Source": "main",
+            "Updated": "2023-04-30T00:26:06.6677663+05:30",
+            "Name": "aria2"
+        },
+        {
+            "Info": "",
+            "Version": "2.3.3",
+            "Source": "nerd-fonts",
+            "Updated": "2023-04-30T09:58:18.1272703+05:30",
+            "Name": "CascadiaCode-NF"
+        },
+        {
+            "Info": "",
+            "Version": "2.3.3",
+            "Source": "nerd-fonts",
+            "Updated": "2023-04-30T09:58:29.9547287+05:30",
+            "Name": "CascadiaCode-NF-Mono"
+        },
+        {
+            "Info": "",
+            "Version": "3.26.3",
+            "Source": "main",
+            "Updated": "2023-04-30T09:54:00.4930477+05:30",
+            "Name": "cmake"
+        },
+        {
+            "Info": "",
+            "Version": "8.0.1_8",
+            "Source": "main",
+            "Updated": "2023-04-30T00:27:18.5526928+05:30",
+            "Name": "curl"
+        },
+        {
+            "Info": "",
+            "Version": "3.11.2",
+            "Source": "main",
+            "Updated": "2023-04-30T00:34:15.1713199+05:30",
+            "Name": "dark"
+        },
+        {
+            "Info": "",
+            "Version": "1.24.2",
+            "Source": "extras",
+            "Updated": "2023-04-30T09:58:40.9802711+05:30",
+            "Name": "dartium-content-shell"
+        },
+        {
+            "Info": "",
+            "Version": "2.3.3",
+            "Source": "nerd-fonts",
+            "Updated": "2023-04-30T09:59:01.1317112+05:30",
+            "Name": "DejaVuSansMono-NF"
+        },
+        {
+            "Info": "",
+            "Version": "2.3.3",
+            "Source": "nerd-fonts",
+            "Updated": "2023-04-30T09:59:06.209318+05:30",
+            "Name": "DejaVuSansMono-NF-Mono"
+        },
+        {
+            "Info": "",
+            "Version": "2111.01.2",
+            "Source": "nerd-fonts",
+            "Updated": "2023-04-30T09:59:08.641277+05:30",
+            "Name": "Delugia-Mono-Nerd-Font-Complete"
+        },
+        {
+            "Info": "",
+            "Version": "2111.01.2",
+            "Source": "nerd-fonts",
+            "Updated": "2023-04-30T09:59:11.8662943+05:30",
+            "Name": "Delugia-Nerd-Font-Complete"
+        },
+        {
+            "Info": "",
+            "Version": "0.19.2",
+            "Source": "main",
+            "Updated": "2023-04-30T12:54:25.0053437+05:30",
+            "Name": "elvish"
+        },
+        {
+            "Info": "",
+            "Version": "28.2",
+            "Source": "extras",
+            "Updated": "2023-04-30T09:55:02.258678+05:30",
+            "Name": "emacs"
+        },
+        {
+            "Info": "",
+            "Version": "8.7.0",
+            "Source": "main",
+            "Updated": "2023-04-30T00:27:22.2200093+05:30",
+            "Name": "fd"
+        },
+        {
+            "Info": "",
+            "Version": "2.3.3",
+            "Source": "nerd-fonts",
+            "Updated": "2023-04-30T09:59:17.6646786+05:30",
+            "Name": "FiraCode-NF"
+        },
+        {
+            "Info": "",
+            "Version": "2.3.3",
+            "Source": "nerd-fonts",
+            "Updated": "2023-04-30T09:59:21.7039963+05:30",
+            "Name": "FiraCode-NF-Mono"
+        },
+        {
+            "Info": "",
+            "Version": "2.40.1.windows.1",
+            "Source": "main",
+            "Updated": "2023-04-30T00:40:25.4054406+05:30",
+            "Name": "git"
+        },
+        {
+            "Info": "",
+            "Version": "0.11.0-dev.2892",
+            "Source": "sarvex",
+            "Updated": "2023-04-30T12:23:56.6332239+05:30",
+            "Name": "giz-dev"
+        },
+        {
+            "Info": "",
+            "Version": "1.20.3",
+            "Source": "main",
+            "Updated": "2023-04-30T00:28:48.7689376+05:30",
+            "Name": "go"
+        },
+        {
+            "Info": "",
+            "Version": "4.0.2",
+            "Source": "extras",
+            "Updated": "2023-04-30T00:44:32.1248608+05:30",
+            "Name": "godot"
+        },
+        {
+            "Info": "",
+            "Version": "0.2.1",
+            "Source": "extras",
+            "Updated": "2023-04-30T00:44:37.1226385+05:30",
+            "Name": "godot-manager"
+        },
+        {
+            "Info": "",
+            "Version": "4.0.2",
+            "Source": "extras",
+            "Updated": "2023-04-30T00:44:45.6319019+05:30",
+            "Name": "godot-mono"
+        },
+        {
+            "Info": "",
+            "Version": "3.7",
+            "Source": "main",
+            "Updated": "2023-04-30T00:28:57.0975525+05:30",
+            "Name": "grep"
+        },
+        {
+            "Info": "",
+            "Version": "2.0.7",
+            "Source": "main",
+            "Updated": "2023-04-30T00:48:16.5146256+05:30",
+            "Name": "gsudo"
+        },
+        {
+            "Info": "",
+            "Version": "2.3.3",
+            "Source": "nerd-fonts",
+            "Updated": "2023-04-30T09:59:26.2179089+05:30",
+            "Name": "Hack-NF"
+        },
+        {
+            "Info": "",
+            "Version": "2.3.3",
+            "Source": "nerd-fonts",
+            "Updated": "2023-04-30T09:59:29.3341606+05:30",
+            "Name": "Hack-NF-Mono"
+        },
+        {
+            "Info": "",
+            "Version": "2.3.3",
+            "Source": "nerd-fonts",
+            "Updated": "2023-04-30T09:59:43.6959696+05:30",
+            "Name": "Hasklig-NF"
+        },
+        {
+            "Info": "",
+            "Version": "2.3.3",
+            "Source": "nerd-fonts",
+            "Updated": "2023-04-30T09:59:57.7925626+05:30",
+            "Name": "Hasklig-NF-Mono"
+        },
+        {
+            "Info": "",
+            "Version": "2.3.3",
+            "Source": "nerd-fonts",
+            "Updated": "2023-04-30T10:00:59.0977718+05:30",
+            "Name": "Iosevka-NF"
+        },
+        {
+            "Info": "",
+            "Version": "2.3.3",
+            "Source": "nerd-fonts",
+            "Updated": "2023-04-30T10:02:01.4765061+05:30",
+            "Name": "Iosevka-NF-Mono"
+        },
+        {
+            "Info": "",
+            "Version": "2.3.3",
+            "Source": "nerd-fonts",
+            "Updated": "2023-04-30T10:02:18.8875961+05:30",
+            "Name": "JetBrainsMono-NF"
+        },
+        {
+            "Info": "",
+            "Version": "2.3.3",
+            "Source": "nerd-fonts",
+            "Updated": "2023-04-30T10:02:35.0078248+05:30",
+            "Name": "JetBrainsMono-NF-Mono"
+        },
+        {
+            "Info": "",
+            "Version": "1.8.5",
+            "Source": "main",
+            "Updated": "2023-04-30T00:29:19.8838659+05:30",
+            "Name": "julia"
+        },
+        {
+            "Info": "",
+            "Version": "0.5.2",
+            "Source": "extras",
+            "Updated": "2023-04-30T10:02:41.8450505+05:30",
+            "Name": "kotlin-interactive-shell"
+        },
+        {
+            "Info": "",
+            "Version": "608",
+            "Source": "main",
+            "Updated": "2023-04-30T00:29:24.4250635+05:30",
+            "Name": "less"
+        },
+        {
+            "Info": "",
+            "Version": "2.3.3",
+            "Source": "nerd-fonts",
+            "Updated": "2023-04-30T10:02:47.5543985+05:30",
+            "Name": "LiberationMono-NF"
+        },
+        {
+            "Info": "",
+            "Version": "2.3.3",
+            "Source": "nerd-fonts",
+            "Updated": "2023-04-30T10:02:52.8625887+05:30",
+            "Name": "LiberationMono-NF-Mono"
+        },
+        {
+            "Info": "",
+            "Version": "16.0.2",
+            "Source": "main",
+            "Updated": "2023-04-30T09:51:10.6260873+05:30",
+            "Name": "llvm"
+        },
+        {
+            "Info": "",
+            "Version": "11.4",
+            "Source": "extras",
+            "Updated": "2023-04-30T00:44:49.1149358+05:30",
+            "Name": "love"
+        },
+        {
+            "Info": "",
+            "Version": "5.4.2",
+            "Source": "main",
+            "Updated": "2023-04-30T00:44:56.1442621+05:30",
+            "Name": "lua"
+        },
+        {
+            "Info": "",
+            "Version": "4.4.1",
+            "Source": "main",
+            "Updated": "2023-04-30T09:55:04.8848752+05:30",
+            "Name": "make"
+        },
+        {
+            "Info": "",
+            "Version": "2.3.3",
+            "Source": "nerd-fonts",
+            "Updated": "2023-04-30T10:03:09.0461721+05:30",
+            "Name": "Meslo-NF"
+        },
+        {
+            "Info": "",
+            "Version": "2.3.3",
+            "Source": "nerd-fonts",
+            "Updated": "2023-04-30T10:03:22.3620968+05:30",
+            "Name": "Meslo-NF-Mono"
+        },
+        {
+            "Info": "",
+            "Version": "2023-03-18",
+            "Source": "main",
+            "Updated": "2023-04-30T14:10:58.0422293+05:30",
+            "Name": "msys2"
+        },
+        {
+            "Info": "",
+            "Version": "2.3.3",
+            "Source": "nerd-fonts",
+            "Updated": "2023-04-30T10:04:16.107217+05:30",
+            "Name": "Noto-NF"
+        },
+        {
+            "Info": "",
+            "Version": "2.3.3",
+            "Source": "nerd-fonts",
+            "Updated": "2023-04-30T10:05:05.7217799+05:30",
+            "Name": "Noto-NF-Mono"
+        },
+        {
+            "Info": "",
+            "Version": "2023-04",
+            "Source": "versions",
+            "Updated": "2023-04-30T12:24:07.4526659+05:30",
+            "Name": "odin-dev"
+        },
+        {
+            "Info": "",
+            "Version": "15.4.0",
+            "Source": "main",
+            "Updated": "2023-04-30T09:51:17.3260299+05:30",
+            "Name": "oh-my-posh"
+        },
+        {
+            "Info": "",
+            "Version": "5.32.1.1",
+            "Source": "main",
+            "Updated": "2023-04-30T00:34:11.711281+05:30",
+            "Name": "perl"
+        },
+        {
+            "Info": "",
+            "Version": "5.0.0-beta2",
+            "Source": "main",
+            "Updated": "2023-04-30T09:55:07.6697999+05:30",
+            "Name": "premake"
+        },
+        {
+            "Info": "",
+            "Version": "3.11.3",
+            "Source": "main",
+            "Updated": "2023-04-30T00:35:16.866626+05:30",
+            "Name": "python"
+        },
+        {
+            "Info": "",
+            "Version": "13.0.0",
+            "Source": "main",
+            "Updated": "2023-04-30T09:51:19.5259988+05:30",
+            "Name": "ripgrep"
+        },
+        {
+            "Info": "",
+            "Version": "2.3.3",
+            "Source": "nerd-fonts",
+            "Updated": "2023-04-30T10:05:12.3723452+05:30",
+            "Name": "RobotoMono-NF"
+        },
+        {
+            "Info": "",
+            "Version": "2.3.3",
+            "Source": "nerd-fonts",
+            "Updated": "2023-04-30T10:05:19.4873884+05:30",
+            "Name": "RobotoMono-NF-Mono"
+        },
+        {
+            "Info": "",
+            "Version": "3.2.2-1",
+            "Source": "main",
+            "Updated": "2023-04-30T00:37:05.7166708+05:30",
+            "Name": "ruby"
+        },
+        {
+            "Info": "",
+            "Version": "0.1.20220804",
+            "Source": "sarvex",
+            "Updated": "2023-04-30T09:51:25.863297+05:30",
+            "Name": "searchMultisource"
+        },
+        {
+            "Info": "",
+            "Version": "4.8",
+            "Source": "main",
+            "Updated": "2023-04-30T00:37:08.5779287+05:30",
+            "Name": "sed"
+        },
+        {
+            "Info": "",
+            "Version": "2.3.3",
+            "Source": "nerd-fonts",
+            "Updated": "2023-04-30T10:05:28.9658475+05:30",
+            "Name": "SourceCodePro-NF"
+        },
+        {
+            "Info": "",
+            "Version": "2.3.3",
+            "Source": "nerd-fonts",
+            "Updated": "2023-04-30T10:05:37.1561252+05:30",
+            "Name": "SourceCodePro-NF-Mono"
+        },
+        {
+            "Info": "",
+            "Version": "0.2020.01.26",
+            "Source": "main",
+            "Updated": "2023-04-30T00:48:30.8376722+05:30",
+            "Name": "sudo"
+        },
+        {
+            "Info": "",
+            "Version": "0.10.0",
+            "Source": "extras",
+            "Updated": "2023-04-30T09:51:34.3928243+05:30",
+            "Name": "terminal-icons"
+        },
+        {
+            "Info": "",
+            "Version": "0.2018.07.25",
+            "Source": "main",
+            "Updated": "2023-04-30T00:37:13.8309508+05:30",
+            "Name": "touch"
+        },
+        {
+            "Info": "",
+            "Version": "2.3.3",
+            "Source": "nerd-fonts",
+            "Updated": "2023-04-30T10:05:40.2592958+05:30",
+            "Name": "UbuntuMono-NF"
+        },
+        {
+            "Info": "",
+            "Version": "2.3.3",
+            "Source": "nerd-fonts",
+            "Updated": "2023-04-30T10:05:43.1694935+05:30",
+            "Name": "UbuntuMono-NF-Mono"
+        },
+        {
+            "Info": "",
+            "Version": "0.11.0-dev.2892",
+            "Source": "versions",
+            "Updated": "2023-04-30T12:25:07.0710512+05:30",
+            "Name": "zig-dev"
+        }
+    ],
+    "config": {
+        "aria2-warning-enabled": false,
+        "scoop_repo": "https://github.com/ScoopInstaller/Scoop",
+        "scoop_branch": "master"
+    }
 }
