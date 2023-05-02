@@ -1,10 +1,40 @@
 {
   "FSharp.suggestGitignore": false,
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[ignore]": {
+    "editor.defaultFormatter": "lkrms.inifmt"
+  },
+  "[ps1]": {
+    "editor.defaultFormatter": "ms-vscode.powershell"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[lua]": {
+    "editor.defaultFormatter": "JohnnyMorganz.stylua"
+  },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[powershell]": {
+    "editor.defaultFormatter": "ms-vscode.powershell"
+  },
+  "[properties]": {
+    "editor.defaultFormatter": "lkrms.inifmt"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "aws.telemetry": false,
   "cSpell.userWords": [
@@ -47,9 +77,7 @@
   "editor.indentSize": "tabSize",
   "editor.linkedEditing": true,
   "editor.parameterHints.cycle": true,
-  "editor.rulers": [
-    120
-  ],
+  "editor.rulers": [120],
   "editor.semanticHighlighting.enabled": true,
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
@@ -60,11 +88,11 @@
           "comment",
           "string",
           "parameter",
-          "entity.name.type.class", 
-          "keyword", 
-          "constant", 
-          "storage.modifier", 
-          "storage.type.class.js" 
+          "entity.name.type.class",
+          "keyword",
+          "constant",
+          "storage.modifier",
+          "storage.type.class.js"
         ],
         "settings": {
           "fontStyle": "italic"
@@ -158,11 +186,7 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "git.autofetch": true,
-  "git.branchRandomName.dictionary": [
-    "adjectives",
-    "animals",
-    "colors"
-  ],
+  "git.branchRandomName.dictionary": ["adjectives", "animals", "colors"],
   "git.branchRandomName.enable": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
@@ -199,9 +223,9 @@
     "added": true
   },
   "security.workspace.trust.untrustedFiles": "open",
-  "settingsSync.ignoredSettings": [
-    "configurationSync.store"
-  ],
+  "settingsSync.ignoredSettings": ["configurationSync.store"],
+  "snyk.advanced.cliPath": "C:\\Users\\Yoga\\AppData\\Local\\snyk-ls\\snyk-win.exe",
+  "snyk.yesWelcomeNotification": false,
   "solidity.telemetry": false,
   "sonarlint.connectedMode.connections.sonarcloud": [
     {
@@ -223,20 +247,8 @@
     "sortJSONValuesReverse": false
   },
   "stylelint.packageManager": "pnpm",
-  "stylelint.snippet": [
-    "css",
-    "less",
-    "postcss",
-    "scss",
-    "sass"
-  ],
-  "stylelint.validate": [
-    "css",
-    "less",
-    "postcss",
-    "scss",
-    "sass"
-  ],
+  "stylelint.snippet": ["css", "less", "postcss", "scss", "sass"],
+  "stylelint.validate": ["css", "less", "postcss", "scss", "sass"],
   "svelte.enable-ts-plugin": true,
   "svelte.plugin.svelte.format.config.printWidth": 120,
   "svelte.plugin.svelte.format.config.singleQuote": true,
@@ -245,9 +257,7 @@
   "telemetry.telemetryLevel": "off",
   "terminal.external.windowsExec": "pwsh.exe",
   "terminal.integrated.allowMnemonics": true,
-  "terminal.integrated.commandsToSkipShell": [
-    "language-julia.interrupt"
-  ],
+  "terminal.integrated.commandsToSkipShell": ["language-julia.interrupt"],
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "terminal.integrated.fontFamily": "LiterationMono NF",
@@ -295,27 +305,13 @@
     "!Split sequence"
   ],
   "yaml.format.printWidth": 120,
-  "snyk.advanced.cliPath": "C:\\Users\\Yoga\\AppData\\Local\\snyk-ls\\snyk-win.exe",
-  "snyk.yesWelcomeNotification": false,
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[yaml]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[properties]": {
-    "editor.defaultFormatter": "lkrms.inifmt"
-  },
-  "[ignore]": {
-    "editor.defaultFormatter": "lkrms.inifmt"
-  },
-  "[powershell]": {
-    "editor.defaultFormatter": "ms-vscode.powershell"
-  },
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.python"
-  },
-  "[github-actions-workflow]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  "snyk.yesTelemetry": false,
+  "sonarlint.disableTelemetry": true,
+  "powershell.codeFormatting.autoCorrectAliases": true,
+  "powershell.codeFormatting.avoidSemicolonsAsLineTerminators": true,
+  "powershell.codeFormatting.preset": "Stroustrup",
+  "powershell.codeFormatting.useConstantStrings": true,
+  "powershell.codeFormatting.whitespaceBetweenParameters": true,
+  "powershell.integratedConsole.suppressStartupBanner": true,
+  "powershell.startAsLoginShell.linux": true
 }

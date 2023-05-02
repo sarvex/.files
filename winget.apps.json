@@ -1,6 +1,6 @@
 {
 	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
-	"CreationDate" : "2023-04-30T15:25:43.308-00:00",
+	"CreationDate" : "2023-05-02T17:15:19.263-00:00",
 	"Sources" : 
 	[
 		{
@@ -8,6 +8,12 @@
 			[
 				{
 					"PackageIdentifier" : "Microsoft.VisualStudio.2022.Enterprise"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.XMLNotepad"
+				},
+				{
+					"PackageIdentifier" : "Stackers.Stack"
 				},
 				{
 					"PackageIdentifier" : "7zip.7zip"
@@ -25,6 +31,12 @@
 					"PackageIdentifier" : "Brave.Brave"
 				},
 				{
+					"PackageIdentifier" : "eloston.ungoogled-chromium"
+				},
+				{
+					"PackageIdentifier" : "Codeblocks.Codeblocks"
+				},
+				{
 					"PackageIdentifier" : "Discord.Discord"
 				},
 				{
@@ -34,7 +46,19 @@
 					"PackageIdentifier" : "GIMP.GIMP"
 				},
 				{
+					"PackageIdentifier" : "kmeleonbrowser.K-Meleon"
+				},
+				{
+					"PackageIdentifier" : "CodecGuide.K-LiteCodecPack.Full"
+				},
+				{
 					"PackageIdentifier" : "KDE.Krita"
+				},
+				{
+					"PackageIdentifier" : "TwibrightLabs.Links"
+				},
+				{
+					"PackageIdentifier" : "Maxthon.Maxthon"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.Edge"
@@ -49,7 +73,31 @@
 					"PackageIdentifier" : "Microsoft.WindowsTerminal"
 				},
 				{
+					"PackageIdentifier" : "Mozilla.Firefox"
+				},
+				{
+					"PackageIdentifier" : "NetSurf.NetSurf"
+				},
+				{
+					"PackageIdentifier" : "Notepad++.Notepad++"
+				},
+				{
 					"PackageIdentifier" : "Microsoft.OneDrive"
+				},
+				{
+					"PackageIdentifier" : "Opera.OperaCrypto"
+				},
+				{
+					"PackageIdentifier" : "Opera.OperaGX"
+				},
+				{
+					"PackageIdentifier" : "SMPlayer.SMPlayer"
+				},
+				{
+					"PackageIdentifier" : "Mozilla.SeaMonkey"
+				},
+				{
+					"PackageIdentifier" : "SimonSteele.ProgrammersNotepad"
 				},
 				{
 					"PackageIdentifier" : "SublimeHQ.SublimeText.4"
@@ -58,10 +106,22 @@
 					"PackageIdentifier" : "Lenovo.SystemUpdate"
 				},
 				{
+					"PackageIdentifier" : "Unity.UnityHub"
+				},
+				{
 					"PackageIdentifier" : "vim.vim"
 				},
 				{
+					"PackageIdentifier" : "VivaldiTechnologies.Vivaldi"
+				},
+				{
+					"PackageIdentifier" : "Yandex.Browser"
+				},
+				{
 					"PackageIdentifier" : "GDevelop.GDevelop"
+				},
+				{
+					"PackageIdentifier" : "SlashedIo.Inssist"
 				},
 				{
 					"PackageIdentifier" : "Min.Min"
@@ -73,16 +133,25 @@
 					"PackageIdentifier" : "yt-dlp.yt-dlp"
 				},
 				{
+					"PackageIdentifier" : "Microsoft.PowerShell"
+				},
+				{
 					"PackageIdentifier" : "Lapce.Lapce"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.PowerShell"
+					"PackageIdentifier" : "Rawns.Reddit-Wallpaper-Changer"
 				},
 				{
 					"PackageIdentifier" : "EclipseAdoptium.Temurin.20.JDK"
 				},
 				{
+					"PackageIdentifier" : "CloudMosaInc.PuffinSecureBrowser"
+				},
+				{
 					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x86"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.CLRTypesSQLServer.2019"
 				},
 				{
 					"PackageIdentifier" : "MSYS2.MSYS2"
@@ -109,13 +178,34 @@
 					"PackageIdentifier" : "Neovide.Neovide"
 				},
 				{
+					"PackageIdentifier" : "Microsoft.WebDeploy"
+				},
+				{
 					"PackageIdentifier" : "BlenderFoundation.Blender"
+				},
+				{
+					"PackageIdentifier" : "EpicGames.EpicGamesLauncher"
 				},
 				{
 					"PackageIdentifier" : "Alacritty.Alacritty"
 				},
 				{
+					"PackageIdentifier" : "Google.Chrome"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.OpenJDK.11"
+				},
+				{
 					"PackageIdentifier" : "Microsoft.VisualStudioCode"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.WindowsSDK"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.WindowsSDK"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x86"
 				}
 			],
 			"SourceDetails" : 
