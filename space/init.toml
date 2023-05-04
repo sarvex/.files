@@ -20,7 +20,7 @@
   enable_statusline_mode = true
   enable_statusline_tag = true
   enable_tabline_filetype_icon = true
-  guifont = 'DejaVuSansMono NFM:h10'
+  guifont = 'DejaVuSansMono NFM:h11'
   project_rooter_outermost = false
   statusline_iseparator = 'arrow'
   statusline_separator = 'arrow'

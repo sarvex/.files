@@ -4,7 +4,6 @@ return {
 		"arsham/arshlib.nvim",
 		"famiu/feline.nvim",
 		"rebelot/heirline.nvim",
-		"kyazdani42/nvim-web-devicons",
 	},
 	config = function()
 		-- ignore any parts you don't want to use

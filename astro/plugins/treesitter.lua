@@ -35,7 +35,7 @@ return {
       'python', 'query', 'r', 'racket', 'regex', 'rst', 'ruby', 'rust', 'scss', 'slint', 'solidity', 'sparql', 'sql',
       'squirrel', 'starlark', 'supercollider', 'surface', 'svelte', 'swift', 'teal', 'terraform', 'thrift', 'tiger',
       'toml', 'tsx', 'turtle', 'twig', 'typescript', 'v', 'vala', 'vim', 'vimdoc', 'vue', 'wgsl',
-      'wgsl_bevy', 'yaml', 'yuck', 'zig', 'maintained'
+      'wgsl_bevy', 'yaml', 'yuck', 'zig'
     })
   end,
 },
