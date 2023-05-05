@@ -19,20 +19,8 @@ return {
 		end,
 		config = true,
 	},
-	{
-		"williamboman/mason-lspconfig.nvim",
-		opts = {
-			ensure_installed = { "clangd" }, -- automatically install lsp
-		},
-	},
 	"akinsho/flutter-tools.nvim",
 	"simrat39/rust-tools.nvim", -- add lsp plugin
-	{
-		"williamboman/mason-lspconfig.nvim",
-		opts = {
-			ensure_installed = { "lua-language-server", "rust_analyzer" },
-		},
-	},
 	{ "lvimuser/lsp-inlayhints.nvim", config = true },
 
 	setup_handlers = {
