@@ -1,7 +1,7 @@
 return {
   -- customize alpha options
   {
-    { "goolord/alpha-nvim", enabled = false },
+    { 'goolord/alpha-nvim', enabled = false },
     -- "goolord/alpha-nvim",
     -- opts = function(_, opts)
     --   -- customize the dashboard header

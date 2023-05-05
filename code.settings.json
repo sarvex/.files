@@ -313,5 +313,6 @@
   "powershell.codeFormatting.useConstantStrings": true,
   "powershell.codeFormatting.whitespaceBetweenParameters": true,
   "powershell.integratedConsole.suppressStartupBanner": true,
-  "powershell.startAsLoginShell.linux": true
+  "powershell.startAsLoginShell.linux": true,
+  "stylua.searchParentDirectories": true
 }

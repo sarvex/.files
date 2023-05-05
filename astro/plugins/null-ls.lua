@@ -1,8 +1,8 @@
 return {
-  "jose-elias-alvarez/null-ls.nvim",
+  'jose-elias-alvarez/null-ls.nvim',
   opts = function(_, config)
     -- config variable is the default configuration table for the setup function call
-    -- local null_ls = require "null-ls"
+    local null_ls = require 'null-ls'
 
     -- Check supported formatters and linters
     -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/formatting
@@ -31,7 +31,7 @@ return {
       null_ls.builtins.diagnostics.buildifier,
       null_ls.builtins.diagnostics.cfn_lint,
       null_ls.builtins.diagnostics.checkmake,
-      null_ls.builtins.diagnostics.checkstyle.with({ extra_args = { "-c", "/google_checks.xml" }, }),
+      null_ls.builtins.diagnostics.checkstyle.with { extra_args = { '-c', '/google_checks.xml' } },
       null_ls.builtins.diagnostics.chktex,
       null_ls.builtins.diagnostics.clang_check,
       null_ls.builtins.diagnostics.clazy,
