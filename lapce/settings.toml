@@ -1,0 +1,11 @@
+
+[core]
+icon-theme = "Lapce Codicons"
+color-theme = "Ayu Mirage"
+
+[editor]
+tab-width = 2
+format-on-save = true
+highlight-scope-lines = true
+enable-completion-lens = true
+font-family = "FiraCode NF"

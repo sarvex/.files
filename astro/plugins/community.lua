@@ -9,7 +9,7 @@ return {
 
 	
 	{ import = "astrocommunity.bars-and-lines.bufferline-nvim" },
-	{ import = "astrocommunity.bars-and-lines.scopes-nvim" },
+	{ import = "astrocommunity.bars-and-lines.scope-nvim" },
 	{ import = "astrocommunity.bars-and-lines.smartcolumn-nvim" },
 	{ import = "astrocommunity.bars-and-lines.lualine-nvim" },
 
@@ -20,7 +20,7 @@ return {
 	{ import = "astrocommunity.colorscheme.catppuccin" },
 	{ import = "astrocommunity.colorscheme.dracula" },
 	{ import = "astrocommunity.colorscheme.everforest" },
-	{ import = "astrocommunity.colorscheme.gruvbox-boby" },
+	{ import = "astrocommunity.colorscheme.gruvbox-baby" },
 	{ import = "astrocommunity.colorscheme.gruvbox" },
 	{ import = "astrocommunity.colorscheme.iceberg" },
 	{ import = "astrocommunity.colorscheme.kanagawa" },
@@ -39,15 +39,16 @@ return {
 	{ import = "astrocommunity.diagnostics.lsp_lines-nvim" },
 	{ import = "astrocommunity.diagnostics.trouble-nvim" },
 
-	{ import = "astrocommunity.editing-support.cutlass" },
+	{ import = "astrocommunity.editing-support.cutlass-nvim" },
 	{ import = "astrocommunity.editing-support.neogen" },
 	{ import = "astrocommunity.editing-support.nvim-ts-rainbow2" },
 	{ import = "astrocommunity.editing-support.refactoring-nvim" },
 	{ import = "astrocommunity.editing-support.text-case-nvim" },
 	{ import = "astrocommunity.editing-support.todo-comments-nvim" },
 	{ import = "astrocommunity.editing-support.treej" },
-	{ import = "astrocommunity.editing-support.oil-nvim" },
 	{ import = "astrocommunity.editing-support.zen-mode-nvim" },
+
+	{ import = "astrocommunity.file-explorer.oil-nvim" },
 
 	{ import = "astrocommunity.git.git-blame-nvim" },
 	{ import = "astrocommunity.git.neogit" },

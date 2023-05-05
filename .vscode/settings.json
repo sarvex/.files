@@ -8,5 +8,9 @@
     "titleBar.inactiveForeground": "#e7e7e799",
     "tab.activeBorder": "#269974"
   },
-  "peacock.color": "#1c7055"
+  "peacock.color": "#1c7055",
+  "sonarlint.connectedMode.project": {
+    "connectionId": "sarvex",
+    "projectKey": "sarvex_.files"
+  }
 }
