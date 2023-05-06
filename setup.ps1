@@ -12,7 +12,7 @@ scoop install git
 scoop bucket known | ForEach-Object{ scoop bucket add $_ }
 scoop bucket add sarvex https://github.com/sarvex/scoop
 scoop install sudo aria2 curl grep sed less touch search-multisource terminal-icons oh-my-posh ripgrep fd llvm emacs python julia go make cmake premake 
-scoop install AurulentSansMono-NF Agave-NF AnonymousPro-NF BitstreamVeraSansMono-NF CascadiaCode CascadiaCode-NF CodeNewRoman-NF ComicShannsMono-NF Cousine-NF DejaVuSansMono-NF DroidSansMono-NF FantasqueSansMono-NF FiraCode-NF Hack-NF Hasklig-NF Inconsolata-NF InconsolataGo-NF Iosevka-NF IosevkaTerm-NF JetBrainsMono-NF LiberationMono-NF Meslo-NF Overpass-NF Noto-NF ProggyClean-NF RobotoMono-NF SourceCodePro-NF SpaceMono-NF Terminus-NF UbuntuMono-NF VictorMono-NF
+scoop install AurulentSansMono-NF Agave-NF AnonymousPro-NF BitstreamVeraSansMono-NF CascadiaCode CascadiaCode-NF CodeNewRoman-NF ComicShannsMono-NF Cousine-NF DejaVuSansMono-NF DroidSansMono-NF FantasqueSansMono-NF FiraCode-NF Go-Mono-NF Gohu-NF Hack-NF Hasklig-NF iA-Writer-NF IBMPlexMono-NF Inconsolata-NF InconsolataGo-NF Iosevka-NF IosevkaTerm-NF JetBrainsMono-NF LiberationMono-NF Lilex-NF Meslo-NF Overpass-NF Monofur-NF Mononoki-NF Noto-NF ProFont-NF ProggyClean-NF RobotoMono-NF SourceCodePro-NF SpaceMono-NF ShareTechMono-NF Tinos-NF UbuntuMono-NF
 
 # Install all apps
 winget import --import-file "$dotfiles\winget.apps.json" --disable-interactivity

@@ -2,7 +2,7 @@
 return {
 	opt = {
 		-- set to true or false etc.
-		guifont = "SpaceMono NF:h11",
+		guifont = "ComicShannsMono Nerd Font:h13",
 		lazyredraw = false,
 		linespace = 0,
 		list = true,

@@ -191,10 +191,12 @@ terminal:
   customColorSchemes: []
   minimumContrastRatio: 8
   autoOpen: true
-  font: Hasklug NF
-  fontSize: 15
+  font: Hasklug Nerd Font
   profile: local:powershell-core
   showTabProfileIcon: true
+  fontSize: 15
+  fontWeight: 350
+  fontWeightBold: 650
 ssh: {}
 configSync:
   parts: {}
