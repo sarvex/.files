@@ -1,6 +1,6 @@
 {
 	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
-	"CreationDate" : "2023-05-02T17:15:19.263-00:00",
+	"CreationDate" : "2023-05-06T10:58:58.873-00:00",
 	"Sources" : 
 	[
 		{
@@ -25,6 +25,9 @@
 					"PackageIdentifier" : "DevHub.DevHub"
 				},
 				{
+					"PackageIdentifier" : "KDE.Amarok"
+				},
+				{
 					"PackageIdentifier" : "Audacity.Audacity"
 				},
 				{
@@ -37,22 +40,52 @@
 					"PackageIdentifier" : "Codeblocks.Codeblocks"
 				},
 				{
+					"PackageIdentifier" : "CodeLite.CodeLite"
+				},
+				{
+					"PackageIdentifier" : "JFrog.Conan"
+				},
+				{
+					"PackageIdentifier" : "Orwell.Dev-C++"
+				},
+				{
 					"PackageIdentifier" : "Discord.Discord"
 				},
 				{
 					"PackageIdentifier" : "Docker.DockerDesktop"
 				},
 				{
+					"PackageIdentifier" : "Embarcadero.Dev-C++"
+				},
+				{
 					"PackageIdentifier" : "GIMP.GIMP"
+				},
+				{
+					"PackageIdentifier" : "Geany.Geany"
+				},
+				{
+					"PackageIdentifier" : "GNU.Gforth"
 				},
 				{
 					"PackageIdentifier" : "kmeleonbrowser.K-Meleon"
 				},
 				{
+					"PackageIdentifier" : "KDE.kdevelop"
+				},
+				{
+					"PackageIdentifier" : "KDE.KDiff3"
+				},
+				{
 					"PackageIdentifier" : "CodecGuide.K-LiteCodecPack.Full"
 				},
 				{
+					"PackageIdentifier" : "kalilinux.kalilinux"
+				},
+				{
 					"PackageIdentifier" : "KDE.Krita"
+				},
+				{
+					"PackageIdentifier" : "KDE.LabPlot"
 				},
 				{
 					"PackageIdentifier" : "TwibrightLabs.Links"
@@ -67,6 +100,9 @@
 					"PackageIdentifier" : "Microsoft.EdgeWebView2Runtime"
 				},
 				{
+					"PackageIdentifier" : "Microsoft.NuGet"
+				},
+				{
 					"PackageIdentifier" : "Microsoft.WingetCreate"
 				},
 				{
@@ -76,10 +112,10 @@
 					"PackageIdentifier" : "Mozilla.Firefox"
 				},
 				{
-					"PackageIdentifier" : "NetSurf.NetSurf"
+					"PackageIdentifier" : "Notepad++.Notepad++"
 				},
 				{
-					"PackageIdentifier" : "Notepad++.Notepad++"
+					"PackageIdentifier" : "dail8859.NotepadNext"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.OneDrive"
@@ -89,6 +125,15 @@
 				},
 				{
 					"PackageIdentifier" : "Opera.OperaGX"
+				},
+				{
+					"PackageIdentifier" : "JanFiala.PSpad"
+				},
+				{
+					"PackageIdentifier" : "KDE.rkward"
+				},
+				{
+					"PackageIdentifier" : "RoyQu.RedPanda-C++"
 				},
 				{
 					"PackageIdentifier" : "SMPlayer.SMPlayer"
@@ -103,7 +148,13 @@
 					"PackageIdentifier" : "SublimeHQ.SublimeText.4"
 				},
 				{
+					"PackageIdentifier" : "jsimlo.tednotepad"
+				},
+				{
 					"PackageIdentifier" : "Lenovo.SystemUpdate"
+				},
+				{
+					"PackageIdentifier" : "KDE.umbrello"
 				},
 				{
 					"PackageIdentifier" : "Unity.UnityHub"
@@ -115,10 +166,19 @@
 					"PackageIdentifier" : "VivaldiTechnologies.Vivaldi"
 				},
 				{
+					"PackageIdentifier" : "WinMerge.WinMerge"
+				},
+				{
 					"PackageIdentifier" : "Yandex.Browser"
 				},
 				{
+					"PackageIdentifier" : "Xidicone.ZeusIDE"
+				},
+				{
 					"PackageIdentifier" : "GDevelop.GDevelop"
+				},
+				{
+					"PackageIdentifier" : "dandavison.delta"
 				},
 				{
 					"PackageIdentifier" : "SlashedIo.Inssist"
@@ -136,7 +196,13 @@
 					"PackageIdentifier" : "Microsoft.PowerShell"
 				},
 				{
+					"PackageIdentifier" : "WikidPad.WikidPad"
+				},
+				{
 					"PackageIdentifier" : "Lapce.Lapce"
+				},
+				{
+					"PackageIdentifier" : "voidtools.Everything"
 				},
 				{
 					"PackageIdentifier" : "Rawns.Reddit-Wallpaper-Changer"
@@ -160,6 +226,9 @@
 					"PackageIdentifier" : "Microsoft.OpenJDK.17"
 				},
 				{
+					"PackageIdentifier" : "QTextPad.QTextPad"
+				},
+				{
 					"PackageIdentifier" : "OpenJS.NodeJS"
 				},
 				{
@@ -181,6 +250,9 @@
 					"PackageIdentifier" : "Microsoft.WebDeploy"
 				},
 				{
+					"PackageIdentifier" : "StefansTools.BowPad"
+				},
+				{
 					"PackageIdentifier" : "BlenderFoundation.Blender"
 				},
 				{
@@ -196,10 +268,16 @@
 					"PackageIdentifier" : "Microsoft.OpenJDK.11"
 				},
 				{
+					"PackageIdentifier" : "Scintilla.SciTE"
+				},
+				{
+					"PackageIdentifier" : "KDE.Marble"
+				},
+				{
 					"PackageIdentifier" : "Microsoft.VisualStudioCode"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.WindowsSDK"
+					"PackageIdentifier" : "Emurasoft.EmEditor"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.WindowsSDK"
