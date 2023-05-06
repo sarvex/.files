@@ -12,7 +12,7 @@ scoop install git
 scoop bucket known | ForEach-Object{ scoop bucket add $_ }
 scoop bucket add sarvex https://github.com/sarvex/scoop
 scoop install sudo aria2 curl grep sed less touch search-multisource terminal-icons oh-my-posh ripgrep fd llvm emacs python julia go make cmake premake 
-sccop install CascadiaCode-NF CascadiaCode-NF-Mono Hack-NF Hack-NF-Mono Delugia-Nerd-Font-Complete Delugia-Mono-Nerd-Font-Complete Hasklig-NF Hasklig-NF-Mono SourceCodePro-NF SourceCodePro-NF-Mono LiberationMono-NF LiberationMono-NF-Mono AnonymousPro-NF AnonymousPro-NF-Mono FiraCode-NF-Mono FiraCode-NF Iosevka-NF Iosevka-NF-Mono Meslo-NF-Mono Meslo-NF Noto-NF-Mono Noto-NF RobotoMono-NF-Mono RobotoMono-NF UbuntuMono-NF-Mono UbuntuMono-NF JetBrainsMono-NF-Mono JetBrainsMono-NF DejaVuSansMono-NF-Mono DejaVuSansMono-NF
+sccop install CascadiaCode-NF Hack-NF Delugia-Nerd-Font-Complete Hasklig-NF SourceCodePro-NF LiberationMono-NF AnonymousPro-NF FiraCode-NF Iosevka-NF Meslo-NF Noto-NF RobotoMono-NF UbuntuMono-NF JetBrainsMono-NF DejaVuSansMono-NF
 
 # Install all apps
 winget import --import-file "$dotfiles\winget.apps.json" --disable-interactivity
@@ -50,6 +50,7 @@ $doom_emacs = "$env:APPDATA\.emacs.d"
 git clone --depth 1 https://github.com/doomemacs/doomemacs.git $doom_emacs
 New-Item -Path $HOME\.emacs.d -ItemType SymbolicLink -Value $doom_emacs -Force
 New-Item -Path "$HOME\.doom.d" -ItemType SymbolicLink -Value "$dotfiles\doom" -Force
+New-Item -Path "$env:APPDATA\.doom.d" -ItemType SymbolicLink -Value "$dotfiles\doom" -Force
 
 # Install SpaceVim
 $space_vim = "$env:LOCALAPPDATA\SpaceVim"
