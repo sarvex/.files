@@ -7,7 +7,8 @@
     "titleBar.activeForeground": "#e7e7e7",
     "titleBar.inactiveBackground": "#4181aa99",
     "titleBar.inactiveForeground": "#e7e7e799",
-    "titleBar.border": "#4181aa"
+    "tab.activeBorder": "#269974",
+    "titleBar.border": "#1c7055"
   },
   "peacock.color": "#4181aa",
   "sonarlint.connectedMode.project": {

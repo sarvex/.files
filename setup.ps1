@@ -2,13 +2,11 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 #Install Winget 
 winget upgrade --all
-$winget_pkgs = @('Microsoft.VisualStudioCode', 'Git.Git', 'Microsoft.Powershell', 'Microsoft.Git', 'Microsoft.DotNet.SDK.7', 'Microsoft.VisualStudio.2022.Enterprise', 'Microsoft.WingetCreate', 'Microsoft.WindowsWDK', 'Microsoft.VFSforGit', 'Microsoft.Sysinternals.ProcessMonitor', 'Microsoft.Sysinternals.ProcessExplorer', 'Microsoft.Sysinternals.Autoruns', 'Microsoft.Sysinternals.Desktops', 'Microsoft.Sysinternals.BGInfo', 'Microsoft.Sysinternals.RDCMan', 'Microsoft.Sysinternals.TCPView', 'GitHub.cli', 'GLab.GLab', 'GitHub.GitHubDesktop', 'GitHub.GitLFS', 'SublimeHQ.SublimeText.4', 'Wez.Wezterm', 'Eugeny.Tabby', 'Lapce.Lapce', 'Vim.Vim', 'Neovide.Neovide', 'Neovim.Neovim', 'yt-dlp.yt-dlp')
-$winget_pkgs | ForEach-Object{ winget install $_ }
+@('Microsoft.VisualStudioCode', 'Git.Git', 'Microsoft.Powershell', 'Microsoft.Git', 'Microsoft.DotNet.SDK.7', 'Microsoft.VisualStudio.2022.Enterprise', 'Microsoft.WingetCreate', 'Microsoft.WindowsWDK', 'Microsoft.VFSforGit', 'Microsoft.Sysinternals.ProcessMonitor', 'Microsoft.Sysinternals.ProcessExplorer', 'Microsoft.Sysinternals.Autoruns', 'Microsoft.Sysinternals.Desktops', 'Microsoft.Sysinternals.BGInfo', 'Microsoft.Sysinternals.RDCMan', 'Microsoft.Sysinternals.TCPView', 'GitHub.cli', 'GLab.GLab', 'GitHub.GitHubDesktop', 'GitHub.GitLFS', 'SublimeHQ.SublimeText.4', 'Wez.Wezterm', 'Eugeny.Tabby', 'Lapce.Lapce', 'Vim.Vim', 'Neovide.Neovide', 'Neovim.Neovim', 'yt-dlp.yt-dlp') | ForEach-Object{ winget install $_ }
 
 #Install scoop 
 Invoke-WebRequest get.scoop.sh -UseBasicParsing | Invoke-Expression
 Add-MpPreference -ExclusionPath "${env:ProgramData}\scoop\buckets", "${env:USERPROFILE}\scoop\buckets" -Force
-scoop install git 
 scoop bucket known | ForEach-Object{ scoop bucket add $_ }
 scoop bucket add sarvex https://github.com/sarvex/scoop
 scoop install sudo aria2 curl grep sed less touch search-multisource terminal-icons oh-my-posh ripgrep fd llvm emacs python ruby perl php julia go make cmake premake bazel clangd 

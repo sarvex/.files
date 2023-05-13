@@ -42,7 +42,10 @@
 		"fontsource",
 		"gizlang",
 		"imagetools",
+		"Infobox",
 		"jampack",
+		"Jatasra",
+		"maxage",
 		"metaprogramming",
 		"partytown",
 		"postbuild",
@@ -52,15 +55,18 @@
 		"sarvex",
 		"sprintf",
 		"stackoverflow",
+		"stylelint",
 		"subfont",
 		"tabler",
 		"tailwindcss",
+		"undici",
 		"unpic",
-		"Webp"
+		"Webp",
+		"wontfix"
 	],
 	"code-runner.enableAppInsights": false,
 	"codeQL.telemetry.enableTelemetry": false,
-	"dart.flutterSdkPath": "/Users/sarvex/Library/Android/flutter",
+  "dart.flutterSdkPath": "/Users/sarvex/Library/Android/flutter",
 	"dart.lineLength": 120,
 	"dart.maxLogLineLength": 10000,
 	"dart.normalizeFileCasing": true,
@@ -213,7 +219,10 @@
 		"added": true
 	},
 	"security.workspace.trust.untrustedFiles": "open",
-	"settingsSync.ignoredSettings": ["configurationSync.store"],
+  "settingsSync.ignoredSettings": [
+    "configurationSync.store"
+  ],
+  "snyk.advanced.cliPath": "C:\\Users\\Yoga\\AppData\\Local\\snyk-ls\\snyk-win.exe",
 	"solidity.telemetry": false,
 	"sonarlint.connectedMode.connections.sonarcloud": [
 		{
@@ -260,8 +269,8 @@
 	"terminal.integrated.tabs.showActions": "always",
 	"terminal.integrated.tabs.showActiveTerminal": "always",
 	"window.autoDetectColorScheme": true,
-	"workbench.colorTheme": "Tokyo Night",
-	"workbench.iconTheme": "file-icons",
+	"workbench.colorTheme": "One Hunter Theme",
+	"workbench.iconTheme": "emoji-file-icons",
 	"workbench.preferredDarkColorTheme": "Tokyo Night",
 	"workbench.preferredLightColorTheme": "Tokyo Night Storm",
 	"workbench.productIconTheme": "flippidippi-product-icons",
@@ -275,16 +284,23 @@
 	],
 	"yaml.format.printWidth": 120,
 	"yaml.maxItemsComputed": 9999,
-	"snyk.advanced.cliPath": "C:\\Users\\Yoga\\AppData\\Local\\snyk-ls\\snyk-win.exe",
 	"snyk.yesWelcomeNotification": false,
 	"snyk.trustedFolders": [
 		"d:\\Source\\unpic-img",
 		"d:\\Source\\unpic-img",
 		"d:\\Source\\com-meta",
 		"c:\\Users\\Yoga\\.files",
-		"d:\\Source\\scoop"
+		"d:\\Source\\scoop",
+		"d:\\Source\\qwik-app",
+		"d:\\Source\\qwik-starter"
 	],
 	"snyk.advanced.autoScanOpenSourceSecurity": true,
 	"snyk.yesCrashReport": false,
-	"snyk.yesTelemetry": false
+	"snyk.yesTelemetry": false,
+	"files.eol": "\n",
+  "editor.detectIndentation": false,
+  "editor.foldingMaximumRegions": 9999,
+  "editor.mouseWheelZoom": true,
+  "editor.renderLineHighlight": "gutter",
+  "editor.smoothScrolling": true
 }
