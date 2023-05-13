@@ -11,12 +11,8 @@ Add-MpPreference -ExclusionPath "${env:ProgramData}\scoop\buckets", "${env:USERP
 scoop install git 
 scoop bucket known | ForEach-Object{ scoop bucket add $_ }
 scoop bucket add sarvex https://github.com/sarvex/scoop
-scoop install sudo aria2 curl grep sed less touch search-multisource terminal-icons oh-my-posh ripgrep fd llvm emacs python julia go make cmake premake 
+scoop install sudo aria2 curl grep sed less touch search-multisource terminal-icons oh-my-posh ripgrep fd llvm emacs python ruby perl php julia go make cmake premake bazel clangd 
 scoop install AurulentSansMono-NF Agave-NF AnonymousPro-NF BitstreamVeraSansMono-NF CascadiaCode CascadiaCode-NF CodeNewRoman-NF ComicShannsMono-NF Cousine-NF DejaVuSansMono-NF DroidSansMono-NF FantasqueSansMono-NF FiraCode-NF Go-Mono-NF Gohu-NF Hack-NF Hasklig-NF iA-Writer-NF IBMPlexMono-NF Inconsolata-NF InconsolataGo-NF Iosevka-NF IosevkaTerm-NF JetBrainsMono-NF LiberationMono-NF Lilex-NF Meslo-NF Overpass-NF Monofur-NF Mononoki-NF Noto-NF ProFont-NF ProggyClean-NF RobotoMono-NF SourceCodePro-NF SpaceMono-NF ShareTechMono-NF Tinos-NF UbuntuMono-NF
-
-# Install all apps
-winget import --import-file "$dotfiles\winget.apps.json" --disable-interactivity
-scoop import "$dotfiles\scoop.apps.json"
 
 #Fetch DotFiles 
 $dotfiles = "$HOME\.files"
@@ -26,8 +22,8 @@ git clone https://github.com/sarvex/dotfiles $dotfiles
 New-Item -Path "$HOME\.gitconfig" -ItemType SymbolicLink -Value "$dotfiles\git.config" -Force
 New-Item -Path "$HOME\.wezterm.lua" -ItemType SymbolicLink -Value "$dotfiles\wezterm.lua" -Force
 New-Item -Path "$HOME\.xonshrc" -ItemType SymbolicLink -Value "$dotfiles\xonsh.rc" -Force
-New-Item -Path "$HOME\.bashrc" -ItemType SymbolicLink -Value "$dotfiles\.bashrc" -Force
-New-Item -Path "$HOME\.bash_profile" -ItemType SymbolicLink -Value "$dotfiles\.bash_profile" -Force
+New-Item -Path "$HOME\.bashrc" -ItemType SymbolicLink -Value "$dotfiles\msys\.bashrc" -Force
+New-Item -Path "$HOME\.bash_profile" -ItemType SymbolicLink -Value "$dotfiles\msys\.bash_profile" -Force
 New-Item -Path "$HOME\.profile" -ItemType SymbolicLink -Value "$dotfiles\msys\profile" -Force
 New-Item -Path "$HOME\.zshrc" -ItemType SymbolicLink -Value "$dotfiles\msys\.zshrc" -Force
 New-Item -Path "$HOME\.zshenv" -ItemType SymbolicLink -Value "$dotfiles\msys\zshenv" -Force

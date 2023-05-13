@@ -4,7 +4,10 @@
         <Filter name="" />
         <Replace name="" />
     </FindHistory>
-    <History nbMaxFile="10" inSubMenu="no" customLength="-1" />
+    <History nbMaxFile="10" inSubMenu="no" customLength="-1">
+        <File filename="C:\msys64\etc\nsswitch.conf" />
+        <File filename="C:\msys64\msys2.ini" />
+    </History>
     <ProjectPanels>
         <ProjectPanel id="0" workSpaceFile="" />
         <ProjectPanel id="1" workSpaceFile="" />
@@ -21,7 +24,7 @@
         <GUIConfig name="ScintillaViewsSplitter">vertical</GUIConfig>
         <GUIConfig name="UserDefineDlg" position="undocked">hide</GUIConfig>
         <GUIConfig name="TabSetting" replaceBySpace="no" size="4" />
-        <GUIConfig name="AppPosition" x="196" y="224" width="1254" height="753" isMaximized="no" />
+        <GUIConfig name="AppPosition" x="196" y="224" width="967" height="607" isMaximized="no" />
         <GUIConfig name="FindWindowPosition" left="521" top="430" right="1135" bottom="794" isLessModeOn="no" />
         <GUIConfig name="FinderConfig" wrappedLines="no" purgeBeforeEverySearch="no" showOnlyOneEntryPerFoundLine="yes" />
         <GUIConfig name="noUpdate" intervalDays="15" nextUpdateDate="20230521">no</GUIConfig>

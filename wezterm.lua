@@ -24,23 +24,6 @@ config = {
   default_prog = { "pwsh.exe", "-NoLogo" },
 }
 
-if wezterm.target_triple == "x86_64-pc-windows-msvc" then
-  config.term = "" -- Set to empty so FZF works on windows
-  -- table.insert(config.launch_menu, { label = "PowerShell 5", args = { "powershell.exe", "-NoLogo" } })
-  table.insert(config.launch_menu, { label = "PowerShell", args = { "pwsh.exe", "-NoLogo" } })
-  table.insert(
-    config.launch_menu,
-    { label = "VS PowerShell 2022", args = { "powershell.exe", "-NoLogo", "-NoExit", "-Command", "devps 17.0" } }
-  )
-  table.insert(config.launch_menu, { label = "Command Prompt", args = { "cmd.exe" } })
-  table.insert(config.launch_menu, {
-    label = "VS Command Prompt 2022",
-    args = { "powershell.exe", "-NoLogo", "-NoExit", "-Command", "devcmd 17.0" },
-  })
-else
-  table.insert(config.launch_menu, { label = "zsh", args = { "zsh", "-l" } })
-end
-
 -- Equivalent to POSIX basename(3)
 -- Given "/foo/bar" returns "bar"
 -- Given "c:\\foo\\bar" returns "bar"
