@@ -12,7 +12,7 @@
   "draw_unicode_white_space": "all",
   "draw_white_space": ["all_tabs", "selection"],
   "ensure_newline_at_eof_on_save": true,
-  "font_face": "Hack Nerd Font",
+  "font_face": "Hack Nerd Font Mono",
   "font_options": ["aalt", "gdi", "liga", "clig", "calt", "falt", "halt", "jalt", "ltra", "nalt", "palt", "rvrn", "salt", "valt", "dlig", "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08", "ss09", "ss10", "ss11", "ss12", "ss13", "ss14", "ss15", "ss16", "ss17", "ss18", "ss19", "ss20"],
   "font_size": 10,
   "hardware_acceleration": "opengl",

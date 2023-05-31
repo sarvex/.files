@@ -57,3 +57,12 @@ New-Item -Path "$HOME\.SpaceVim.d" -ItemType SymbolicLink -Value "$dotfiles\spac
 $astro_nvim = "$env:LOCALAPPDATA\nvim"
 git clone --depth 1 https://github.com/AstroNvim/AstroNvim $astro_nvim
 New-Item -Path "$astro_nvim\lua\user" -ItemType SymbolicLink -Value "$dotfiles\astro"  -Force
+
+## Additional Steps move Home to D:\
+# New-Item -Path "$HOME\Desktop" -ItemType SymbolicLink -Value "D:\Desktop" -Force
+# New-Item -Path "$HOME\Documents" -ItemType SymbolicLink -Value "D:\Documents" -Force
+# New-Item -Path "$HOME\Downloads" -ItemType SymbolicLink -Value "D:\Downloads" -Force
+# New-Item -Path "$HOME\Music" -ItemType SymbolicLink -Value "D:\Music" -Force
+# New-Item -Path "$HOME\Pictures" -ItemType SymbolicLink -Value "D:\Pictures" -Force
+# New-Item -Path "$HOME\Source" -ItemType SymbolicLink -Value "D:\Source" -Force
+# New-Item -Path "$HOME\Videos" -ItemType SymbolicLink -Value "D:\Videos" -Force

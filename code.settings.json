@@ -1,39 +1,18 @@
 {
-  "[github-actions-workflow]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "[ignore]": {
     "editor.defaultFormatter": "lkrms.inifmt"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[lua]": {
     "editor.defaultFormatter": "JohnnyMorganz.stylua"
   },
-  "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[powershell]": {
-    "editor.defaultFormatter": "ms-vscode.powershell"
-  },
   "[properties]": {
     "editor.defaultFormatter": "lkrms.inifmt"
-  },
-  "[ps1]": {
-    "editor.defaultFormatter": "ms-vscode.powershell"
-  },
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.python"
   },
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml"
-  },
-  "[yaml]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "aws.telemetry": false,
   "cSpell.userWords": [
@@ -77,7 +56,7 @@
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.cursorBlinking": "phase",
   "editor.cursorSmoothCaretAnimation": "on",
-  "editor.defaultFormatter": "rome.rome",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.detectIndentation": false,
   "editor.experimental.pasteActions.enabled": true,
   "editor.foldingImportsByDefault": true,
@@ -253,13 +232,9 @@
   "snyk.advanced.autoScanOpenSourceSecurity": true,
   "snyk.advanced.cliPath": "C:\\Users\\Yoga\\AppData\\Local\\snyk-ls\\snyk-win.exe",
   "snyk.trustedFolders": [
-    "d:\\Source\\unpic-img",
-    "d:\\Source\\unpic-img",
-    "d:\\Source\\com-meta",
+    "d:\\Source",
     "c:\\Users\\Yoga\\.files",
-    "d:\\Source\\scoop",
-    "d:\\Source\\qwik-app",
-    "d:\\Source\\qwik-starter"
+    "c:\\Users\\Yoga\\Source"
   ],
   "snyk.yesCrashReport": false,
   "snyk.yesTelemetry": false,
@@ -268,7 +243,6 @@
   "sonarlint.connectedMode.connections.sonarcloud": [
     {
       "connectionId": "sarvex",
-      "disableNotifications": true,
       "organizationKey": "sarvex"
     }
   ],
