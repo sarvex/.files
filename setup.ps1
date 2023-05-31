@@ -12,7 +12,7 @@ scoop install git
 scoop bucket known | ForEach-Object{ scoop bucket add $_ }
 scoop bucket add sarvex https://github.com/sarvex/scoop
 scoop install sudo aria2 curl grep sed less touch search-multisource terminal-icons oh-my-posh ripgrep fd llvm emacs python ruby perl php julia go make cmake premake bazel clangd 
-scoop install AurulentSansMono-NF Agave-NF AnonymousPro-NF BitstreamVeraSansMono-NF CascadiaCode CascadiaCode-NF CodeNewRoman-NF ComicShannsMono-NF Cousine-NF DejaVuSansMono-NF DroidSansMono-NF FantasqueSansMono-NF FiraCode-NF Go-Mono-NF Gohu-NF Hack-NF Hasklig-NF iA-Writer-NF IBMPlexMono-NF Inconsolata-NF InconsolataGo-NF Iosevka-NF IosevkaTerm-NF JetBrainsMono-NF LiberationMono-NF Lilex-NF Meslo-NF Overpass-NF Monofur-NF Mononoki-NF Noto-NF ProFont-NF ProggyClean-NF RobotoMono-NF SourceCodePro-NF SpaceMono-NF ShareTechMono-NF Tinos-NF UbuntuMono-NF
+scoop install aurulent-sans-mono-nerd-font agave-nerd-font anonymous-pro-nerd-font bitstream-vera-sans-mono-nerd-font CascadiaCode cascadia-code-nerd-font code-new-roman-nerd-font comic-shanns-mono-nerd-font cousine-nerd-font dejavu-sans-mono-nerd-font droid-sans-mono-nerd-font fantasque-sans-mono-nerd-font fira-code-nerd-font go-mono-nerd-font gohu-nerd-font hack-nerd-font hasklig-nerd-font ia-writer-nerd-font ibm-plex-mono-nerd-font inconsolata-nerd-font inconsolata-go-nerd-font iosevka-nerd-font iosevka-term-nerd-font jetbrains-mono-nerd-font liberation-mono-nerd-font lilex-nerd-font meslo-nerd-font overpass-nerd-font monofur-nerd-font mononoki-nerd-font noto-nerd-font pro-font-nerd-font proggy-clean-nerd-font roboto-mono-nerd-font source-code-pro-nerd-font space-mono-nerd-font share-tech-mono-nerd-font tinos-nerd-font ubuntu-mono-nerd-font
 
 #Fetch DotFiles 
 $dotfiles = "$HOME\.files"
@@ -58,3 +58,12 @@ New-Item -Path "$HOME\.SpaceVim.d" -ItemType SymbolicLink -Value "$dotfiles\spac
 $astro_nvim = "$env:LOCALAPPDATA\nvim"
 git clone --depth 1 https://github.com/AstroNvim/AstroNvim $astro_nvim
 New-Item -Path "$astro_nvim\lua\user" -ItemType SymbolicLink -Value "$dotfiles\astro"  -Force
+
+## Additional Steps move Home to D:\
+# New-Item -Path "$HOME\Desktop" -ItemType SymbolicLink -Value "D:\Desktop" -Force
+# New-Item -Path "$HOME\Documents" -ItemType SymbolicLink -Value "D:\Documents" -Force
+# New-Item -Path "$HOME\Downloads" -ItemType SymbolicLink -Value "D:\Downloads" -Force
+# New-Item -Path "$HOME\Music" -ItemType SymbolicLink -Value "D:\Music" -Force
+# New-Item -Path "$HOME\Pictures" -ItemType SymbolicLink -Value "D:\Pictures" -Force
+# New-Item -Path "$HOME\Source" -ItemType SymbolicLink -Value "D:\Source" -Force
+# New-Item -Path "$HOME\Videos" -ItemType SymbolicLink -Value "D:\Videos" -Force
