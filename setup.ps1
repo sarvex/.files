@@ -2,15 +2,15 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 #Install Winget 
 winget upgrade --all
-@('Microsoft.VisualStudioCode', 'Git.Git', 'Microsoft.Powershell', 'Microsoft.Git', 'Microsoft.DotNet.SDK.7', 'Microsoft.VisualStudio.2022.Enterprise', 'Microsoft.WingetCreate', 'Microsoft.WindowsWDK', 'Microsoft.VFSforGit', 'Microsoft.Sysinternals.ProcessMonitor', 'Microsoft.Sysinternals.ProcessExplorer', 'Microsoft.Sysinternals.Autoruns', 'Microsoft.Sysinternals.Desktops', 'Microsoft.Sysinternals.BGInfo', 'Microsoft.Sysinternals.RDCMan', 'Microsoft.Sysinternals.TCPView', 'GitHub.cli', 'GLab.GLab', 'GitHub.GitHubDesktop', 'GitHub.GitLFS', 'SublimeHQ.SublimeText.4', 'Wez.Wezterm', 'Eugeny.Tabby', 'Lapce.Lapce', 'Vim.Vim', 'Neovide.Neovide', 'Neovim.Neovim', 'yt-dlp.yt-dlp') | ForEach-Object{ winget install $_ }
+@('Microsoft.VisualStudioCode', 'Microsoft.Powershell', 'Microsoft.Git', 'Microsoft.VFSforGit', 'Microsoft.DotNet.SDK.7', 'Microsoft.VisualStudio.2022.Enterprise', 'Microsoft.WingetCreate', 'Microsoft.WindowsWDK', 'Microsoft.VFSforGit', 'Microsoft.Sysinternals.ProcessMonitor', 'Microsoft.Sysinternals.ProcessExplorer', 'Microsoft.Sysinternals.Autoruns', 'Microsoft.Sysinternals.Desktops', 'Microsoft.Sysinternals.BGInfo', 'Microsoft.Sysinternals.RDCMan', 'Microsoft.Sysinternals.TCPView', 'GitHub.cli', 'GLab.GLab', 'SublimeHQ.SublimeText.4', 'Wez.Wezterm', 'Eugeny.Tabby', 'Lapce.Lapce', 'Vim.Vim', 'Neovide.Neovide', 'Neovim.Neovim', 'yt-dlp.yt-dlp') | ForEach-Object{ winget install $_ }
 
 #Install scoop 
 Invoke-WebRequest get.scoop.sh -UseBasicParsing | Invoke-Expression
-Add-MpPreference -ExclusionPath "${env:ProgramData}\scoop\buckets", "${env:USERPROFILE}\scoop\buckets" -Force
 scoop bucket known | ForEach-Object{ scoop bucket add $_ }
 scoop bucket add sarvex https://github.com/sarvex/scoop
-scoop install sudo aria2 curl grep sed less touch search-multisource terminal-icons oh-my-posh ripgrep fd llvm emacs python ruby perl php julia go make cmake premake bazel clangd 
-scoop install AurulentSansMono-NF Agave-NF AnonymousPro-NF BitstreamVeraSansMono-NF CascadiaCode CascadiaCode-NF CodeNewRoman-NF ComicShannsMono-NF Cousine-NF DejaVuSansMono-NF DroidSansMono-NF FantasqueSansMono-NF FiraCode-NF Go-Mono-NF Gohu-NF Hack-NF Hasklig-NF iA-Writer-NF IBMPlexMono-NF Inconsolata-NF InconsolataGo-NF Iosevka-NF IosevkaTerm-NF JetBrainsMono-NF LiberationMono-NF Lilex-NF Meslo-NF Overpass-NF Monofur-NF Mononoki-NF Noto-NF ProFont-NF ProggyClean-NF RobotoMono-NF SourceCodePro-NF SpaceMono-NF ShareTechMono-NF Tinos-NF UbuntuMono-NF
+scoop install sudo aria2 curl grep sed less touch search-multisource terminal-icons oh-my-posh ripgrep fd llvm emacs python ruby perl php julia go make cmake premake bazel clangd rustup scala kotlin erlang haskell scala kotlin erlang haskell lua love
+scoop install AurulentSansMono-nerd-font Agave-nerd-font AnonymousPro-nerd-font BitstreamVeraSansMono-nerd-font CascadiaCode CascadiaCode-nerd-font CodeNewRoman-nerd-font ComicShannsMono-nerd-font Cousine-nerd-font DejaVuSansMono-nerd-font DroidSansMono-nerd-font FantasqueSansMono-nerd-font FiraCode-nerd-font Go-Mono-nerd-font Gohu-nerd-font Hack-nerd-font Hasklig-nerd-font iA-Writer-nerd-font IBMPlexMono-nerd-font Inconsolata-nerd-font InconsolataGo-nerd-font Iosevka-nerd-font IosevkaTerm-nerd-font JetBrainsMono-nerd-font LiberationMono-nerd-font Lilex-nerd-font Meslo-nerd-font Overpass-nerd-font Monofur-nerd-font Mononoki-nerd-font Noto-nerd-font ProFont-nerd-font ProggyClean-nerd-font RobotoMono-nerd-font SourceCodePro-nerd-font SpaceMono-nerd-font ShareTechMono-nerd-font Tinos-nerd-font UbuntuMono-nerd-font
+sudo Add-MpPreference -ExclusionPath "${env:ProgramData}\scoop\buckets", "${env:USERPROFILE}\scoop\buckets" -Force
 
 #Fetch DotFiles 
 $dotfiles = "$HOME\.files"
@@ -37,6 +37,7 @@ New-Item -Path "$env:APPDATA\tabby\config.yaml" -ItemType SymbolicLink -Value "$
 New-Item -Path "$env:APPDATA\Notepad++" -ItemType SymbolicLink -Value "$dotfiles\notepad" -Force
 
 $profile_path = $PROFILE.CurrentUserAllHosts
+New-Item -Path "$profile_path" -ItemType SymbolicLink -Value "$dotfiles\Profile.ps1" -Force
 . $profile_path
 
 # Install Doom 
