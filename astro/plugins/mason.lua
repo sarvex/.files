@@ -73,7 +73,7 @@ return {
 				'salt_ls',
 				'serve_d',
 				'slint_lsp',
-				'solang-llvm',
+				'solang_llvm',
 				'solang',
 				'solargraph',
 				'solidity',
