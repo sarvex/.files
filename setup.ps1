@@ -54,15 +54,19 @@ New-Item -Path $HOME\vimfiles -ItemType SymbolicLink -Value $space_vim -Force
 New-Item -Path "$HOME\.SpaceVim.d" -ItemType SymbolicLink -Value "$dotfiles\space" -Force
 
 # Install AstroNvim
-$astro_nvim = "$env:LOCALAPPDATA\nvim"
-git clone --depth 1 https://github.com/AstroNvim/AstroNvim $astro_nvim
-New-Item -Path "$astro_nvim\lua\user" -ItemType SymbolicLink -Value "$dotfiles\astro"  -Force
+$astro = "$env:LOCALAPPDATA\astro"
+git clone --depth 1 https://github.com/AstroNvim/AstroNvim $astro
+New-Item -Path "$astro\lua\user" -ItemType SymbolicLink -Value "$dotfiles\astro"  -Force
 
 # Install LunarVim
 $lvim = "$env:LOCALAPPDATA\lvim"
-Invoke-WebRequest https://raw.githubusercontent.com/LunarVim/LunarVim/master/utils/installer/install.ps1 -UseBasicParsing | Invoke-Expression
+Invoke-WebRequest https://raw.githubusercontent.com/Lunar/LunarVim/main/utils/installer/install.ps1 -UseBasicParsing | Invoke-Expression
 New-Item -Path "$lvim" -ItemType SymbolicLink -Value "$dotfiles\lunar"  -Force
 
+# Install ChadVim
+$chad = "$env:LOCALAPPDATA\chad"
+git clone --depth 1 https://github.com/NvChad/NvChad $chad
+New-Item -Path "$chad" -ItemType SymbolicLink -Value "$dotfiles\chad"  -Force
 
 ## Additional Steps move Home to D:\
 # New-Item -Path "$HOME\Desktop" -ItemType SymbolicLink -Value "D:\Desktop" -Force

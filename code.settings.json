@@ -1,19 +1,4 @@
 {
-  "[ignore]": {
-    "editor.defaultFormatter": "lkrms.inifmt"
-  },
-  "[lua]": {
-    "editor.defaultFormatter": "JohnnyMorganz.stylua"
-  },
-  "[properties]": {
-    "editor.defaultFormatter": "lkrms.inifmt"
-  },
-  "[rust]": {
-    "editor.defaultFormatter": "rust-lang.rust-analyzer"
-  },
-  "[toml]": {
-    "editor.defaultFormatter": "tamasfe.even-better-toml"
-  },
   "aws.telemetry": false,
   "cSpell.userWords": [
     "astro",
@@ -347,5 +332,8 @@
   "yaml.format.printWidth": 120,
   "yaml.maxItemsComputed": 9999,
   "codesandbox.currentWorkspace": "833fac05-adfd-48e8-a2b6-b9066105472e",
-  "genieai.enableConversationHistory": true
+  "genieai.enableConversationHistory": true,
+  "[lua]": {
+    "editor.defaultFormatter": "sumneko.lua"
+  }
 }
