@@ -20,7 +20,7 @@
   enable_statusline_mode = true
   enable_statusline_tag = true
   enable_tabline_filetype_icon = true
-  guifont = 'Monofur Nerd Font Mono:h13'
+  guifont = 'AurulentSansM Nerd Font Mono:h10'
   project_rooter_outermost = false
   statusline_iseparator = 'arrow'
   statusline_separator = 'arrow'
