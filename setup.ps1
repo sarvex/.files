@@ -66,7 +66,7 @@ New-Item -Path "$lvim" -ItemType SymbolicLink -Value "$dotfiles\lunar"  -Force
 # Install ChadVim
 $chad = "$env:LOCALAPPDATA\chad"
 git clone --depth 1 https://github.com/NvChad/NvChad $chad
-New-Item -Path "$chad" -ItemType SymbolicLink -Value "$dotfiles\chad"  -Force
+New-Item -Path "$chad\lua\custom" -ItemType SymbolicLink -Value "$dotfiles\chad"  -Force
 
 ## Additional Steps move Home to D:\
 # New-Item -Path "$HOME\Desktop" -ItemType SymbolicLink -Value "D:\Desktop" -Force
