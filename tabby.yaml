@@ -163,6 +163,7 @@ hotkeys:
     - Ctrl-Shift-E
   command-selector:
     - Ctrl-Shift-P
+  reconnect-tab: []
 terminal:
   searchOptions: {}
   colorScheme:
@@ -206,6 +207,7 @@ appearance:
   theme: Follow the color scheme
   opacity: 0.8
   spaciness: 0.6
+  lastTabClosesWindow: true
 hacks: {}
 enableAnalytics: false
 profileDefaults:
@@ -213,3 +215,5 @@ profileDefaults:
     disableDynamicTitle: true
 enableWelcomeTab: false
 pluginBlacklist: []
+providerBlacklist: []
+commandBlacklist: []

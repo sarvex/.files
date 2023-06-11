@@ -88,7 +88,7 @@ return {
 		end,
 		config = function(...)
 			require("plugins.configs.telescope")(...)
-			local telescope = require("telescope")
+			local telescope = require("nvim.lua.sarvex.configsg.telescope")
 			telescope.load_extension("undo")
 			telescope.load_extension("file_browser")
 			telescope.load_extension("media_files")

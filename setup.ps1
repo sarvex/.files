@@ -38,6 +38,7 @@ New-Item -Path "$env:APPDATA\Notepad++" -ItemType SymbolicLink -Value "$dotfiles
 
 $profile_path = $PROFILE.CurrentUserAllHosts
 New-Item -Path "$profile_path" -ItemType SymbolicLink -Value "$dotfiles\Profile.ps1" -Force
+New-Item -Path "$env:LOCALAPPDATA\nvim" -ItemType SymbolicLink -Value "$dotfiles\nvim"  -Force
 . $profile_path
 
 # Install Doom 
