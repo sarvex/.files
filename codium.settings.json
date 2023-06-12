@@ -1,7 +1,4 @@
 {
-  "[lua]": {
-    "editor.defaultFormatter": "sumneko.lua"
-  },
   "aws.telemetry": false,
   "cSpell.userWords": [
     "astro",
@@ -46,25 +43,35 @@
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.cursorBlinking": "phase",
   "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorStyle": "line-thin",
+  "editor.defaultColorDecorators": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.detectIndentation": false,
+  "editor.experimental.asyncTokenization": true,
+  "editor.experimental.asyncTokenizationVerification": true,
   "editor.experimental.pasteActions.enabled": true,
   "editor.foldingImportsByDefault": true,
   "editor.foldingMaximumRegions": 9999,
-  "editor.fontFamily": "'Cascadia Code PL', 'CascadiaCodePL', 'MesloLGMDZ Nerd Font', Menlo, Monaco, Consolas,  'Courier New', monospace",
+  "editor.fontFamily": "'Hack Nerd Font', 'JetbrainsMono Nerd Font', 'FiraCode Nerd Font', 'Cascadia Code PL', 'CascadiaCodePL', 'MesloLGMDZ Nerd Font', Menlo, Monaco, Consolas,  'Courier New', 'monospace'",
   "editor.fontLigatures": "'aalt', 'gdi', 'liga', 'clig', 'calt', 'falt', 'halt', 'jalt', 'ltra', 'nalt', 'palt', 'rvrn', 'salt', 'valt', 'dlig', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09', 'ss10', 'ss11', 'ss12', 'ss13', 'ss14', 'ss15', 'ss16', 'ss17', 'ss18', 'ss19', 'ss20'",
   "editor.fontWeight": "300",
   "editor.formatOnPaste": true,
   "editor.guides.bracketPairs": true,
-  "editor.guides.bracketPairsHorizontal": true,
+  "editor.guides.highlightActiveIndentation": "always",
   "editor.indentSize": "tabSize",
   "editor.lineNumbers": "relative",
   "editor.linkedEditing": true,
+  "editor.minimap.enabled": false,
   "editor.mouseWheelZoom": true,
   "editor.parameterHints.cycle": true,
   "editor.renderLineHighlight": "gutter",
-  "editor.rulers": [120],
+  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [
+    120
+  ],
   "editor.semanticHighlighting.enabled": true,
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": true
+  },
   "editor.smoothScrolling": true,
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
@@ -175,7 +182,11 @@
   "files.trimFinalNewlines": true,
   "genieai.enableConversationHistory": true,
   "git.autofetch": true,
-  "git.branchRandomName.dictionary": ["adjectives", "animals", "colors"],
+  "git.branchRandomName.dictionary": [
+    "adjectives",
+    "animals",
+    "colors"
+  ],
   "git.branchRandomName.enable": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
@@ -215,7 +226,6 @@
   "remote.SSH.remotePlatform": {
     "DeveloperArm": "linux"
   },
-  "restructuredtext.experimental": true,
   "scm.diffDecorationsGutterPattern": {
     "added": true
   },
@@ -240,17 +250,35 @@
     "sortJSONValuesReverse": false
   },
   "stylelint.packageManager": "pnpm",
-  "stylelint.snippet": ["css", "less", "postcss", "scss", "sass"],
-  "stylelint.validate": ["css", "less", "postcss", "scss", "sass"],
+  "stylelint.snippet": [
+    "css",
+    "less",
+    "postcss",
+    "scss",
+    "sass"
+  ],
+  "stylelint.validate": [
+    "css",
+    "less",
+    "postcss",
+    "scss",
+    "sass"
+  ],
   "svelte.enable-ts-plugin": true,
   "svelte.plugin.svelte.format.config.printWidth": 120,
   "svelte.plugin.svelte.format.config.singleQuote": true,
   "svelte.plugin.svelte.format.config.svelteBracketNewLine": false,
   "svelte.plugin.svelte.format.config.svelteStrictMode": true,
+  "sync.autoDownload": true,
+  "sync.autoUpload": true,
+  "sync.gist": "64b50b90b8cdf42d362ae33f49da1822",
+  "sync.quietSync": true,
   "telemetry.telemetryLevel": "off",
   "terminal.external.windowsExec": "pwsh.exe",
   "terminal.integrated.allowMnemonics": true,
-  "terminal.integrated.commandsToSkipShell": ["language-julia.interrupt"],
+  "terminal.integrated.commandsToSkipShell": [
+    "language-julia.interrupt"
+  ],
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "terminal.integrated.fontFamily": "LiterationMono Nerd Font Mono",
@@ -265,10 +293,9 @@
   "vite.buildCommand": "pnpm build",
   "vite.devCommand": "pnpm start",
   "window.autoDetectColorScheme": true,
-  "workbench.colorTheme": "One Hunter Theme",
-  "workbench.iconTheme": "emoji-file-icons",
-  "workbench.preferredDarkColorTheme": "Tokyo Night",
-  "workbench.preferredLightColorTheme": "Tokyo Night Storm",
+  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.preferredDarkColorTheme": "Best Themes - Nord Dark",
+  "workbench.preferredLightColorTheme": "Best Themes - Nord Cold",
   "workbench.productIconTheme": "flippidippi-product-icons",
   "yaml.customTags": [
     "!And",
