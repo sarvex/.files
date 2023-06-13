@@ -19,12 +19,12 @@ return function()
 			-- Buffer local mappings.
 			-- See `:help vim.lsp.*` for documentation on any of the below functions
 			local opts = { buffer = ev.buf }
-			vim.keymap.set("n", require("custom_keys").goto_declaration, vim.lsp.buf.declaration, opts)
-			vim.keymap.set("n", require("custom_keys").goto_definition, vim.lsp.buf.definition, opts)
-			vim.keymap.set("n", require("custom_keys").goto_references, vim.lsp.buf.references, opts)
-			vim.keymap.set("n", require("custom_keys").goto_impl, vim.lsp.buf.implementation, opts)
-			vim.keymap.set("n", require("custom_keys").lsp_rename, vim.lsp.buf.rename, opts)
-			vim.keymap.set("n", require("custom_keys").format, function()
+			vim.keymap.set("n", require("keys").goto_declaration, vim.lsp.buf.declaration, opts)
+			vim.keymap.set("n", require("keys").goto_definition, vim.lsp.buf.definition, opts)
+			vim.keymap.set("n", require("keys").goto_references, vim.lsp.buf.references, opts)
+			vim.keymap.set("n", require("keys").goto_impl, vim.lsp.buf.implementation, opts)
+			vim.keymap.set("n", require("keys").lsp_rename, vim.lsp.buf.rename, opts)
+			vim.keymap.set("n", require("keys").format, function()
 				vim.lsp.buf.format({ async = true })
 			end, opts)
 

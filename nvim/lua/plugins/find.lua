@@ -7,7 +7,7 @@ return {
 
             local option = {noremap = true, silent = true }
 
-            local keys = require("custom_keys")
+            local keys = require("keys")
             local builtin = require('telescope.builtin')
             vim.keymap.set('n', keys.find_files, builtin.find_files, option)
             vim.keymap.set('n', keys.live_grep, builtin.live_grep, option)

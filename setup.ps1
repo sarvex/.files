@@ -1,10 +1,10 @@
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
-#Install Winget 
+# Install Winget
 winget upgrade --all
-@('Microsoft.VisualStudioCode', 'Microsoft.Powershell', 'Microsoft.Git', 'Microsoft.VFSforGit', 'Microsoft.DotNet.SDK.7', 'Microsoft.VisualStudio.2022.Enterprise', 'Microsoft.WingetCreate', 'Microsoft.WindowsWDK', 'Microsoft.Sysinternals.ProcessMonitor', 'Microsoft.Sysinternals.ProcessExplorer', 'Microsoft.Sysinternals.Autoruns', 'Microsoft.Sysinternals.Desktops', 'Microsoft.Sysinternals.BGInfo', 'Microsoft.Sysinternals.RDCMan', 'Microsoft.Sysinternals.TCPView', 'Nushell.Nushell', 'GitHub.cli', 'GLab.GLab', 'SublimeHQ.SublimeText.4', 'Wez.Wezterm', 'Eugeny.Tabby', 'Lapce.Lapce', 'Vim.Vim', 'Neovide.Neovide', 'Neovim.Neovim', 'yt-dlp.yt-dlp', 'Brave.Brave', 'Mozilla.Firefox', 'Google.Chrome', 'Maxthon.Maxthon', 'eloston.ungoogled-chromium', 'Opera.OperaGX', 'TorProject.TorBrowser', 'VivaldiTechnologies.Vivaldi', 'Notepad++.Notepad++', 'Scintilla.SciTE', 'VideoLAN.VLC', 'SMPlayer.SMPlayer', 'CodecGuide.K-LiteCodecPack.Full', 'Avidemux.Avidemux', 'GIMP.GIMP', 'KDE.Krita', 'BlenderFoundation.Blender', 'Inkscape.Inkscape', 'Audacity.Audacity', 'Helix.Helix', 'KDE.Kate', 'KDE.kdevelop', 'KDE.LabPlot') | ForEach-Object{ winget install $_ }
+@('Microsoft.VisualStudioCode', 'Microsoft.Powershell', 'Microsoft.Git', 'Microsoft.VFSforGit', 'Microsoft.DotNet.SDK.7', 'Microsoft.VisualStudio.2022.Enterprise', 'Microsoft.WingetCreate', 'Microsoft.WindowsWDK', 'Microsoft.Sysinternals.ProcessMonitor', 'Microsoft.Sysinternals.ProcessExplorer', 'Microsoft.Sysinternals.Autoruns', 'Microsoft.Sysinternals.Desktops', 'Microsoft.Sysinternals.BGInfo', 'Microsoft.Sysinternals.RDCMan', 'Microsoft.Sysinternals.TCPView', 'Nushell.Nushell', 'GitHub.cli', 'GLab.GLab', 'SublimeHQ.SublimeText.4', 'Wez.Wezterm', 'Eugeny.Tabby', 'Lapce.Lapce', 'Vim.Vim', 'Neovide.Neovide', 'Neovim.Neovim', 'VSCodium.VSCodium', 'Discord.Discord', 'yt-dlp.yt-dlp', 'Brave.Brave', 'Mozilla.Firefox', 'Google.Chrome', 'Maxthon.Maxthon', 'eloston.ungoogled-chromium', 'Opera.OperaGX', 'TorProject.TorBrowser', 'VivaldiTechnologies.Vivaldi', 'Notepad++.Notepad++', 'Scintilla.SciTE', 'VideoLAN.VLC', 'SMPlayer.SMPlayer', 'CodecGuide.K-LiteCodecPack.Full', 'Avidemux.Avidemux', 'GIMP.GIMP', 'KDE.Krita', 'BlenderFoundation.Blender', 'Inkscape.Inkscape', 'Audacity.Audacity', 'Helix.Helix', 'KDE.Kate', 'KDE.kdevelop', 'KDE.LabPlot') | ForEach-Object{ winget install $_ }
 
-#Install scoop 
+# Install scoop
 Invoke-WebRequest get.scoop.sh -UseBasicParsing | Invoke-Expression
 scoop bucket known | ForEach-Object{ scoop bucket add $_ }
 scoop bucket add sarvex https://github.com/sarvex/scoop
@@ -12,7 +12,7 @@ scoop install sudo aria2 curl grep sed less touch search-multisource terminal-ic
 scoop install AurulentSansMono-nerd-font Agave-nerd-font AnonymousPro-nerd-font BitstreamVeraSansMono-nerd-font CascadiaCode CascadiaCode-nerd-font CodeNewRoman-nerd-font ComicShannsMono-nerd-font Cousine-nerd-font DejaVuSansMono-nerd-font DroidSansMono-nerd-font FantasqueSansMono-nerd-font FiraCode-nerd-font Go-Mono-nerd-font Gohu-nerd-font Hack-nerd-font Hasklig-nerd-font iA-Writer-nerd-font IBMPlexMono-nerd-font Inconsolata-nerd-font InconsolataGo-nerd-font Iosevka-nerd-font IosevkaTerm-nerd-font JetBrainsMono-nerd-font LiberationMono-nerd-font Lilex-nerd-font Meslo-nerd-font Overpass-nerd-font Monofur-nerd-font Mononoki-nerd-font Noto-nerd-font ProFont-nerd-font ProggyClean-nerd-font RobotoMono-nerd-font SourceCodePro-nerd-font SpaceMono-nerd-font ShareTechMono-nerd-font Tinos-nerd-font UbuntuMono-nerd-font
 sudo Add-MpPreference -ExclusionPath "${env:ProgramData}\scoop\buckets", "${env:USERPROFILE}\scoop\buckets" -Force
 
-#Fetch DotFiles 
+# Fetch DotFiles
 $dotfiles = "$HOME\.files"
 git clone https://github.com/sarvex/dotfiles $dotfiles
 
@@ -42,7 +42,7 @@ New-Item -Path "$profile_path" -ItemType SymbolicLink -Value "$dotfiles\Profile.
 New-Item -Path "$env:LOCALAPPDATA\nvim" -ItemType SymbolicLink -Value "$dotfiles\nvim"  -Force
 . $profile_path
 
-# Install Doom 
+# Install Doom
 $doom_emacs = "$env:APPDATA\.emacs.d"
 git clone --depth 1 https://github.com/doomemacs/doomemacs.git $doom_emacs
 New-Item -Path $HOME\.emacs.d -ItemType SymbolicLink -Value $doom_emacs -Force
@@ -69,6 +69,11 @@ New-Item -Path "$lvim" -ItemType SymbolicLink -Value "$dotfiles\lunar"  -Force
 $chad = "$env:LOCALAPPDATA\chad"
 git clone --depth 1 https://github.com/NvChad/NvChad $chad
 New-Item -Path "$chad\lua\custom" -ItemType SymbolicLink -Value "$dotfiles\chad"  -Force
+
+# Install Nyoom
+$nyoom = "$env:LOCALAPPDATA\nyoom"
+git clone --depth 1 https://github.com/nyoom-engineering/nyoom.nvim $nyoom
+New-Item -Path "$nyoom\lua\custom" -ItemType SymbolicLink -Value "$dotfiles\nyoom"  -Force
 
 ## Additional Steps move Home to D:\
 # New-Item -Path "$HOME\Desktop" -ItemType SymbolicLink -Value "D:\Desktop" -Force

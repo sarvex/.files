@@ -66,7 +66,7 @@ return {
 		config = function()
 			require("aerial").setup({
 				lazy_load = false,
-				open_automatic = require("custom_opts").auto_open_outline,
+				open_automatic = require("options").auto_open_outline,
 			})
 		end,
 	},

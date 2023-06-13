@@ -105,16 +105,16 @@ Use command `:TSInstall` to download and install a parser, e.g. `:TSInstall rust
     │   └── ...
     ├── languages/
     │   └── ...
-    ├── my_plugins/
+    ├── user/
     │   └── ...
     ├── basic.lua
     ├── custom.lua
-    ├── custom_keys.lua
-    ├── custom_opts.lua
+    ├── keys.lua
+    ├── options.lua
     └── settings.lua
 ```
 
-- ~/.config/nvim/lua/**my_plugins/**
+- ~/.config/nvim/lua/**user/**
 
   You can put the plugins you want into the directory.
 
@@ -124,13 +124,13 @@ Use command `:TSInstall` to download and install a parser, e.g. `:TSInstall rust
 
 #### ⌨️ Shortcut Keys
 
-[👉 View the default shortcut settings](https://github.com/hardhackerlabs/oh-my-nvim/blob/main/lua/custom_keys.lua)
+[👉 View the default shortcut settings](https://github.com/hardhackerlabs/oh-my-nvim/blob/main/lua/keys.lua)
 
-You can edit the default settings of the shortcut keys in this configuration file (`~/.config/nvim/lua/custom_keys.lua`).
+You can edit the default settings of the shortcut keys in this configuration file (`~/.config/nvim/lua/keys.lua`).
 
 #### 😍 Add the plugins you want
 
-If you want to add your own plugins, you can create a `plugin_name.lua` file in the directory `~/.config/nvim/lua/my_plugins`. Setup the plugins in this file.
+If you want to add your own plugins, you can create a `plugin_name.lua` file in the directory `~/.config/nvim/lua/user`. Setup the plugins in this file.
 
 The plugin configuration in the `plugin_name.lua` file refers to the following template (lazy.nvim syntax):
 
@@ -151,12 +151,12 @@ return {
 
 Some useful plugins are configured by default in the directory `~/.config/nvim/misc/recommended`,
 but they are not loaded into neovim by default ,
-so if you need them, you can copy them into the directory `~/.config/nvim/lua/my_plugins/`.
+so if you need them, you can copy them into the directory `~/.config/nvim/lua/user/`.
 
 Example:
 
 ```
-cp ~/.config/nvim/misc/recommended/markdown.lua ~/.config/nvim/lua/my_plugins/
+cp ~/.config/nvim/misc/recommended/markdown.lua ~/.config/nvim/lua/user/
 ```
 
 ## 🧩 Plugins

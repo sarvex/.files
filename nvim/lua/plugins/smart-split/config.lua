@@ -9,7 +9,7 @@ return function()
         ignored_buftypes = { 'NvimTree', 'neo-tree' },
     })
 
-    local keys = require("custom_keys")
+    local keys = require("keys")
     local opttion = {noremap = true, silent = true }
 
     vim.keymap.set({'n', 't'}, keys.resize_left, require('smart-splits').resize_left, option)

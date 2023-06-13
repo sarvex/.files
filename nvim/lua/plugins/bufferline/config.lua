@@ -17,13 +17,13 @@ return function()
 			offsets = {
 				{
 					filetype = "neo-tree",
-					text = require("custom_opts").file_explorer_title,
+					text = require("options").file_explorer_title,
 					text_align = "left",
 					separator = true,
 				},
 			},
 			color_icons = true, -- whether or not to add the filetype icon highlights
-			separator_style = require("custom_opts").tab_style,
+			separator_style = require("options").tab_style,
 			hover = {
 				enabled = true,
 				delay = 200,
