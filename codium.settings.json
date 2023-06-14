@@ -45,7 +45,6 @@
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorStyle": "line-thin",
   "editor.defaultColorDecorators": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.experimental.asyncTokenization": true,
   "editor.experimental.asyncTokenizationVerification": true,
   "editor.experimental.pasteActions.enabled": true,
@@ -201,7 +200,6 @@
   "omnisharp.enableRoslynAnalyzers": true,
   "partialDiff.enableTelemetry": false,
   "peacock.affectActivityBar": false,
-  "peacock.affectStatusAndTitleBorders": true,
   "peacock.affectStatusBar": false,
   "peacock.affectTabActiveBorder": true,
   "peacock.showColorInStatusBar": false,
@@ -327,5 +325,8 @@
     "!Split sequence"
   ],
   "yaml.format.printWidth": 120,
-  "yaml.maxItemsComputed": 9999
+  "yaml.maxItemsComputed": 9999,
+  "workbench.colorTheme": "Mayukai Semantic Mirage",
+  "peacock.affectStatusAndTitleBorders": true,
+  "peacock.squigglyBeGone": true
 }
