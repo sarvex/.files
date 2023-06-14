@@ -17,8 +17,8 @@ local plugins = {
       },
     },
     config = function()
-      require "configs.lspconfig"
-      require "user.configs.lspconfig"
+      require 'configs.lsp'
+      require "user.configs.lsp"
     end, -- Override to setup mason-lspconfig
   },
 
@@ -63,6 +63,10 @@ local plugins = {
 
   -- To use a extras plugin
   -- { import = "custom.configs.extras.symbols-outline", },
+  { import = "user.configs.diffview", },
+  { import = "user.configs.mason-extras", },
+  { import = "user.configs.symbols-outline", },
+  { import = "user.configs.trouble", },
 }
 
 return plugins

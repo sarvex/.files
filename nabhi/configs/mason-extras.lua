@@ -1,6 +1,6 @@
 local setup = function(_, opts)
-  local on_attach = require("configs.lspconfig").on_attach
-  local capabilities = require("configs.lspconfig").capabilities
+  local on_attach = require("configs.lsp").on_attach
+  local capabilities = require("configs.lsp").capabilities
 
   local lspconfig = require "lspconfig"
 
