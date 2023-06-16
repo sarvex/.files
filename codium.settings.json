@@ -294,7 +294,7 @@
   "workbench.iconTheme": "catppuccin-mocha",
   "workbench.preferredDarkColorTheme": "Best Themes - Nord Dark",
   "workbench.preferredLightColorTheme": "Best Themes - Nord Cold",
-  "workbench.productIconTheme": "flippidippi-product-icons",
+  "workbench.productIconTheme": "icons-carbon",
   "yaml.customTags": [
     "!And",
     "!And sequence",
@@ -326,7 +326,9 @@
   ],
   "yaml.format.printWidth": 120,
   "yaml.maxItemsComputed": 9999,
-  "workbench.colorTheme": "Mayukai Semantic Mirage",
+  "workbench.colorTheme": "Catppuccin Mocha",
   "peacock.affectStatusAndTitleBorders": true,
-  "peacock.squigglyBeGone": true
+  "peacock.squigglyBeGone": true,
+  "vsicons.dontShowNewVersionMessage": true,
+  "codestream.serverUrl": "https://codestream-us1.service.newrelic.com"
 }
