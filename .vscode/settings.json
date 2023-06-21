@@ -13,5 +13,6 @@
   "sonarlint.connectedMode.project": {
     "connectionId": "sarvex",
     "projectKey": "sarvex_.files"
-  }
+  },
+  "sarif-viewer.connectToGithubCodeScanning": "on"
 }

@@ -4,17 +4,30 @@
   },
   "aws.telemetry": false,
   "cSpell.userWords": [
+    "aaxep",
+    "apeyro",
+    "araugya",
     "astro",
+    "autosize",
+    "autoupdate",
+    "bhanjak",
+    "checkver",
+    "clsx",
+    "cmdk",
     "codegen",
     "Comptime",
     "divriots",
+    "editorjs",
     "fontsource",
     "gizlang",
+    "hookform",
     "imagetools",
     "Infobox",
     "jampack",
     "Jatasra",
     "kysely",
+    "lucide",
+    "mantine",
     "maxage",
     "metaprogramming",
     "partytown",
@@ -35,6 +48,9 @@
     "trpc",
     "undici",
     "unpic",
+    "uploadthing",
+    "upstash",
+    "valec",
     "Webp",
     "wontfix"
   ],
@@ -306,5 +322,9 @@
     "!Split sequence"
   ],
   "yaml.format.printWidth": 120,
-  "yaml.maxItemsComputed": 9999
+  "yaml.maxItemsComputed": 9999,
+  "yaml.schemas": {
+    "file:///c%3A/Users/Yoga/.vscode/extensions/docsmsft.docs-yaml-1.0.0/dist/toc.schema.json": "/toc\\.yml/i"
+  },
+  "marquee.configuration.name": "sarvex"
 }
