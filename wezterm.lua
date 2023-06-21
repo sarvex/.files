@@ -13,15 +13,15 @@ end
 
 -- This is where you actually apply your config choices
 config = {
-  font = wezterm.font('Delugia', { weight = 'DemiLight', italic = true }),
-  window_background_opacity = 0.8,
+  font = wezterm.font('Delugia', { weight = 'DemiLight' }),
+  window_background_opacity = 0.7,
   use_fancy_tab_bar = true,
   hide_tab_bar_if_only_one_tab = true,
   check_for_updates = true,
   color_scheme = "AdventureTime",
   tab_bar_at_bottom = true,
   font_size = 11.0,
-  default_prog = { "pwsh.exe", "-NoLogo" },
+  default_prog = { "pwsh.exe", "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;" },
 }
 
 -- Equivalent to POSIX basename(3)
