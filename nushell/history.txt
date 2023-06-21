@@ -7,3 +7,81 @@ cd bucket\
 ..\scripts\update-readme.nu .
 nu 
 nu ..\scripts\update-readme.nu .
+config nu
+ls
+clear
+dir
+cargo install sccache
+clear
+scoop install sccache
+clear
+exit
+ls
+clear
+clear
+ls
+dir
+whoami
+clear
+exit
+nu
+exit
+clear
+ls
+dir
+ls
+clear
+exit
+nu
+exit
+ls
+exit
+ls
+clear
+dir
+whoami
+wclearalkjadsfalsdk jf
+clear
+ls
+dir
+clear
+exit
+ls
+dir
+whoami
+clear
+$nu.env-path
+starship
+scoop search starship
+scoop install starship
+exit
+clear
+ls
+clear
+ls
+clear
+cd .files\
+ls
+cd starship\
+clear
+clear
+exit
+starship preset tokyo-night 
+clear
+exit
+cd .files\
+ls
+clear
+whoami
+clear
+ls
+cd nushell\
+ls
+clear
+exit
+cd Sources\
+ls
+cd breadit\
+ls
+navi
+scoop search navi

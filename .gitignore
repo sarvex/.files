@@ -1,1 +1,19 @@
 .walls
+*node_modules/
+*src/node_modules/@sapper/
+*__sapper__/
+
+# spotify-tui
+*client.yml
+*.spotify_token_cache.json
+
+*.DS_Store
+*.log
+*.out
+*.pem
+*.env
+*tags
+
+.shell/.zsh/secret.zsh
+.analysis/tokei.yaml
+# .aliases

@@ -14,5 +14,10 @@
     "connectionId": "sarvex",
     "projectKey": "sarvex_.files"
   },
-  "sarif-viewer.connectToGithubCodeScanning": "on"
+  "sarif-viewer.connectToGithubCodeScanning": "on",
+  "cSpell.words": [
+    "cellpath",
+    "filesize",
+    "nushell"
+  ]
 }
