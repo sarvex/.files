@@ -16,7 +16,9 @@ sudo Add-MpPreference -ExclusionPath "${env:ProgramData}\scoop\buckets", "${env:
 $dotfiles = "$HOME\.files"
 git clone https://github.com/sarvex/dotfiles $dotfiles
 
-# Add Links
+# Add Custom Directories
+New-Item -Path "$HOME\.config" -ItemType SymbolicLink -Value "$dotfiles\config" -Force
+New-Item -Path "$HOME\.aliases" -ItemType SymbolicLink -Value "$dotfiles\aliases" -Force
 New-Item -Path "$HOME\.gitconfig" -ItemType SymbolicLink -Value "$dotfiles\git.config" -Force
 New-Item -Path "$HOME\.wezterm.lua" -ItemType SymbolicLink -Value "$dotfiles\wezterm.lua" -Force
 New-Item -Path "$HOME\.xonshrc" -ItemType SymbolicLink -Value "$dotfiles\xonsh.rc" -Force
@@ -26,6 +28,8 @@ New-Item -Path "$HOME\.profile" -ItemType SymbolicLink -Value "$dotfiles\msys\pr
 New-Item -Path "$HOME\.zshrc" -ItemType SymbolicLink -Value "$dotfiles\msys\.zshrc" -Force
 New-Item -Path "$HOME\.zshenv" -ItemType SymbolicLink -Value "$dotfiles\msys\zshenv" -Force
 New-Item -Path "$HOME\.oh-my-zsh" -ItemType SymbolicLink -Value "$dotfiles\msys\oh-myzsh" -Force
+
+# Add Links
 New-Item -Path "$env:APPDATA\alacritty\alacritty.yml" -ItemType SymbolicLink -Value "$dotfiles\alacritty.windows.yml" -Force
 New-Item -Path "$env:APPDATA\tabby\config.yaml" -ItemType SymbolicLink -Value "$dotfiles\tabby.yaml" -Force
 New-Item -Path "$env:APPDATA\nushell" -ItemType SymbolicLink -Value "$dotfiles\nushell" -Force
