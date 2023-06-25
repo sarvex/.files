@@ -9,7 +9,7 @@ jobs:
       matrix:
         os: [macOS-latest]
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v3
     - name: Run curl Setup
       run: curl https://raw.githubusercontent.com/Coordinate-Cat/dotfiles/master/install.sh
     - name: Run dotfiles setup
