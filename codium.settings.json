@@ -2,7 +2,13 @@
   "[astro]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "aws.telemetry": false,
@@ -255,7 +261,6 @@
   "peacock.affectStatusBar": false,
   "peacock.affectTabActiveBorder": true,
   "peacock.showColorInStatusBar": false,
-  "peacock.squigglyBeGone": true,
   "peacock.surpriseMeOnStartup": true,
   "powershell.codeFormatting.autoCorrectAliases": true,
   "powershell.codeFormatting.avoidSemicolonsAsLineTerminators": true,
@@ -345,7 +350,7 @@
   "terminal.integrated.tabs.showActiveTerminal": "always",
   "totalTypeScript.hideAllTips": false,
   "totalTypeScript.hideBasicTips": false,
-    "vite.buildCommand": "pnpm build",
+  "vite.buildCommand": "pnpm build",
   "vite.devCommand": "pnpm start",
   "vsicons.dontShowNewVersionMessage": true,
   "watermelon.enableTelemetry": false,
@@ -385,11 +390,5 @@
     "!Split sequence"
   ],
   "yaml.format.printWidth": 120,
-  "yaml.maxItemsComputed": 9999,
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  "yaml.maxItemsComputed": 9999
 }

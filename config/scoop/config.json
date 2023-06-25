@@ -1,7 +1,7 @@
 {
   "root_path": "C:\\Scoop",
-  "last_update": "2023-06-22T06:38:27.8824188+05:30",
+  "last_update": "2023-06-25T06:35:25.7825262+05:30",
   "aria2-enabled": false,
-  "scoop_repo": "https://github.com/ScoopInstaller/Scoop",
-  "scoop_branch": "master"
+  "scoop_branch": "master",
+  "scoop_repo": "https://github.com/ScoopInstaller/Scoop"
 }

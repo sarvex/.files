@@ -7,10 +7,7 @@
     "titleBar.activeForeground": "#e7e7e7",
     "titleBar.inactiveBackground": "#620fd899",
     "titleBar.inactiveForeground": "#e7e7e799",
-    "titleBar.border": "#620fd8",
-    "editorError.foreground": "#000000ff",
-    "editorInfo.foreground": "#000000ff",
-    "editorWarning.foreground": "#000000ff"
+    "titleBar.border": "#620fd8"
   },
   "peacock.color": "#620fd8",
   "sonarlint.connectedMode.project": {
@@ -21,6 +18,7 @@
   "cSpell.words": [
     "cellpath",
     "filesize",
+    "Gruvbox",
     "nushell"
   ]
 }
