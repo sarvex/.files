@@ -53,7 +53,10 @@
   /*"gnc_h16": true,*/
   /*"gnc_m07": true,*/
   /*"gnc_w2m15": true,*/
-  "gnc_h17": true,
-  "gnc_m04": true,
-  "gnc_w2m15": true,
+  /*"gnc_h17": true,*/
+  /*"gnc_m04": true,*/
+  /*"gnc_w2m15": true,*/
+  "gnc_h12": true,
+  "gnc_w0m12": true,
+  "gnc_m08": true,
 }

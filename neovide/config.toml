@@ -1,0 +1,6 @@
+multigrid = true
+vsync = true
+maximized = true
+srgb = true
+idle = true
+frame = "Full"

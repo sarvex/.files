@@ -10,6 +10,7 @@
     "autofetch",
     "calt",
     "Cascadia",
+    "catppuccin",
     "classpath",
     "clig",
     "COBCOPY",
@@ -55,12 +56,10 @@
   "code-runner.enableAppInsights": false,
   "codeQL.telemetry.enableTelemetry": false,
   "codesandbox.currentWorkspace": "833fac05-adfd-48e8-a2b6-b9066105472e",
-  "dart.flutterSdkPath": "/Users/sarvex/Library/Android/flutter",
   "dart.lineLength": 120,
   "dart.maxLogLineLength": 10000,
   "dart.normalizeFileCasing": true,
   "dart.openDevTools": "flutter",
-  "dart.renameFilesWithClasses": "prompt",
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.cursorBlinking": "phase",
   "editor.cursorSmoothCaretAnimation": "on",
@@ -204,7 +203,6 @@
   "scm.diffDecorationsGutterPattern": {
     "added": true
   },
-  "security.workspace.trust.untrustedFiles": "open",
   "sonarlint.connectedMode.connections.sonarcloud": [
     {
       "connectionId": "sarvex",
