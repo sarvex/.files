@@ -1,4 +1,3 @@
--- Configure require('lazy').setup() options
 return {
   diff = { cmd = "terminal_git" },
   checker = { enabled = true },

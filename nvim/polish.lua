@@ -1,7 +1,20 @@
--- This function is run last and is a good place to configuring
--- augroups/autocommands and custom filetypes also this just pure lua so
--- anything that doesn't fit in the normal config locations above can go here
-return function()
+  -- This function is run last and is a good place to configuring
+  -- augroups/autocommands and custom filetypes also this just pure lua so
+  -- anything that doesn't fit in the normal config locations above can go here
+  
+  return function()
+  -- Set up custom filetypes
+  -- vim.filetype.add {
+  --   extension = {
+  --     foo = 'fooscript',
+  --   },
+  --   filename = {
+  --     ['Foofile'] = 'fooscript',
+  --   },
+  --   pattern = {
+  --     ['~/%.config/foo/.*'] = 'fooscript',
+  --   },
+  -- }
   local function yaml_ft(path, bufnr)
     -- get content of buffer as string
     local content = vim.filetype.getlines(bufnr)
@@ -28,29 +41,6 @@ return function()
       ['/tmp/neomutt.*'] = 'markdown',
     },
   }
-
-  -- Set up custom filetypes
-  -- vim.filetype.add {
-  --   extension = {
-  --     foo = 'fooscript',
-  --   },
-  --   filename = {
-  --     ['Foofile'] = 'fooscript',
-  --   },
-  --   pattern = {
-  --     ['~/%.config/foo/.*'] = 'fooscript',
-  --   },
-  -- }
-  vim.g.neovide_scale_factor = 1.0
-  local change_scale_factor = function(delta)
-    vim.g.neovide_scale_factor = vim.g.neovide_scale_factor * delta
-  end
-  vim.keymap.set('n', '<C-=>', function()
-    change_scale_factor(1.25)
-  end)
-  vim.keymap.set('n', '<C-->', function()
-    change_scale_factor(1 / 1.25)
-  end)
 
   require 'user.autocmds'
 end

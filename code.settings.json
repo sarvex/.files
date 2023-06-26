@@ -299,5 +299,6 @@
   "yaml.maxItemsComputed": 9999,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "githubPullRequests.pullBranch": "never"
 }
