@@ -76,6 +76,11 @@ $chad = "$env:LOCALAPPDATA\chad"
 git clone --depth 1 https://github.com/NvChad/NvChad $chad
 New-Item -Path "$chad\lua\custom" -ItemType SymbolicLink -Value "$dotfiles\chad"  -Force
 
+# Install LazyVim
+$lazy = "$env:LOCALAPPDATA\lazy"
+git clone --depth 1 https://github.com/LazyVim/starter $lazy
+New-Item -Path "$lazy\lua\user" -ItemType SymbolicLink -Value "$dotfiles\lazy"  -Force
+
 # Install Nyoom
 $nyoom = "$env:LOCALAPPDATA\nyoom"
 git clone --depth 1 https://github.com/nyoom-engineering/nyoom.nvim $nyoom

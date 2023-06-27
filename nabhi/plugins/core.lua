@@ -1,8 +1,8 @@
 local get_icon = require('astronvim.utils').get_icon
 
 return {
-  { 'goolord/alpha-nvim', enabled = false },
-
+  { 'goolord/alpha-nvim',           enabled = false },
+  { 'max397574/better-escape.nvim', enabled = false },
   {
     'mfussenegger/nvim-dap',
     dependencies = {
@@ -13,12 +13,6 @@ return {
     'akinsho/toggleterm.nvim',
     opts = {
       terminal_mappings = false,
-    }
-  },
-  {
-    'rcarriga/nvim-notify',
-    opts = {
-      timeout = 0,
     }
   },
   {
