@@ -4,7 +4,6 @@
 
 vim.opt.guifont = 'Hack Nerd Font Mono,NotoMono Nerd Font Mono:h11'
 
-
 vim.g.neovide_background_color = '#0f1117' .. string.format('%x', math.floor(255 * 0.8))
 vim.g.neovide_cursor_animate_command_line = true
 vim.g.neovide_cursor_animate_in_insert_mode = true

@@ -45,7 +45,7 @@ New-Item -Path "$env:APPDATA\yt-dlp\config" -ItemType SymbolicLink -Value "$dotf
 
 $profile_path = $PROFILE.CurrentUserAllHosts
 New-Item -Path "$profile_path" -ItemType SymbolicLink -Value "$dotfiles\Profile.ps1" -Force
-New-Item -Path "$env:LOCALAPPDATA\nvim" -ItemType SymbolicLink -Value "$dotfiles\nvim"  -Force
+New-Item -Path "$env:LOCALAPPDATA\nvim" -ItemType SymbolicLink -Value "$dotfiles\nvim" -Force
 . $profile_path
 
 # Install Doom
@@ -64,47 +64,52 @@ New-Item -Path "$HOME\.SpaceVim.d" -ItemType SymbolicLink -Value "$dotfiles\spac
 # Install LunarVim
 $lvim = "$env:LOCALAPPDATA\lvim"
 Invoke-WebRequest https://raw.githubusercontent.com/Lunar/LunarVim/main/utils/installer/install.ps1 -UseBasicParsing | Invoke-Expression
-New-Item -Path "$lvim" -ItemType SymbolicLink -Value "$dotfiles\lunar"  -Force
+New-Item -Path "$lvim" -ItemType SymbolicLink -Value "$dotfiles\lunar" -Force
 
 # Install AstroNvim
 $astro = "$env:LOCALAPPDATA\astro"
 git clone --depth 1 https://github.com/AstroNvim/AstroNvim $astro
-New-Item -Path "$astro\lua\user" -ItemType SymbolicLink -Value "$dotfiles\astro"  -Force
+New-Item -Path "$astro\lua\user" -ItemType SymbolicLink -Value "$dotfiles\astro" -Force
 
-# Install ChadVim
+# Install Chad
 $chad = "$env:LOCALAPPDATA\chad"
 git clone --depth 1 https://github.com/NvChad/NvChad $chad
-New-Item -Path "$chad\lua\custom" -ItemType SymbolicLink -Value "$dotfiles\chad"  -Force
+New-Item -Path "$chad\lua\custom" -ItemType SymbolicLink -Value "$dotfiles\chad" -Force
+
+# Install Kickstarter
+$kick = "$env:LOCALAPPDATA\kick"
+git clone --depth 1 https://github.com/kickVim/starter $kick
+New-Item -Path "$kick" -ItemType SymbolicLink -Value "$dotfiles\kick" -Force
 
 # Install LazyVim
 $lazy = "$env:LOCALAPPDATA\lazy"
 git clone --depth 1 https://github.com/LazyVim/starter $lazy
-New-Item -Path "$lazy\lua\user" -ItemType SymbolicLink -Value "$dotfiles\lazy"  -Force
+New-Item -Path "$lazy" -ItemType SymbolicLink -Value "$dotfiles\lazy" -Force
 
 # Install Nyoom
 $nyoom = "$env:LOCALAPPDATA\nyoom"
 git clone --depth 1 https://github.com/nyoom-engineering/nyoom.nvim $nyoom
-New-Item -Path "$nyoom\lua\custom" -ItemType SymbolicLink -Value "$dotfiles\nyoom"  -Force
+New-Item -Path "$nyoom\lua\custom" -ItemType SymbolicLink -Value "$dotfiles\nyoom" -Force
 
 # Install Code Art
 $cart = "$env:LOCALAPPDATA\cart"
 git clone --depth 1 https://github.com/artart222/CodeArt $cart
-New-Item -Path "$cart\lua\user_settings" -ItemType SymbolicLink -Value "$dotfiles\cart"  -Force
+New-Item -Path "$cart\lua\user_settings" -ItemType SymbolicLink -Value "$dotfiles\cart" -Force
 
 # Install CosmicNvim
 $cosmic = "$env:LOCALAPPDATA\cosmic"
 git clone --depth 1 https://github.com/CosmicNvim/CosmicNvim $cosmic
-New-Item -Path "$cosmic\lua\cosmic\config" -ItemType SymbolicLink -Value "$dotfiles\cosmic"  -Force
+New-Item -Path "$cosmic\lua\cosmic\config" -ItemType SymbolicLink -Value "$dotfiles\cosmic" -Force
 
 # Install NV-IDE
 $nvide = "$env:LOCALAPPDATA\nvide"
 git clone --depth 1 https://github.com/crivotz/nv-ide.git $nvide
-New-Item -Path "$nvide\lua\nvide\config" -ItemType SymbolicLink -Value "$dotfiles\nvide"  -Force
+New-Item -Path "$nvide\lua\nvide\config" -ItemType SymbolicLink -Value "$dotfiles\nvide" -Force
 
 # Install Nabhi
 $nabhi = "$env:LOCALAPPDATA\nabhi"
 git clone --depth 1 https://github.com/sarvex/nabhi.git $nabhi
-New-Item -Path "$nabhi\lua\user" -ItemType SymbolicLink -Value "$dotfiles\nabhi"  -Force
+New-Item -Path "$nabhi\lua\user" -ItemType SymbolicLink -Value "$dotfiles\nabhi" -Force
 
 ## Additional Steps move Home to D:\
 # New-Item -Path "$HOME\Desktop" -ItemType SymbolicLink -Value "D:\Desktop" -Force
