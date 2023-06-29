@@ -86,3 +86,31 @@ ls
 navi
 scoop search navi
 exit
+ls
+clear
+scoop update
+clear
+winget upgrade --all
+winget search powershell
+clear
+exit
+scoop update
+scoop update --all
+scoop cleanup --all
+cd Sources\
+ls
+cd com-meta\
+clear
+ls
+code .
+cd ..
+pnpm create astro@latest button-component
+code button-component\
+pnpm upgrade -g
+clear
+pnpm install eslint -g prettier stylelint typescript 
+exit
+exa
+scoop install exa
+scoop install dust
+cargo install exa

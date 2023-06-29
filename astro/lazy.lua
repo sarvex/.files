@@ -1,15 +1,11 @@
-local data = vim.fn.stdpath("data")
-
 return {
-	dev = {
-		path = data .. "/dev",
-		patterns = {},
-	},
-	defaults = { lazy = true },
-	performance = {
-		rtp = {
-			-- customize default disabled vim plugins
-			disabled_plugins = { "tohtml", "gzip", "matchit", "zipPlugin", "netrwPlugin", "tarPlugin" },
-		},
-	},
+  diff = { cmd = "terminal_git" },
+  checker = { enabled = true },
+  defaults = { lazy = true },
+  performance = {
+    rtp = {
+      -- customize default disabled vim plugins
+      disabled_plugins = { "tohtml", "gzip", "matchit", "zipPlugin", "netrwPlugin", "tarPlugin" },
+    },
+  },
 }

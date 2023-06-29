@@ -198,7 +198,8 @@ terminal:
   fontSize: 15
   fontWeight: 350
   fontWeightBold: 650
-ssh: {}
+ssh:
+  warnOnClose: true
 configSync:
   parts: {}
 clickableLinks: {}

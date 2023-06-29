@@ -16,14 +16,17 @@
     "COBCOPY",
     "codesandbox",
     "Consolas",
+    "divriots",
     "dlig",
     "doxygen",
     "factorypath",
     "falt",
     "flippidippi",
+    "fontsource",
     "genieai",
     "hlasm",
     "jalt",
+    "jampack",
     "LGMDZ",
     "liga",
     "Literation",
@@ -39,6 +42,7 @@
     "pwsh",
     "pylint",
     "pytest",
+    "qwik",
     "rehype",
     "rexx",
     "REXXINC",
@@ -158,7 +162,7 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "genieai.enableConversationHistory": true,
-  "git.autofetch": true,
+  "git.autofetch": "all",
   "git.branchRandomName.dictionary": [
     "adjectives",
     "animals",
@@ -300,5 +304,10 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "githubPullRequests.pullBranch": "never"
+  "githubPullRequests.pullBranch": "never",
+  "git.autoStash": true,
+  "git.detectSubmodulesLimit": 64,
+  "git.mergeEditor": true,
+  "git.pruneOnFetch": true,
+  "git.rebaseWhenSync": true
 }

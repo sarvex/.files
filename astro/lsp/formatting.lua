@@ -1,1 +1,3 @@
-return { disabled = { "lua_ls" } }
+return {
+  format_on_save = { ignore_filetypes = { 'julia' } },
+}

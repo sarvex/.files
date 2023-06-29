@@ -1,200 +1,136 @@
 -- customize mason plugins
 return {
-	-- use mason-lspconfig to configure LSP installations
-	{
-		'williamboman/mason-lspconfig.nvim',
-		-- overrides `require('mason-lspconfig').setup(...)`
-		opts = function(_, opts)
-			opts.ensure_installed = require('astronvim.utils').list_insert_unique(opts.ensure_installed, {
-				'als',
-				'angularls',
-				'asm_lsp',
-				'astro',
-				'awk_ls',
-				'azure_pipelines_ls',
-				'bashls',
-				'bicep',
-				'clangd',
-				'clojure_lsp',
-				'cmake',
-				'codeqlls',
-				'crystalline',
-				'csharp_ls',
-				'cssls',
-				'cssmodules_ls',
-				'denols',
-				'diagnosticls',
-				'docker_compose_language_service',
-				'dockerls',
-				'dotls',
-				'efm',
-				'elixirls',
-				'elmls',
-				'ember',
-				'emmet_ls',
-				'erlangls',
-				'eslint',
-				'fsautocomplete',
-				'glint',
-				'golangci_lint_ls',
-				'gopls',
-				'gradle_ls',
-				'grammarly',
-				'graphql',
-				'helm_ls',
-				'hls',
-				'html',
-				'intelephense',
-				'java_language_server',
-				'jsonls',
-				'jsonnet_ls',
-				'julials',
-				'kotlin_language_server',
-				'lua_ls',
-				'luau_lsp',
-				'marksman',
-				'move_analyzer',
-				'neocmake',
-				'nickel_ls',
-				'nimls',
-				'ocamllsp',
-				'opencl_ls',
-				'powershell_es',
-				'prismals',
-				'purescriptls',
-				'pyre',
-				'pyright',
-				'r_language_server',
-				'raku_navigator',
-				'reason_ls',
-				'remark_ls',
-				'rome',
-				'ruff_lsp',
-				'salt_ls',
-				'serve_d',
-				'slint_lsp',
-				'solang',
-				'solargraph',
-				'solidity',
-				'sourcery',
-				'spectral',
-				'sqlls',
-				'svelte',
-				'tailwindcss',
-				'teal_ls',
-				'tsserver',
-				'unocss',
-				'vala_ls',
-				'vimls',
-				'vls',
-				'volar',
-				'yamlls',
-				'zk',
-				'zls'
-			})
-		end,
-	},
-	-- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
-	{
-		'jay-babu/mason-null-ls.nvim',
-		-- overrides `require('mason-null-ls').setup(...)`
-		opts = function(_, opts)
-			opts.ensure_installed = require('astronvim.utils').list_insert_unique(opts.ensure_installed, {
-				'black',
-				'buildifier',
-				'clang-format',
-				'cmakelang',
-				'cmakelint',
-				'codespell',
-				'commitlint',
-				'cpplint',
-				'csharpier',
-				'cspell',
-				'editorconfig-checker',
-				'elm-format',
-				'eslint_d',
-				'fixjson',
-				'gitlint',
-				'gofumpt',
-				'goimports',
-				'golangci-lint',
-				'golines',
-				'google-java-format',
-				'gospel',
-				'isort',
-				'joker',
-				'jsonlint',
-				'ktlint',
-				'luacheck',
-				'luaformatter',
-				'markdown-toc',
-				'markdownlint',
-				'misspell',
-				'ocamlformat',
-				'php-cs-fixer',
-				'phpcbf',
-				'phpcs',
-				'prettier',
-				'prettierd',
-				'proselint',
-				'pylama',
-				'remark-cli',
-				'reorder-plugin-imports',
-				'revive',
-				'rstcheck',
-				'ruff',
-				'rustfmt',
-				'rustywind',
-				'shellcheck',
-				'shfmt',
-				'solhint',
-				'somarlint-language-server',
-				'sqlfmt',
-				'standardjs',
-				'standardrb',
-				'stylelint',
-				'stylua',
-				'textlint',
-				'usort',
-				'vale',
-				'vint',
-				'vulture',
-				'write-good',
-				'xmlformatter',
-				'xo',
-				'yamlfix',
-				'yamlfmt',
-				'yamllint',
-			})
-		end,
-	},
-	{
-		'jay-babu/mason-nvim-dap.nvim',
-		-- overrides `require('mason-nvim-dap').setup(...)`
-		opts = function(_, opts)
-			opts.ensure_installed = require('astronvim.utils').list_insert_unique(opts.ensure_installed, {
-				'bash-debug-adapter',
-				'bzl',
-				'chrome-debug-adapter',
-				'codelldb',
-				'cpptools',
-				'dart-debug-adapter',
-				'debugpy',
-				'delve',
-				'firefox-debug-adapter',
-				'go-debug-adapter',
-				'haskell-debug-adapter',
-				'java-debug-adapter',
-				'java-test',
-				'js-debugy-adapter',
-				'kotlin-debug-adapter',
-				'lua',
-				'mockdebug',
-				'netcoredbg',
-				'node-debug2-adapter',
-				'php-debug-adapter',
-				'python',
-			})
-		end,
-	},
+  { 'williamboman/mason.nvim', opts = { PATH = 'append' } },
+  -- use mason-lspconfig to configure LSP installations
+  {
+    'williamboman/mason-lspconfig.nvim',
+    -- overrides `require('mason-lspconfig').setup(...)`
+    opts = function(_, opts)
+      -- add more things to the ensure_installed table protecting against community packs modifying it
+      opts.ensure_installed = require('astronvim.utils').list_insert_unique(opts.ensure_installed, {
+        'clangd',
+        'cssls',
+        'gopls',
+        'html',
+        'intelephense',
+        'marksman',
+        'neocmake',
+        'jsonls',
+        'julials',
+        'pyright',
+        'lua_ls',
+        'taplo',
+        'texlab',
+        'tsserver',
+        'yamlls',
+      })
+    end,
+  },
+  -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
+  {
+    'jay-babu/mason-null-ls.nvim',
+    -- overrides `require('mason-null-ls').setup(...)`
+    opts = function(_, opts)
+      -- add more things to the ensure_installed table protecting against community packs modifying it
+      opts.ensure_installed = require('astronvim.utils').list_insert_unique(opts.ensure_installed, {
+        'shellcheck',
+        'stylua',
+        'black',
+        'isort',
+        'prettierd',
+        'shfmt',
+        'shellcheck',
+      })
+    end,
+  },
+  {
+    'jay-babu/mason-nvim-dap.nvim',
+    -- overrides `require('mason-nvim-dap').setup(...)`
+    opts = function(_, opts)
+      -- add more things to the ensure_installed table protecting against community packs modifying it
+      opts.ensure_installed = require('astronvim.utils').list_insert_unique(opts.ensure_installed, {
+        'bash',
+        'cppdbg',
+        'delve',
+        'js',
+        'php',
+        'python',
+      })
+    end,
+    handlers = {
+      js = function()
+        local dap = require 'dap'
+        dap.adapters['pwa-node'] = {
+          type = 'server',
+          port = '${port}',
+          executable = { command = vim.fn.exepath 'js-debug-adapter', args = { '${port}' } },
+        }
+
+        local pwa_node_attach = {
+          type = 'pwa-node',
+          request = 'launch',
+          name = 'js-debug: Attach to Process (pwa-node)',
+          proccessId = require('dap.utils').pick_process,
+          cwd = '${workspaceFolder}',
+        }
+        local function deno(cmd)
+          cmd = cmd or 'run'
+          return {
+            request = 'launch',
+            name = ('js-debug: Launch Current File (deno %s)'):format(cmd),
+            type = 'pwa-node',
+            program = '${file}',
+            cwd = '${workspaceFolder}',
+            runtimeExecutable = vim.fn.exepath 'deno',
+            runtimeArgs = { cmd, '--inspect-brk' },
+            attachSimplePort = 9229,
+          }
+        end
+        local function typescript(args)
+          return {
+            type = 'pwa-node',
+            request = 'launch',
+            name = ('js-debug: Launch Current File (ts-node%s)'):format(
+              args and (' ' .. table.concat(args, ' ')) or ''
+            ),
+            program = '${file}',
+            cwd = '${workspaceFolder}',
+            runtimeExecutable = 'ts-node',
+            runtimeArgs = args,
+            sourceMaps = true,
+            protocol = 'inspector',
+            console = 'integratedTerminal',
+            resolveSourceMapLocations = {
+              '${workspaceFolder}/dist/**/*.js',
+              '${workspaceFolder}/**',
+              '!**/node_modules/**',
+            },
+          }
+        end
+        for _, language in ipairs { 'javascript', 'javascriptreact' } do
+          dap.configurations[language] = {
+            {
+              type = 'pwa-node',
+              request = 'launch',
+              name = 'js-debug: Launch File (pwa-node)',
+              program = '${file}',
+              cwd = '${workspaceFolder}',
+            },
+            deno 'run',
+            deno 'test',
+            pwa_node_attach,
+          }
+        end
+        for _, language in ipairs { 'typescript', 'typescriptreact' } do
+          dap.configurations[language] = {
+            typescript(),
+            typescript { '--esm' },
+            deno 'run',
+            deno 'test',
+            pwa_node_attach,
+          }
+        end
+      end,
+    },
+  },
 }
