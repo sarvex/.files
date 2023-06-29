@@ -24,3 +24,8 @@ vim.api.nvim_create_autocmd("User", {
     if new_showtabline ~= vim.opt.showtabline:get() then vim.opt.showtabline = new_showtabline end
   end,
 })
+
+vim.api.nvim_create_autocmd(
+  { "BufRead", "BufNewFile" },
+  { pattern = { "*.txt", "*.md", "*.tex" }, command = "setlocal spell" }
+)

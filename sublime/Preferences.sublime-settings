@@ -63,9 +63,9 @@
   /*"gnc_h14": true,*/
   /*"gnc_m09": true,*/
   "gnc_h14": true,
-  "gnc_m01": true,
+  /*"gnc_m01": true,*/
   "gnc_w3m14": true,
-  "gni_001": false,
-  "gni_002": false,
-  "gni_003": false,
+  /*"gni_001": false,*/
+  /*"gni_002": false,*/
+  /*"gni_003": false,*/
 }
