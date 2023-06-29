@@ -29,8 +29,7 @@ return function()
     },
   }
 
-  require "user.autocmds"
-  
+
   -- Set up custom filetypes
   -- vim.filetype.add {
   --   extension = {
@@ -43,4 +42,6 @@ return function()
   --     ["~/%.config/foo/.*"] = "fooscript",
   --   },
   -- }
+
+  require "user.autocmds"
 end
