@@ -2,14 +2,6 @@ local utils = require "user.utils"
 local astro_utils = require "astronvim.utils"
 local mappings = {
   n = {
-    -- disable default bindings
-    ["<C-Down>"] = false,
-    ["<C-Left>"] = false,
-    ["<C-Right>"] = false,
-    ["<C-Up>"] = false,
-    ["<C-q>"] = false,
-    ["<C-s>"] = false,
-    ["q:"] = ":",
     -- better buffer navigation
     ["]b"] = false,
     ["[b"] = false,

@@ -8,9 +8,9 @@ winget upgrade --all
 Invoke-WebRequest get.scoop.sh -UseBasicParsing | Invoke-Expression
 scoop bucket known | ForEach-Object{ scoop bucket add $_ }
 scoop bucket add sarvex https://github.com/sarvex/scoop
-scoop install sudo aria2 curl grep sed less touch search-multisource terminal-icons starship elvish oh-my-posh ripgrep lazygit bottom bat dust mprocs fd fzf ripgrep helix llvm emacs python ruby perl php julia go make cmake premake bazel clangd rustup scala kotlin scala kotlin erlang haskell lua love elixir elm nim racket clojure luarocks
+scoop install sudo aria2 curl grep sed less touch search-multisource terminal-icons starship elvish oh-my-posh ripgrep deno lazygit bottom bat dust mprocs fd fzf ripgrep helix llvm emacs python ruby perl php julia go make cmake premake bazel clangd rustup scala kotlin scala kotlin erlang haskell lua love elixir elm nim racket clojure luarocks
 scoop install AurulentSansMono-nerd-font Agave-nerd-font AnonymousPro-nerd-font BitstreamVeraSansMono-nerd-font CascadiaCode CascadiaCode-nerd-font CodeNewRoman-nerd-font ComicShannsMono-nerd-font Cousine-nerd-font DejaVuSansMono-nerd-font DroidSansMono-nerd-font FantasqueSansMono-nerd-font FiraCode-nerd-font Go-Mono-nerd-font Gohu-nerd-font Hack-nerd-font Hasklig-nerd-font iA-Writer-nerd-font IBMPlexMono-nerd-font Inconsolata-nerd-font InconsolataGo-nerd-font Iosevka-nerd-font IosevkaTerm-nerd-font JetBrainsMono-nerd-font LiberationMono-nerd-font Lilex-nerd-font Meslo-nerd-font Overpass-nerd-font Monofur-nerd-font Monoid-nerd-font Mononoki-nerd-font Noto-nerd-font ProFont-nerd-font ProggyClean-nerd-font RobotoMono-nerd-font SourceCodePro-nerd-font SpaceMono-nerd-font ShareTechMono-nerd-font Tinos-nerd-font Terminus-nerd-font UbuntuMono-nerd-font
-sudo Add-MpPreference -ExclusionPath "${env:ProgramData}\scoop\buckets", "${env:USERPROFILE}\scoop\buckets" -Force
+sudo Add-MpPreference -ExclusionPath "${env:ProgramData}\Scoop\", "${env:USERPROFILE}\Scoop\" -Force
 
 # Fetch DotFiles
 $dotfiles = "$HOME\.files"

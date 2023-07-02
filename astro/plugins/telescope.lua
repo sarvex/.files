@@ -2,12 +2,21 @@ return {
   'nvim-telescope/telescope.nvim',
   dependencies = {
     { 'nvim-telescope/telescope-fzf-native.nvim', enabled = false },
-    'nvim-telescope/telescope-fzy-native.nvim',
-    'nvim-telescope/telescope-live-grep-args.nvim',
-    'nvim-telescope/telescope-hop.nvim',
+    'ahmedkhalf/project.nvim', -- defined in  ./editor.lua
+    'debugloop/telescope-undo.nvim',
     'nvim-telescope/telescope-bibtex.nvim',
     'nvim-telescope/telescope-file-browser.nvim',
-    'ahmedkhalf/project.nvim', -- defined in  ./editor.lua
+    'nvim-telescope/telescope-file-browser.nvim',
+    'nvim-telescope/telescope-fzy-native.nvim',
+    'nvim-telescope/telescope-hop.nvim',
+    'nvim-telescope/telescope-live-grep-args.nvim',
+  },
+  cmd = 'Telescope',
+  keys = {
+    '<C-p>',
+    '<C-S-p>',
+    '<C-f>',
+    '<TAB>',
   },
   opts = function(_, opts)
     local telescope = require 'telescope'
@@ -17,6 +26,7 @@ return {
     local hop = telescope.extensions.hop
     return require('astronvim.utils').extend_tbl(opts, {
       defaults = {
+        winblend = vim.g.neovide and vim.g.winblend + 10 or vim.g.winblend,
         results_title = '',
         selection_caret = '  ',
         layout_config = {
@@ -93,10 +103,34 @@ return {
   config = function(...)
     require 'plugins.configs.telescope'(...)
     local telescope = require 'telescope'
-    telescope.load_extension 'fzy_native'
-    telescope.load_extension 'live_grep_args'
     telescope.load_extension 'bibtex'
     telescope.load_extension 'file_browser'
+    telescope.load_extension 'file_browser'
+    telescope.load_extension 'fzy_native'
+    telescope.load_extension 'live_grep_args'
     telescope.load_extension 'projects'
+    telescope.load_extension 'undo'
+    require('astronvim.utils').set_mappings {
+      n = {
+        ['<C-p>'] = { '<cmd>Telescope fd<CR>', desc = 'Activates Telescope fd' },
+        ['<C-S-p>'] = { '<cmd>Telescope commands<CR>', desc = 'Activates Telescope commands' },
+        ['<C-f>'] = { '<cmd>Telescope live_grep<CR>', desc = 'Activates Telescope live_grep' },
+        ['<Tab>'] = {
+          function()
+            if #vim.t.bufs > 1 then
+              require('telescope.builtin').buffers {
+                sort_mru = true,
+                ignore_current_buffer = true,
+              }
+            else
+              require 'notify' { 'No other buffers open' }
+            end
+          end,
+          desc = 'Switch Buffers',
+        },
+        -- ['<C-b>'] = { '<cmd>Telescope file_browser<CR>' },
+        -- ['<C-z>'] = { '<cmd>Telescope undo<CR>' },
+      },
+    }
   end,
 }

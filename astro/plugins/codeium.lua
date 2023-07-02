@@ -11,5 +11,7 @@ return {
     vim.keymap.set('i', '<C-->', function() return vim.fn['codeium#CycleCompletions'](1) end, { expr = true })
     vim.keymap.set('i', '<C-=>', function() return vim.fn['codeium#CycleCompletions'](-1) end, { expr = true })
     vim.keymap.set('i', '<C-BS>', function() return vim.fn['codeium#Clear']() end, { expr = true })
+
+    vim.api.nvim_set_hl(0, 'CodeiumSuggestion', { link = 'Comment' })
   end,
 }

@@ -1,6 +1,18 @@
 {
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[lua]": {
     "editor.defaultFormatter": "sumneko.lua"
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "aws.telemetry": false,
   "cSpell.userWords": [
@@ -21,6 +33,7 @@
     "doxygen",
     "factorypath",
     "falt",
+    "fira",
     "flippidippi",
     "fontsource",
     "genieai",
@@ -36,9 +49,11 @@
     "Menlo",
     "Meslo",
     "nalt",
+    "neoconfetti",
     "okteto",
     "omnisharp",
     "palt",
+    "preact",
     "pwsh",
     "pylint",
     "pytest",
@@ -55,6 +70,8 @@
     "stylelint",
     "sumneko",
     "tailwindcss",
+    "twind",
+    "unpic",
     "valt"
   ],
   "code-runner.enableAppInsights": false,
@@ -67,6 +84,7 @@
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.cursorBlinking": "phase",
   "editor.cursorSmoothCaretAnimation": "on",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.detectIndentation": false,
   "editor.foldingImportsByDefault": true,
   "editor.foldingMaximumRegions": 9999,
@@ -82,7 +100,9 @@
   "editor.mouseWheelZoom": true,
   "editor.parameterHints.cycle": true,
   "editor.renderLineHighlight": "gutter",
-  "editor.rulers": [ 120 ],
+  "editor.rulers": [
+    120
+  ],
   "editor.semanticHighlighting.enabled": true,
   "editor.smoothScrolling": true,
   "editor.tabCompletion": "on",
@@ -162,6 +182,7 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "genieai.enableConversationHistory": true,
+  "git.autoStash": true,
   "git.autofetch": "all",
   "git.branchRandomName.dictionary": [
     "adjectives",
@@ -170,7 +191,12 @@
   ],
   "git.branchRandomName.enable": true,
   "git.confirmSync": false,
+  "git.detectSubmodulesLimit": 64,
   "git.enableSmartCommit": true,
+  "git.mergeEditor": true,
+  "git.pruneOnFetch": true,
+  "git.rebaseWhenSync": true,
+  "githubPullRequests.pullBranch": "never",
   "gitlens.codeLens.enabled": false,
   "gitlens.statusBar.enabled": false,
   "gitlens.telemetry.enabled": false,
@@ -301,13 +327,9 @@
   ],
   "yaml.format.printWidth": 120,
   "yaml.maxItemsComputed": 9999,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "emmet.includeLanguages": {
+    "svelte": "html",
+    "astro": "html"
   },
-  "githubPullRequests.pullBranch": "never",
-  "git.autoStash": true,
-  "git.detectSubmodulesLimit": 64,
-  "git.mergeEditor": true,
-  "git.pruneOnFetch": true,
-  "git.rebaseWhenSync": true
+  "svelte.plugin.svelte.defaultScriptLanguage": "ts"
 }
