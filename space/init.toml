@@ -1,68 +1,81 @@
 # SpaceVim options {{{
 [options]
+  # disabled_plugins = ["startify", 'deoplete-dictionary']
+  # enable_language_specific_leader = false
+  # vimcompatible = true
+  auto_disable_touchpad = false
   automatic_update = true
   buffer_index_type = 4
+  checkinstall = false
   code_runner_focus = true
   colorscheme = 'gruvbox'
   colorscheme_bg = 'dark'
   commandline_prompt = '➭'
+  debug_level = 0
+  default_indent = 2
   enable_cursorline = true
+  enable_filetree_gitstatus = true
   enable_googlesuggest = true
   enable_guicolors = true
+  enable_key_frequency = 1
   enable_os_fileformat_icon = true
   enable_statusline_bfpath = true
-  enable_statusline_mode = true
   enable_statusline_tag = true
   enable_tabline_filetype_icon = true
   enable_tabline_ft_icon = true
   filetree_direction = 'right'
   github_username = 'sarvex'
   guifont = 'Agave Nerd Font Mono:h11'
+  # guifont = 'DejaVuSansM Nerd Font Mono:h11'
+  # guifont = 'Hasklug Nerd Font Mono:h11'
+  # guifont = 'SauceCodePro Nerd Font Mono:h11'
   home_files_number = 16
   project_rooter_outermost = false
+  relativenumber = true
   src_root = '~\Source\'
   statusline_iseparator = 'arrow'
   statusline_separator = 'fire'
+  statusline_unicode_symbols = true
+  todo_labels = ['bug', 'question', 'fixme', 'todo']
+  todo_prefix = '@'
+  use_lua = true
 # }}}
 
 # SpaceVim layer config {{{
-[[layers]]
-  name = 'core'
-  enable_filetree_gitstatus = true
-  enable_filetree_filetypeicon = true
-  # enable_netrw = true
-
-[[layers]]
-    name = 'edit'
-    autosave_timeout = 300000
-    # autosave_events = ['InsertLeave', 'TextChanged']
-    # autosave_all_buffers = true
-    enable_hop = false
-
-[[layers]]
-    name = 'ui'
-    enable_scrollbar = true
-    enable_indentline = false
-    # filetree_show_hidden = true
-    cursorword_delay = 200
-    cursorword_exclude_filetype = ['markdown']
-    indentline_exclude_filetyps = ['startify', 'help']
-
 [[layers]]
   name = 'autocomplete'
   auto_completion_return_key_behavior = 'complete'
   auto_completion_tab_key_behavior = 'smart'
 
 [[layers]]
-  name = 'telescope'
+  name = 'checkers'
+  lint_on_the_fly = true
+  lint_on_save = true
 
 [[layers]]
   name = 'format'
+  format_on_save = true
 
 [[layers]]
-  name = 'checkers'
-  lint_on_the_fly  = true
-  lint_on_save = true
+  name = 'edit'
+  autosave_timeout = 300000
+  enable_hop = true
+
+[[layers]]
+  name = 'core'
+  enable_filetree_gitstatus = true
+  enable_filetree_filetypeicon = true
+  filetree_show_hidden = true
+
+[[layers]]
+  name = 'ui'
+  conceallevel = 2
+  cursorword_exclude_filetype = ['markdown']
+  enable_cursorword = true
+  enable_sidebar = true
+
+[[layers]]
+  name = 'telescope'
 
 [[layers]]
   name = 'ctrlspace'
@@ -289,12 +302,24 @@
 
 [[layers]]
   name = 'lsp'
-  filetypes = [ 'c', 'cpp', 'go', 'java', 'javascript', 'javascriptreact', 'lua', 'nim', 'python', 'rust', 'typescript']
-  [layers.override_cmd]
-    rust = ['rls']  
+  filetypes = [
+    'c',
+    'cpp',
+    'go',
+    'java',
+    'javascript',
+    'javascriptreact',
+    'lua',
+    'nim',
+    'python',
+    'rust',
+    'typescript',
+  ]
+[layers.override_cmd]
+  rust = ['rls']
 
 [[layers]]
-  name = 'mail'
+  name = 'mail' 
 
 [[layers]]
   name = 'shell'
@@ -330,3 +355,4 @@
 
 [[layers]]
   name = 'zettelkasten'
+# }}}
