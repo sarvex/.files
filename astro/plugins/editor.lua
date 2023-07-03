@@ -1,5 +1,4 @@
 local utils = require 'astronvim.utils'
-local prefix = "<leader>a"
 return {
   {
     'goolord/alpha-nvim',
@@ -120,7 +119,6 @@ return {
   },
   {
     'rcarriga/nvim-notify',
-    opts = { timeout = 0, }
   },
   {
     'mrjones2014/smart-splits.nvim',
@@ -128,43 +126,56 @@ return {
     opts = function(_, opts) opts.at_edge = require('smart-splits.types').AtEdgeBehavior.stop end,
   },
   {
-    'folke/zen-mode.nvim',
-    cmd = 'ZenMode',
-    opts = {
-      window = {
-        backdrop = 1,
-        width = function() return math.min(120, vim.o.columns * 0.75) end,
-        height = 0.9,
-        options = {
-          number = false,
-          relativenumber = false,
-          foldcolumn = '0',
-          list = false,
-          showbreak = 'NONE',
-          signcolumn = 'no',
+    'Pocco81/true-zen.nvim',
+    opts = function(_, opts)
+      return utils.extend_tbl(opts, {
+        integrations = {
+          tmux = os.getenv 'TMUX' ~= nil,                -- hide tmux status bar in (minimalist, ataraxis)
+          twilight = utils.is_available 'twilight.nvim', -- enable twilight (ataraxis)
         },
+      })
+    end,
+    keys = {
+      {
+        '<leader>z',
+        desc = 'True Zen',
       },
-      plugins = {
-        options = {
-          cmdheight = 1,
-          laststatus = 0,
-        },
+      {
+        '<leader>z' .. 'f',
+        function() require('true-zen').focus() end,
+        desc = 'Focus (True Zen)',
       },
-      on_open = function() -- disable diagnostics, indent blankline, and winbar
-        vim.g.diagnostics_mode_old = vim.g.diagnostics_mode
-        vim.g.indent_blankline_enabled_old = vim.g.indent_blankline_enabled
-        vim.g.winbar_old = vim.wo.winbar
-        vim.g.diagnostics_mode = 0
-        vim.g.indent_blankline_enabled = false
-        vim.wo.winbar = nil
-        vim.diagnostic.config(require('astronvim.utils.lsp').diagnostics[vim.g.diagnostics_mode])
-      end,
-      on_close = function() -- restore diagnostics, indent blankline, and winbar
-        vim.g.diagnostics_mode = vim.g.diagnostics_mode_old
-        vim.g.indent_blankline_enabled = vim.g.indent_blankline_enabled_old
-        vim.wo.winbar = vim.g.winbar_old
-        vim.diagnostic.config(require('astronvim.utils.lsp').diagnostics[vim.g.diagnostics_mode])
-      end,
+      {
+        '<leader>z' .. 'm',
+        function() require('true-zen').minimalist() end,
+        desc = 'Minimalist (True Zen)',
+      },
+      {
+        '<leader>z' .. 'a',
+        function() require('true-zen').ataraxis() end,
+        desc = 'Ataraxis (True Zen)',
+      },
+      {
+        '<leader>z' .. 'n',
+        function()
+          local truezen = require 'true-zen'
+          local first = 0
+          local last = vim.api.nvim_buf_line_count(0)
+          truezen.narrow(first, last)
+        end,
+        desc = 'Narrow (True Zen)',
+      },
+      {
+        '<leader>z' .. 'n',
+        function()
+          local truezen = require 'true-zen'
+          local first = vim.fn.line 'v'
+          local last = vim.fn.line '.'
+          truezen.narrow(first, last)
+        end,
+        desc = 'Narrow (True Zen)',
+        mode = { 'v' },
+      },
     },
   },
   {
@@ -195,12 +206,12 @@ return {
       },
     },
     keys = {
-      { prefix,           desc = 'Annotation' },
-      { prefix .. '<cr>', function() require('neogen').generate { type = 'current' } end, desc = 'Current' },
-      { prefix .. 'c',    function() require('neogen').generate { type = 'class' } end,   desc = 'Class' },
-      { prefix .. 'f',    function() require('neogen').generate { type = 'func' } end,    desc = 'Function' },
-      { prefix .. 't',    function() require('neogen').generate { type = 'type' } end,    desc = 'Type' },
-      { prefix .. 'F',    function() require('neogen').generate { type = 'file' } end,    desc = 'File' },
+      { '<leader>a',           desc = 'Annotation' },
+      { '<leader>a' .. '<cr>', function() require('neogen').generate { type = 'current' } end, desc = 'Current' },
+      { '<leader>a' .. 'c',    function() require('neogen').generate { type = 'class' } end,   desc = 'Class' },
+      { '<leader>a' .. 'f',    function() require('neogen').generate { type = 'func' } end,    desc = 'Function' },
+      { '<leader>a' .. 't',    function() require('neogen').generate { type = 'type' } end,    desc = 'Type' },
+      { '<leader>a' .. 'F',    function() require('neogen').generate { type = 'file' } end,    desc = 'File' },
     },
   },
   {
@@ -275,6 +286,35 @@ return {
     'wsdjeg/vim-fetch',
     lazy = false,
   },
+  {
+    'lukas-reineke/indent-blankline.nvim',
+    event = 'User AstroFile',
+    opts = {
+      char = '│',
+      filetype_exclude = { 'help', 'alpha', 'dashboard', 'neo-tree', 'Trouble', 'lazy' },
+      show_trailing_blankline_indent = false,
+      show_current_context = false,
+    },
+  },
+  {
+    'echasnovski/mini.indentscope',
+    event = 'User AstroFile',
+    opts = { symbol = '│', options = { try_as_border = true } },
+    config = function(_, opts)
+      vim.api.nvim_create_autocmd('FileType', {
+        pattern = { 'fzf', 'starter', 'help', 'alpha', 'dashboard', 'neo-tree', 'Trouble', 'lazy', 'mason' },
+        callback = function() vim.b.miniindentscope_disable = true end,
+      })
+      require('mini.indentscope').setup(opts)
+    end,
+  },
+  {
+    'arsham/indent-tools.nvim',
+    dependencies = { 'arsham/arshlib.nvim' },
+    event = 'User AstroFile',
+    config = function() require('indent-tools').config {} end,
+  },
+
   { 'nyoom-engineering/oxocarbon.nvim', },
   { 'kvrohit/mellow.nvim', },
   {

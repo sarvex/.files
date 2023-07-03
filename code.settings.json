@@ -291,10 +291,10 @@
   "vite.buildCommand": "pnpm build",
   "vite.devCommand": "pnpm start",
   "window.autoDetectColorScheme": true,
-  "workbench.colorTheme": "Catppuccin Mocha",
-  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.colorTheme": "Catppuccin Macchiato",
+  "workbench.iconTheme": "catppuccin-macchiato",
   "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
-  "workbench.preferredLightColorTheme": "Catppuccin Macchiato",
+  "workbench.preferredLightColorTheme": "Catppuccin Frappé",
   "yaml.customTags": [
     "!And",
     "!And sequence",

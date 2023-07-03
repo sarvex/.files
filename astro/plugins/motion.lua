@@ -141,11 +141,6 @@ return {
     opts = {},
   },
   {
-    'echasnovski/mini.ai',
-    event = 'User AstroFile',
-    opts = {},
-  },
-  {
     'echasnovski/mini.basics',
     version = false,
     event = 'User AstroFile',
