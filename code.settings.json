@@ -14,6 +14,7 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "autoHide.hideOnOpen": false,
   "aws.telemetry": false,
   "cSpell.userWords": [
     "aalt",
@@ -139,7 +140,10 @@
     ]
   },
   "editor.wordWrapColumn": 120,
-  "eslint.experimental.useFlatConfig": true,
+  "emmet.includeLanguages": {
+    "astro": "html",
+    "svelte": "html"
+  },
   "eslint.format.enable": true,
   "eslint.lintTask.enable": true,
   "eslint.probe": [
@@ -204,7 +208,6 @@
   "julia.symbolCacheDownload": true,
   "okteto.telemetry": false,
   "omnisharp.enableRoslynAnalyzers": true,
-  "partialDiff.enableTelemetry": false,
   "peacock.affectActivityBar": false,
   "peacock.affectStatusAndTitleBorders": true,
   "peacock.affectStatusBar": false,
@@ -267,6 +270,7 @@
     "sass"
   ],
   "svelte.enable-ts-plugin": true,
+  "svelte.plugin.svelte.defaultScriptLanguage": "ts",
   "svelte.plugin.svelte.format.config.printWidth": 120,
   "svelte.plugin.svelte.format.config.singleQuote": true,
   "svelte.plugin.svelte.format.config.svelteBracketNewLine": false,
@@ -289,9 +293,10 @@
   "terminal.integrated.tabs.showActions": "always",
   "terminal.integrated.tabs.showActiveTerminal": "always",
   "vite.buildCommand": "pnpm build",
-  "vite.devCommand": "pnpm start",
+  "vite.devCommand": "pnpm dev",
   "window.autoDetectColorScheme": true,
   "workbench.colorTheme": "Catppuccin Macchiato",
+  "workbench.editor.labelFormat": "short",
   "workbench.iconTheme": "catppuccin-macchiato",
   "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
   "workbench.preferredLightColorTheme": "Catppuccin Frappé",
@@ -326,9 +331,5 @@
   ],
   "yaml.format.printWidth": 120,
   "yaml.maxItemsComputed": 9999,
-  "emmet.includeLanguages": {
-    "svelte": "html",
-    "astro": "html"
-  },
-  "svelte.plugin.svelte.defaultScriptLanguage": "ts"
+  "autoHide.autoHidePanel": false
 }

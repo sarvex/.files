@@ -26,7 +26,6 @@ return {
     local hop = telescope.extensions.hop
     return require('astronvim.utils').extend_tbl(opts, {
       defaults = {
-        winblend = vim.g.neovide and vim.g.winblend + 10 or vim.g.winblend,
         results_title = '',
         selection_caret = '  ',
         layout_config = {
