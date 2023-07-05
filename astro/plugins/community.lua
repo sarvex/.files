@@ -4,19 +4,18 @@ return {
   -- example of imporing a plugin, comment out to use it or add your own
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 
-  -- { import = "astrocommunity.colorscheme.catppuccin" },
-  -- { import = "astrocommunity.completion.copilot-lua-cmp" },
+  -- { import = 'astrocommunity.colorscheme.catppuccin' },
+  -- { import = 'astrocommunity.completion.copilot-lua-cmp' },
 
+  { import = 'astrocommunity.bars-and-lines.bufferline-nvim' },
   { import = 'astrocommunity.bars-and-lines.dropbar-nvim' },
   { import = 'astrocommunity.bars-and-lines.lualine-nvim' },
   { import = 'astrocommunity.bars-and-lines.scope-nvim' },
   { import = 'astrocommunity.bars-and-lines.smartcolumn-nvim' },
-  { import = 'astrocommunity.bars-and-lines.statuscol-nvim' },
-
+  { import = 'astrocommunity.bars-and-lines.statuscol-nvim',           opts = { colorcolumn = '120', }, },
   { import = 'astrocommunity.code-runner.compiler-nvim' },
   { import = 'astrocommunity.code-runner.sniprun' },
 
-  -- { import = 'astrocommunity.color.ccc-nvim' },
   { import = 'astrocommunity.color.headlines-nvim' },
   { import = 'astrocommunity.color.modes-nvim' },
   { import = 'astrocommunity.color.tint-nvim' },
@@ -45,7 +44,6 @@ return {
   { import = 'astrocommunity.colorscheme.sonokai' },
   { import = 'astrocommunity.colorscheme.tokyonight-nvim' },
   { import = 'astrocommunity.colorscheme.vscode-nvim' },
-  --  { import = 'astrocommunity.comment.mini-comment' },
 
   { import = 'astrocommunity.completion.codeium-vim' },
 
@@ -99,7 +97,7 @@ return {
   { import = 'astrocommunity.motion.harpoon' },
   { import = 'astrocommunity.motion.mini-ai' },
   { import = 'astrocommunity.motion.mini-basics' },
-  { import = 'astrocommunity.motion.mini-braketed' },
+  { import = 'astrocommunity.motion.mini-bracketed' },
   { import = 'astrocommunity.motion.mini-move' },
   { import = 'astrocommunity.motion.mini-surround' },
   { import = 'astrocommunity.motion.nvim-spider' },

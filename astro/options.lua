@@ -4,8 +4,8 @@ return {
     -- set to true or false etc.
     relativenumber = true, -- sets vim.opt.relativenumber
     number = true, -- sets vim.opt.number
-    spell = false, -- sets vim.opt.spell
-    signcolumn = "auto", -- sets vim.opt.signcolumn to auto
+    spell = true, -- sets vim.opt.spell
+    signcolumn = 'auto', -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
     guifont = 'Hack Nerd Font Mono,NotoMono Nerd Font Mono:h11',
     autoindent = true,
@@ -16,8 +16,7 @@ return {
     foldexpr = 'nvim_treesitter#foldexpr()', -- set Treesitter based folding
     foldmethod = 'expr',
     shell = vim.fn.executable 'pwsh' and 'pwsh' or 'powershell',
-    shellcmdflag =
-    '-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;',
+    shellcmdflag = '-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;',
     shellpipe = '2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode',
     shellquote = '',
     shellredir = '-RedirectStandardOutput %s -NoNewWindow -Wait',
@@ -30,7 +29,7 @@ return {
     smartindent = true,
   },
   g = {
-    mapleader = " ", -- sets vim.g.mapleader
+    mapleader = ' ', -- sets vim.g.mapleader
     autoformat_enabled = true, -- enable or disable auto formatting at start (lsp.formatting.format_on_save must be enabled)
     cmp_enabled = true, -- enable completion at start
     autopairs_enabled = true, -- enable autopairs at start
