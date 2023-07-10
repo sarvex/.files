@@ -68,7 +68,7 @@ return {
   { import = 'astrocommunity.editing-support.dial-nvim' },
   { import = 'astrocommunity.editing-support.hypersonic-nvim' },
   { import = 'astrocommunity.editing-support.mini-splitjoin' },
-  -- { import = 'astrocommunity.editing-support.multicursors-nvim' },
+  { import = 'astrocommunity.editing-support.multicursors-nvim' },
   { import = 'astrocommunity.editing-support.neogen' },
   { import = 'astrocommunity.editing-support.rainbow-delimiters-nvim' },
   { import = 'astrocommunity.editing-support.refactoring-nvim' },
@@ -157,7 +157,6 @@ return {
   { import = 'astrocommunity.programming-language-support.nvim-jqx' },
   { import = 'astrocommunity.programming-language-support.rest-nvim' },
   { import = 'astrocommunity.programming-language-support.web-tools-nvim' },
-  { import = 'astrocommunity.project.neoconf-nvim' },
   { import = 'astrocommunity.project.nvim-spectre' },
   { import = 'astrocommunity.project.projectmgr-nvim' },
 
