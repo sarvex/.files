@@ -1,6 +1,6 @@
 {
-  "aws.telemetry": false,
   "breadcrumbs.symbolSortOrder": "type",
+  "codeQL.telemetry.enableTelemetry": false,
   "cSpell.userWords": [
     "aalt",
     "astro",
@@ -23,6 +23,7 @@
     "falt",
     "fira",
     "fontsource",
+    "Fullscreen",
     "genieai",
     "Gurugram",
     "Haryana",
@@ -35,6 +36,7 @@
     "Literation",
     "ltra",
     "lucide",
+    "macchiato",
     "MACLIB",
     "Mayukai",
     "Menlo",
@@ -67,9 +69,6 @@
     "valt",
     "vitepress"
   ],
-  "code-runner.enableAppInsights": false,
-  "codeQL.telemetry.enableTelemetry": false,
-  "codesandbox.currentWorkspace": "833fac05-adfd-48e8-a2b6-b9066105472e",
   "dart.lineLength": 120,
   "dart.maxLogLineLength": 10000,
   "dart.normalizeFileCasing": true,
@@ -186,9 +185,8 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
-  "genieai.enableConversationHistory": true,
-  "git.autoStash": true,
   "git.autofetch": true,
+  "git.autoStash": true,
   "git.branchRandomName.dictionary": [
     "adjectives",
     "animals",
@@ -201,11 +199,72 @@
   "git.mergeEditor": true,
   "git.pruneOnFetch": true,
   "git.rebaseWhenSync": true,
-  "githubPullRequests.pullBranch": "never",
   "gitlens.codeLens.enabled": false,
   "gitlens.statusBar.enabled": false,
   "gitlens.telemetry.enabled": false,
   "go.toolsManagement.autoUpdate": true,
+  "highlight.regexes": {
+    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:FIXME|FIX|BUG|UGLY|DEBUG|HACK)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+      "decorations": [
+        {
+          "backgroundColor": "#cc0000",
+          "color": "#1f1f1f",
+          "fontWeight": "bold",
+          "overviewRulerColor": "#cc0000"
+        },
+        {
+          "backgroundColor": "#cc0000",
+          "color": "#1f1f1f"
+        }
+      ],
+      "filterFileRegex": ".*(?<!CHANGELOG.md)$"
+    },
+    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:IDEA)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+      "decorations": [
+        {
+          "backgroundColor": "#cc00cc",
+          "color": "#1f1f1f",
+          "fontWeight": "bold",
+          "overviewRulerColor": "#cc00cc"
+        },
+        {
+          "backgroundColor": "#cc00cc",
+          "color": "#1f1f1f"
+        }
+      ],
+      "filterFileRegex": ".*(?<!CHANGELOG.md)$"
+    },
+    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:REVIEW|OPTIMIZE|TSC)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+      "decorations": [
+        {
+          "backgroundColor": "#00ccff",
+          "color": "#1f1f1f",
+          "fontWeight": "bold",
+          "overviewRulerColor": "#00ccff"
+        },
+        {
+          "backgroundColor": "#00ccff",
+          "color": "#1f1f1f"
+        }
+      ],
+      "filterFileRegex": ".*(?<!CHANGELOG.md)$"
+    },
+    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *TODO(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+      "decorations": [
+        {
+          "backgroundColor": "#ffcc00",
+          "color": "#1f1f1f",
+          "fontWeight": "bold",
+          "overviewRulerColor": "#ffcc00"
+        },
+        {
+          "backgroundColor": "#ffcc00",
+          "color": "#1f1f1f"
+        }
+      ],
+      "filterFileRegex": ".*(?<!CHANGELOG.md)$"
+    }
+  },
   "javascript.inlayHints.enumMemberValues.enabled": true,
   "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
   "javascript.inlayHints.parameterNames.enabled": "all",
@@ -217,6 +276,10 @@
   "julia.enableTelemetry": false,
   "julia.symbolCacheDownload": true,
   "keyboard.mapAltGrToCtrlAlt": true,
+  "Lua.codeLens.enable": true,
+  "Lua.diagnostics.enable": false,
+  "Lua.hint.enable": true,
+  "Lua.hint.setType": true,
   "marquee.configuration.launchOnStartup": false,
   "marquee.configuration.name": "Sarvex",
   "marquee.widgets.dependencies.prefersPnpm": true,
@@ -229,7 +292,6 @@
   "notebook.formatOnSave.enabled": true,
   "notebook.lineNumbers": "on",
   "notebook.outline.showCodeCells": true,
-  "okteto.telemetry": false,
   "omnisharp.enableRoslynAnalyzers": true,
   "peacock.affectActivityBar": false,
   "peacock.affectStatusAndTitleBorders": true,
@@ -248,7 +310,6 @@
   "python.formatting.provider": "black",
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
-  "restructuredtext.experimental": true,
   "scm.diffDecorationsGutterPattern": {
     "added": true
   },
@@ -256,12 +317,6 @@
   "search.seedWithNearestWord": true,
   "search.showLineNumbers": true,
   "search.smartCase": true,
-  "snyk.advanced.cliPath": "C:\\Users\\Yoga\\AppData\\Local\\snyk-ls\\snyk-win.exe",
-  "snyk.trustedFolders": [
-    "c:\\Users\\Yoga\\Sources"
-  ],
-  "snyk.yesTelemetry": false,
-  "snyk.yesWelcomeNotification": false,
   "sonarlint.connectedMode.connections.sonarcloud": [
     {
       "connectionId": "sarvex",
@@ -269,18 +324,6 @@
     }
   ],
   "sonarlint.disableTelemetry": true,
-  "sortJSON.contextMenu": {
-    "sortJSON": false,
-    "sortJSONAlphaNum": false,
-    "sortJSONAlphaNumReverse": false,
-    "sortJSONKeyLength": false,
-    "sortJSONKeyLengthReverse": false,
-    "sortJSONReverse": false,
-    "sortJSONType": false,
-    "sortJSONTypeReverse": false,
-    "sortJSONValues": false,
-    "sortJSONValuesReverse": false
-  },
   "stateful.notifications": false,
   "stylelint.packageManager": "pnpm",
   "stylelint.snippet": [
@@ -312,16 +355,17 @@
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "terminal.integrated.enablePersistentSessions": false,
+  "terminal.integrated.env.windows": {},
   "terminal.integrated.fontFamily": "LiterationMono Nerd Font Mono",
   "terminal.integrated.gpuAcceleration": "on",
   "terminal.integrated.minimumContrastRatio": 7,
   "terminal.integrated.scrollback": 99999,
   "terminal.integrated.shellIntegration.history": 999,
   "terminal.integrated.shellIntegration.suggestEnabled": true,
-  "terminal.integrated.tabStopWidth": 2,
   "terminal.integrated.tabs.defaultColor": "terminal.ansiCyan",
   "terminal.integrated.tabs.showActions": "always",
   "terminal.integrated.tabs.showActiveTerminal": "always",
+  "terminal.integrated.tabStopWidth": 2,
   "typescript.inlayHints.enumMemberValues.enabled": true,
   "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
   "typescript.inlayHints.parameterNames.enabled": "all",
@@ -383,68 +427,5 @@
     "!Split sequence"
   ],
   "yaml.format.printWidth": 120,
-  "yaml.maxItemsComputed": 9999,
-  "terminal.integrated.env.windows": {},
-  "highlight.regexes": {
-    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *TODO(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
-      "filterFileRegex": ".*(?<!CHANGELOG.md)$",
-      "decorations": [
-        {
-          "overviewRulerColor": "#ffcc00",
-          "backgroundColor": "#ffcc00",
-          "color": "#1f1f1f",
-          "fontWeight": "bold"
-        },
-        {
-          "backgroundColor": "#ffcc00",
-          "color": "#1f1f1f"
-        }
-      ]
-    },
-    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:FIXME|FIX|BUG|UGLY|DEBUG|HACK)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
-      "filterFileRegex": ".*(?<!CHANGELOG.md)$",
-      "decorations": [
-        {
-          "overviewRulerColor": "#cc0000",
-          "backgroundColor": "#cc0000",
-          "color": "#1f1f1f",
-          "fontWeight": "bold"
-        },
-        {
-          "backgroundColor": "#cc0000",
-          "color": "#1f1f1f"
-        }
-      ]
-    },
-    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:REVIEW|OPTIMIZE|TSC)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
-      "filterFileRegex": ".*(?<!CHANGELOG.md)$",
-      "decorations": [
-        {
-          "overviewRulerColor": "#00ccff",
-          "backgroundColor": "#00ccff",
-          "color": "#1f1f1f",
-          "fontWeight": "bold"
-        },
-        {
-          "backgroundColor": "#00ccff",
-          "color": "#1f1f1f"
-        }
-      ]
-    },
-    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:IDEA)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
-      "filterFileRegex": ".*(?<!CHANGELOG.md)$",
-      "decorations": [
-        {
-          "overviewRulerColor": "#cc00cc",
-          "backgroundColor": "#cc00cc",
-          "color": "#1f1f1f",
-          "fontWeight": "bold"
-        },
-        {
-          "backgroundColor": "#cc00cc",
-          "color": "#1f1f1f"
-        }
-      ]
-    }
-  }
+  "yaml.maxItemsComputed": 9999
 }

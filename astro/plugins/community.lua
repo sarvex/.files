@@ -12,12 +12,7 @@ return {
   { import = 'astrocommunity.bars-and-lines.lualine-nvim' },
   { import = 'astrocommunity.bars-and-lines.scope-nvim' },
   { import = 'astrocommunity.bars-and-lines.smartcolumn-nvim' },
-  {
-    import = 'astrocommunity.bars-and-lines.statuscol-nvim',
-    opts = { colorcolumn = '120', },
-  },
-
-
+  { import = 'astrocommunity.bars-and-lines.statuscol-nvim',              opts = { colorcolumn = '120', }, },
   { import = 'astrocommunity.code-runner.executor-nvim' },
   { import = 'astrocommunity.code-runner.compiler-nvim' },
   { import = 'astrocommunity.code-runner.sniprun' },
@@ -47,7 +42,6 @@ return {
   { import = 'astrocommunity.colorscheme.nord-nvim' },
   { import = 'astrocommunity.colorscheme.nvim-juliana' },
   { import = 'astrocommunity.colorscheme.onedarkpro-nvim' },
-  { import = 'astrocommunity.colorscheme.onigiri-nvim' },
   { import = 'astrocommunity.colorscheme.oxocarbon-nvim' },
   { import = 'astrocommunity.colorscheme.poimandres-nvim' },
   { import = 'astrocommunity.colorscheme.rose-pine' },
@@ -74,10 +68,8 @@ return {
   { import = 'astrocommunity.editing-support.dial-nvim' },
   { import = 'astrocommunity.editing-support.hypersonic-nvim' },
   { import = 'astrocommunity.editing-support.mini-splitjoin' },
-  { import = 'astrocommunity.editing-support.multicursors-nvim' },
+  -- { import = 'astrocommunity.editing-support.multicursors-nvim' },
   { import = 'astrocommunity.editing-support.neogen' },
-  -- { import = 'astrocommunity.editing-support.nvim-regexplainer' },
-  -- { import = 'astrocommunity.editing-support.nvim-ts-rainbow2' },
   { import = 'astrocommunity.editing-support.rainbow-delimiters-nvim' },
   { import = 'astrocommunity.editing-support.refactoring-nvim' },
   { import = 'astrocommunity.editing-support.suda-vim' },
