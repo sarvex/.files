@@ -2,12 +2,12 @@
   "workbench.colorCustomizations": {
     "sash.hoverBorder": "#7c2af0",
     "tab.activeBorder": "#7c2af0",
-    "commandCenter.border": "#e7e7e799",
-    "titleBar.activeBackground": "#620fd8",
-    "titleBar.activeForeground": "#e7e7e7",
-    "titleBar.inactiveBackground": "#620fd899",
-    "titleBar.inactiveForeground": "#e7e7e799",
-    "titleBar.border": "#620fd8"
+    "statusBar.background": "#620fd8",
+    "statusBar.border": "#620fd8",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#7c2af0",
+    "statusBarItem.remoteBackground": "#620fd8",
+    "statusBarItem.remoteForeground": "#e7e7e7"
   },
   "peacock.color": "#620fd8",
   "sonarlint.connectedMode.project": {

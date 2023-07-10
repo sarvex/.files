@@ -6,4 +6,10 @@ return {
       'lua'
     })
   end,
+  dependencies = {
+    {
+      "nvim-treesitter/playground",
+      cmd = "TSPlaygroundToggle",
+    },
+  }
 }

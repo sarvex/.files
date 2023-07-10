@@ -1,6 +1,6 @@
 {
 	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
-	"CreationDate" : "2023-05-07T13:34:59.931-00:00",
+	"CreationDate" : "2023-07-10T08:35:28.617-00:00",
 	"Sources" : 
 	[
 		{
@@ -10,49 +10,13 @@
 					"PackageIdentifier" : "Microsoft.VisualStudio.2022.Enterprise"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.XMLNotepad"
-				},
-				{
-					"PackageIdentifier" : "Stackers.Stack"
-				},
-				{
 					"PackageIdentifier" : "7zip.7zip"
-				},
-				{
-					"PackageIdentifier" : "Eugeny.Tabby"
-				},
-				{
-					"PackageIdentifier" : "DevHub.DevHub"
-				},
-				{
-					"PackageIdentifier" : "KDE.Amarok"
-				},
-				{
-					"PackageIdentifier" : "JetBrains.Aqua.EAP"
-				},
-				{
-					"PackageIdentifier" : "Audacity.Audacity"
 				},
 				{
 					"PackageIdentifier" : "Brave.Brave"
 				},
 				{
-					"PackageIdentifier" : "JetBrains.CLion"
-				},
-				{
 					"PackageIdentifier" : "eloston.ungoogled-chromium"
-				},
-				{
-					"PackageIdentifier" : "Codeblocks.Codeblocks"
-				},
-				{
-					"PackageIdentifier" : "CodeLite.CodeLite"
-				},
-				{
-					"PackageIdentifier" : "JFrog.Conan"
-				},
-				{
-					"PackageIdentifier" : "Orwell.Dev-C++"
 				},
 				{
 					"PackageIdentifier" : "Discord.Discord"
@@ -61,43 +25,16 @@
 					"PackageIdentifier" : "Docker.DockerDesktop"
 				},
 				{
-					"PackageIdentifier" : "Embarcadero.Dev-C++"
-				},
-				{
 					"PackageIdentifier" : "GIMP.GIMP"
 				},
 				{
-					"PackageIdentifier" : "GNU.Gforth"
+					"PackageIdentifier" : "Microsoft.Git"
 				},
 				{
-					"PackageIdentifier" : "JetBrains.IntelliJIDEA.Ultimate"
-				},
-				{
-					"PackageIdentifier" : "kmeleonbrowser.K-Meleon"
-				},
-				{
-					"PackageIdentifier" : "KDE.kdevelop"
-				},
-				{
-					"PackageIdentifier" : "KDE.KDiff3"
-				},
-				{
-					"PackageIdentifier" : "CodecGuide.K-LiteCodecPack.Full"
-				},
-				{
-					"PackageIdentifier" : "kalilinux.kalilinux"
+					"PackageIdentifier" : "Helix.Helix"
 				},
 				{
 					"PackageIdentifier" : "KDE.Krita"
-				},
-				{
-					"PackageIdentifier" : "KDE.LabPlot"
-				},
-				{
-					"PackageIdentifier" : "TwibrightLabs.Links"
-				},
-				{
-					"PackageIdentifier" : "CondaForge.Mambaforge"
 				},
 				{
 					"PackageIdentifier" : "Maxthon.Maxthon"
@@ -109,7 +46,19 @@
 					"PackageIdentifier" : "Microsoft.EdgeWebView2Runtime"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.NuGet"
+					"PackageIdentifier" : "Microsoft.Sysinternals.Desktops"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.Sysinternals.ProcessExplorer"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.Sysinternals.ProcessMonitor"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.Sysinternals.RDCMan"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.Sysinternals.TCPView"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.WingetCreate"
@@ -124,55 +73,22 @@
 					"PackageIdentifier" : "Notepad++.Notepad++"
 				},
 				{
-					"PackageIdentifier" : "dail8859.NotepadNext"
-				},
-				{
 					"PackageIdentifier" : "Microsoft.OneDrive"
-				},
-				{
-					"PackageIdentifier" : "Opera.OperaCrypto"
-				},
-				{
-					"PackageIdentifier" : "Opera.OperaGX"
-				},
-				{
-					"PackageIdentifier" : "JanFiala.PSpad"
-				},
-				{
-					"PackageIdentifier" : "JetBrains.PyCharm.Professional"
-				},
-				{
-					"PackageIdentifier" : "KDE.rkward"
-				},
-				{
-					"PackageIdentifier" : "RoyQu.RedPanda-C++"
 				},
 				{
 					"PackageIdentifier" : "SMPlayer.SMPlayer"
 				},
 				{
-					"PackageIdentifier" : "Mozilla.SeaMonkey"
-				},
-				{
-					"PackageIdentifier" : "SimonSteele.ProgrammersNotepad"
-				},
-				{
 					"PackageIdentifier" : "SublimeHQ.SublimeText.4"
-				},
-				{
-					"PackageIdentifier" : "jsimlo.tednotepad"
 				},
 				{
 					"PackageIdentifier" : "Lenovo.SystemUpdate"
 				},
 				{
+					"PackageIdentifier" : "Microsoft.Teams"
+				},
+				{
 					"PackageIdentifier" : "JetBrains.Toolbox"
-				},
-				{
-					"PackageIdentifier" : "KDE.umbrello"
-				},
-				{
-					"PackageIdentifier" : "Unity.Unity.2020"
 				},
 				{
 					"PackageIdentifier" : "Unity.UnityHub"
@@ -184,28 +100,7 @@
 					"PackageIdentifier" : "VivaldiTechnologies.Vivaldi"
 				},
 				{
-					"PackageIdentifier" : "WinMerge.WinMerge"
-				},
-				{
-					"PackageIdentifier" : "Yandex.Browser"
-				},
-				{
-					"PackageIdentifier" : "Xidicone.ZeusIDE"
-				},
-				{
-					"PackageIdentifier" : "GDevelop.GDevelop"
-				},
-				{
-					"PackageIdentifier" : "dandavison.delta"
-				},
-				{
-					"PackageIdentifier" : "SlashedIo.Inssist"
-				},
-				{
-					"PackageIdentifier" : "Min.Min"
-				},
-				{
-					"PackageIdentifier" : "rsteube.Carapace"
+					"PackageIdentifier" : "Zoom.Zoom"
 				},
 				{
 					"PackageIdentifier" : "yt-dlp.yt-dlp"
@@ -214,112 +109,61 @@
 					"PackageIdentifier" : "Microsoft.VCRedist.2013.x64"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.PowerShell"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2010.x64"
-				},
-				{
-					"PackageIdentifier" : "WikidPad.WikidPad"
-				},
-				{
-					"PackageIdentifier" : "Lapce.Lapce"
-				},
-				{
-					"PackageIdentifier" : "voidtools.Everything"
-				},
-				{
-					"PackageIdentifier" : "Rawns.Reddit-Wallpaper-Changer"
-				},
-				{
-					"PackageIdentifier" : "EclipseAdoptium.Temurin.20.JDK"
-				},
-				{
-					"PackageIdentifier" : "CloudMosaInc.PuffinSecureBrowser"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x86"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.CLRTypesSQLServer.2019"
-				},
-				{
-					"PackageIdentifier" : "JetBrains.ReSharper"
-				},
-				{
-					"PackageIdentifier" : "MSYS2.MSYS2"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.OpenJDK.17"
-				},
-				{
-					"PackageIdentifier" : "QTextPad.QTextPad"
-				},
-				{
 					"PackageIdentifier" : "OpenJS.NodeJS"
-				},
-				{
-					"PackageIdentifier" : "Volta.Volta"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.DotNet.SDK.7"
 				},
 				{
-					"PackageIdentifier" : "Neovim.Neovim"
+					"PackageIdentifier" : "EpicGames.EpicGamesLauncher"
 				},
 				{
-					"PackageIdentifier" : "Nushell.Nushell"
+					"PackageIdentifier" : "Microsoft.PowerShell"
 				},
 				{
-					"PackageIdentifier" : "Neovide.Neovide"
+					"PackageIdentifier" : "Microsoft.VFSforGit"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.WebDeploy"
+					"PackageIdentifier" : "Microsoft.CLRTypesSQLServer.2019"
 				},
 				{
-					"PackageIdentifier" : "StefansTools.BowPad"
+					"PackageIdentifier" : "GLab.GLab"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.OpenJDK.17"
 				},
 				{
 					"PackageIdentifier" : "BlenderFoundation.Blender"
 				},
 				{
-					"PackageIdentifier" : "wez.wezterm"
+					"PackageIdentifier" : "Neovide.Neovide"
 				},
 				{
-					"PackageIdentifier" : "EpicGames.EpicGamesLauncher"
+					"PackageIdentifier" : "VideoLAN.VLC"
 				},
 				{
-					"PackageIdentifier" : "Alacritty.Alacritty"
+					"PackageIdentifier" : "Microsoft.WebDeploy"
 				},
 				{
 					"PackageIdentifier" : "Google.Chrome"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.OpenJDK.11"
+					"PackageIdentifier" : "Nushell.Nushell"
 				},
 				{
-					"PackageIdentifier" : "Scintilla.SciTE"
-				},
-				{
-					"PackageIdentifier" : "KDE.Marble"
+					"PackageIdentifier" : "GitHub.cli"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.VisualStudioCode"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2010.x86"
+					"PackageIdentifier" : "Microsoft.WindowsSDK.10.0.22621"
 				},
 				{
-					"PackageIdentifier" : "Emurasoft.EmEditor"
+					"PackageIdentifier" : "Microsoft.WindowsWDK"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.WindowsSDK"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x86"
-				},
-				{
-					"PackageIdentifier" : "JetBrains.ReSharper"
+					"PackageIdentifier" : "Microsoft.WindowsSDK.10.0.22000"
 				}
 			],
 			"SourceDetails" : 
@@ -331,5 +175,5 @@
 			}
 		}
 	],
-	"WinGetVersion" : "1.4.10173"
+	"WinGetVersion" : "1.5.1572"
 }

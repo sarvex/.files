@@ -1,5 +1,7 @@
 -- Mapping data with 'desc' stored directly by vim.keymap.set().
---
+
+local utils = require "user.utils"
+local astro_utils = require "astronvim.utils"
 -- Please use this mappings table to set keyboard mapping since this is the
 -- lower level configuration and more robust one. (which-key will
 -- automatically pick-up stored data by this setting.)
@@ -11,8 +13,10 @@ return {
     ['<leader>bn'] = { '<cmd>tabnew<cr>', desc = 'New tab' },
     ['<leader>bD'] = {
       function()
-        require('astronvim.utils.status').heirline.buffer_picker(function(bufnr) require('astronvim.utils.buffer').close(
-          bufnr) end)
+        require('astronvim.utils.status').heirline.buffer_picker(function(bufnr)
+          require('astronvim.utils.buffer').close(
+            bufnr)
+        end)
       end,
       desc = 'Pick to close',
     },
@@ -20,7 +24,20 @@ return {
     -- this is useful for naming menus
     ['<leader>b'] = { name = 'Buffers' },
     -- quick save
-    -- ['<C-s>'] = { ':w!<cr>', desc = 'Save File' },  -- change description but the same command
+    ['<C-s>'] = { ':w!<cr>', desc = 'Save File' }, -- change description but the same command
+
+    -- better buffer navigation
+    ["]b"] = false,
+    ["[b"] = false,
+    ["<S-l>"] = {
+      function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
+      desc = "Next buffer",
+    },
+    ["<S-h>"] = {
+      function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
+      desc = "Previous buffer",
+    },
+
     -- better search
     n = { utils.better_search 'n', desc = 'Next search' },
     N = { utils.better_search 'N', desc = 'Previous search' },

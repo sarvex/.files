@@ -190,12 +190,10 @@ terminal:
       - '#f6f5fb'
   ligatures: true
   customColorSchemes: []
-  minimumContrastRatio: 8
-  autoOpen: true
+  minimumContrastRatio: 7
   font: Hasklug Nerd Font
   profile: local:powershell-core
   showTabProfileIcon: true
-  fontSize: 15
   fontWeight: 350
   fontWeightBold: 650
 ssh:

@@ -1,7 +1,6 @@
 {
     "config": {
-        "aria2-warning-enabled": false,
-        "virustotal_api_key": "6b266619f12c5531eb75139252516285bb4ffad669d5864b95b39dcb1b4dfca3",
+        "aria2-enabled": false,
         "scoop_branch": "master",
         "scoop_repo": "https://github.com/ScoopInstaller/Scoop"
     },
@@ -9,969 +8,915 @@
         {
             "Name": "extras",
             "Source": "https://github.com/ScoopInstaller/Extras",
-            "Updated": "2023-05-07T09:55:15+05:30",
-            "Manifests": 1863
-        },
-        {
-            "Name": "games",
-            "Source": "https://github.com/Calinou/scoop-games",
-            "Updated": "2023-05-07T09:56:58+05:30",
-            "Manifests": 272
+            "Updated": "2023-07-10T06:04:45+05:30",
+            "Manifests": 1881
         },
         {
             "Name": "main",
-            "Source": "https://github.com/ScoopInstaller/Main",
-            "Updated": "2023-05-07T09:56:46+05:30",
-            "Manifests": 1197
+            "Source": "https://github.com/ScoopInstaller/Main.git",
+            "Updated": "2023-07-10T06:04:05+05:30",
+            "Manifests": 1207
         },
         {
-            "Name": "nirsoft",
-            "Source": "https://github.com/kodybrown/scoop-nirsoft",
-            "Updated": "2022-06-21T21:30:55+05:30",
-            "Manifests": 271
-        },
-        {
-            "Name": "nonportable",
-            "Source": "https://github.com/ScoopInstaller/Nonportable",
-            "Updated": "2023-05-05T22:06:53+05:30",
-            "Manifests": 127
+            "Name": "nerd-fonts",
+            "Source": "https://github.com/matthewjberger/scoop-nerd-fonts",
+            "Updated": "2023-06-29T18:59:56+05:30",
+            "Manifests": 279
         },
         {
             "Name": "sarvex",
             "Source": "https://github.com/sarvex/scoop",
-            "Updated": "2023-05-07T11:55:54+05:30",
-            "Manifests": 2391
+            "Updated": "2023-07-10T06:17:45+05:30",
+            "Manifests": 2118
         },
         {
             "Name": "sysinternals",
             "Source": "https://github.com/niheaven/scoop-sysinternals",
-            "Updated": "2023-04-18T17:32:21+05:30",
+            "Updated": "2023-06-29T21:45:27+05:30",
             "Manifests": 75
         },
         {
             "Name": "versions",
             "Source": "https://github.com/ScoopInstaller/Versions",
-            "Updated": "2023-05-07T10:01:54+05:30",
-            "Manifests": 424
+            "Updated": "2023-07-10T07:45:51+05:30",
+            "Manifests": 425
         }
     ],
     "apps": [
         {
             "Info": "",
-            "Updated": "2023-05-06T22:16:19.6829708+05:30",
-            "Version": "3.0.0",
-            "Name": "3270-NF",
-            "Source": "sarvex"
-        },
-        {
-            "Info": "",
-            "Updated": "2023-04-30T00:27:14.5877837+05:30",
-            "Version": "22.01",
+            "Source": "main",
             "Name": "7zip",
-            "Source": "main"
+            "Updated": "2023-06-27T10:33:34.640124+05:30",
+            "Version": "23.01"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:31:06.7266665+05:30",
-            "Version": "3.0.0",
-            "Name": "Agave-NF",
-            "Source": "sarvex"
+            "Source": "sarvex",
+            "Name": "Agave-nerd-font",
+            "Updated": "2023-06-06T16:56:45.6889236+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:31:10.0133902+05:30",
-            "Version": "3.0.0",
-            "Name": "AnonymousPro-NF",
-            "Source": "sarvex"
+            "Source": "sarvex",
+            "Name": "AnonymousPro-nerd-font",
+            "Updated": "2023-06-06T16:56:47.9046699+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-07T13:28:20.5753602+05:30",
-            "Version": "2.4.57",
-            "Name": "apache",
-            "Source": "main"
-        },
-        {
-            "Info": "",
-            "Updated": "2023-04-30T00:26:06.6677663+05:30",
-            "Version": "1.36.0-1",
+            "Source": "main",
             "Name": "aria2",
-            "Source": "main"
+            "Updated": "2023-05-31T13:37:20.1154611+05:30",
+            "Version": "1.36.0-1"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T22:16:38.2490776+05:30",
-            "Version": "3.0.0",
-            "Name": "Arimo-NF",
-            "Source": "sarvex"
+            "Source": "sarvex",
+            "Name": "AurulentSansMono-nerd-font",
+            "Updated": "2023-06-06T16:56:49.4909822+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-05T08:10:39.1138133+05:30",
-            "Version": "0.60.8-2",
-            "Name": "aspell",
-            "Source": "main"
+            "Source": "main",
+            "Name": "bat",
+            "Updated": "2023-06-22T09:04:29.5740718+05:30",
+            "Version": "0.23.0"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:31:12.1027882+05:30",
-            "Version": "3.0.0",
-            "Name": "AurulentSansMono-NF",
-            "Source": "sarvex"
-        },
-        {
-            "Info": "",
-            "Updated": "2023-05-02T10:36:31.241994+05:30",
-            "Version": "6.1.2",
+            "Source": "main",
             "Name": "bazel",
-            "Source": "main"
+            "Updated": "2023-06-03T14:03:36.5689709+05:30",
+            "Version": "6.2.1"
         },
         {
             "Info": "",
-            "Updated": "2023-05-05T06:58:47.8875543+05:30",
-            "Version": "6.1.2",
-            "Name": "bazel-buildtools",
-            "Source": "main"
+            "Source": "sarvex",
+            "Name": "BitstreamVeraSansMono-nerd-font",
+            "Updated": "2023-06-06T16:56:51.5456304+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T22:16:55.1502794+05:30",
-            "Version": "3.0.0",
-            "Name": "BigBlueTerminal-NF",
-            "Source": "sarvex"
+            "Source": "sarvex",
+            "Name": "bob",
+            "Updated": "2023-06-26T10:26:36.1837513+05:30",
+            "Version": "2.4.1"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:31:14.4959553+05:30",
-            "Version": "3.0.0",
-            "Name": "BitstreamVeraSansMono-NF",
-            "Source": "sarvex"
+            "Source": "main",
+            "Name": "bottom",
+            "Updated": "2023-06-29T12:08:51.6814142+05:30",
+            "Version": "0.9.3"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T09:40:22.4984668+05:30",
-            "Version": "4882-g6e0a6b7e5",
-            "Name": "busybox",
-            "Source": "main"
+            "Source": "extras",
+            "Name": "carapace-bin",
+            "Updated": "2023-07-07T09:21:45.5170919+05:30",
+            "Version": "0.25.1"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T11:29:58.5226612+05:30",
-            "Version": "2111.01",
+            "Source": "sarvex",
             "Name": "CascadiaCode",
-            "Source": "sarvex"
+            "Updated": "2023-05-31T13:55:43.0638749+05:30",
+            "Version": "2111.01"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:31:20.0207851+05:30",
-            "Version": "3.0.0",
-            "Name": "CascadiaCode-NF",
-            "Source": "sarvex"
-        },
-        {
-            "Info": "Install failed",
-            "Updated": "2023-05-05T08:54:46.8151245+05:30",
-            "Version": null,
-            "Name": "cherrytree",
-            "Source": null
+            "Source": "sarvex",
+            "Name": "CascadiaCode-nerd-font",
+            "Updated": "2023-06-06T16:56:55.4570847+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-02T17:06:51.3924274+05:30",
-            "Version": "16.0.2",
+            "Source": "sarvex",
+            "Name": "chez-scheme",
+            "Updated": "2023-06-01T09:08:55.0824299+05:30",
+            "Version": "9.5.8"
+        },
+        {
+            "Info": "",
+            "Source": "main",
             "Name": "clangd",
-            "Source": "main"
+            "Updated": "2023-05-31T13:37:39.7999639+05:30",
+            "Version": "16.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-04-30T09:54:00.4930477+05:30",
-            "Version": "3.26.3",
+            "Source": "sarvex",
+            "Name": "clj-deps",
+            "Updated": "2023-06-28T16:20:48.2125936+05:30",
+            "Version": "1.11.1.1347"
+        },
+        {
+            "Info": "",
+            "Source": "sarvex",
+            "Name": "clojure-lsp",
+            "Updated": "2023-07-04T08:56:52.4065635+05:30",
+            "Version": "2023.07.01-22.35.41"
+        },
+        {
+            "Info": "",
+            "Source": "main",
             "Name": "cmake",
-            "Source": "main"
+            "Updated": "2023-05-31T13:38:37.6384943+05:30",
+            "Version": "3.26.4"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:31:24.2915571+05:30",
-            "Version": "3.0.0",
-            "Name": "CodeNewRoman-NF",
-            "Source": "sarvex"
+            "Source": "sarvex",
+            "Name": "CodeNewRoman-nerd-font",
+            "Updated": "2023-06-06T16:56:57.7179932+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T21:54:38.4150557+05:30",
-            "Version": "3.0.0",
-            "Name": "ComicShannsMono-NF",
-            "Source": "sarvex"
+            "Source": "main",
+            "Name": "codeql",
+            "Updated": "2023-07-07T20:27:11.4071697+05:30",
+            "Version": "2.13.5"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:31:29.7871995+05:30",
-            "Version": "3.0.0",
-            "Name": "Cousine-NF",
-            "Source": "sarvex"
+            "Source": "main",
+            "Name": "coder",
+            "Updated": "2023-07-07T20:33:53.1070919+05:30",
+            "Version": "0.25.0"
         },
         {
             "Info": "",
-            "Updated": "2023-04-30T00:27:18.5526928+05:30",
-            "Version": "8.0.1_8",
+            "Source": "sarvex",
+            "Name": "ComicShannsMono-nerd-font",
+            "Updated": "2023-06-06T16:56:59.630246+05:30",
+            "Version": "3.0.2"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "composer",
+            "Updated": "2023-06-27T15:02:11.6226048+05:30",
+            "Version": "2.5.8"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "cormanlisp",
+            "Updated": "2023-06-01T09:09:40.770437+05:30",
+            "Version": "3.1.2b"
+        },
+        {
+            "Info": "",
+            "Source": "sarvex",
+            "Name": "Cousine-nerd-font",
+            "Updated": "2023-06-06T16:57:01.7258042+05:30",
+            "Version": "3.0.2"
+        },
+        {
+            "Info": "",
+            "Source": "main",
             "Name": "curl",
-            "Source": "main"
+            "Updated": "2023-06-08T09:26:36.1607558+05:30",
+            "Version": "8.1.2_3"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T22:17:22.2325908+05:30",
-            "Version": "3.0.0",
-            "Name": "DaddyTimeMono-NF",
-            "Source": "sarvex"
-        },
-        {
-            "Info": "",
-            "Updated": "2023-04-30T00:34:15.1713199+05:30",
-            "Version": "3.11.2",
+            "Source": "main",
             "Name": "dark",
-            "Source": "main"
+            "Updated": "2023-05-31T13:43:29.9213748+05:30",
+            "Version": "3.11.2"
         },
         {
             "Info": "",
-            "Updated": "2023-04-30T09:58:40.9802711+05:30",
-            "Version": "1.24.2",
-            "Name": "dartium-content-shell",
-            "Source": "extras"
+            "Source": "sarvex",
+            "Name": "DejaVuSansMono-nerd-font",
+            "Updated": "2023-06-06T11:16:23.008767+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T07:39:08.2434924+05:30",
-            "Version": "1.4.5",
-            "Name": "defold",
-            "Source": "sarvex"
-        },
-        {
-            "Info": "",
-            "Updated": "2023-05-06T17:31:32.4429171+05:30",
-            "Version": "3.0.0",
-            "Name": "DejaVuSansMono-NF",
-            "Source": "sarvex"
-        },
-        {
-            "Info": "",
-            "Updated": "2023-05-06T11:19:54.706216+05:30",
-            "Version": "2111.01.2",
-            "Name": "Delugia-Mono-Nerd-Font-Complete",
-            "Source": "sarvex"
-        },
-        {
-            "Info": "",
-            "Updated": "2023-05-06T11:19:55.4560954+05:30",
-            "Version": "2111.01.2",
+            "Source": "nerd-fonts",
             "Name": "Delugia-Nerd-Font-Complete",
-            "Source": "sarvex"
+            "Updated": "2023-06-13T05:28:59.814441+05:30",
+            "Version": "2111.01.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T11:19:22.5343783+05:30",
-            "Version": "2.103.1",
-            "Name": "dmd",
-            "Source": "main"
+            "Source": "main",
+            "Name": "deno",
+            "Updated": "2023-07-07T13:44:14.0012074+05:30",
+            "Version": "1.35.0"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:31:34.2333765+05:30",
-            "Version": "3.0.0",
-            "Name": "DroidSansMono-NF",
-            "Source": "sarvex"
+            "Source": "sarvex",
+            "Name": "DroidSansMono-nerd-font",
+            "Updated": "2023-06-06T12:39:36.3251246+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-04-30T12:54:25.0053437+05:30",
-            "Version": "0.19.2",
-            "Name": "elvish",
-            "Source": "main"
+            "Source": "main",
+            "Name": "dust",
+            "Updated": "2023-06-22T09:04:30.9197224+05:30",
+            "Version": "0.8.6"
         },
         {
             "Info": "",
-            "Updated": "2023-04-30T09:55:02.258678+05:30",
-            "Version": "28.2",
+            "Source": "main",
+            "Name": "edgedb",
+            "Updated": "2023-07-07T13:39:27.8045526+05:30",
+            "Version": "3.4.0+160d07d"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "elixir",
+            "Updated": "2023-07-02T10:34:43.0815596+05:30",
+            "Version": "1.15.2"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "elm",
+            "Updated": "2023-06-01T09:03:48.7027541+05:30",
+            "Version": "0.19.1"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
             "Name": "emacs",
-            "Source": "extras"
+            "Updated": "2023-05-31T13:39:29.8349447+05:30",
+            "Version": "28.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T23:40:41.6130707+05:30",
-            "Version": "3.1.37",
-            "Name": "emscripten",
-            "Source": "main"
+            "Source": "main",
+            "Name": "erlang",
+            "Updated": "2023-06-30T08:02:35.2589373+05:30",
+            "Version": "26.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:31:37.2431542+05:30",
-            "Version": "3.0.0",
-            "Name": "FantasqueSansMono-NF",
-            "Source": "sarvex"
+            "Source": "sarvex",
+            "Name": "FantasqueSansMono-nerd-font",
+            "Updated": "2023-06-06T12:39:40.8383414+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-04-30T00:27:22.2200093+05:30",
-            "Version": "8.7.0",
+            "Source": "main",
             "Name": "fd",
-            "Source": "main"
+            "Updated": "2023-05-31T13:39:33.0520563+05:30",
+            "Version": "8.7.0"
         },
         {
             "Info": "",
-            "Updated": "2023-05-02T18:28:40.3440212+05:30",
-            "Version": "6.0",
-            "Name": "ffmpeg",
-            "Source": "main"
+            "Source": "sarvex",
+            "Name": "FiraCode-nerd-font",
+            "Updated": "2023-06-06T12:39:44.8141449+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:31:40.9623832+05:30",
-            "Version": "3.0.0",
-            "Name": "FiraCode-NF",
-            "Source": "sarvex"
+            "Source": "main",
+            "Name": "firebase",
+            "Updated": "2023-07-07T09:55:57.6310637+05:30",
+            "Version": "12.4.3"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T22:17:40.0984286+05:30",
-            "Version": "3.0.0",
-            "Name": "FiraMono-NF",
-            "Source": "sarvex"
-        },
-        {
-            "Info": "",
-            "Updated": "2023-05-01T08:19:30.4442467+05:30",
-            "Version": "0.40.0",
+            "Source": "main",
             "Name": "fzf",
-            "Source": "main"
+            "Updated": "2023-06-16T08:30:33.1062129+05:30",
+            "Version": "0.42.0"
         },
         {
             "Info": "",
-            "Updated": "2023-04-30T00:40:25.4054406+05:30",
-            "Version": "2.40.1.windows.1",
-            "Name": "git",
-            "Source": "main"
+            "Source": "main",
+            "Name": "git-town",
+            "Updated": "2023-06-02T17:19:27.5377967+05:30",
+            "Version": "9.0.0"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T14:48:39.2296689+05:30",
-            "Version": "0.11.0-dev.2991",
-            "Name": "giz-dev",
-            "Source": "sarvex"
-        },
-        {
-            "Info": "",
-            "Updated": "2023-05-04T13:22:43.0240679+05:30",
-            "Version": "1.20.4",
+            "Source": "main",
             "Name": "go",
-            "Source": "main"
+            "Updated": "2023-06-07T07:15:08.9504458+05:30",
+            "Version": "1.20.5"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:31:43.8948252+05:30",
-            "Version": "3.0.0",
-            "Name": "Go-Mono-NF",
-            "Source": "sarvex"
+            "Source": "sarvex",
+            "Name": "Go-Mono-nerd-font",
+            "Updated": "2023-06-06T12:39:47.6357536+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-04-30T00:44:32.1248608+05:30",
-            "Version": "4.0.2",
-            "Name": "godot",
-            "Source": "extras"
+            "Source": "sarvex",
+            "Name": "Gohu-nerd-font",
+            "Updated": "2023-06-06T12:39:50.8490708+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-04-30T00:44:37.1226385+05:30",
-            "Version": "0.2.1",
-            "Name": "godot-manager",
-            "Source": "extras"
+            "Source": "versions",
+            "Name": "goneovim-nightly",
+            "Updated": "2023-07-09T10:32:37.9746932+05:30",
+            "Version": "20230709"
         },
         {
             "Info": "",
-            "Updated": "2023-04-30T00:44:45.6319019+05:30",
-            "Version": "4.0.2",
-            "Name": "godot-mono",
-            "Source": "extras"
-        },
-        {
-            "Info": "",
-            "Updated": "2023-05-06T17:31:47.0015753+05:30",
-            "Version": "3.0.0",
-            "Name": "Gohu-NF",
-            "Source": "sarvex"
-        },
-        {
-            "Info": "",
-            "Updated": "2023-04-30T00:28:57.0975525+05:30",
-            "Version": "3.7",
+            "Source": "main",
             "Name": "grep",
-            "Source": "main"
+            "Updated": "2023-05-31T13:40:41.401938+05:30",
+            "Version": "3.8"
         },
         {
             "Info": "",
-            "Updated": "2023-05-04T13:22:56.8915604+05:30",
-            "Version": "2.0.9",
-            "Name": "gsudo",
-            "Source": "main"
+            "Source": "sarvex",
+            "Name": "Hack-nerd-font",
+            "Updated": "2023-06-06T11:16:27.2988402+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:31:49.8857555+05:30",
-            "Version": "3.0.0",
-            "Name": "Hack-NF",
-            "Source": "sarvex"
+            "Source": "main",
+            "Name": "haskell",
+            "Updated": "2023-05-31T15:57:32.9336971+05:30",
+            "Version": "9.4.1"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T18:34:14.8538263+05:30",
-            "Version": "3.0.0",
-            "Name": "Hasklig-NF",
-            "Source": "sarvex"
+            "Source": "sarvex",
+            "Name": "Hasklig-nerd-font",
+            "Updated": "2023-06-06T11:16:33.8751574+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T22:18:07.4228328+05:30",
-            "Version": "3.0.0",
-            "Name": "HeavyData-NF",
-            "Source": "sarvex"
+            "Source": "main",
+            "Name": "hugo-extended",
+            "Updated": "2023-07-09T10:32:42.7186198+05:30",
+            "Version": "0.115.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T22:18:21.5954188+05:30",
-            "Version": "3.0.0",
-            "Name": "Hermit-NF",
-            "Source": "sarvex"
+            "Source": "sarvex",
+            "Name": "iA-Writer-nerd-font",
+            "Updated": "2023-06-06T11:16:44.7459632+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:32:03.227834+05:30",
-            "Version": "3.0.0",
-            "Name": "iA-Writer-NF",
-            "Source": "sarvex"
+            "Source": "sarvex",
+            "Name": "IBMPlexMono-nerd-font",
+            "Updated": "2023-06-06T11:16:49.5971208+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:32:10.7599765+05:30",
-            "Version": "3.0.0",
-            "Name": "IBMPlexMono-NF",
-            "Source": "sarvex"
+            "Source": "sarvex",
+            "Name": "Inconsolata-nerd-font",
+            "Updated": "2023-06-06T11:16:51.9516037+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:32:12.8213261+05:30",
-            "Version": "3.0.0",
-            "Name": "Inconsolata-NF",
-            "Source": "sarvex"
+            "Source": "sarvex",
+            "Name": "InconsolataGo-nerd-font",
+            "Updated": "2023-06-06T11:16:54.6061241+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:32:15.5594293+05:30",
-            "Version": "3.0.0",
-            "Name": "InconsolataGo-NF",
-            "Source": "sarvex"
-        },
-        {
-            "Info": "",
-            "Updated": "2023-05-06T22:18:45.0366552+05:30",
-            "Version": "3.0.0",
-            "Name": "InconsolataLGC-NF",
-            "Source": "sarvex"
-        },
-        {
-            "Info": "",
-            "Updated": "2023-05-04T21:31:16.560064+05:30",
-            "Version": "0.50",
+            "Source": "main",
             "Name": "innounp",
-            "Source": "main"
+            "Updated": "2023-06-08T17:06:34.8884706+05:30",
+            "Version": "0.50"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:32:38.8138422+05:30",
-            "Version": "3.0.0",
-            "Name": "Iosevka-NF",
-            "Source": "sarvex"
+            "Source": "sarvex",
+            "Name": "Iosevka-nerd-font",
+            "Updated": "2023-06-06T11:17:11.4274652+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:33:12.3617203+05:30",
-            "Version": "3.0.0",
-            "Name": "IosevkaTerm-NF",
-            "Source": "sarvex"
+            "Source": "sarvex",
+            "Name": "IosevkaTerm-nerd-font",
+            "Updated": "2023-06-06T11:17:29.2613787+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-05T21:40:10.3683218+05:30",
-            "Version": "0.20.4083",
-            "Name": "jackett",
-            "Source": "extras"
+            "Source": "sarvex",
+            "Name": "JetBrainsMono-nerd-font",
+            "Updated": "2023-06-06T11:17:38.4118243+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:33:31.4199508+05:30",
-            "Version": "3.0.0",
-            "Name": "JetBrainsMono-NF",
-            "Source": "sarvex"
-        },
-        {
-            "Info": "",
-            "Updated": "2023-05-06T09:39:50.3871204+05:30",
-            "Version": "0.7.6",
-            "Name": "jid",
-            "Source": "main"
-        },
-        {
-            "Info": "",
-            "Updated": "2023-05-06T09:39:44.1417782+05:30",
-            "Version": "1.6",
+            "Source": "main",
             "Name": "jq",
-            "Source": "main"
+            "Updated": "2023-06-06T12:56:57.7465669+05:30",
+            "Version": "1.6"
         },
         {
             "Info": "",
-            "Updated": "2023-04-30T00:29:19.8838659+05:30",
-            "Version": "1.8.5",
+            "Source": "main",
             "Name": "julia",
-            "Source": "main"
+            "Updated": "2023-07-07T10:17:23.6440029+05:30",
+            "Version": "1.9.2"
         },
         {
             "Info": "",
-            "Updated": "2023-04-30T10:02:41.8450505+05:30",
-            "Version": "0.5.2",
-            "Name": "kotlin-interactive-shell",
-            "Source": "extras"
+            "Source": "main",
+            "Name": "kotlin",
+            "Updated": "2023-07-07T10:23:43.4391938+05:30",
+            "Version": "1.9.0"
         },
         {
             "Info": "",
-            "Updated": "2023-05-04T13:25:48.0603126+05:30",
-            "Version": "0.38.2",
+            "Source": "extras",
             "Name": "lazygit",
-            "Source": "extras"
+            "Updated": "2023-06-29T12:09:13.8680232+05:30",
+            "Version": "0.38.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T22:18:58.3130226+05:30",
-            "Version": "3.0.0",
-            "Name": "Lekton-NF",
-            "Source": "sarvex"
+            "Source": "main",
+            "Name": "leiningen",
+            "Updated": "2023-06-28T16:25:49.3088918+05:30",
+            "Version": "2.10.0"
         },
         {
             "Info": "",
-            "Updated": "2023-05-04T13:25:51.516679+05:30",
-            "Version": "633",
+            "Source": "main",
             "Name": "less",
-            "Source": "main"
+            "Updated": "2023-05-31T13:41:06.8523905+05:30",
+            "Version": "633"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:33:46.1039597+05:30",
-            "Version": "3.0.0",
-            "Name": "LiberationMono-NF",
-            "Source": "sarvex"
+            "Source": "sarvex",
+            "Name": "LiberationMono-nerd-font",
+            "Updated": "2023-06-06T11:17:42.5699531+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:33:52.6243451+05:30",
-            "Version": "3.0.0",
-            "Name": "Lilex-NF",
-            "Source": "sarvex"
+            "Source": "sarvex",
+            "Name": "Lilex-nerd-font",
+            "Updated": "2023-06-06T11:17:45.1288805+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-04T17:00:36.7227259+05:30",
-            "Version": "16.0.3",
+            "Source": "main",
             "Name": "llvm",
-            "Source": "main"
+            "Updated": "2023-06-14T21:12:53.4321927+05:30",
+            "Version": "16.0.6"
         },
         {
             "Info": "",
-            "Updated": "2023-04-30T00:44:49.1149358+05:30",
-            "Version": "11.4",
+            "Source": "extras",
             "Name": "love",
-            "Source": "extras"
+            "Updated": "2023-05-31T15:59:02.3933519+05:30",
+            "Version": "11.4"
         },
         {
             "Info": "",
-            "Updated": "2023-04-30T00:44:56.1442621+05:30",
-            "Version": "5.4.2",
+            "Source": "main",
             "Name": "lua",
-            "Source": "main"
+            "Updated": "2023-06-30T07:10:26.2927617+05:30",
+            "Version": "5.4.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-05T12:59:57.3728073+05:30",
-            "Version": "1.1.0",
+            "Source": "main",
+            "Name": "lua-language-server",
+            "Updated": "2023-07-07T13:46:44.1549806+05:30",
+            "Version": "3.6.23"
+        },
+        {
+            "Info": "",
+            "Source": "versions",
+            "Name": "lua51",
+            "Updated": "2023-06-30T07:09:42.0662573+05:30",
+            "Version": "5.1.5"
+        },
+        {
+            "Info": "",
+            "Source": "main",
             "Name": "luacheck",
-            "Source": "main"
+            "Updated": "2023-07-02T21:50:13.6204995+05:30",
+            "Version": "1.1.1"
         },
         {
             "Info": "",
-            "Updated": "2023-05-05T13:00:02.4809825+05:30",
-            "Version": "2.1.0.beta3.r475.g1c279127-1",
-            "Name": "luajit",
-            "Source": "main"
-        },
-        {
-            "Info": "",
-            "Updated": "2023-05-05T13:00:05.3625395+05:30",
-            "Version": "3.9.2",
+            "Source": "main",
             "Name": "luarocks",
-            "Source": "main"
+            "Updated": "2023-06-30T07:10:28.060013+05:30",
+            "Version": "3.9.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T07:37:34.7624704+05:30",
-            "Version": "0.575",
-            "Name": "luau",
-            "Source": "main"
-        },
-        {
-            "Info": "",
-            "Updated": "2023-04-30T09:55:04.8848752+05:30",
-            "Version": "4.4.1",
+            "Source": "main",
             "Name": "make",
-            "Source": "main"
+            "Updated": "2023-05-31T13:42:02.5884397+05:30",
+            "Version": "4.4.1"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:34:06.6717699+05:30",
-            "Version": "3.0.0",
-            "Name": "Meslo-NF",
-            "Source": "sarvex"
+            "Source": "main",
+            "Name": "marksman",
+            "Updated": "2023-07-02T11:56:26.9788106+05:30",
+            "Version": "2023-07-01"
         },
         {
             "Info": "",
-            "Updated": "2023-05-01T08:50:31.2569981+05:30",
-            "Version": "12.2.0-16.0.0-10.0.0-r5",
+            "Source": "extras",
+            "Name": "masscode",
+            "Updated": "2023-07-07T20:39:00.8716576+05:30",
+            "Version": "3.7.0"
+        },
+        {
+            "Info": "",
+            "Source": "sarvex",
+            "Name": "Meslo-nerd-font",
+            "Updated": "2023-06-06T11:17:55.1653592+05:30",
+            "Version": "3.0.2"
+        },
+        {
+            "Info": "",
+            "Source": "main",
             "Name": "mingw-winlibs",
-            "Source": "main"
+            "Updated": "2023-06-05T11:19:59.4817273+05:30",
+            "Version": "13.1.0-16.0.5-11.0.0-r5"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T22:15:02.3321172+05:30",
-            "Version": "3.0.0",
-            "Name": "Monofur-NF",
-            "Source": "sarvex"
+            "Source": "sarvex",
+            "Name": "Monofur-nerd-font",
+            "Updated": "2023-06-06T11:17:57.74018+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T22:19:16.1749567+05:30",
-            "Version": "3.0.0",
-            "Name": "Monoid-NF",
-            "Source": "sarvex"
+            "Source": "sarvex",
+            "Name": "monoid-nerd-font",
+            "Updated": "2023-06-14T11:27:46.2772805+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T22:12:51.0557845+05:30",
-            "Version": "3.0.0",
-            "Name": "Mononoki-NF",
-            "Source": "sarvex"
+            "Source": "sarvex",
+            "Name": "Mononoki-nerd-font",
+            "Updated": "2023-06-06T11:18:00.3621383+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:34:29.4256331+05:30",
-            "Version": "3.0.0",
-            "Name": "MPlus-NF",
-            "Source": "sarvex"
+            "Source": "main",
+            "Name": "mprocs",
+            "Updated": "2023-06-22T09:04:44.5737703+05:30",
+            "Version": "0.6.4"
         },
         {
             "Info": "",
-            "Updated": "2023-04-30T14:10:58.0422293+05:30",
-            "Version": "2023-03-18",
-            "Name": "msys2",
-            "Source": "main"
+            "Source": "sarvex",
+            "Name": "neovim-nightly",
+            "Updated": "2023-06-25T07:06:40.5159147+05:30",
+            "Version": "0.10.0-dev-569-gfa0a25dcb"
         },
         {
             "Info": "",
-            "Updated": "2023-05-01T08:50:57.5246354+05:30",
-            "Version": "1.6.12",
+            "Source": "main",
             "Name": "nim",
-            "Source": "main"
+            "Updated": "2023-06-28T09:56:00.704075+05:30",
+            "Version": "1.6.14"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:35:18.0813275+05:30",
-            "Version": "3.0.0",
-            "Name": "Noto-NF",
-            "Source": "sarvex"
+            "Source": "sarvex",
+            "Name": "Noto-nerd-font",
+            "Updated": "2023-06-06T16:57:27.100106+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-04T17:00:49.997891+05:30",
-            "Version": "2023-05",
-            "Name": "odin-dev",
-            "Source": "versions"
-        },
-        {
-            "Info": "",
-            "Updated": "2023-05-04T21:23:20.6109827+05:30",
-            "Version": "15.4.2",
+            "Source": "main",
             "Name": "oh-my-posh",
-            "Source": "main"
+            "Updated": "2023-07-10T08:11:23.4666415+05:30",
+            "Version": "17.7.0"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:35:26.5810776+05:30",
-            "Version": "3.0.0",
-            "Name": "Overpass-NF",
-            "Source": "sarvex"
+            "Source": "sarvex",
+            "Name": "Overpass-nerd-font",
+            "Updated": "2023-06-06T16:57:38.7734261+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-04-30T00:34:11.711281+05:30",
-            "Version": "5.32.1.1",
+            "Source": "main",
             "Name": "perl",
-            "Source": "main"
+            "Updated": "2023-05-31T13:43:15.2762184+05:30",
+            "Version": "5.32.1.1"
         },
         {
             "Info": "",
-            "Updated": "2023-05-07T13:28:36.2938179+05:30",
-            "Version": "8.2.5",
+            "Source": "main",
             "Name": "php",
-            "Source": "main"
+            "Updated": "2023-07-07T10:28:50.9312316+05:30",
+            "Version": "8.2.8"
         },
         {
             "Info": "",
-            "Updated": "2023-04-30T09:55:07.6697999+05:30",
-            "Version": "5.0.0-beta2",
+            "Source": "main",
             "Name": "premake",
-            "Source": "main"
+            "Updated": "2023-05-31T13:43:27.705778+05:30",
+            "Version": "5.0.0-beta2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:35:29.2188389+05:30",
-            "Version": "3.0.0",
-            "Name": "ProFont-NF",
-            "Source": "sarvex"
+            "Source": "sarvex",
+            "Name": "ProFont-nerd-font",
+            "Updated": "2023-06-06T16:57:40.6425401+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:35:32.0334187+05:30",
-            "Version": "3.0.0",
-            "Name": "ProggyClean-NF",
-            "Source": "sarvex"
+            "Source": "sarvex",
+            "Name": "ProggyClean-nerd-font",
+            "Updated": "2023-06-06T16:57:42.2862434+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-04-30T00:35:16.866626+05:30",
-            "Version": "3.11.3",
+            "Source": "extras",
+            "Name": "psfzf",
+            "Updated": "2023-06-08T17:05:37.0821581+05:30",
+            "Version": "2.5.16"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "pyenv",
+            "Updated": "2023-06-27T15:02:38.8351484+05:30",
+            "Version": "3.1.1"
+        },
+        {
+            "Info": "",
+            "Source": "main",
             "Name": "python",
-            "Source": "main"
+            "Updated": "2023-06-08T09:28:20.6794111+05:30",
+            "Version": "3.11.4"
         },
         {
             "Info": "",
-            "Updated": "2023-05-01T08:52:23.8056376+05:30",
-            "Version": "8.8",
+            "Source": "main",
+            "Name": "r",
+            "Updated": "2023-06-18T05:28:53.1471279+05:30",
+            "Version": "4.3.1"
+        },
+        {
+            "Info": "",
+            "Source": "main",
             "Name": "racket",
-            "Source": "main"
+            "Updated": "2023-06-01T09:08:41.8064595+05:30",
+            "Version": "8.9"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T10:54:27.335138+05:30",
-            "Version": "06may23",
+            "Source": "main",
+            "Name": "rakudo-star",
+            "Updated": "2023-07-02T12:12:58.8463339+05:30",
+            "Version": "2023.06-01"
+        },
+        {
+            "Info": "",
+            "Source": "main",
             "Name": "red",
-            "Source": "main"
+            "Updated": "2023-07-01T08:50:59.3297641+05:30",
+            "Version": "30jun23"
         },
         {
             "Info": "",
-            "Updated": "2023-04-30T09:51:19.5259988+05:30",
-            "Version": "13.0.0",
+            "Source": "main",
             "Name": "ripgrep",
-            "Source": "main"
+            "Updated": "2023-05-31T13:44:12.9185953+05:30",
+            "Version": "13.0.0"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:35:37.9570929+05:30",
-            "Version": "3.0.0",
-            "Name": "RobotoMono-NF",
-            "Source": "sarvex"
+            "Source": "sarvex",
+            "Name": "RobotoMono-nerd-font",
+            "Updated": "2023-06-06T16:57:46.1898456+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-04-30T00:37:05.7166708+05:30",
-            "Version": "3.2.2-1",
+            "Source": "main",
             "Name": "ruby",
-            "Source": "main"
+            "Updated": "2023-05-31T13:45:23.042648+05:30",
+            "Version": "3.2.2-1"
         },
         {
             "Info": "",
-            "Updated": "2023-05-02T05:38:20.8651458+05:30",
-            "Version": "2023-05-01",
-            "Name": "rust-analyzer",
-            "Source": "main"
-        },
-        {
-            "Info": "",
-            "Updated": "2023-04-30T15:30:48.7533777+05:30",
-            "Version": "1.26.0",
+            "Source": "main",
             "Name": "rustup",
-            "Source": "main"
+            "Updated": "2023-05-31T15:52:10.3818699+05:30",
+            "Version": "1.26.0"
         },
         {
             "Info": "",
-            "Updated": "2023-05-07T11:42:16.1595829+05:30",
-            "Version": "0.1.20220804",
+            "Source": "main",
+            "Name": "scala",
+            "Updated": "2023-05-31T15:57:53.8164938+05:30",
+            "Version": "3.3.0"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "sccache",
+            "Updated": "2023-06-28T09:56:26.1660897+05:30",
+            "Version": "0.5.4"
+        },
+        {
+            "Info": "",
+            "Source": "sarvex",
             "Name": "search-multisource",
-            "Source": "sarvex"
+            "Updated": "2023-05-31T13:45:27.0329172+05:30",
+            "Version": "0.1.20230520"
         },
         {
             "Info": "",
-            "Updated": "2023-04-30T00:37:08.5779287+05:30",
-            "Version": "4.8",
+            "Source": "main",
             "Name": "sed",
-            "Source": "main"
+            "Updated": "2023-05-31T13:45:29.0864535+05:30",
+            "Version": "4.9"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:35:39.8960131+05:30",
-            "Version": "3.0.0",
-            "Name": "ShareTechMono-NF",
-            "Source": "sarvex"
+            "Source": "sarvex",
+            "Name": "ShareTechMono-nerd-font",
+            "Updated": "2023-06-06T16:57:47.6905419+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:35:47.062061+05:30",
-            "Version": "3.0.0",
-            "Name": "SourceCodePro-NF",
-            "Source": "sarvex"
+            "Source": "sarvex",
+            "Name": "SourceCodePro-nerd-font",
+            "Updated": "2023-06-06T16:57:51.6795763+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-05T09:00:04.8779249+05:30",
-            "Version": "3.4.12",
-            "Name": "sourcetree",
-            "Source": "extras"
+            "Source": "sarvex",
+            "Name": "SpaceMono-nerd-font",
+            "Updated": "2023-06-06T11:18:03.5233985+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:35:50.0148781+05:30",
-            "Version": "3.0.0",
-            "Name": "SpaceMono-NF",
-            "Source": "sarvex"
+            "Source": "main",
+            "Name": "starship",
+            "Updated": "2023-06-21T17:16:40.3108592+05:30",
+            "Version": "1.15.0"
         },
         {
             "Info": "",
-            "Updated": "2023-05-05T13:00:08.7070172+05:30",
-            "Version": "5.4.4",
-            "Name": "srlua",
-            "Source": "main"
-        },
-        {
-            "Info": "",
-            "Updated": "2023-05-02T18:25:24.4370356+05:30",
-            "Version": "0.20.2",
-            "Name": "stash",
-            "Source": "extras"
-        },
-        {
-            "Info": "",
-            "Updated": "2023-05-05T01:17:21.8743745+05:30",
-            "Version": "0.17.1",
-            "Name": "stylua",
-            "Source": "main"
-        },
-        {
-            "Info": "",
-            "Updated": "2023-04-30T00:48:30.8376722+05:30",
-            "Version": "0.2020.01.26",
+            "Source": "main",
             "Name": "sudo",
-            "Source": "main"
+            "Updated": "2023-05-31T13:45:30.0236232+05:30",
+            "Version": "0.2020.01.26"
         },
         {
             "Info": "",
-            "Updated": "2023-04-30T09:51:34.3928243+05:30",
-            "Version": "0.10.0",
+            "Source": "extras",
             "Name": "terminal-icons",
-            "Source": "extras"
+            "Updated": "2023-07-07T10:28:52.7654785+05:30",
+            "Version": "0.11.0"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:35:53.1589129+05:30",
-            "Version": "3.0.0",
-            "Name": "Terminus-NF",
-            "Source": "sarvex"
+            "Source": "sarvex",
+            "Name": "Terminus-nerd-font",
+            "Updated": "2023-06-14T11:26:34.4921206+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T21:51:46.1130093+05:30",
-            "Version": "3.0.0",
-            "Name": "Tinos-NF",
-            "Source": "sarvex"
+            "Source": "sarvex",
+            "Name": "thefuck",
+            "Updated": "2023-06-30T13:11:32.4213955+05:30",
+            "Version": "3.32"
         },
         {
             "Info": "",
-            "Updated": "2023-04-30T00:37:13.8309508+05:30",
-            "Version": "0.2018.07.25",
+            "Source": "sarvex",
+            "Name": "Tinos-nerd-font",
+            "Updated": "2023-06-06T16:57:53.4209177+05:30",
+            "Version": "3.0.2"
+        },
+        {
+            "Info": "",
+            "Source": "main",
             "Name": "touch",
-            "Source": "main"
+            "Updated": "2023-05-31T13:45:31.3299534+05:30",
+            "Version": "0.2018.07.25"
         },
         {
             "Info": "",
-            "Updated": "2023-05-05T09:00:07.0246132+05:30",
-            "Version": "0.20.8",
+            "Source": "main",
             "Name": "tree-sitter",
-            "Source": "main"
+            "Updated": "2023-06-25T07:10:18.7722336+05:30",
+            "Version": "0.20.8"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T10:56:19.6332621+05:30",
-            "Version": "3.0.0",
-            "Name": "Ubuntu-NF",
-            "Source": "sarvex"
+            "Source": "sarvex",
+            "Name": "tree-sitter-langs",
+            "Updated": "2023-07-07T10:30:36.6077975+05:30",
+            "Version": "0.12.22"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:35:58.9105733+05:30",
-            "Version": "3.0.0",
-            "Name": "UbuntuMono-NF",
-            "Source": "sarvex"
+            "Source": "nerd-fonts",
+            "Name": "twemoji-color-font",
+            "Updated": "2023-06-26T12:21:45.5300377+05:30",
+            "Version": "14.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-01T08:20:34.9671879+05:30",
-            "Version": "0.3.4",
-            "Name": "v",
-            "Source": "main"
+            "Source": "sarvex",
+            "Name": "UbuntuMono-nerd-font",
+            "Updated": "2023-06-06T16:57:55.54233+05:30",
+            "Version": "3.0.2"
         },
         {
             "Info": "",
-            "Updated": "2023-05-04T21:24:53.8419502+05:30",
-            "Version": "2023.04.15",
-            "Name": "vcpkg",
-            "Source": "main"
+            "Source": "main",
+            "Name": "unzip",
+            "Updated": "2023-06-27T15:02:42.0698447+05:30",
+            "Version": "6.00"
         },
         {
             "Info": "",
-            "Updated": "2023-05-06T17:36:08.9706745+05:30",
-            "Version": "3.0.0",
-            "Name": "VictorMono-NF",
-            "Source": "sarvex"
-        },
-        {
-            "Info": "",
-            "Updated": "2023-05-05T13:00:10.4164984+05:30",
-            "Version": "1.8.16",
-            "Name": "z.lua",
-            "Source": "main"
-        },
-        {
-            "Info": "",
-            "Updated": "2023-05-06T14:50:08.6721931+05:30",
-            "Version": "0.11.0-dev.2991",
-            "Name": "zig-dev",
-            "Source": "versions"
-        },
-        {
-            "Info": "",
-            "Updated": "2023-05-05T10:04:14.8627048+05:30",
-            "Version": "0.9.0",
-            "Name": "zoxide",
-            "Source": "main"
-        },
-        {
-            "Info": "",
-            "Updated": "2023-05-05T08:09:46.6928066+05:30",
-            "Version": "1.5.5",
-            "Name": "zstd",
-            "Source": "main"
+            "Source": "main",
+            "Name": "vale",
+            "Updated": "2023-07-07T13:47:44.8866702+05:30",
+            "Version": "2.28.0"
         }
     ]
 }
