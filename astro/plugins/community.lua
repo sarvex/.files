@@ -98,7 +98,7 @@ return {
   { import = 'astrocommunity.markdown-and-latex.markdown-preview-nvim' },
   { import = 'astrocommunity.markdown-and-latex.markmap-nvim' },
   { import = 'astrocommunity.markdown-and-latex.peek-nvim' },
-  { import = 'astrocommunity.markdown-and-latex.vimtex' },
+  -- { import = 'astrocommunity.markdown-and-latex.vimtex' },
 
   { import = 'astrocommunity.media.presence-nvim' },
   { import = 'astrocommunity.media.vim-wakatime' },
@@ -130,6 +130,7 @@ return {
   { import = 'astrocommunity.pack.full-dadbod' },
   { import = 'astrocommunity.pack.go' },
   -- { import = 'astrocommunity.pack.haskell' },
+  -- { import = 'astrocommunity.pack.haxe' },
   { import = 'astrocommunity.pack.html-css' },
   { import = 'astrocommunity.pack.java' },
   { import = 'astrocommunity.pack.json' },
@@ -138,7 +139,7 @@ return {
   { import = 'astrocommunity.pack.lua' },
   { import = 'astrocommunity.pack.markdown' },
   { import = 'astrocommunity.pack.nix' },
-  { import = 'astrocommunity.pack.php' },
+  -- { import = 'astrocommunity.pack.php' },
   { import = 'astrocommunity.pack.prisma' },
   { import = 'astrocommunity.pack.proto' },
   { import = 'astrocommunity.pack.ps1' },
@@ -160,6 +161,8 @@ return {
   { import = 'astrocommunity.project.nvim-spectre' },
   { import = 'astrocommunity.project.projectmgr-nvim' },
 
+  { import = 'astrocommunity.search.nvim-hlslens' },
+
   { import = 'astrocommunity.scrolling.mini-animate' },
   { import = 'astrocommunity.scrolling.neoscroll-nvim' },
   { import = 'astrocommunity.scrolling.nvim-scrollbar' },
@@ -178,8 +181,11 @@ return {
 
   { import = 'astrocommunity.utility.neodim' },
   { import = 'astrocommunity.utility.noice-nvim' },
-  { import = 'astrocommunity.utility.transparent-nvim' },
   { import = 'astrocommunity.utility.nvim-toggler' },
+  { import = 'astrocommunity.utility.telescope-fzy-native-nvim' },
+  { import = 'astrocommunity.utility.telescope-live-grep-args-nvim' },
+  { import = 'astrocommunity.utility.transparent-nvim' },
 
+  { import = 'astrocommunity.workflow.bad-practices-nvim' },
   --  { import = 'astrocommunity.workflow.hardtime-nvim' },
 }

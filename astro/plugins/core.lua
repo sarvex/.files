@@ -10,6 +10,12 @@ return {
       return opts
     end,
   },
+  {
+    "HampusHauffman/block.nvim",
+    config = function()
+      require("block").setup({})
+    end
+  },
   -- You can disable default plugins as follows:
   -- { 'max397574/better-escape.nvim', enabled = false },
   --
