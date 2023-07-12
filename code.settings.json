@@ -440,5 +440,6 @@
   "git.terminalGitEditor": true,
   "git.useCommitInputAsStashMessage": true,
   "github.gitProtocol": "ssh",
-  "gitlens.plusFeatures.enabled": false
+  "gitlens.plusFeatures.enabled": false,
+  "yaml.format.singleQuote": true
 }

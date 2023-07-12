@@ -2,9 +2,15 @@ local overrides = require('custom.configs.overrides')
 
 ---@type NvPluginSpec[]
 local plugins = {
+  {
+    "Pocco81/TrueZen.nvim",
+    cmd = { "TZAtaraxis", "TZMinimalist" },
+    config = function()
+      require "custom.configs.truezen" -- just an example path
+    end,
+  },
 
   -- Override plugin definition options
-
   {
     'neovim/nvim-lspconfig',
     dependencies = {
