@@ -25,6 +25,5 @@ export HOMEBREW_BUILD_FROM_SOURCE=1
 export HOMEBREW_GITHUB_API_TOKEN=ac53d9a40a814ec6cff19abddb964484a9c9ada5
 export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/opt/cask"
 export GRAILS_HOME="/usr/local/opt/grails/libexec"
-export GRIFFON_HOME="/usr/local/Cellar/griffon/1.5.0/libexec"
+export GRIFFON_HOME="/usr/local/opt/griffon/libexec"
 export GOPATH="$HOME/Go"
-export STUDIO_JDK=/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk

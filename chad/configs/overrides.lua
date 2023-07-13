@@ -2,6 +2,7 @@ local M = {}
 
 M.treesitter = {
   ensure_installed = {
+    'astro',
     'vim',
     'lua',
     'html',
@@ -23,6 +24,7 @@ M.treesitter = {
 
 M.mason = {
   ensure_installed = {
+    'astro',
     -- lua stuff
     'lua-language-server',
     'stylua',

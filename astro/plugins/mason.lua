@@ -38,7 +38,6 @@ return {
         'isort',
         'prettierd',
         'shfmt',
-        'shellcheck',
       })
     end,
   },

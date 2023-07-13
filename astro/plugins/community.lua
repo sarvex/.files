@@ -74,6 +74,7 @@ return {
   { import = 'astrocommunity.editing-support.refactoring-nvim' },
   { import = 'astrocommunity.editing-support.suda-vim' },
   { import = 'astrocommunity.editing-support.text-case-nvim' },
+  { import = 'astrocommunity.editing-support.telescope-undo-nvim' },
   { import = 'astrocommunity.editing-support.todo-comments-nvim' },
   { import = 'astrocommunity.editing-support.treesj' },
   { import = 'astrocommunity.editing-support.true-zen-nvim' },
