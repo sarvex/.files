@@ -1,5 +1,6 @@
 {
   "breadcrumbs.symbolSortOrder": "type",
+  "codemetrics.basics.CodeLensEnabled": false,
   "console-ninja.showWhatsNew": false,
   "console-ninja.toolsToEnableSupportAutomaticallyFor": {
     "live-preview-extension": true,
@@ -19,6 +20,7 @@
     "classpath",
     "clig",
     "COBCOPY",
+    "codemetrics",
     "codesandbox",
     "Codespaces",
     "Consolas",
@@ -81,7 +83,8 @@
     "undici",
     "unpic",
     "valt",
-    "vitepress"
+    "vitepress",
+    "vulncheck"
   ],
   "dart.lineLength": 120,
   "dart.maxLogLineLength": 10000,
@@ -222,6 +225,15 @@
   "gitlens.plusFeatures.enabled": false,
   "gitlens.statusBar.enabled": false,
   "gitlens.telemetry.enabled": false,
+  "go.diagnostic.vulncheck": "Imports",
+  "go.inlayHints.assignVariableTypes": true,
+  "go.inlayHints.compositeLiteralFields": true,
+  "go.inlayHints.compositeLiteralTypes": true,
+  "go.inlayHints.constantValues": true,
+  "go.inlayHints.functionTypeParameters": true,
+  "go.inlayHints.parameterNames": true,
+  "go.inlayHints.rangeVariableTypes": true,
+  "go.lintTool": "revive",
   "go.toolsManagement.autoUpdate": true,
   "highlight.regexes": {
     "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:FIXME|FIX|BUG|UGLY|DEBUG|HACK)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
@@ -439,14 +451,5 @@
     "!Split sequence"
   ],
   "yaml.format.printWidth": 120,
-  "yaml.format.singleQuote": true,
-  "go.diagnostic.vulncheck": "Imports",
-  "go.inlayHints.assignVariableTypes": true,
-  "go.inlayHints.compositeLiteralFields": true,
-  "go.inlayHints.compositeLiteralTypes": true,
-  "go.inlayHints.constantValues": true,
-  "go.inlayHints.functionTypeParameters": true,
-  "go.inlayHints.parameterNames": true,
-  "go.inlayHints.rangeVariableTypes": true,
-  "go.lintTool": "revive"
+  "yaml.format.singleQuote": true
 }
