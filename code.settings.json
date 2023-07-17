@@ -1,5 +1,26 @@
 {
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "unifiedjs.vscode-remark",
+    "editor.formatOnSave": true
+  },
   "breadcrumbs.symbolSortOrder": "type",
+  "C_Cpp.autocompleteAddParentheses": true,
+  "C_Cpp.clang_format_sortIncludes": true,
+  "C_Cpp.default.cppStandard": "c++23",
+  "C_Cpp.default.cStandard": "c23",
+  "C_Cpp.enhancedColorization": "enabled",
+  "C_Cpp.inlayHints.autoDeclarationTypes.enabled": true,
+  "C_Cpp.inlayHints.referenceOperator.enabled": true,
+  "C_Cpp.inlayHints.referenceOperator.showSpace": true,
+  "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyFunction": true,
+  "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyType": true,
+  "cmake.configureOnOpen": true,
   "codemetrics.basics.CodeLensEnabled": false,
   "console-ninja.showWhatsNew": false,
   "console-ninja.toolsToEnableSupportAutomaticallyFor": {
@@ -17,6 +38,7 @@
     "Cascadia",
     "Caskaydia",
     "catppuccin",
+    "ccache",
     "classpath",
     "clig",
     "COBCOPY",
@@ -24,6 +46,7 @@
     "codesandbox",
     "Codespaces",
     "Consolas",
+    "Defold",
     "divriots",
     "dlig",
     "doxygen",
@@ -51,6 +74,7 @@
     "Mayukai",
     "Menlo",
     "Meslo",
+    "msys",
     "nalt",
     "neoconfetti",
     "okteto",
@@ -67,6 +91,7 @@
     "rehype",
     "rexx",
     "REXXINC",
+    "ripgrep",
     "runme",
     "rvrn",
     "Sarvex",
@@ -108,7 +133,6 @@
   "editor.indentSize": "tabSize",
   "editor.inlayHints.padding": true,
   "editor.linkedEditing": true,
-  "editor.minimap.autohide": true,
   "editor.mouseWheelZoom": true,
   "editor.parameterHints.cycle": true,
   "editor.renderLineHighlightOnlyWhenFocus": true,
@@ -191,7 +215,7 @@
   "extensions.experimental.deferredStartupFinishedActivation": true,
   "extensions.webWorker": true,
   "files.autoGuessEncoding": true,
-  "files.autoSave": "onWindowChange",
+  "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 1000,
   "files.eol": "\n",
   "files.exclude": {
@@ -451,5 +475,19 @@
     "!Split sequence"
   ],
   "yaml.format.printWidth": 120,
-  "yaml.format.singleQuote": true
+  "yaml.format.singleQuote": true,
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "sameLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.lambda": "sameLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.type": "sameLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.namespace": "sameLine",
+  "background.backgroundAlignment": [
+    "Bottom Right",
+    "Center Center",
+    "Center Center",
+    "Center Center"
+  ],
+  "background.useWindowOptionsForAllBackgrounds": true,
+  "background.renderContentAboveBackground": true,
+  "background.smoothImageRendering": true
 }

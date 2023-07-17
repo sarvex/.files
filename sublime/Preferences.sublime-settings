@@ -3,95 +3,45 @@
   "auto_complete_commit_on_tab": true,
   "auto_complete_cycle": true,
   "auto_complete_with_fields": true,
-  "bold_folder_labels": true,
+  "auto_hide_menu": true,
+  "auto_hide_status_bar": true,
+  "auto_hide_tabs": true,
+  "caret_extra_bottom": 2,
+  "caret_extra_top": 2,
+  "caret_extra_width": 0,
   "caret_style": "phase",
+  "color_scheme": "auto",
   "console_max_history_lines": 99999,
   "control_character_style": "names",
-  "dark_theme": "ayu-dark.sublime-theme",
+  "dark_color_scheme": "Macchiato.sublime-color-scheme",
+  "dark_theme": "Adaptive.sublime-theme",
   "default_line_ending": "unix",
-  "draw_unicode_white_space": "all",
-  "draw_white_space": ["all_tabs", "selection"],
+  "draw_white_space": ["all_tabs", "selection", "trailing", "isolated"],
   "ensure_newline_at_eof_on_save": true,
+  "file_tab_style": "square",
   "font_face": "Hack Nerd Font Mono",
-  "font_options": ["aalt", "gdi", "liga", "clig", "calt", "falt", "halt", "jalt", "ltra", "nalt", "palt", "rvrn", "salt", "valt", "dlig", "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08", "ss09", "ss10", "ss11", "ss12", "ss13", "ss14", "ss15", "ss16", "ss17", "ss18", "ss19", "ss20"],
+  "font_options": ["dlig", "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08", "ss09", "ss10", "gdi"],
   "font_size": 10,
   "hardware_acceleration": "opengl",
+  "highlight_line": true,
+  "highlight_line_number": true,
   "highlight_modified_tabs": true,
-  "light_theme": "ayu-mirage.sublime-theme",
+  "light_color_scheme": "Mocha.sublime-color-scheme",
+  "light_theme": "Adaptive.sublime-theme",
+  "margin": 2,
+  "overlay_scroll_bars": "enabled",
   "relative_line_numbers": true,
-  "ruler_style": "stippled",
-  "rulers": [120],
+  "remember_full_screen": true,
+  "reveal_tabs_with_timeout": true,
+  "rulers": [[100, "stippled"], [120, "solid"]],
   "save_on_focus_lost": true,
   "show_encoding": true,
   "show_line_endings": true,
+  "show_project_first": true,
+  "spell_check": true,
   "tab_size": 2,
+  "theme": "auto",
   "translate_tabs_to_spaces": true,
+  "trim_only_modified_white_space": false,
   "trim_trailing_white_space_on_save": "all",
-  "ignored_packages":
-  [
-    "Vintage",
-  ],
-  "theme": "Guna.sublime-theme",
-  "color_scheme": "Packages/Guna/themes/Guna.sublime-color-scheme",
-  "dark_color_scheme": "Mocha.sublime-color-scheme",
-  "light_color_scheme": "Frappe.sublime-color-scheme",
-  /*"gnc_001": false,*/
-  /*"gnc_002": true,*/
-  "gn_overlay_scroll_bars": true,
-  /*"gnc_001": false,*/
-  /*"gnc_002": true,*/
-  /*"gnc_h19": true,*/
-  /*"gnc_m08": true,*/
-  /*"gnc_w5m10": true,*/
-  "gn_hide_tab_dropdown": true,
-  "gn_sidebar_box": true,
-  "gn_title_bar": true,
-  /*"gni_001": true,*/
-  /*"gni_002": true,*/
-  "gnwidg1": true,
-  "gnwidgo": true,
-  /*"gnc_h16": true,*/
-  /*"gnc_m07": true,*/
-  /*"gnc_w2m15": true,*/
-  /*"gnc_h17": true,*/
-  /*"gnc_m04": true,*/
-  /*"gnc_w2m15": true,*/
-  /*"gnc_h12": true,*/
-  /*"gnc_w0m12": true,*/
-  /*"gnc_m08": true,*/
-  /*"gnc_w3m13": true,*/
-  /*"gnc_h14": true,*/
-  /*"gnc_m09": true,*/
-  /*"gnc_h14": true,*/
-  /*"gnc_m01": true,*/
-  /*"gnc_w3m14": true,*/
-  /*"gni_001": false,*/
-  /*"gni_002": false,*/
-  /*"gni_003": false,*/
-  /*"gnc_h18": true,*/
-  /*"gnc_m04": true,*/
-  /*"gnc_w3m11": true,*/
-  /*"gnc_m05": true,*/
-  /*"gnc_001": true,*/
-  /*"gnc_h13": true,*/
-  /*"gnc_m02": true,*/
-  /*"gnc_w4m11": true,*/
-  /*"gnc_001": true,*/
-  /*"gnc_h10": true,*/
-  /*"gnc_m00": true,*/
-  /*"gnc_w2m12": true,*/
-  /*"gnc_001": true,*/
-  /*"gnc_h11": true,*/
-  /*"gnc_m04": true,*/
-  /*"gnc_w1m15": true,*/
-  /*"gnc_001": true,*/
-  /*"gnc_h16": true,*/
-  /*"gnc_m09": true,*/
-  /*"gnc_w2m10": true,*/
-  /*"gnc_h19": true,*/
-  /*"gnc_m00": true,*/
-  /*"gnc_w3m14": true,*/
-  /*"gnc_h09": true,*/
-  /*"gnc_m06": true,*/
-  /*"gnc_w4m11": true,*/
 }
