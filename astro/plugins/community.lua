@@ -13,11 +13,14 @@ return {
   { import = 'astrocommunity.bars-and-lines.scope-nvim' },
   { import = 'astrocommunity.bars-and-lines.smartcolumn-nvim' },
   { import = 'astrocommunity.bars-and-lines.statuscol-nvim',              opts = { colorcolumn = '120', }, },
-  { import = 'astrocommunity.code-runner.executor-nvim' },
+  { import = 'astrocommunity.bars-and-lines.vim-illuminate' },
+
   { import = 'astrocommunity.code-runner.compiler-nvim' },
+  { import = 'astrocommunity.code-runner.executor-nvim' },
   { import = 'astrocommunity.code-runner.sniprun' },
 
   { import = 'astrocommunity.color.headlines-nvim' },
+  { import = 'astrocommunity.color.mini-hiplatterns' },
   { import = 'astrocommunity.color.modes-nvim' },
   { import = 'astrocommunity.color.tint-nvim' },
   { import = 'astrocommunity.color.twilight-nvim' },
