@@ -44,4 +44,9 @@
   "translate_tabs_to_spaces": true,
   "trim_only_modified_white_space": false,
   "trim_trailing_white_space_on_save": "all",
+  "auto_complete": true,
+  "ignored_packages":
+  [
+		"Vintage",
+  ],
 }

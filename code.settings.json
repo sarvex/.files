@@ -5,19 +5,17 @@
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "[markdown]": {
-    "editor.defaultFormatter": "unifiedjs.vscode-remark",
-    "editor.formatOnSave": true
-  },
   "breadcrumbs.symbolSortOrder": "type",
   "C_Cpp.autocompleteAddParentheses": true,
   "C_Cpp.clang_format_sortIncludes": true,
   "C_Cpp.default.cppStandard": "c++23",
   "C_Cpp.default.cStandard": "c23",
   "C_Cpp.enhancedColorization": "enabled",
-  "C_Cpp.inlayHints.autoDeclarationTypes.enabled": true,
-  "C_Cpp.inlayHints.referenceOperator.enabled": true,
-  "C_Cpp.inlayHints.referenceOperator.showSpace": true,
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "sameLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.lambda": "sameLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.namespace": "sameLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.type": "sameLine",
   "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyFunction": true,
   "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyType": true,
   "cmake.configureOnOpen": true,
@@ -64,6 +62,7 @@
     "jalt",
     "jampack",
     "jetbrains",
+    "leetcode",
     "LGMDZ",
     "liga",
     "Literation",
@@ -106,6 +105,7 @@
     "tailwindcss",
     "twind",
     "undici",
+    "unifiedjs",
     "unpic",
     "valt",
     "vitepress",
@@ -122,11 +122,12 @@
   "editor.cursorBlinking": "expand",
   "editor.cursorStyle": "line-thin",
   "editor.definitionLinkOpensInPeek": true,
+  "editor.detectIndentation": false,
   "editor.experimental.asyncTokenization": true,
-  "editor.foldingImportsByDefault": true,
   "editor.foldingMaximumRegions": 9999,
   "editor.fontFamily": "'CaskaydiaCove Nerd Font', 'Cascadia Code PL', 'CascadiaCodePL', 'MesloLGMDZ Nerd Font', Menlo, Monaco, Consolas,  'Courier New', monospace",
   "editor.fontLigatures": "'aalt', 'gdi', 'liga', 'clig', 'calt', 'falt', 'halt', 'jalt', 'ltra', 'nalt', 'palt', 'rvrn', 'salt', 'valt', 'dlig', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09', 'ss10', 'ss11', 'ss12', 'ss13', 'ss14', 'ss15', 'ss16', 'ss17', 'ss18', 'ss19', 'ss20'",
+  "editor.fontWeight": "350",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.guides.bracketPairs": "active",
@@ -475,19 +476,5 @@
     "!Split sequence"
   ],
   "yaml.format.printWidth": 120,
-  "yaml.format.singleQuote": true,
-  "C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "sameLine",
-  "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
-  "C_Cpp.vcFormat.newLine.beforeOpenBrace.lambda": "sameLine",
-  "C_Cpp.vcFormat.newLine.beforeOpenBrace.type": "sameLine",
-  "C_Cpp.vcFormat.newLine.beforeOpenBrace.namespace": "sameLine",
-  "background.backgroundAlignment": [
-    "Bottom Right",
-    "Center Center",
-    "Center Center",
-    "Center Center"
-  ],
-  "background.useWindowOptionsForAllBackgrounds": true,
-  "background.renderContentAboveBackground": true,
-  "background.smoothImageRendering": true
+  "yaml.format.singleQuote": true
 }
