@@ -1,0 +1,12 @@
+<service>
+  <id>valet_phpcgi</id>
+  <name>valet_phpcgi</name>
+  <description>Valet PHP-CGI</description>
+  <env name="PHP_FCGI_CHILDREN" value="4"/>
+  <executable>C:\Scoop\apps\php\current\php-cgi.exe</executable>
+  <arguments>-b 127.0.0.1:9001</arguments>
+  <logpath>C:/Users/Yoga/.config/valet\Log\</logpath>
+  <log mode="reset"></log>
+  <onfailure action="restart" delay="5 sec"/>
+  <onfailure action="restart" delay="10 sec"/>
+</service>

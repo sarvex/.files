@@ -1,15 +1,13 @@
 {
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
   },
   "breadcrumbs.symbolSortOrder": "type",
   "C_Cpp.autocompleteAddParentheses": true,
   "C_Cpp.clang_format_sortIncludes": true,
   "C_Cpp.default.cppStandard": "c++23",
   "C_Cpp.default.cStandard": "c23",
+  "C_Cpp.default.mergeConfigurations": true,
   "C_Cpp.enhancedColorization": "enabled",
   "C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "sameLine",
   "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
@@ -18,6 +16,8 @@
   "C_Cpp.vcFormat.newLine.beforeOpenBrace.type": "sameLine",
   "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyFunction": true,
   "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyType": true,
+  "cmake.allowCommentsInPresetsFile": true,
+  "cmake.allowUnsupportedPresetsVersions": true,
   "cmake.configureOnOpen": true,
   "codemetrics.basics.CodeLensEnabled": false,
   "console-ninja.showWhatsNew": false,
@@ -32,6 +32,7 @@
     "asvetliakov",
     "autofetch",
     "autohide",
+    "Brogrammer",
     "calt",
     "Cascadia",
     "Caskaydia",
@@ -39,10 +40,12 @@
     "ccache",
     "classpath",
     "clig",
+    "clsx",
     "COBCOPY",
     "codemetrics",
     "codesandbox",
     "Codespaces",
+    "commandline",
     "Consolas",
     "Defold",
     "divriots",
@@ -76,6 +79,9 @@
     "msys",
     "nalt",
     "neoconfetti",
+    "nextjs",
+    "nixos",
+    "Nushell",
     "okteto",
     "omnisharp",
     "palt",
@@ -88,6 +94,7 @@
     "qwikest",
     "regexes",
     "rehype",
+    "Retrowave",
     "rexx",
     "REXXINC",
     "ripgrep",
@@ -103,13 +110,15 @@
     "stylelint",
     "sumneko",
     "tailwindcss",
+    "trpc",
     "twind",
     "undici",
     "unifiedjs",
     "unpic",
     "valt",
     "vitepress",
-    "vulncheck"
+    "vulncheck",
+    "wtstart"
   ],
   "dart.lineLength": 120,
   "dart.maxLogLineLength": 10000,
@@ -121,6 +130,7 @@
   "editor.acceptSuggestionOnEnter": "smart",
   "editor.cursorBlinking": "expand",
   "editor.cursorStyle": "line-thin",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.definitionLinkOpensInPeek": true,
   "editor.detectIndentation": false,
   "editor.experimental.asyncTokenization": true,
@@ -137,9 +147,7 @@
   "editor.mouseWheelZoom": true,
   "editor.parameterHints.cycle": true,
   "editor.renderLineHighlightOnlyWhenFocus": true,
-  "editor.rulers": [
-    120
-  ],
+  "editor.rulers": [120],
   "editor.semanticHighlighting.enabled": true,
   "editor.suggest.preview": true,
   "editor.tabCompletion": "on",
@@ -171,7 +179,7 @@
           "constant.numeric.json"
         ],
         "settings": {
-          "fontStyle": "bold"
+          "fontStyle": "bold italic"
         }
       }
     ]
@@ -183,9 +191,11 @@
     "javascript": "javascriptreact",
     "markdown": "html",
     "svelte": "html",
+    "typescript": "typescriptreact",
     "vue-html": "html"
   },
-  "eslint.format.enable": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.triggerExpansionOnTab": true,
   "eslint.lintTask.enable": true,
   "eslint.packageManager": "pnpm",
   "eslint.probe": [
@@ -230,11 +240,7 @@
   "files.trimTrailingWhitespace": true,
   "git.autofetch": true,
   "git.autoStash": true,
-  "git.branchRandomName.dictionary": [
-    "adjectives",
-    "animals",
-    "colors"
-  ],
+  "git.branchRandomName.dictionary": ["adjectives", "animals", "colors"],
   "git.branchRandomName.enable": true,
   "git.confirmSync": false,
   "git.defaultCloneDirectory": "C:\\Users\\Yoga\\Sources",
@@ -248,6 +254,7 @@
   "github.gitProtocol": "ssh",
   "gitlens.codeLens.enabled": false,
   "gitlens.plusFeatures.enabled": false,
+  "gitlens.showWelcomeOnInstall": false,
   "gitlens.statusBar.enabled": false,
   "gitlens.telemetry.enabled": false,
   "go.diagnostic.vulncheck": "Imports",
@@ -333,6 +340,7 @@
   "julia.enableTelemetry": false,
   "julia.symbolCacheDownload": true,
   "keyboard.mapAltGrToCtrlAlt": true,
+  "marquee.configuration.background": "2",
   "marquee.configuration.launchOnStartup": false,
   "marquee.configuration.name": "Sarvex",
   "marquee.widgets.dependencies.prefersPnpm": true,
@@ -353,18 +361,11 @@
   "peacock.affectTitleBar": false,
   "peacock.showColorInStatusBar": false,
   "peacock.surpriseMeOnStartup": true,
-  "powershell.buttons.showPanelMovementButtons": true,
-  "powershell.codeFormatting.autoCorrectAliases": true,
-  "powershell.codeFormatting.avoidSemicolonsAsLineTerminators": true,
-  "powershell.codeFormatting.preset": "Stroustrup",
-  "powershell.codeFormatting.useConstantStrings": true,
-  "powershell.codeFormatting.useCorrectCasing": true,
-  "powershell.developer.editorServicesLogLevel": "None",
-  "powershell.integratedConsole.showOnStartup": false,
-  "powershell.integratedConsole.suppressStartupBanner": true,
-  "powershell.promptToUpdatePowerShell": false,
-  "powershell.sideBar.CommandExplorerVisibility": false,
-  "powershell.startAsLoginShell.linux": true,
+  "prettier.bracketSameLine": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.printWidth": 120,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
   "python.analysis.inlayHints.pytestParameters": true,
   "python.formatting.provider": "black",
   "python.linting.enabled": true,
@@ -379,20 +380,8 @@
   "search.smartCase": true,
   "stateful.notifications": false,
   "stylelint.packageManager": "pnpm",
-  "stylelint.snippet": [
-    "css",
-    "less",
-    "postcss",
-    "scss",
-    "sass"
-  ],
-  "stylelint.validate": [
-    "css",
-    "less",
-    "postcss",
-    "scss",
-    "sass"
-  ],
+  "stylelint.snippet": ["css", "less", "postcss", "scss", "sass"],
+  "stylelint.validate": ["css", "less", "postcss", "scss", "sass"],
   "svelte.enable-ts-plugin": true,
   "svelte.plugin.svelte.defaultScriptLanguage": "ts",
   "svelte.plugin.svelte.format.config.printWidth": 120,
@@ -401,9 +390,7 @@
   "svelte.plugin.svelte.format.config.svelteStrictMode": true,
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.allowMnemonics": true,
-  "terminal.integrated.commandsToSkipShell": [
-    "language-julia.interrupt"
-  ],
+  "terminal.integrated.commandsToSkipShell": ["language-julia.interrupt"],
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "terminal.integrated.enableMultiLinePasteWarning": false,
@@ -427,14 +414,54 @@
   "typescript.inlayHints.variableTypes.enabled": true,
   "typescript.suggest.autoImports": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "vim.autoSwitchInputMethod.enable": true,
+  "vim.camelCaseMotion.enable": true,
+  "vim.easymotion": true,
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  "vim.highlightedyank.enable": true,
+  "vim.hlsearch": true,
+  "vim.incsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "after": ["<Esc>"],
+      "before": ["j", "j"]
+    }
+  ],
+  "vim.leader": " ",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "after": ["d", "d"],
+      "before": ["<leader>", "d"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["lineBreakInsert"],
+      "silent": true
+    }
+  ],
+  "vim.smartRelativeLine": true,
+  "vim.sneak": true,
+  "vim.sneakUseIgnorecaseAndSmartcase": true,
+  "vim.statusBarColorControl": true,
+  "vim.textwidth": 120,
+  "vim.useCtrlKeys": true,
+  "vim.useSystemClipboard": true,
+  "vim.visualstar": true,
   "vite.buildCommand": "pnpm build",
   "vite.devCommand": "pnpm dev",
+  "vite.vitepressAutoRouting": true,
   "window.autoDetectColorScheme": true,
   "window.autoDetectHighContrast": false,
   "window.commandCenter": true,
-  "window.menuBarVisibility": "compact",
   "window.restoreFullscreen": true,
-  "workbench.colorTheme": "Catppuccin Macchiato",
+  "workbench.colorTheme": "SynthWave '84",
   "workbench.commandPalette.experimental.suggestCommands": true,
   "workbench.commandPalette.experimental.useSemanticSimilarity": true,
   "workbench.editor.highlightModifiedTabs": true,
@@ -442,10 +469,10 @@
   "workbench.editor.preferHistoryBasedLanguageDetection": true,
   "workbench.editor.splitInGroupLayout": "vertical",
   "workbench.enableExperiments": false,
-  "workbench.iconTheme": "catppuccin-macchiato",
+  "workbench.iconTheme": "ayu",
   "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
   "workbench.preferredLightColorTheme": "Catppuccin Frappé",
-  "workbench.productIconTheme": "icons-carbon",
+  "workbench.productIconTheme": "macos-modern",
   "yaml.customTags": [
     "!And",
     "!And sequence",
@@ -476,5 +503,17 @@
     "!Split sequence"
   ],
   "yaml.format.printWidth": 120,
-  "yaml.format.singleQuote": true
+  "yaml.format.singleQuote": true,
+  "workbench.colorCustomizations": {
+    "sash.hoverBorder": "#7c2af0",
+    "tab.activeBorder": "#7c2af0",
+    "statusBar.background": "#005f5f",
+    "statusBar.border": "#620fd8",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#7c2af0",
+    "statusBarItem.remoteBackground": "#620fd8",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "statusBar.noFolderBackground": "#005f5f",
+    "statusBar.debuggingBackground": "#005f5f"
+  }
 }

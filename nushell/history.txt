@@ -114,3 +114,78 @@ exa
 scoop install exa
 scoop install dust
 cargo install exa
+exit
+ls
+whoami
+clear
+dir
+ls
+clear
+ls
+whoami
+clear
+config nu
+let-env $EDITOR = 'subl.exe'
+let-env $env.EDITOR = 'subl.exe'
+$env.EDITOR
+let-env EDITOR=C:\PROGRA~1\SUBLIM~1\subl.exe
+let-env EDITOR = C:\PROGRA~1\SUBLIM~1\subl.exe
+config nu
+clear
+scoop search stow
+scoops stow
+composer version
+clear
+ls
+cd Sources\
+ls
+clear
+cd Sources\
+composer create-project laravel/laravel livewire
+scoop which php
+cd c:\Scoop\apps\php\current\
+ls
+ls *.ini
+cp php.ini-development php.ini
+nvim php.ini
+cd ext\ls
+cd ext
+ls
+cd ..
+ls
+nvim php.ini
+clear
+nvim
+clear
+ls
+composer create-project laravel/laravel livewire
+nvim c:\Scoop\apps\php\current\php.ini
+composer create-project laravel/laravel livewire
+rm -rf livewire\
+composer create-project laravel/laravel livewire
+rm -rf livewire\
+nvim c:\Scoop\apps\php\current\php.ini
+exit
+clear
+composer create-project laravel/laravel livewire
+cd livewire\
+composer require livewire/livewire
+valet open
+scoops valet
+winget search valet
+composer global require laravel/valet
+valet open
+composer global require cretueusebiu/valet-windows
+nvim
+composer global require cretueusebiu/valet-windows --with-all-dependencies
+valet open
+valet install
+composer global remove cretueusebiu/valet-windows
+composer global remove laravel/valet
+composer global require cretueusebiu/valet-windows
+valet install
+valet open
+valet
+valet link
+valet start
+valet open
