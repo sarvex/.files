@@ -1,6 +1,12 @@
 # Nushell Environment Config File
 #
 # version = 0.79.0
+let-env STARSHIP_SHELL = "nu"
+let-env STARSHIP_CONFIG = "~/.files/starship.toml"
+
+let carapace_completer = {|spans|
+    carapace $spans.0 nushell $spans | from json
+}
 
 def create_left_prompt [] {
     mut home = ""
@@ -22,6 +28,8 @@ def create_left_prompt [] {
     } else {
         $"(ansi green_bold)($dir)"
     }
+
+    starship prompt --cmd-duration $env.CMD_DURATION_MS $'--status=($env.LAST_EXIT_CODE)'
 
     $path_segment
 }

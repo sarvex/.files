@@ -472,7 +472,7 @@
   "workbench.iconTheme": "ayu",
   "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
   "workbench.preferredLightColorTheme": "Catppuccin Frappé",
-  "workbench.productIconTheme": "macos-modern",
+  "workbench.productIconTheme": "bootstrap-product-icons",
   "yaml.customTags": [
     "!And",
     "!And sequence",
@@ -505,13 +505,13 @@
   "yaml.format.printWidth": 120,
   "yaml.format.singleQuote": true,
   "workbench.colorCustomizations": {
-    "sash.hoverBorder": "#7c2af0",
-    "tab.activeBorder": "#7c2af0",
+    "sash.hoverBorder": "#f7654a",
+    "tab.activeBorder": "#f7654a",
     "statusBar.background": "#005f5f",
-    "statusBar.border": "#620fd8",
+    "statusBar.border": "#f53b19",
     "statusBar.foreground": "#e7e7e7",
-    "statusBarItem.hoverBackground": "#7c2af0",
-    "statusBarItem.remoteBackground": "#620fd8",
+    "statusBarItem.hoverBackground": "#f7654a",
+    "statusBarItem.remoteBackground": "#f53b19",
     "statusBarItem.remoteForeground": "#e7e7e7",
     "statusBar.noFolderBackground": "#005f5f",
     "statusBar.debuggingBackground": "#005f5f"

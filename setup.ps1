@@ -17,6 +17,7 @@ git clone https://github.com/sarvex/dotfiles $dotfiles
 
 # Add Custom Directories
 New-Item -Path "$HOME\.config" -ItemType SymbolicLink -Value "$dotfiles\config" -Force
+New-Item -Path "$HOME\.cache\starship" -ItemType SymbolicLink -Value "$dotfiles\starship" -Force
 New-Item -Path "$HOME\.aliases" -ItemType SymbolicLink -Value "$dotfiles\aliases" -Force
 New-Item -Path "$HOME\.gitconfig" -ItemType SymbolicLink -Value "$dotfiles\git.config" -Force
 New-Item -Path "$HOME\.wezterm.lua" -ItemType SymbolicLink -Value "$dotfiles\wezterm.lua" -Force

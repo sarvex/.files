@@ -189,3 +189,257 @@ valet
 valet link
 valet start
 valet open
+im-select
+scoops im-select
+clear
+pnpm create astro
+clear
+code .
+ls
+clear
+cd astro-blog-tutorial\
+pwd
+dir
+ls
+$env.PWD
+cd ..
+mv astro-blog-tutorial\ ../
+exit
+nu
+exit
+nvim Sources\livewire\
+clear
+ls
+exit
+clear
+ls
+cd Sources\
+pnpm create astro
+clear
+pnpm create astro
+code tested-tower\
+pnpm astro add react
+clear
+pnpm astro add react lit image mdx partytown tailwind
+pnpm astro add react 
+rm -rf tested-tower\
+pnpm create astro
+pnpm create astro -- --template portfolio
+cd red-resonance\
+pnpm astro add react lit image mdx partytown tailwind
+code .
+pnpm dlx shadcn-ui@latest init
+pnpx shadcn-ui@latest init
+cd ..
+pnpm create astro -- --template portfolio
+cd sleepy-star\
+pnpm astro add react image mdx partytown tailwind
+pnpx shadcn-ui@latest init
+$nu.config-path
+ls
+howmi
+whoami
+$STARSHIP_CONFIG
+$env.STARSHIP_CONFIG
+cat ~\.files\starship.toml
+bat ~\.files\starship.toml
+starship
+starship config
+starship print-config
+starship config
+starship
+clear
+starship config
+$env.STARSHIP_CONFIG
+subl 
+starship init nu
+starship init nu | save -f ~/.files/starship/init.nu
+cat ~\.files\starship\init.nu
+bat ~\.files\starship\init.nu
+exit
+nu
+exit
+nu
+clera
+exit
+starship config
+exit
+nu
+exit
+ls
+cd Sources\
+ls
+clear
+cd sleepy-star\l
+cd sleepy-star\
+clear
+starship
+which startship
+scoop which starship
+cd c:\Scoop\apps\starship\
+ls
+cd current\
+ls
+start .
+bat ~\.files\starship\init.nu
+bat ~\.files\starship.toml
+starship
+starship completions
+starship completions nu
+starship help
+starship -h
+starship -V
+starship explain
+starship prompt
+$config.buffer_editor
+$env.config.buffer_editor
+$env.config.editor
+$env.STARSHIP_SHELL
+$nu.config-path
+starship prompt --help
+starship config
+clear
+ls
+cd
+ls
+starship prompt --help
+source ~\.files\starship\init.nu
+starship config --help
+starship config STARSHIP_CONFIG
+exit
+nu
+exit
+which nu
+scoop search nu
+scoop which nu
+clear
+ls
+starship
+starship toggle
+starship toggle --help
+starship preset tokyo-night 
+starship 
+starship print-config
+clear
+starship man
+clear
+ls
+starship
+exit
+starship config
+bat ~\.config\starship.toml
+ls
+exit
+yt-dlp 'https://www.youtube.com/watch?v=6XzyobQYQVQ&t=935s&pp=ygUOYXN0cm8gdHV0b3JpYWw%3D'
+clear
+ls
+whoami
+dir
+exit
+pwsh
+ls
+exit
+scoops xonsh
+winget search xonsh
+scoops xonsh
+scoops carapace
+scoops elvish
+winget search elvish
+clear
+cd Sources\
+pnpm create astro -- --template portfolio
+cd curved-cycle\
+code .
+cd
+yt-dlp 'https://www.youtube.com/watch?v=18c3MTX0PK0&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb&pp=iAQB'
+scoops codelite
+winget search codelite
+clear
+wingetcreate 
+gcc
+gcc --version
+which gcc
+cl;ear
+clear
+scoops mingw
+scoop install codeblocks-mingw raylib-mingw mingw 
+scoop info raylib-mingw 
+scoop info raylib-mingw raylib mingw
+scoop install raylib-mingw raylib mingw
+scoop install compactgui
+msys2
+cd c:\Scoop\apps\mingw
+ls
+cd current\
+ls
+cd bin
+ls
+clear
+cd
+winget install mingw -i
+winget search mingw
+winget search msys
+winget install msys2
+winget install msys2 -i
+clear
+exit
+msys2
+cd c:\msys64\
+ls
+msys2.exe
+clera
+exit
+clear
+exit
+clear
+exit
+yt-dlp 'https://www.youtube.com/watch?v=JxIZbV_XjAs&list=PLlrATfBNZ98dC-V-N3m0Go4deliWHPFwT&pp=iAQB'
+exit
+yt-dlp 'https://www.youtube.com/watch?v=JxIZbV_XjAs&list=PLlrATfBNZ98dC-V-N3m0Go4deliWHPFwT&pp=iAQB'
+clear
+exit
+scoop update
+scoop update --all
+New-Item -Path "$HOME\.cache\starship" -ItemType SymbolicLink -Value "$HOME\.files\starship" -Force
+ls
+starship init nu | save -f ~/.cache/starship/init.nu
+source ~/.cache/starship/init.nu
+bat ~\.cache\starship\init.nu
+$STARSHIP_SHELL
+$env.STARSHIP_SHELL
+clear
+clear
+ls
+clear
+exit
+cd Sources\
+git clone git@github.com:sarvex/Hazel.git
+cd Hazel\
+git submodule update --init
+code .
+git submodule update --init
+winget search vulkan
+scoops buildifier
+scoops bazel
+scoop install bazel-buildtools
+clion
+cd ..
+git clone git@github.com:sarvex/compiler-explorer.git
+code .
+ls
+rm -rf .vscode\
+code compiler-explorer\
+cd c:
+ls
+cd c:\
+ls
+clear
+ls
+cd `Documents and Settings\`
+ls
+cd Yoga\
+ls
+clear
+winget upgrade --all
+winget upgrade --all --include-unknown
+winget install msys2
