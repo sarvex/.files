@@ -443,3 +443,34 @@ clear
 winget upgrade --all
 winget upgrade --all --include-unknown
 winget install msys2
+scoop update --all
+z
+winget upgrade --all --include-unknown
+scoop update --all
+scoop cleanup --all
+scoop cache --clean
+scoop cache
+scoop cache rm --all
+clear
+ls
+clear
+cd c:\msys64\
+ls
+msys2.exe
+.\msys2.exe
+clear
+exit
+winget upgrade --all
+scoop update --all
+clear
+exit
+yt-dlp 'https://www.youtube.com/watch?v=PsyGmsIgp9M&list=PLlrATfBNZ98dC-V-N3m0Go4deliWHPFwT&index=89&pp=iAQB'
+clear
+ls
+clear
+yt-dlp 'https://www.youtube.com/watch?v=6XzyobQYQVQ&t=935s'
+clear
+exit
+yt-dlp 'https://www.youtube.com/watch?v=F2pw1C9eKXw&list=PLoqZcxvpWzzeRwF8TEpXHtO7KYY6cNJeF&pp=iAQB'
+clear
+exit
