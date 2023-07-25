@@ -1,6 +1,7 @@
 Import-Module Terminal-Icons
 # Invoke-Expression (&scoop-search-multisource.exe --hook)
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/capr4n.omp.json" | Invoke-Expression
+# oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/capr4n.omp.json" | Invoke-Expression
+Invoke-Expression (& 'C:\Users\Yoga\scoop\shims\starship.exe' init powershell --print-full-init | Out-String)
 
 Set-Alias astro 'C:\Users\Yoga\.files\bin\astro.ps1'
 Set-Alias cart 'C:\Users\Yoga\.files\bin\cart.ps1'

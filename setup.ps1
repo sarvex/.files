@@ -2,13 +2,13 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 # Install Winget
 winget upgrade --all
-@('Microsoft.VisualStudioCode', 'Microsoft.Powershell', 'Microsoft.Git', 'Microsoft.VFSforGit', 'Microsoft.DotNet.SDK.7', 'Microsoft.VisualStudio.2022.Enterprise', 'Microsoft.WingetCreate', 'Microsoft.WindowsWDK', 'Microsoft.Sysinternals.ProcessMonitor', 'Microsoft.Sysinternals.ProcessExplorer', 'Microsoft.Sysinternals.Autoruns', 'Microsoft.Sysinternals.Desktops', 'Microsoft.Sysinternals.BGInfo', 'Microsoft.Sysinternals.RDCMan', 'Microsoft.Sysinternals.TCPView', 'Nushell.Nushell', 'GitHub.cli', 'GLab.GLab', 'SublimeHQ.SublimeText.4', 'Vim.Vim', 'Neovide.Neovide', 'Discord.Discord', 'Brave.Brave', 'Mozilla.Firefox', 'Google.Chrome', 'eloston.ungoogled-chromium', 'TorProject.TorBrowser', 'VivaldiTechnologies.Vivaldi', 'Notepad++.Notepad++', 'VideoLAN.VLC', 'SMPlayer.SMPlayer', 'Avidemux.Avidemux', 'GIMP.GIMP', 'KDE.Krita', 'BlenderFoundation.Blender', 'Inkscape.Inkscape', 'Audacity.Audacity', 'Helix.Helix') | ForEach-Object { winget install $_ }
+@('Microsoft.VisualStudioCode', 'Microsoft.Powershell', 'Microsoft.Git', 'Microsoft.VFSforGit', 'Microsoft.DotNet.SDK.7', 'Microsoft.VisualStudio.2022.Enterprise', 'Microsoft.WingetCreate', 'Microsoft.WindowsWDK', 'Nushell.Nushell', 'GitHub.cli', 'GLab.GLab', 'SublimeHQ.SublimeText.4', 'Vim.Vim', 'Neovide.Neovide', 'Discord.Discord', 'Brave.Brave', 'Mozilla.Firefox', 'Google.Chrome', 'eloston.ungoogled-chromium', 'TorProject.TorBrowser', 'VivaldiTechnologies.Vivaldi', 'Notepad++.Notepad++', 'VideoLAN.VLC', 'SMPlayer.SMPlayer', 'Avidemux.Avidemux', 'GIMP.GIMP', 'KDE.Krita', 'BlenderFoundation.Blender', 'Inkscape.Inkscape', 'Audacity.Audacity') | ForEach-Object { winget install $_ }
 
 # Install scoop
 Invoke-WebRequest get.scoop.sh -UseBasicParsing | Invoke-Expression
-scoop bucket known | ForEach-Object { scoop bucket add $_ }
+@('extras', 'games', 'nerd-fonts') | ForEach-Object { scoop bucket add $_ }
 scoop bucket add sarvex https://github.com/sarvex/scoop
-scoop install sudo aria2 curl grep sed less touch wget gzip search-multisource terminal-icons starship elvish oh-my-posh ripgrep deno lazygit bottom bat dust mprocs fd fzf ripgrep helix llvm emacs python ruby perl php julia go make cmake premake bazel clangd rustup scala kotlin scala kotlin erlang haskell lua love elixir elm nim racket clojure luarocks luacheck lua-language-server ffmpeg yt-dlp AurulentSansMono-nerd-font Agave-nerd-font AnonymousPro-nerd-font BitstreamVeraSansMono-nerd-font CascadiaCode CascadiaCode-nerd-font CodeNewRoman-nerd-font ComicShannsMono-nerd-font Cousine-nerd-font DejaVuSansMono-nerd-font DroidSansMono-nerd-font FantasqueSansMono-nerd-font FiraCode-nerd-font Go-Mono-nerd-font Gohu-nerd-font Hack-nerd-font Hasklig-nerd-font iA-Writer-nerd-font IBMPlexMono-nerd-font Inconsolata-nerd-font InconsolataGo-nerd-font Iosevka-nerd-font IosevkaTerm-nerd-font JetBrainsMono-nerd-font LiberationMono-nerd-font Lilex-nerd-font Meslo-nerd-font Overpass-nerd-font Monofur-nerd-font Monoid-nerd-font Mononoki-nerd-font Noto-nerd-font ProFont-nerd-font ProggyClean-nerd-font RobotoMono-nerd-font SourceCodePro-nerd-font SpaceMono-nerd-font ShareTechMono-nerd-font Tinos-nerd-font Terminus-nerd-font UbuntuMono-nerd-font
+scoop install sudo aria2 curl grep sed less touch wget gzip search-multisource terminal-icons starship ripgrep deno lazygit bottom bat dust mprocs fd fzf ripgrep helix llvm emacs nodejs pyenv ruby perl php julia go make cmake premake bazel clangd rustup scala kotlin scala kotlin erlang haskell lua love elixir elm nim racket luarocks luacheck lua-language-server ffmpeg yt-dlp AurulentSansMono-nerd-font Agave-nerd-font AnonymousPro-nerd-font BitstreamVeraSansMono-nerd-font CascadiaCode CascadiaCode-nerd-font CodeNewRoman-nerd-font ComicShannsMono-nerd-font Cousine-nerd-font DejaVuSansMono-nerd-font DroidSansMono-nerd-font FantasqueSansMono-nerd-font FiraCode-nerd-font Go-Mono-nerd-font Gohu-nerd-font Hack-nerd-font Hasklig-nerd-font iA-Writer-nerd-font IBMPlexMono-nerd-font Inconsolata-nerd-font InconsolataGo-nerd-font Iosevka-nerd-font IosevkaTerm-nerd-font JetBrainsMono-nerd-font LiberationMono-nerd-font Lilex-nerd-font Meslo-nerd-font Overpass-nerd-font Monofur-nerd-font Monoid-nerd-font Mononoki-nerd-font Noto-nerd-font ProFont-nerd-font ProggyClean-nerd-font RobotoMono-nerd-font SourceCodePro-nerd-font SpaceMono-nerd-font ShareTechMono-nerd-font Tinos-nerd-font Terminus-nerd-font UbuntuMono-nerd-font
 sudo Add-MpPreference -ExclusionPath "${env:ProgramData}\Scoop\", "${env:USERPROFILE}\Scoop\" -Force
 
 # Fetch DotFiles
@@ -43,9 +43,15 @@ New-Item -Path "$env:APPDATA\neovide" -ItemType SymbolicLink -Value "$dotfiles\n
 New-Item -Path "$env:APPDATA\Notepad++" -ItemType SymbolicLink -Value "$dotfiles\notepad" -Force
 New-Item -Path "$env:APPDATA\yt-dlp\config" -ItemType SymbolicLink -Value "$dotfiles\yt-dlp.config" -Force
 
+New-Item -Path "$env:LOCALAPPDATA\nvim" -ItemType SymbolicLink -Value "$dotfiles\nvim" -Force
+
+# Install LazyVim
+# $lazy = "$env:LOCALAPPDATA\lazy"
+$lazy = "$env:LOCALAPPDATA\nvim"
+New-Item -Path "$lazy" -ItemType SymbolicLink -Value "$dotfiles\lazy" -Force
+
 $profile_path = $PROFILE.CurrentUserAllHosts
 New-Item -Path "$profile_path" -ItemType SymbolicLink -Value "$dotfiles\Profile.ps1" -Force
-New-Item -Path "$env:LOCALAPPDATA\nvim" -ItemType SymbolicLink -Value "$dotfiles\nvim" -Force
 . $profile_path
 
 # Install Doom
@@ -95,11 +101,6 @@ New-Item -Path "$cosmic\lua\cosmic\config" -ItemType SymbolicLink -Value "$dotfi
 $kick = "$env:LOCALAPPDATA\kick"
 git clone --depth 1 https://github.com/kickVim/starter $kick
 New-Item -Path "$kick" -ItemType SymbolicLink -Value "$dotfiles\kick" -Force
-
-# Install LazyVim
-$lazy = "$env:LOCALAPPDATA\lazy"
-git clone --depth 1 https://github.com/LazyVim/starter $lazy
-New-Item -Path "$lazy" -ItemType SymbolicLink -Value "$dotfiles\lazy" -Force
 
 # Install NV-IDE
 $nvide = "$env:LOCALAPPDATA\nvide"
