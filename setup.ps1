@@ -48,8 +48,8 @@ New-Item -Path "$env:APPDATA\yt-dlp\config" -ItemType SymbolicLink -Value "$dotf
 New-Item -Path "$env:LOCALAPPDATA\nvim" -ItemType SymbolicLink -Value "$dotfiles\nvim" -Force
 
 # Install LazyVim
-# $lazy = "$env:LOCALAPPDATA\lazy"
 $lazy = "$env:LOCALAPPDATA\nvim"
+# $lazy = "$env:LOCALAPPDATA\lazy"
 New-Item -Path "$lazy" -ItemType SymbolicLink -Value "$dotfiles\lazy" -Force
 
 $profile_path = $PROFILE.CurrentUserAllHosts
