@@ -1,0 +1,35 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+shift+j",
+    "command": "editor.action.joinLines"
+  },
+  {
+    "key": "shift shift",
+    "command": "workbench.action.showCommands"
+  },
+  {
+    "key": "alt alt",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl ctrl",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "workbench.action.toggleSidebarVisibility",
+        // "workbench.action.toggleActivityBarVisibility",
+        "workbench.action.toggleAuxiliaryBar",
+        "workbench.action.togglePanel"
+      ]
+    }
+  },
+  {
+    "key": "alt+enter",
+    "command": "editor.action.quickFix"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "workbench.action.toggleEditorType"
+  }
+]
