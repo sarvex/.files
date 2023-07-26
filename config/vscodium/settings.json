@@ -1,8 +1,25 @@
 {
   "breadcrumbs.symbolSortOrder": "type",
+  "C_Cpp.autocompleteAddParentheses": true,
+  "C_Cpp.clang_format_sortIncludes": true,
+  "C_Cpp.default.cppStandard": "c++23",
+  "C_Cpp.default.cStandard": "c23",
+  "C_Cpp.default.mergeConfigurations": true,
+  "C_Cpp.enhancedColorization": "enabled",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "sameLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.lambda": "sameLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.namespace": "sameLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.type": "sameLine",
+  "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyFunction": true,
+  "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyType": true,
+  "cmake.allowCommentsInPresetsFile": true,
+  "cmake.allowUnsupportedPresetsVersions": true,
+  "cmake.configureOnOpen": true,
   "cSpell.userWords": [
     "aalt",
     "astro",
+    "autofetch",
     "autohide",
     "Brogrammer",
     "calt",
@@ -59,6 +76,7 @@
     "Urple",
     "valt",
     "visualstar",
+    "vulncheck",
     "Zenburn"
   ],
   "dart.lineLength": 120,
@@ -83,7 +101,6 @@
   "editor.fontWeight": "350",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
-  "editor.formatOnType": true,
   "editor.guides.bracketPairs": "active",
   "editor.hideCursorInOverviewRuler": true,
   "editor.linkedEditing": true,
@@ -93,6 +110,9 @@
     120
   ],
   "editor.semanticHighlighting.enabled": true,
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": true, // enable for all themes
+  },
   "editor.smoothScrolling": true,
   "editor.stablePeek": true,
   "editor.suggest.shareSuggestSelections": true,
@@ -237,66 +257,7 @@
   "peacock.surpriseMeOnStartup": true,
   "redhat.telemetry.enabled": false,
   "terminal.integrated.sendKeybindingsToShell": true,
-  "vim.camelCaseMotion.enable": true,
-  "vim.easymotion": true,
-  "vim.handleKeys": {
-    "<C-a>": false,
-    "<C-f>": false
-  },
-  "vim.highlightedyank.enable": true,
-  "vim.hlsearch": true,
-  "vim.incsearch": true,
-  "vim.insertModeKeyBindings": [
-    {
-      "after": [
-        "<Esc>"
-      ],
-      "before": [
-        "j",
-        "j"
-      ]
-    }
-  ],
-  "vim.leader": " ",
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "after": [
-        "d",
-        "d"
-      ],
-      "before": [
-        "<leader>",
-        "d"
-      ]
-    },
-    {
-      "before": [
-        "<C-n>"
-      ],
-      "commands": [
-        ":nohl"
-      ]
-    },
-    {
-      "before": [
-        "K"
-      ],
-      "commands": [
-        "lineBreakInsert"
-      ],
-      "silent": true
-    }
-  ],
-  "vim.smartRelativeLine": true,
-  "vim.sneak": true,
-  "vim.sneakUseIgnorecaseAndSmartcase": true,
-  "vim.statusBarColorControl": true,
-  "vim.textwidth": 120,
-  "vim.useCtrlKeys": true,
-  "vim.useSystemClipboard": true,
-  "vim.visualstar": true,
   "window.autoDetectColorScheme": true,
-  "window.closeWhenEmpty": true,
   "window.commandCenter": true,
   "workbench.colorTheme": "Rosé Pine",
   "workbench.commandPalette.experimental.suggestCommands": true,
@@ -312,21 +273,6 @@
   "workbench.preferredLightColorTheme": "Rosé Pine Moon",
   "workbench.productIconTheme": "fluent-icons",
   "workbench.sideBar.location": "right",
-  "workbench.colorCustomizations": {
-    "sash.hoverBorder": "#7c2af0",
-    "statusBar.background": "#5f0000",
-    "statusBar.foreground": "#e7e7e7",
-    "statusBarItem.hoverBackground": "#7c2af0",
-    "statusBarItem.remoteBackground": "#620fd8",
-    "statusBarItem.remoteForeground": "#e7e7e7",
-    "panel.border": "#7c2af0",
-    "statusBar.noFolderBackground": "#5f0000",
-    "statusBar.debuggingBackground": "#5f0000"
-  },
-  "vim.foldfix": true,
-  "vim.showMarksInGutter": true,
-  "vim.startInInsertMode": true,
-  "[jsonc]": {
-    "editor.defaultFormatter": "denoland.vscode-deno"
-  },
+  "notebook.formatOnCellExecution": true,
+  "notebook.formatOnSave.enabled": true,
 }
