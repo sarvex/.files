@@ -1,4 +1,7 @@
 {
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
@@ -123,6 +126,7 @@
     "tailwindcss",
     "textwidth",
     "trpc",
+    "tsconfigs",
     "twind",
     "undici",
     "unifiedjs",
@@ -141,7 +145,6 @@
   "debug.showBreakpointsInOverviewRuler": true,
   "diffEditor.diffAlgorithm": "advanced",
   "diffEditor.experimental.useVersion2": true,
-  "editor.acceptSuggestionOnEnter": "smart",
   "editor.accessibilitySupport": "off",
   "editor.cursorBlinking": "expand",
   "editor.cursorStyle": "line-thin",
@@ -168,8 +171,6 @@
   "editor.renderWhitespace": "all",
   "editor.rulers": [120],
   "editor.semanticHighlighting.enabled": true,
-  "editor.suggest.preview": true,
-  "editor.suggestSelection": "first",
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
   "editor.tokenColorCustomizations": {
@@ -260,6 +261,7 @@
     "**/CVS": false
   },
   "files.insertFinalNewline": true,
+  "files.simpleDialog.enable": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "git.autofetch": true,
@@ -369,7 +371,6 @@
   "javascript.inlayHints.parameterTypes.enabled": true,
   "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
   "javascript.inlayHints.variableTypes.enabled": true,
-  "javascript.suggest.autoImports": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "julia.enableTelemetry": false,
   "julia.symbolCacheDownload": true,
@@ -396,6 +397,7 @@
   "peacock.showColorInStatusBar": false,
   "peacock.surpriseMeOnStartup": true,
   "prettier.bracketSameLine": true,
+  "prettier.documentSelectors": ["**/*.astro"],
   "prettier.jsxSingleQuote": true,
   "prettier.printWidth": 120,
   "prettier.singleQuote": true,
@@ -453,7 +455,6 @@
   "typescript.inlayHints.parameterTypes.enabled": true,
   "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
   "typescript.inlayHints.variableTypes.enabled": true,
-  "typescript.suggest.autoImports": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vite.buildCommand": "pnpm build",
   "vite.devCommand": "pnpm dev",
@@ -463,18 +464,6 @@
   "window.autoDetectHighContrast": false,
   "window.commandCenter": true,
   "window.restoreFullscreen": true,
-  "workbench.colorCustomizations": {
-    "sash.hoverBorder": "#f7654a",
-    "statusBar.background": "#005f5f",
-    "statusBar.border": "#f53b19",
-    "statusBar.debuggingBackground": "#005f5f",
-    "statusBar.foreground": "#e7e7e7",
-    "statusBar.noFolderBackground": "#005f5f",
-    "statusBarItem.hoverBackground": "#f7654a",
-    "statusBarItem.remoteBackground": "#f53b19",
-    "statusBarItem.remoteForeground": "#e7e7e7",
-    "tab.activeBorder": "#f7654a"
-  },
   "workbench.colorTheme": "SynthWave '84",
   "workbench.commandPalette.experimental.suggestCommands": true,
   "workbench.commandPalette.experimental.useSemanticSimilarity": true,
@@ -484,7 +473,6 @@
   "workbench.editor.splitInGroupLayout": "vertical",
   "workbench.editor.tabSizing": "fit",
   "workbench.enableExperiments": false,
-  "workbench.iconTheme": "ayu",
   "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
   "workbench.preferredLightColorTheme": "Catppuccin Frappé",
   "workbench.productIconTheme": "icons-carbon",
@@ -519,5 +507,6 @@
   ],
   "yaml.format.printWidth": 120,
   "yaml.format.singleQuote": true,
-  "files.simpleDialog.enable": true
+  "javascript.suggest.completeFunctionCalls": true,
+  "typescript.suggest.completeFunctionCalls": true
 }
