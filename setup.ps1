@@ -8,8 +8,11 @@ winget upgrade --all
 Invoke-WebRequest get.scoop.sh -UseBasicParsing | Invoke-Expression
 @('extras', 'games', 'nerd-fonts', 'versions') | ForEach-Object { scoop bucket add $_ }
 scoop bucket add sarvex https://github.com/sarvex/scoop
-scoop install sudo aria2 curl grep sed less touch wget pnpm yarn gzip search-multisource terminal-icons starship ripgrep deno lazygit bottom bat dust mprocs fd fzf ripgrep helix llvm emacs nodejs pyenv ruby perl php julia go make cmake premake bazel clangd rustup scala kotlin scala kotlin erlang haskell lua love elixir elm nim racket luarocks luacheck lua-language-server ffmpeg yt-dlp AurulentSansMono-nerd-font Agave-nerd-font AnonymousPro-nerd-font BitstreamVeraSansMono-nerd-font CascadiaCode CascadiaCode-nerd-font CodeNewRoman-nerd-font ComicShannsMono-nerd-font Cousine-nerd-font DejaVuSansMono-nerd-font DroidSansMono-nerd-font FantasqueSansMono-nerd-font FiraCode-nerd-font Go-Mono-nerd-font Gohu-nerd-font Hack-nerd-font Hasklig-nerd-font iA-Writer-nerd-font IBMPlexMono-nerd-font Inconsolata-nerd-font InconsolataGo-nerd-font Iosevka-nerd-font IosevkaTerm-nerd-font JetBrainsMono-nerd-font LiberationMono-nerd-font Lilex-nerd-font Meslo-nerd-font Overpass-nerd-font Monofur-nerd-font Monoid-nerd-font Mononoki-nerd-font Noto-nerd-font ProFont-nerd-font ProggyClean-nerd-font RobotoMono-nerd-font SourceCodePro-nerd-font SpaceMono-nerd-font ShareTechMono-nerd-font Tinos-nerd-font Terminus-nerd-font UbuntuMono-nerd-font
+scoop install sudo aria2 curl grep sed less touch wget pnpm yarn gzip search-multisource terminal-icons starship ripgrep deno lazygit bottom bat dust mprocs fd fzf ripgrep helix llvm emacs nodejs ruby perl php julia go mambaforge make cmake premake xmake godot defold ccache sccache bazel bazel-buildtools clangd rustup scala kotlin kotlin-native gradle-bin kotlin-language-server erlang haskell luarocks luacheck luajit lua love elixir elm nim racket lua-language-server ffmpeg yt-dlp godot godot-mono clj-deps clojure-lsp openjdk tree-sitter tree-sitter-langs AurulentSansMono-nerd-font Agave-nerd-font AnonymousPro-nerd-font BitstreamVeraSansMono-nerd-font CascadiaCode CascadiaCode-nerd-font CodeNewRoman-nerd-font ComicShannsMono-nerd-font Cousine-nerd-font DejaVuSansMono-nerd-font DroidSansMono-nerd-font FantasqueSansMono-nerd-font FiraCode-nerd-font Go-Mono-nerd-font Gohu-nerd-font Hack-nerd-font Hasklig-nerd-font iA-Writer-nerd-font IBMPlexMono-nerd-font Inconsolata-nerd-font InconsolataGo-nerd-font Iosevka-nerd-font IosevkaTerm-nerd-font JetBrainsMono-nerd-font LiberationMono-nerd-font Lilex-nerd-font Meslo-nerd-font Overpass-nerd-font Monofur-nerd-font Monoid-nerd-font Mononoki-nerd-font Noto-nerd-font ProFont-nerd-font ProggyClean-nerd-font RobotoMono-nerd-font SourceCodePro-nerd-font SpaceMono-nerd-font ShareTechMono-nerd-font Tinos-nerd-font Terminus-nerd-font UbuntuMono-nerd-font
 sudo Add-MpPreference -ExclusionPath "${env:ProgramData}\Scoop\", "${env:USERPROFILE}\Scoop\" -Force
+
+# Add PyEnv
+Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1" -OutFile "./install-pyenv-win.ps1"; &"./install-pyenv-win.ps1"
 
 # Fetch DotFiles
 $dotfiles = "$HOME\.files"
@@ -120,10 +123,11 @@ git clone --depth 1 https://github.com/sarvex/nabhi.git $nabhi
 New-Item -Path "$nabhi\lua\user" -ItemType SymbolicLink -Value "$dotfiles\nabhi" -Force
 
 ## Additional Steps move Home to D:\
-# New-Item -Path "$HOME\Desktop" -ItemType SymbolicLink -Value "D:\Desktop" -Force
-# New-Item -Path "$HOME\Documents" -ItemType SymbolicLink -Value "D:\Documents" -Force
-# New-Item -Path "$HOME\Downloads" -ItemType SymbolicLink -Value "D:\Downloads" -Force
-# New-Item -Path "$HOME\Music" -ItemType SymbolicLink -Value "D:\Music" -Force
-# New-Item -Path "$HOME\Pictures" -ItemType SymbolicLink -Value "D:\Pictures" -Force
-# New-Item -Path "$HOME\Source" -ItemType SymbolicLink -Value "D:\Source" -Force
-# New-Item -Path "$HOME\Videos" -ItemType SymbolicLink -Value "D:\Videos" -Force
+New-Item -Path "$HOME\Desktop" -ItemType SymbolicLink -Value "D:\Desktop" -Force
+New-Item -Path "$HOME\Documents" -ItemType SymbolicLink -Value "D:\Documents" -Force
+New-Item -Path "$HOME\Downloads" -ItemType SymbolicLink -Value "D:\Downloads" -Force
+New-Item -Path "$HOME\Music" -ItemType SymbolicLink -Value "D:\Music" -Force
+New-Item -Path "$HOME\Pictures" -ItemType SymbolicLink -Value "D:\Pictures" -Force
+New-Item -Path "$HOME\Source" -ItemType SymbolicLink -Value "D:\Source" -Force
+New-Item -Path "$HOME\Videos" -ItemType SymbolicLink -Value "D:\Videos" -Force
+New-Item -Path "$HOME\Youtube" -ItemType SymbolicLink -Value "D:\Youtube" -Force

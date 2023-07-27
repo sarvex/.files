@@ -28,6 +28,7 @@
     "Catppuccin",
     "clig",
     "Cmder",
+    "commandline",
     "Consolas",
     "Darcula",
     "dlig",
@@ -56,6 +57,7 @@
     "nalt",
     "nohl",
     "nord",
+    "Nushell",
     "palt",
     "Paraiso",
     "Rebecca",
@@ -68,6 +70,7 @@
     "Smyck",
     "Spacedust",
     "Spiderman",
+    "startdir",
     "Sundried",
     "Synthwave",
     "textwidth",
@@ -77,6 +80,7 @@
     "valt",
     "visualstar",
     "vulncheck",
+    "wtstart",
     "Zenburn"
   ],
   "dart.lineLength": 120,
@@ -275,4 +279,8 @@
   "workbench.sideBar.location": "right",
   "notebook.formatOnCellExecution": true,
   "notebook.formatOnSave.enabled": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "[jsonc]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
 }
