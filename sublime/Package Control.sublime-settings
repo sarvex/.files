@@ -133,6 +133,7 @@
 		"Svelte",
 		"SymbolBalloon",
 		"SyncedSideBar",
+		"SynthWave 84 - Color Scheme",
 		"Tabnine",
 		"Tailwind CSS",
 		"Terminal",
@@ -145,6 +146,5 @@
 	],
 	"in_process_packages":
 	[
-		"LSP-pyright",
 	],
 }
