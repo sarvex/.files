@@ -1,4 +1,10 @@
 {
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
   "breadcrumbs.symbolSortOrder": "type",
   "C_Cpp.autocompleteAddParentheses": true,
   "C_Cpp.clang_format_sortIncludes": true,
@@ -113,177 +119,171 @@
   "editor.linkedEditing": true,
   "editor.minimap.autohide": true,
   "editor.mouseWheelZoom": true,
-  "editor.rulers": [
-    120
-  ],
+  "editor.rulers": [120],
   "editor.semanticHighlighting.enabled": true,
   "editor.semanticTokenColorCustomizations": {
-    "enabled": true, // enable for all themes
-  },
-  "editor.smoothScrolling": true,
-  "editor.stablePeek": true,
-  "editor.suggest.shareSuggestSelections": true,
-  "editor.suggest.showStatusBar": true,
-  "editor.tabCompletion": "on",
-  "editor.tabSize": 2,
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      {
-        "scope": [
-          "comment",
-          "string",
-          "parameter",
-          "entity.name.type.class",
-          "keyword",
-          "constant",
-          "storage.modifier",
-          "storage.type.class.js"
-        ],
-        "settings": {
-          "fontStyle": "italic"
+    "[jsonc]": {
+      "editor.defaultFormatter": "denoland.vscode-deno"
+    },
+    "editor.smoothScrolling": true,
+    "editor.stablePeek": true,
+    "editor.suggest.shareSuggestSelections": true,
+    "editor.suggest.showStatusBar": true,
+    "editor.tabCompletion": "on",
+    "editor.tabSize": 2,
+    "editor.tokenColorCustomizations": {
+      "textMateRules": [
+        {
+          "scope": [
+            "comment",
+            "string",
+            "parameter",
+            "entity.name.type.class",
+            "keyword",
+            "constant",
+            "storage.modifier",
+            "storage.type.class.js"
+          ],
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": [
+            "invalid",
+            "keyword.operator",
+            "constant.numeric.css",
+            "keyword.other.unit.px.css",
+            "constant.numeric.decimal.js",
+            "constant.numeric.json"
+          ],
+          "settings": {
+            "fontStyle": "bold italic"
+          }
         }
+      ]
+    },
+    "editor.wordWrapColumn": 120,
+    "editor.wrappingStrategy": "advanced",
+    "emmet.excludeLanguages": [],
+    "emmet.includeLanguages": {
+      "astro": "html",
+      "javascript": "javascriptreact",
+      "markdown": "html",
+      "svelte": "html",
+      "typescript": "typescriptreact",
+      "vue-html": "html"
+    },
+    "emmet.showSuggestionsAsSnippets": true,
+    "emmet.triggerExpansionOnTab": true,
+    "enabled": true, // enable for all themes
+    "eslint.lintTask.enable": true,
+    "eslint.packageManager": "pnpm",
+    "eslint.probe": [
+      "astro",
+      "html",
+      "html",
+      "javascript",
+      "javascriptreact",
+      "markdown",
+      "markdownreact",
+      "svelte",
+      "typescript",
+      "typescriptreact",
+      "vue"
+    ],
+    "eslint.validate": [
+      "astro",
+      "html",
+      "html",
+      "javascript",
+      "javascriptreact",
+      "markdown",
+      "markdownreact",
+      "svelte",
+      "typescript",
+      "typescriptreact",
+      "vue"
+    ],
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.fileNesting.enabled": true,
+    "extensions.experimental.deferredStartupFinishedActivation": true,
+    "extensions.webWorker": true,
+    "files.autoSave": "onFocusChange",
+    "files.eol": "\n",
+    "files.exclude": {
+      "**/.git": false
+    },
+    "files.insertFinalNewline": true,
+    "files.simpleDialog.enable": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "git.autofetch": true,
+    "git.autoStash": true,
+    "git.branchRandomName.dictionary": ["adjectives", "animals", "colors"],
+    "git.branchRandomName.enable": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "git.mergeEditor": true,
+    "git.postCommitCommand": "sync",
+    "git.pruneOnFetch": true,
+    "git.rebaseWhenSync": true,
+    "git.terminalGitEditor": true,
+    "git.useCommitInputAsStashMessage": true,
+    "github.gitProtocol": "ssh",
+    "githubIssues.queries": [
+      {
+        "label": "My Issues",
+        "query": "default"
       },
       {
-        "scope": [
-          "invalid",
-          "keyword.operator",
-          "constant.numeric.css",
-          "keyword.other.unit.px.css",
-          "constant.numeric.decimal.js",
-          "constant.numeric.json"
-        ],
-        "settings": {
-          "fontStyle": "bold italic"
-        }
+        "label": "Created Issues",
+        "query": "author:${user} state:open repo:${owner}/${repository} sort:updated-desc"
       }
-    ]
-  },
-  "editor.wordWrapColumn": 120,
-  "editor.wrappingStrategy": "advanced",
-  "emmet.excludeLanguages": [],
-  "emmet.includeLanguages": {
-    "astro": "html",
-    "javascript": "javascriptreact",
-    "markdown": "html",
-    "svelte": "html",
-    "typescript": "typescriptreact",
-    "vue-html": "html"
-  },
-  "emmet.showSuggestionsAsSnippets": true,
-  "emmet.triggerExpansionOnTab": true,
-  "eslint.lintTask.enable": true,
-  "eslint.packageManager": "pnpm",
-  "eslint.probe": [
-    "astro",
-    "html",
-    "html",
-    "javascript",
-    "javascriptreact",
-    "markdown",
-    "markdownreact",
-    "svelte",
-    "typescript",
-    "typescriptreact",
-    "vue"
-  ],
-  "eslint.validate": [
-    "astro",
-    "html",
-    "html",
-    "javascript",
-    "javascriptreact",
-    "markdown",
-    "markdownreact",
-    "svelte",
-    "typescript",
-    "typescriptreact",
-    "vue"
-  ],
-  "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false,
-  "explorer.fileNesting.enabled": true,
-  "extensions.experimental.deferredStartupFinishedActivation": true,
-  "extensions.webWorker": true,
-  "files.autoSave": "onFocusChange",
-  "files.eol": "\n",
-  "files.exclude": {
-    "**/.git": false
-  },
-  "files.insertFinalNewline": true,
-  "files.simpleDialog.enable": true,
-  "files.trimFinalNewlines": true,
-  "files.trimTrailingWhitespace": true,
-  "git.autofetch": true,
-  "git.autoStash": true,
-  "git.branchRandomName.dictionary": [
-    "adjectives",
-    "animals",
-    "colors"
-  ],
-  "git.branchRandomName.enable": true,
-  "git.confirmSync": false,
-  "git.enableSmartCommit": true,
-  "git.mergeEditor": true,
-  "git.postCommitCommand": "sync",
-  "git.pruneOnFetch": true,
-  "git.rebaseWhenSync": true,
-  "git.terminalGitEditor": true,
-  "git.useCommitInputAsStashMessage": true,
-  "github.gitProtocol": "ssh",
-  "githubIssues.queries": [
-    {
-      "label": "My Issues",
-      "query": "default"
-    },
-    {
-      "label": "Created Issues",
-      "query": "author:${user} state:open repo:${owner}/${repository} sort:updated-desc"
-    }
-  ],
-  "gitlens.codeLens.enabled": false,
-  "gitlens.currentLine.enabled": false,
-  "gitlens.defaultGravatarsStyle": "retro",
-  "gitlens.plusFeatures.enabled": false,
-  "gitlens.showWelcomeOnInstall": false,
-  "gitlens.statusBar.enabled": false,
-  "gitlens.telemetry.enabled": false,
-  "go.diagnostic.vulncheck": "Imports",
-  "go.inlayHints.assignVariableTypes": true,
-  "go.inlayHints.compositeLiteralFields": true,
-  "go.inlayHints.compositeLiteralTypes": true,
-  "go.inlayHints.constantValues": true,
-  "go.inlayHints.functionTypeParameters": true,
-  "go.inlayHints.parameterNames": true,
-  "go.inlayHints.rangeVariableTypes": true,
-  "go.lintTool": "revive",
-  "go.toolsManagement.autoUpdate": true,
-  "peacock.affectActivityBar": false,
-  "peacock.affectPanelBorder": true,
-  "peacock.affectTitleBar": false,
-  "peacock.showColorInStatusBar": false,
-  "peacock.surpriseMeOnStartup": true,
-  "redhat.telemetry.enabled": false,
-  "terminal.integrated.sendKeybindingsToShell": true,
-  "window.autoDetectColorScheme": true,
-  "window.commandCenter": true,
-  "workbench.colorTheme": "Rosé Pine",
-  "workbench.commandPalette.experimental.suggestCommands": true,
-  "workbench.commandPalette.history": 64,
-  "workbench.experimental.cloudChanges.autoStore": "onShutdown",
-  "workbench.experimental.cloudChanges.partialMatches.enabled": true,
-  "workbench.experimental.share.enabled": true,
-  "workbench.iconTheme": "bearded-icons",
-  "workbench.list.smoothScrolling": true,
-  "workbench.localHistory.maxFileEntries": 64,
-  "workbench.localHistory.mergeWindow": 16,
-  "workbench.preferredDarkColorTheme": "Rosé Pine",
-  "workbench.preferredLightColorTheme": "Rosé Pine Moon",
-  "workbench.productIconTheme": "fluent-icons",
-  "workbench.sideBar.location": "right",
-  "notebook.formatOnCellExecution": true,
-  "notebook.formatOnSave.enabled": true,
-  "security.workspace.trust.untrustedFiles": "open",
-  "[jsonc]": {
-    "editor.defaultFormatter": "denoland.vscode-deno"
-  },
+    ],
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.defaultGravatarsStyle": "retro",
+    "gitlens.plusFeatures.enabled": false,
+    "gitlens.showWelcomeOnInstall": false,
+    "gitlens.statusBar.enabled": false,
+    "gitlens.telemetry.enabled": false,
+    "go.diagnostic.vulncheck": "Imports",
+    "go.inlayHints.assignVariableTypes": true,
+    "go.inlayHints.compositeLiteralFields": true,
+    "go.inlayHints.compositeLiteralTypes": true,
+    "go.inlayHints.constantValues": true,
+    "go.inlayHints.functionTypeParameters": true,
+    "go.inlayHints.parameterNames": true,
+    "go.inlayHints.rangeVariableTypes": true,
+    "go.lintTool": "revive",
+    "go.toolsManagement.autoUpdate": true,
+    "notebook.formatOnCellExecution": true,
+    "notebook.formatOnSave.enabled": true,
+    "peacock.affectActivityBar": false,
+    "peacock.affectPanelBorder": true,
+    "peacock.affectTitleBar": false,
+    "peacock.showColorInStatusBar": false,
+    "peacock.surpriseMeOnStartup": true,
+    "redhat.telemetry.enabled": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.sendKeybindingsToShell": true,
+    "window.autoDetectColorScheme": true,
+    "window.commandCenter": true,
+    "workbench.colorTheme": "Mayukai Semantic Mirage",
+    "workbench.commandPalette.experimental.suggestCommands": true,
+    "workbench.commandPalette.history": 64,
+    "workbench.experimental.cloudChanges.autoStore": "onShutdown",
+    "workbench.experimental.cloudChanges.partialMatches.enabled": true,
+    "workbench.experimental.share.enabled": true,
+    "workbench.iconTheme": "ayu",
+    "workbench.list.smoothScrolling": true,
+    "workbench.localHistory.maxFileEntries": 64,
+    "workbench.localHistory.mergeWindow": 16,
+    "workbench.preferredDarkColorTheme": "Rosé Pine",
+    "workbench.preferredLightColorTheme": "Rosé Pine Moon",
+    "workbench.productIconTheme": "fluent-icons",
+    "workbench.sideBar.location": "right"
+  }
 }

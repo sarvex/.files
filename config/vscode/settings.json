@@ -371,6 +371,7 @@
   "javascript.inlayHints.parameterTypes.enabled": true,
   "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
   "javascript.inlayHints.variableTypes.enabled": true,
+  "javascript.suggest.completeFunctionCalls": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "julia.enableTelemetry": false,
   "julia.symbolCacheDownload": true,
@@ -396,6 +397,17 @@
   "peacock.affectTitleBar": false,
   "peacock.showColorInStatusBar": false,
   "peacock.surpriseMeOnStartup": true,
+  "powershell.analyzeOpenDocumentsOnly": true,
+  "powershell.buttons.showPanelMovementButtons": true,
+  "powershell.codeFormatting.autoCorrectAliases": true,
+  "powershell.codeFormatting.avoidSemicolonsAsLineTerminators": true,
+  "powershell.codeFormatting.preset": "Stroustrup",
+  "powershell.codeFormatting.useConstantStrings": true,
+  "powershell.codeFormatting.useCorrectCasing": true,
+  "powershell.developer.editorServicesLogLevel": "Error",
+  "powershell.integratedConsole.showOnStartup": false,
+  "powershell.integratedConsole.suppressStartupBanner": true,
+  "powershell.startAsLoginShell.linux": true,
   "prettier.bracketSameLine": true,
   "prettier.documentSelectors": ["**/*.astro"],
   "prettier.jsxSingleQuote": true,
@@ -455,6 +467,7 @@
   "typescript.inlayHints.parameterTypes.enabled": true,
   "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
   "typescript.inlayHints.variableTypes.enabled": true,
+  "typescript.suggest.completeFunctionCalls": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vite.buildCommand": "pnpm build",
   "vite.devCommand": "pnpm dev",
@@ -506,7 +519,5 @@
     "!Split sequence"
   ],
   "yaml.format.printWidth": 120,
-  "yaml.format.singleQuote": true,
-  "javascript.suggest.completeFunctionCalls": true,
-  "typescript.suggest.completeFunctionCalls": true
+  "yaml.format.singleQuote": true
 }
