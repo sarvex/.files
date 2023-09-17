@@ -39,7 +39,9 @@ New-Item -Path "$env:APPDATA\nushell" -ItemType SymbolicLink -Value "$dotfiles\n
 New-Item -Path "$env:APPDATA\elvish\rc.elv" -ItemType SymbolicLink -Value "$dotfiles\rc.elv" -Force
 New-Item -Path "$env:APPDATA\lapce\Lapce-Stable\config" -ItemType SymbolicLink -Value "$dotfiles\lapce" -Force
 New-Item -Path "$env:APPDATA\Code\User\settings.json" -ItemType SymbolicLink -Value "$dotfiles\config\vscode\settings.json" -Force
-New-Item -Path "$env:APPDATA\Code\User\keybindings.json" -ItemType SymbolicLink -Value "$dotfiles\config\vscode\settings.json" -Force
+New-Item -Path "$env:APPDATA\Code\User\keybindings.json" -ItemType SymbolicLink -Value "$dotfiles\config\vscode\keybindings.json" -Force
+New-Item -Path "$env:APPDATA\Code - Insiders\User\settings.json" -ItemType SymbolicLink -Value "$dotfiles\config\vscode-insiders\settings.json" -Force
+New-Item -Path "$env:APPDATA\Code - Insiders\User\keybindings.json" -ItemType SymbolicLink -Value "$dotfiles\config\vscode-insiders\keybindings.json" -Force
 New-Item -Path "$env:APPDATA\helix" -ItemType SymbolicLink -Value "$dotfiles\helix" -Force
 New-Item -Path "$env:APPDATA\VSCodium\User\settings.json" -ItemType SymbolicLink -Value "$dotfiles\config\vscodium\settings.json" -Force
 New-Item -Path "$env:APPDATA\VSCodium\User\keybindings.json" -ItemType SymbolicLink -Value "$dotfiles\config\vscodium\keybindings.json" -Force
