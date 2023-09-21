@@ -1,5 +1,30 @@
 return {
-  { 'nvim-treesitter/playground', cmd = 'TSPlaygroundToggle' },
+  {
+    'code-biscuits/nvim-biscuits',
+    dependencies = {
+      'nvim-treesitter/nvim-treesitter',
+      run = ':TSUpdate'
+    },
+    opts = {
+      default_config = {
+        max_length = 12,
+        min_distance = 5,
+        prefix_string = " 📎 "
+      },
+      language_config = {
+        html = {
+          prefix_string = " 🌐 "
+        },
+        javascript = {
+          prefix_string = " ✨ ",
+          max_length = 80
+        },
+        python = {
+          disabled = true
+        }
+      }
+    }
+  },
 
   {
     'nvim-treesitter/nvim-treesitter-context',
@@ -10,6 +35,11 @@ return {
 
   {
     'nvim-treesitter/nvim-treesitter',
+    dependencies = {
+      { 'windwp/nvim-ts-autotag',     opts = {} },
+      { 'nvim-treesitter/playground', cmd = 'TSPlaygroundToggle' },
+      'nvim-treesitter/nvim-treesitter-refactor',
+    },
     opts = {
       ensure_installed = {
         'astro',
@@ -93,12 +123,36 @@ return {
           show_help = '?',
         },
       },
+      refactor = {
+        highlight_definitions = {
+          enable = true,
+          -- Set to false if you have an `updatetime` of ~100.
+          clear_on_cursor_move = true,
+          highlight_current_scope = { enable = true },
+          smart_rename = {
+            enable = true,
+            -- Assign keymaps to false to disable them, e.g. `smart_rename = false`.
+            keymaps = {
+              smart_rename = "grr",
+            },
+          },
+        },
+        navigation = {
+          enable = true,
+          -- Assign keymaps to false to disable them, e.g. `goto_definition = false`.
+          keymaps = {
+            goto_definition = "gnd",
+            list_definitions = "gnD",
+            list_definitions_toc = "gO",
+            goto_next_usage = "<a-*>",
+            goto_previous_usage = "<a-#>",
+          },
+        },
+      },
     },
   },
   {
     'nvim-treesitter/nvim-treesitter',
-    dependencies = {
-      { 'windwp/nvim-ts-autotag', opts = {} },
-    },
+
   },
 }

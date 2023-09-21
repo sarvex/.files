@@ -86,69 +86,12 @@ return {
         ansiblels = {},
         bashls = {},
         clangd = {},
-        -- denols = {},
+        denols = {},
         cssls = {},
         dockerls = {},
-        ruff_lsp = {},
-        tailwindcss = {
-          root_dir = function(...)
-            return require('lspconfig.util').root_pattern('.git')(...)
-          end,
-        },
-        tsserver = {
-          root_dir = function(...)
-            return require('lspconfig.util').root_pattern('.git')(...)
-          end,
-          single_file_support = false,
-          settings = {
-            typescript = {
-              inlayHints = {
-                includeInlayParameterNameHints = 'literal',
-                includeInlayParameterNameHintsWhenArgumentMatchesName = false,
-                includeInlayFunctionParameterTypeHints = true,
-                includeInlayVariableTypeHints = false,
-                includeInlayPropertyDeclarationTypeHints = true,
-                includeInlayFunctionLikeReturnTypeHints = true,
-                includeInlayEnumMemberValueHints = true,
-              },
-            },
-            javascript = {
-              inlayHints = {
-                includeInlayParameterNameHints = 'all',
-                includeInlayParameterNameHintsWhenArgumentMatchesName = false,
-                includeInlayFunctionParameterTypeHints = true,
-                includeInlayVariableTypeHints = true,
-                includeInlayPropertyDeclarationTypeHints = true,
-                includeInlayFunctionLikeReturnTypeHints = true,
-                includeInlayEnumMemberValueHints = true,
-              },
-            },
-          },
-        },
-        -- svelte = {},
-        html = {},
+        eslint = {},
         gopls = {},
-        marksman = {},
-        pyright = {},
-        rust_analyzer = {
-          -- settings = {
-          --   ['rust-analyzer'] = {
-          --     procMacro = { enable = true },
-          --     cargo = { allFeatures = true },
-          --     checkOnSave = {
-          --       command = 'clippy',
-          --       extraArgs = { '--no-deps' },
-          --     },
-          --   },
-          -- },
-        },
-        yamlls = {
-          settings = {
-            yaml = {
-              keyOrdering = false,
-            },
-          },
-        },
+        html = {},
         lua_ls = {
           -- enabled = false,
           -- cmd = { '/home/folke/projects/lua-language-server/bin/lua-language-server' },
@@ -215,9 +158,77 @@ return {
             },
           },
         },
+        marksman = {},
+        pyright = {},
+        ruff_lsp = {},
+        rust_analyzer = {
+          -- settings = {
+          --   ['rust-analyzer'] = {
+          --     procMacro = { enable = true },
+          --     cargo = { allFeatures = true },
+          --     checkOnSave = {
+          --       command = 'clippy',
+          --       extraArgs = { '--no-deps' },
+          --     },
+          --   },
+          -- },
+        },
+        svelte = {},
+        tailwindcss = {
+          root_dir = function(...)
+            return require('lspconfig.util').root_pattern('.git')(...)
+          end,
+        },
+        tsserver = {
+          root_dir = function(...)
+            return require('lspconfig.util').root_pattern('.git')(...)
+          end,
+          single_file_support = false,
+          settings = {
+            typescript = {
+              inlayHints = {
+                includeInlayParameterNameHints = 'literal',
+                includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+                includeInlayFunctionParameterTypeHints = true,
+                includeInlayVariableTypeHints = false,
+                includeInlayPropertyDeclarationTypeHints = true,
+                includeInlayFunctionLikeReturnTypeHints = true,
+                includeInlayEnumMemberValueHints = true,
+              },
+            },
+            javascript = {
+              inlayHints = {
+                includeInlayParameterNameHints = 'all',
+                includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+                includeInlayFunctionParameterTypeHints = true,
+                includeInlayVariableTypeHints = true,
+                includeInlayPropertyDeclarationTypeHints = true,
+                includeInlayFunctionLikeReturnTypeHints = true,
+                includeInlayEnumMemberValueHints = true,
+              },
+            },
+          },
+        },
         vimls = {},
+        yamlls = {
+          settings = {
+            yaml = {
+              keyOrdering = false,
+            },
+          },
+        },
       },
-      setup = {},
+      setup = {
+        eslint = function()
+          require("lazyvim.util").on_attach(function(client)
+            if client.name == "eslint" then
+              client.server_capabilities.documentFormattingProvider = true
+            elseif client.name == "tsserver" then
+              client.server_capabilities.documentFormattingProvider = false
+            end
+          end)
+        end,
+      },
     },
   },
 

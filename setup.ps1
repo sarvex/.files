@@ -45,7 +45,7 @@ New-Item -Path "$env:APPDATA\Code - Insiders\User\keybindings.json" -ItemType Sy
 New-Item -Path "$env:APPDATA\helix" -ItemType SymbolicLink -Value "$dotfiles\helix" -Force
 New-Item -Path "$env:APPDATA\VSCodium\User\settings.json" -ItemType SymbolicLink -Value "$dotfiles\config\vscodium\settings.json" -Force
 New-Item -Path "$env:APPDATA\VSCodium\User\keybindings.json" -ItemType SymbolicLink -Value "$dotfiles\config\vscodium\keybindings.json" -Force
-New-Item -Path "$env:APPDATA\Sublime Text\Packages\User" -ItemType SymbolicLink -Value "$dotfiles\sublime" -Force
+New-Item -Path "$env:APPDATA\Sublime Text\Packages\User" -ItemType SymbolicLink -Value "$dotfiles\config\sublime" -Force
 New-Item -Path "$env:APPDATA\neovide" -ItemType SymbolicLink -Value "$dotfiles\neovide" -Force
 New-Item -Path "$env:APPDATA\Notepad++" -ItemType SymbolicLink -Value "$dotfiles\notepad" -Force
 New-Item -Path "$env:APPDATA\yt-dlp\config" -ItemType SymbolicLink -Value "$dotfiles\yt-dlp.config" -Force
