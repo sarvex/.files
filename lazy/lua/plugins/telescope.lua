@@ -9,7 +9,6 @@ return {
       },
       'nvim-telescope/telescope-bibtex.nvim',
       'nvim-telescope/telescope-file-browser.nvim',
-      'nvim-telescope/telescope-fzy-native.nvim',
       'nvim-telescope/telescope-hop.nvim',
       'nvim-telescope/telescope-live-grep-args.nvim',
       "AckslD/nvim-neoclip.lua",
