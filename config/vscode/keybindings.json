@@ -31,5 +31,13 @@
   {
     "key": "ctrl+enter",
     "command": "workbench.action.toggleEditorType"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "editor.emmet.action.balanceOut"
+  },
+  {
+    "key": "ctrl+shift+m",
+    "command": "editor.emmet.action.balanceIn"
   }
 ]

@@ -2,8 +2,12 @@
 	"bootstrapped": true,
 	"installed_packages":
 	[
+		"Astro",
 		"Catppuccin color schemes",
+		"LSP-svelte",
 		"Package Control",
+		"Svelte",
+		"Vue Syntax Highlight",
 	],
 	"in_process_packages":
 	[

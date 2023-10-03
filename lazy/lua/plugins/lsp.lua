@@ -1,66 +1,66 @@
 return {
   -- neodev
   {
-    'folke/neodev.nvim',
+    "folke/neodev.nvim",
     opts = {
       debug = true,
       experimental = {
         pathStrict = true,
       },
       library = {
-        runtime = '~/projects/neovim/runtime/',
+        runtime = "~/projects/neovim/runtime/",
       },
     },
   },
 
   -- tools
   {
-    'williamboman/mason.nvim',
+    "williamboman/mason.nvim",
     opts = function(_, opts)
       vim.list_extend(opts.ensure_installed, {
-        'astro-language-server',
-        'bash-language-server',
-        'black',
-        'brighterscript',
-        'bzl',
-        'clojure-lsp',
-        'cmake-language-server',
-        'crystalline',
-        'csharp-language-server',
-        'css-lsp',
-        'deno',
-        'diagnostic-languageserver',
-        'dot-language-server',
-        'elm-language-server',
-        'ember-language-server',
-        'emmet-language-server',
-        'emmet-ls',
-        'flake8',
-        'isort',
-        'lua-language-server',
-        'luacheck',
-        'luaformatter',
-        'prettier',
-        'prettierd',
-        'rust-analyzer',
-        'selene',
-        'shellcheck',
-        'stylelint',
-        'svelte-language-server',
-        'shfmt',
-        'stylua',
-        'tailwindcss-language-server',
-        'taplo',
+        "astro-language-server",
+        "bash-language-server",
+        "black",
+        "brighterscript",
+        "bzl",
+        "clojure-lsp",
+        "cmake-language-server",
+        "crystalline",
+        "csharp-language-server",
+        "css-lsp",
+        "deno",
+        "diagnostic-languageserver",
+        "dot-language-server",
+        "elm-language-server",
+        "ember-language-server",
+        "emmet-language-server",
+        "emmet-ls",
+        "flake8",
+        "isort",
+        "lua-language-server",
+        "luacheck",
+        "luaformatter",
+        "prettier",
+        "prettierd",
+        "rust-analyzer",
+        "selene",
+        "shellcheck",
+        "stylelint",
+        "svelte-language-server",
+        "shfmt",
+        "stylua",
+        "tailwindcss-language-server",
+        "taplo",
       })
     end,
   },
 
   -- lsp servers
   {
-    'neovim/nvim-lspconfig',
+    "neovim/nvim-lspconfig",
     init = function()
       -- disable lsp watcher. Too slow on linux
-      local ok, wf = pcall(require, 'vim.lsp._watchfiles')
+      local ok, wf = pcall(require, "vim.lsp._watchfiles")
       if ok then
         wf._watchfunc = function()
           return function() end
@@ -103,7 +103,7 @@ return {
               },
               completion = {
                 workspaceWord = true,
-                callSnippet = 'Both',
+                callSnippet = "Both",
               },
               misc = {
                 parameters = {
@@ -114,45 +114,45 @@ return {
                 enable = true,
                 setType = false,
                 paramType = true,
-                paramName = 'Disable',
-                semicolon = 'Disable',
-                arrayIndex = 'Disable',
+                paramName = "Disable",
+                semicolon = "Disable",
+                arrayIndex = "Disable",
               },
               doc = {
-                privateName = { '^_' },
+                privateName = { "^_" },
               },
               type = {
                 castNumberToInteger = true,
               },
               diagnostics = {
-                disable = { 'incomplete-signature-doc', 'trailing-space' },
+                disable = { "incomplete-signature-doc", "trailing-space" },
                 -- enable = false,
                 groupSeverity = {
-                  strong = 'Warning',
-                  strict = 'Warning',
+                  strong = "Warning",
+                  strict = "Warning",
                 },
                 groupFileStatus = {
-                  ['ambiguity'] = 'Opened',
-                  ['await'] = 'Opened',
-                  ['codestyle'] = 'None',
-                  ['duplicate'] = 'Opened',
-                  ['global'] = 'Opened',
-                  ['luadoc'] = 'Opened',
-                  ['redefined'] = 'Opened',
-                  ['strict'] = 'Opened',
-                  ['strong'] = 'Opened',
-                  ['type-check'] = 'Opened',
-                  ['unbalanced'] = 'Opened',
-                  ['unused'] = 'Opened',
+                  ["ambiguity"] = "Opened",
+                  ["await"] = "Opened",
+                  ["codestyle"] = "None",
+                  ["duplicate"] = "Opened",
+                  ["global"] = "Opened",
+                  ["luadoc"] = "Opened",
+                  ["redefined"] = "Opened",
+                  ["strict"] = "Opened",
+                  ["strong"] = "Opened",
+                  ["type-check"] = "Opened",
+                  ["unbalanced"] = "Opened",
+                  ["unused"] = "Opened",
                 },
-                unusedLocalExclude = { '_*' },
+                unusedLocalExclude = { "_*" },
               },
               format = {
                 enable = false,
                 defaultConfig = {
-                  indent_style = 'space',
-                  indent_size = '2',
-                  continuation_indent_size = '2',
+                  indent_style = "space",
+                  indent_size = "2",
+                  continuation_indent_size = "2",
                 },
               },
             },
@@ -176,18 +176,18 @@ return {
         svelte = {},
         tailwindcss = {
           root_dir = function(...)
-            return require('lspconfig.util').root_pattern('.git')(...)
+            return require("lspconfig.util").root_pattern(".git")(...)
           end,
         },
         tsserver = {
           root_dir = function(...)
-            return require('lspconfig.util').root_pattern('.git')(...)
+            return require("lspconfig.util").root_pattern(".git")(...)
           end,
           single_file_support = false,
           settings = {
             typescript = {
               inlayHints = {
-                includeInlayParameterNameHints = 'literal',
+                includeInlayParameterNameHints = "literal",
                 includeInlayParameterNameHintsWhenArgumentMatchesName = false,
                 includeInlayFunctionParameterTypeHints = true,
                 includeInlayVariableTypeHints = false,
@@ -198,7 +198,7 @@ return {
             },
             javascript = {
               inlayHints = {
-                includeInlayParameterNameHints = 'all',
+                includeInlayParameterNameHints = "all",
                 includeInlayParameterNameHintsWhenArgumentMatchesName = false,
                 includeInlayFunctionParameterTypeHints = true,
                 includeInlayVariableTypeHints = true,
@@ -233,12 +233,12 @@ return {
   },
 
   {
-    'neovim/nvim-lspconfig',
+    "neovim/nvim-lspconfig",
     opts = {
-      diagnostics = { virtual_text = { prefix = 'icons' } },
+      diagnostics = { virtual_text = { prefix = "icons" } },
       setup = {
         clangd = function(_, opts)
-          opts.capabilities.offsetEncoding = { 'utf-16' }
+          opts.capabilities.offsetEncoding = { "utf-16" }
         end,
       },
     },
@@ -246,21 +246,21 @@ return {
 
   -- null-ls
   {
-    'jose-elias-alvarez/null-ls.nvim',
+    "nvimtools/none-ls.nvim",
     opts = function(_, opts)
-      local nls = require('null-ls')
+      local nls = require("null-ls")
       vim.list_extend(opts.sources, {
         nls.builtins.formatting.dprint.with({
           condition = function(utils)
-            return utils.root_has_file({ 'dprint.json' }) or vim.loop.fs_stat('dprint.json')
+            return utils.root_has_file({ "dprint.json" }) or vim.loop.fs_stat("dprint.json")
           end,
         }),
-        nls.builtins.formatting.prettier.with({ filetypes = { 'markdown' } }),
+        nls.builtins.formatting.prettier.with({ filetypes = { "markdown" } }),
         nls.builtins.diagnostics.markdownlint,
         nls.builtins.diagnostics.deno_lint,
         nls.builtins.diagnostics.selene.with({
           condition = function(utils)
-            return utils.root_has_file({ 'selene.toml' })
+            return utils.root_has_file({ "selene.toml" })
           end,
         }),
         nls.builtins.formatting.isort,
@@ -268,7 +268,7 @@ return {
         nls.builtins.diagnostics.flake8,
         nls.builtins.diagnostics.luacheck.with({
           condition = function(utils)
-            return utils.root_has_file({ '.luacheckrc' })
+            return utils.root_has_file({ ".luacheckrc" })
           end,
         }),
       })

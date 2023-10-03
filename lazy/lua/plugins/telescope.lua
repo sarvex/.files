@@ -2,11 +2,24 @@ return {
   {
     'telescope.nvim',
     dependencies = {
-      'nvim-telescope/telescope-fzy-native.nvim',
-      'nvim-telescope/telescope-live-grep-args.nvim',
-      'nvim-telescope/telescope-hop.nvim',
+      "nvim-notify",
+      {
+        "nvim-telescope/telescope-fzf-native.nvim",
+        build = "make",
+      },
       'nvim-telescope/telescope-bibtex.nvim',
       'nvim-telescope/telescope-file-browser.nvim',
+      'nvim-telescope/telescope-fzy-native.nvim',
+      'nvim-telescope/telescope-hop.nvim',
+      'nvim-telescope/telescope-live-grep-args.nvim',
+      "AckslD/nvim-neoclip.lua",
+      "benfowler/telescope-luasnip.nvim",
+      "jvgrootveld/telescope-zoxide",
+      "nvim-telescope/telescope-ghq.nvim",
+      "nvim-telescope/telescope-github.nvim",
+      "olacin/telescope-cc.nvim",
+      "ThePrimeagen/refactoring.nvim",
+      "tsakirist/telescope-lazy.nvim",
       build = 'make',
       config = function()
         local telescope = require 'telescope'
@@ -16,6 +29,14 @@ return {
         telescope.load_extension 'bibtex'
         telescope.load_extension 'file_browser'
         telescope.load_extension 'projects'
+        telescope.load_extension 'ghq'
+        telescope.load_extension 'gh'
+        telescope.load_extension 'neoclip'
+        telescope.load_extension 'luasnip'
+        telescope.load_extension 'zoxide'
+        telescope.load_extension 'lazy'
+        telescope.load_extension 'conventional_commits'
+        telescope.load_extension 'refactoring'
       end,
     },
     keys = {
