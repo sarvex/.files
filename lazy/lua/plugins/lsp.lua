@@ -232,14 +232,17 @@ return {
     },
   },
 
+  -- add folding range to capabilities
   {
-    "neovim/nvim-lspconfig",
+    'neovim/nvim-lspconfig',
     opts = {
-      diagnostics = { virtual_text = { prefix = "icons" } },
-      setup = {
-        clangd = function(_, opts)
-          opts.capabilities.offsetEncoding = { "utf-16" }
-        end,
+      capabilities = {
+        textDocument = {
+          foldingRange = {
+            dynamicRegistration = false,
+            lineFoldingOnly = true,
+          },
+        },
       },
     },
   },

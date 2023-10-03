@@ -4,7 +4,7 @@ return {
     dependencies = {
       "nvim-notify",
       {
-        "nvim-telescope/telescope-fzf-native.nvim",
+        "nvim-telescope/telescope-fzy-native.nvim",
         build = "make",
       },
       'nvim-telescope/telescope-bibtex.nvim',
@@ -22,7 +22,6 @@ return {
       build = 'make',
       config = function()
         local telescope = require 'telescope'
-        telescope.load_extension 'fzy'
         telescope.load_extension 'fzy_native'
         telescope.load_extension 'live_grep_args'
         telescope.load_extension 'bibtex'

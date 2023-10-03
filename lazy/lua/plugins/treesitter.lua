@@ -66,7 +66,6 @@ return {
         'json',
         'jsonc',
         'lua',
-        'lua',
         'luap',
         'markdown_inline',
         'markdown',

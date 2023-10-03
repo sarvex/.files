@@ -10,7 +10,7 @@ vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 require('lazy').setup({
   spec = {
     -- add LazyVim and import its plugins
-    { 'sarvex/LazyVim',                                      import = 'lazyvim.plugins' },
+    { 'LazyVim/LazyVim',                                     import = 'lazyvim.plugins' },
     { import = 'lazyvim.plugins.extras.coding.yanky' },
     { import = 'lazyvim.plugins.extras.dap.core' },
     { import = 'lazyvim.plugins.extras.dap.nlua' },
@@ -44,17 +44,17 @@ require('lazy').setup({
     { import = 'lazyvim.plugins.extras.util.mini-hipatterns' },
     { import = 'lazyvim.plugins.extras.util.project' },
     { import = 'lazyvim.plugins.extras.vscode' },
-    { import = 'lazyvim.plugins.extras.formatting.biome' },
-    { import = 'lazyvim.plugins.extras.formatting.blackd' },
-    { import = 'lazyvim.plugins.extras.formatting.usort' },
-    { import = 'lazyvim.plugins.extras.lang.dhall' },
-    { import = 'lazyvim.plugins.extras.lang.hakell' },
-    { import = 'lazyvim.plugins.extras.lang.jsonnet' },
-    { import = 'lazyvim.plugins.extras.lang.markdown' },
-    { import = 'lazyvim.plugins.extras.lang.php' },
-    { import = 'lazyvim.plugins.extras.lang.shell' },
-    { import = 'lazyvim.plugins.extras.lang.yuck' },
-    { import = 'lazyvim.plugins.extras.linting.ltex' },
+    -- { import = 'lazyvim.plugins.extras.formatting.biome' },
+    -- { import = 'lazyvim.plugins.extras.formatting.blackd' },
+    -- { import = 'lazyvim.plugins.extras.formatting.usort' },
+    -- { import = 'lazyvim.plugins.extras.lang.dhall' },
+    -- { import = 'lazyvim.plugins.extras.lang.hakell' },
+    -- { import = 'lazyvim.plugins.extras.lang.jsonnet' },
+    -- { import = 'lazyvim.plugins.extras.lang.markdown' },
+    -- { import = 'lazyvim.plugins.extras.lang.php' },
+    -- { import = 'lazyvim.plugins.extras.lang.shell' },
+    -- { import = 'lazyvim.plugins.extras.lang.yuck' },
+    -- { import = 'lazyvim.plugins.extras.linting.ltex' },
 
     -- import/override with your plugins
     { import = 'plugins' },
