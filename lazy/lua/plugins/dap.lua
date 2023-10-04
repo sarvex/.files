@@ -4,10 +4,23 @@ return {
     opts = function(_, opts)
       vim.list_extend(opts.ensure_installed, {
         'bash',
+        'chrome',
+        'codelldb',
+        'coreclr',
         'cppdbg',
+        'dart',
         'delve',
+        'elixir',
+        'firefox',
+        'haskell',
+        'javadbg',
+        'javatest',
         'js',
+        'kotlin',
+        'mock',
+        'node2',
         'php',
+        'puppet',
         'python',
       })
     end,

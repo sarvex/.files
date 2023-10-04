@@ -468,5 +468,6 @@
   "workbench.editor.limit.excludeDirty": true,
   "search.useGlobalIgnoreFiles": true,
   "search.useParentIgnoreFiles": true,
-  "editor.find.addExtraSpaceOnTop": false
+  "editor.find.addExtraSpaceOnTop": false,
+  "terminal.integrated.env.linux": {}
 }

@@ -1,0 +1,37 @@
+{
+	"motd": {
+		"cloudBuildErrorAfter": 1594252800000,
+		"cloudBuildWarnAfter": 1590019200000,
+		"defaultNode10After": 1594252800000,
+		"minVersion": "3.0.5",
+		"node8DeploysDisabledAfter": 1613390400000,
+		"node8RuntimeDisabledAfter": 1615809600000,
+		"node8WarnAfter": 1600128000000,
+		"fetched": 1696317742485
+	},
+	"usage": false,
+	"user": {
+		"iss": "accounts.google.com",
+		"azp": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"aud": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"sub": "101735053453147141734",
+		"email": "sarvex.jatasra@gmail.com",
+		"email_verified": true,
+		"at_hash": "nfnO7ZWrA2uX_qteTvS-7Q",
+		"iat": 1696317761,
+		"exp": 1696321361
+	},
+	"tokens": {
+		"expires_at": 1696321359995,
+		"access_token": "ya29.a0AfB_byAK7x3VSpK6K4xOA2DNMfiSvDgQGmiZJg6XF9VRmXj4yMvOSnQYYSxnfYFPzmDEvXv7oPkehUcYfhni63dq3Y8xk3lXH4yMJq0f4V_9pcLXRstdAE6b2xKeje1ZMH8shVRurYnhrP6HQmabhRxMNS3bbq2fac50jkKMHwaCgYKASESARISFQGOcNnCD0FPXcnWWn1fgtx_PHAepg0177",
+		"expires_in": 3599,
+		"refresh_token": "1//0gOrVonBOKyxiCgYIARAAGBASNwF-L9Ir0G6nwTEzokTFjbuar7qH7UxzSesEga7pZWg2ZBt81vDiV4A7wqmERtBsoC2og2_40ug",
+		"scope": "openid https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase https://www.googleapis.com/auth/userinfo.email",
+		"token_type": "Bearer",
+		"id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImI5YWM2MDFkMTMxZmQ0ZmZkNTU2ZmYwMzJhYWIxODg4ODBjZGUzYjkiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTAxNzM1MDUzNDUzMTQ3MTQxNzM0IiwiZW1haWwiOiJzYXJ2ZXguamF0YXNyYUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6Im5mbk83WldyQTJ1WF9xdGVUdlMtN1EiLCJpYXQiOjE2OTYzMTc3NjEsImV4cCI6MTY5NjMyMTM2MX0.M8mrZbMydrFirIJBQ5Hd4UZKN_0nOZvMZ7X_7-OdKpYA4wv7Qa7DBxcQoQ0ilxPIgeP7viPW-arkWMVm6GAJTaCdt-85q4qpYo2wpjmlgqO7yRSVfWZ19yivvqVUTIwjVuScysl1N_5-DAi6dmGD7rw-jbxN-Rxm3Ki_EaD_DRlfVur7phnapxYbAwGvvARjul-yAYOmzmJfD75nksIlU_jJeQbWBSOCwMFwcsUWtI4Q7I12oN4-icLKom8RaX2zkI8PyJKTY-h4RWK4cUBsBhYlF4dSiAQXD5CYJKL8s8HBCYW68JlZpYtLN2LlIpAo4_wfws5ILEaTbhhPNsbN4w"
+	},
+	"activeProjects": {
+		"C:\\Users\\Yoga\\Sources\\linkedin-clone": "linkedin-clone-7f4bc"
+	},
+	"lastError": 1696318157033
+}
