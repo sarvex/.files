@@ -14,3 +14,11 @@ Set-Alias lvim 'C:\Users\Yoga\.files\bin\lunar.ps1'
 Set-Alias nvide 'C:\Users\Yoga\.files\bin\nvide.ps1'
 Set-Alias nvoid 'C:\Users\Yoga\.files\bin\nvoid.ps1'
 Set-Alias nyoom 'C:\Users\Yoga\.files\bin\nyoom.ps1'
+
+#region conda initialize
+# !! Contents within this block are managed by 'conda init' !!
+If (Test-Path "C:\Users\Yoga\scoop\apps\mambaforge\current\Scripts\conda.exe") {
+    (& "C:\Users\Yoga\scoop\apps\mambaforge\current\Scripts\conda.exe" "shell.powershell" "hook") | Out-String | ?{$_} | Invoke-Expression
+}
+#endregion
+

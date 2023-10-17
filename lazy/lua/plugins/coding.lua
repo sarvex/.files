@@ -346,14 +346,6 @@ return {
 		end,
 	},
 
-	-- add symbols-outline
-	{
-		'simrat39/symbols-outline.nvim',
-		keys = { { '<leader>cs', '<cmd>SymbolsOutline<cr>', desc = 'Symbols Outline' } },
-		cmd = 'SymbolsOutline',
-		opts = {},
-	},
-
 	{
 		"L3MON4D3/LuaSnip",
 		keys = function()
