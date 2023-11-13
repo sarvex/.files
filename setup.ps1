@@ -2,7 +2,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 # Install Winget
 winget upgrade --all
-@('Microsoft.VisualStudioCode', 'Microsoft.Powershell', 'Microsoft.Git', 'Microsoft.VFSforGit', 'Microsoft.DotNet.SDK.7', 'Microsoft.VisualStudio.2022.Enterprise', 'Microsoft.WingetCreate', 'Microsoft.WindowsWDK', 'Nushell.Nushell', 'GitHub.cli', 'GLab.GLab', 'SublimeHQ.SublimeText.4', 'Vim.Vim', 'Neovide.Neovide', 'Discord.Discord', 'Brave.Brave', 'Mozilla.Firefox', 'Google.Chrome', 'eloston.ungoogled-chromium', 'TorProject.TorBrowser', 'VivaldiTechnologies.Vivaldi', 'Notepad++.Notepad++', 'VideoLAN.VLC', 'SMPlayer.SMPlayer', 'Avidemux.Avidemux', 'GIMP.GIMP', 'KDE.Krita', 'BlenderFoundation.Blender', 'Inkscape.Inkscape', 'Audacity.Audacity', 'OBSProject.OBSStudio', 'KDE.Kdenlive') | ForEach-Object { winget install $_ }
+@('Microsoft.VisualStudioCode', 'Microsoft.Powershell', 'Microsoft.Git', 'Microsoft.VFSforGit', 'Microsoft.DotNet.SDK.7', 'Microsoft.VisualStudio.2022.Enterprise', 'Microsoft.WingetCreate', 'Microsoft.WindowsWDK', 'Nushell.Nushell', 'GitHub.cli', 'GLab.GLab', 'SublimeHQ.SublimeText.4', 'Vim.Vim', 'Neovide.Neovide', 'Discord.Discord', 'Brave.Brave', 'Mozilla.Firefox', 'Google.Chrome', 'eloston.ungoogled-chromium', 'VivaldiTechnologies.Vivaldi', 'Notepad++.Notepad++', 'VideoLAN.VLC', 'SMPlayer.SMPlayer', 'Avidemux.Avidemux', 'GIMP.GIMP', 'KDE.Krita', 'BlenderFoundation.Blender', 'Inkscape.Inkscape', 'Audacity.Audacity', 'OBSProject.OBSStudio', 'KDE.Kdenlive') | ForEach-Object { winget install $_ }
 
 # Install scoop
 Invoke-WebRequest get.scoop.sh -UseBasicParsing | Invoke-Expression
@@ -130,6 +130,6 @@ New-Item -Path "$HOME\Documents" -ItemType SymbolicLink -Value "D:\Documents" -F
 New-Item -Path "$HOME\Downloads" -ItemType SymbolicLink -Value "D:\Downloads" -Force
 New-Item -Path "$HOME\Music" -ItemType SymbolicLink -Value "D:\Music" -Force
 New-Item -Path "$HOME\Pictures" -ItemType SymbolicLink -Value "D:\Pictures" -Force
-New-Item -Path "$HOME\Source" -ItemType SymbolicLink -Value "D:\Source" -Force
+New-Item -Path "$HOME\Sources" -ItemType SymbolicLink -Value "D:\Sources" -Force
 New-Item -Path "$HOME\Videos" -ItemType SymbolicLink -Value "D:\Videos" -Force
 New-Item -Path "$HOME\Youtube" -ItemType SymbolicLink -Value "D:\Youtube" -Force

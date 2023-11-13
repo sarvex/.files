@@ -213,7 +213,6 @@ return {
 		},
 	},
 	{ -- buffer enhancements
-		{ import = "lazyvim.plugins.extras.util.mini-hipatterns" },
 		{
 			"lewis6991/satellite.nvim",
 			dependencies = {
