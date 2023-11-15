@@ -1,58 +1,70 @@
 return {
   {
-    'telescope.nvim',
+    "telescope.nvim",
     dependencies = {
-      "nvim-notify",
       {
-        "nvim-telescope/telescope-fzy-native.nvim",
-        build = "make",
+        {
+          "debugloop/telescope-undo.nvim",
+          keys = { { "<leader>U", "<cmd>Telescope undo<cr>" } },
+          config = function()
+            require("telescope").load_extension("undo")
+          end,
+        },
+        {
+          "nvim-telescope/telescope-fzf-native.nvim",
+          build = "make",
+          config = function()
+            require("telescope").load_extension("fzf")
+          end,
+        },
       },
-      'nvim-telescope/telescope-bibtex.nvim',
-      'nvim-telescope/telescope-file-browser.nvim',
-      'nvim-telescope/telescope-hop.nvim',
-      'nvim-telescope/telescope-live-grep-args.nvim',
-      "AckslD/nvim-neoclip.lua",
-      "benfowler/telescope-luasnip.nvim",
-      "jvgrootveld/telescope-zoxide",
-      "nvim-telescope/telescope-ghq.nvim",
-      "nvim-telescope/telescope-github.nvim",
-      "olacin/telescope-cc.nvim",
-      "ThePrimeagen/refactoring.nvim",
-      "tsakirist/telescope-lazy.nvim",
-      build = 'make',
-      config = function()
-        local telescope = require 'telescope'
-        telescope.load_extension 'fzy_native'
-        telescope.load_extension 'live_grep_args'
-        telescope.load_extension 'bibtex'
-        telescope.load_extension 'file_browser'
-        telescope.load_extension 'projects'
-        telescope.load_extension 'ghq'
-        telescope.load_extension 'gh'
-        telescope.load_extension 'neoclip'
-        telescope.load_extension 'luasnip'
-        telescope.load_extension 'zoxide'
-        telescope.load_extension 'lazy'
-        telescope.load_extension 'conventional_commits'
-        telescope.load_extension 'refactoring'
-      end,
     },
     keys = {
       {
-        '<leader>fP',
+        "<leader>fp",
         function()
-          require('telescope.builtin').find_files({
-            cwd = require('lazy.core.config').options.root,
+          require("telescope.builtin").find_files({
+            cwd = require("lazy.core.config").options.root,
           })
         end,
-        desc = 'Find Plugin File',
+        desc = "Find Plugin File",
+      },
+      {
+        "<leader>fl",
+        function()
+          local files = {} ---@type table<string, string>
+          for _, plugin in pairs(require("lazy.core.config").plugins) do
+            repeat
+              if plugin._.module then
+                local info = vim.loader.find(plugin._.module)[1]
+                if info then
+                  files[info.modpath] = info.modpath
+                end
+              end
+              plugin = plugin._.super
+            until not plugin
+          end
+          require("telescope.builtin").live_grep({
+            default_text = "/",
+            search_dirs = vim.tbl_values(files),
+          })
+        end,
+        desc = "Find Lazy Plugin Spec",
       },
     },
     opts = {
       defaults = {
-        layout_strategy = 'horizontal',
-        layout_config = { prompt_position = 'top' },
-        sorting_strategy = 'ascending',
+        layout_strategy = "horizontal",
+        layout_config = {
+          horizontal = {
+            prompt_position = "top",
+            preview_width = 0.5,
+          },
+          width = 0.8,
+          height = 0.8,
+          preview_cutoff = 120,
+        },
+        sorting_strategy = "ascending",
         winblend = 0,
       },
     },

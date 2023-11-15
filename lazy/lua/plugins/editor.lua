@@ -1,5 +1,28 @@
 return {
-  "folke/twilight.nvim",
+  {
+    "echasnovski/mini.align",
+    opts = {},
+    keys = {
+      { "ga", mode = { "n", "v" } },
+      { "gA", mode = { "n", "v" } },
+    },
+  },
+
+  {
+    "echasnovski/mini.bracketed",
+    event = "BufReadPost",
+    enabled = false,
+    config = function()
+      local bracketed = require("mini.bracketed")
+      bracketed.setup({
+        file = { suffix = "" },
+        window = { suffix = "" },
+        quickfix = { suffix = "" },
+        yank = { suffix = "" },
+        treesitter = { suffix = "n" },
+      })
+    end,
+  },
 
   {
     "echasnovski/mini.splitjoin",
@@ -11,26 +34,128 @@ return {
   },
 
   {
-    "Wansmer/treesj",
+    "2kabhishek/nerdy.nvim",
+    cmd = "Nerdy",
     keys = {
-      { "J", "<cmd>TSJToggle<cr>", desc = "Join Toggle" },
+      { "<leader>ci", "<cmd>Nerdy<cr>", desc = "Pick Icon" },
     },
-    opts = { use_default_keymaps = false, max_join_length = 150 },
   },
 
   {
-    "cshuaimin/ssr.nvim",
-    keys = {
-      {
-        "<leader>sR",
-        function()
-          require("ssr").open()
+    "echasnovski/mini.pick",
+    cmd = "Pick",
+    opts = {},
+  },
+
+  {
+    "AckslD/muren.nvim",
+    event = {
+      { "BufNewFile", "BufAdd" },
+    },
+    opts = {
+      patterns_width = 60,
+      patterns_height = 20,
+      options_width = 40,
+      preview_height = 24,
+    },
+    cmd = "MurenToggle",
+  },
+
+  {
+    "folke/flash.nvim",
+    enabled = true,
+    init = function()
+      -- vim.keymap.set("n", "x", "<cmd>lua require('flash').jump()<cr>")
+      -- vim.opt.keymap = "emoji"
+    end,
+    ---@type Flash.Config
+    opts = {
+      -- labels = "#abcdef",
+      modes = {
+        -- char = { jump_labels = false },
+        -- treesitter = {
+        --   label = {
+        --     rainbow = { enabled = true },
+        --   },
+        -- },
+        treesitter_search = {
+          label = {
+            rainbow = { enabled = true },
+            -- format = function(opts)
+            --   local label = opts.match.label
+            --   if opts.after then
+            --     label = label .. ">"
+            --   else
+            --     label = "<" .. label
+            --   end
+            --   return { { label, opts.hl_group } }
+            -- end,
+          },
+        },
+      },
+      search = { mode = "fuzzy" },
+      labels = "😅😀🏇🐎🐴🐵🐒",
+    },
+  },
+
+  { "pwntester/octo.nvim", opts = {}, cmd = "Octo" },
+
+  -- floating winbar
+  {
+    "b0o/incline.nvim",
+    event = "BufReadPre",
+    enabled = false,
+    config = function()
+      local colors = require("tokyonight.colors").setup()
+      require("incline").setup({
+        highlight = {
+          groups = {
+            InclineNormal = { guibg = "#FC56B1", guifg = colors.black },
+            InclineNormalNC = { guifg = "#FC56B1", guibg = colors.black },
+          },
+        },
+        window = { margin = { vertical = 0, horizontal = 1 } },
+        render = function(props)
+          local filename = vim.fn.fnamemodify(vim.api.nvim_buf_get_name(props.buf), ":t")
+          local icon, color = require("nvim-web-devicons").get_icon_color(filename)
+          return { { icon, guifg = color }, { " " }, { filename } }
         end,
-        mode = { "n", "x" },
-        desc = "Structural Replace",
+      })
+    end,
+  },
+
+  -- auto-resize windows
+  {
+    "anuvyklack/windows.nvim",
+    event = "WinNew",
+    dependencies = {
+      { "anuvyklack/middleclass" },
+      { "anuvyklack/animation.nvim", enabled = false },
+    },
+    keys = { { "<leader>m", "<cmd>WindowsMaximize<cr>", desc = "Zoom" } },
+    config = function()
+      vim.o.winwidth = 5
+      vim.o.equalalways = false
+      require("windows").setup({
+        animation = { enable = false, duration = 150 },
+      })
+    end,
+  },
+
+  { -- buffer enhancements
+    {
+      "lewis6991/satellite.nvim",
+      dependencies = {
+        "lewis6991/gitsigns.nvim",
+      },
+      event = "VeryLazy",
+      opts = {
+        excluded_filetypes = { "alpha", "dashboard", "neo-tree", "noice", "prompt", "TelescopePrompt" },
       },
     },
   },
+
+  "folke/twilight.nvim",
 
   {
     "folke/zen-mode.nvim",
@@ -45,27 +170,20 @@ return {
     keys = { { "<leader>z", "<cmd>ZenMode<cr>", desc = "Zen Mode" } },
   },
 
+  -- neorg
   {
-    "andymass/vim-matchup",
-    event = "BufReadPost",
+    'nvim-neorg/neorg',
     enabled = false,
-    init = function()
-      vim.o.matchpairs = "(:),{:},[:],<:>"
-    end,
-    config = function()
-      vim.g.matchup_matchparen_deferred = 1
-      vim.g.matchup_matchparen_offscreen = { method = "status_manual" }
-    end,
-  },
-
-  {
-    "AckslD/muren.nvim",
+    ft = 'norg',
     opts = {
-      patterns_width = 60,
-      patterns_height = 20,
-      options_width = 40,
-      preview_height = 24,
+      load = {
+        ['core.defaults'] = {},
+        ['core.norg.concealer'] = {},
+        ['core.norg.completion'] = {
+          config = { engine = 'nvim-cmp' },
+        },
+        ['core.integrations.nvim-cmp'] = {},
+      },
     },
-    cmd = "MurenToggle",
   },
 }
