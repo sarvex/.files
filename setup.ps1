@@ -8,7 +8,7 @@ winget upgrade --all
 Invoke-WebRequest get.scoop.sh -UseBasicParsing | Invoke-Expression
 @('extras', 'games', 'nerd-fonts', 'versions') | ForEach-Object { scoop bucket add $_ }
 scoop bucket add sarvex https://github.com/sarvex/scoop
-scoop install sudo aria2 curl grep sed less touch wget pnpm yarn mingw gzip aspell search-multisource terminal-icons starship ripgrep deno lazygit bottom bat dust mprocs fd fzf ripgrep helix llvm emacs nodejs ruby perl php julia go mambaforge make cmake premake xmake godot defold ccache sccache bazel bazel-buildtools clangd rustup scala kotlin kotlin-native gradle-bin kotlin-language-server erlang haskell luarocks luacheck luajit lua love elixir elm nim racket lua-language-server ffmpeg yt-dlp godot godot-mono clj-deps clojure-lsp openjdk tree-sitter tree-sitter-langs AurulentSansMono-nerd-font Agave-nerd-font AnonymousPro-nerd-font BitstreamVeraSansMono-nerd-font CascadiaCode CascadiaCode-nerd-font CodeNewRoman-nerd-font ComicShannsMono-nerd-font Cousine-nerd-font DejaVuSansMono-nerd-font DroidSansMono-nerd-font FantasqueSansMono-nerd-font FiraCode-nerd-font Go-Mono-nerd-font Gohu-nerd-font Hack-nerd-font Hasklig-nerd-font iA-Writer-nerd-font IBMPlexMono-nerd-font Inconsolata-nerd-font InconsolataGo-nerd-font Iosevka-nerd-font IosevkaTerm-nerd-font JetBrainsMono-nerd-font LiberationMono-nerd-font Lilex-nerd-font Meslo-nerd-font Overpass-nerd-font Monofur-nerd-font Monoid-nerd-font Mononoki-nerd-font Noto-nerd-font ProFont-nerd-font ProggyClean-nerd-font RobotoMono-nerd-font SourceCodePro-nerd-font SpaceMono-nerd-font ShareTechMono-nerd-font Tinos-nerd-font Terminus-nerd-font UbuntuMono-nerd-font
+scoop install sudo aria2 curl grep sed less touch wget pnpm yarn mingw neovim-nightly gzip aspell search-multisource terminal-icons starship ripgrep deno lazygit bottom bat dust mprocs fd fzf ripgrep helix llvm emacs nodejs ruby perl php julia go mambaforge make cmake premake xmake godot defold ccache sccache bazel bazel-buildtools clangd rustup scala kotlin kotlin-native gradle-bin kotlin-language-server erlang haskell luarocks luacheck luajit lua love elixir elm nim racket lua-language-server ffmpeg yt-dlp godot godot-mono clj-deps clojure-lsp openjdk tree-sitter tree-sitter-langs AurulentSansMono-nerd-font Agave-nerd-font AnonymousPro-nerd-font BitstreamVeraSansMono-nerd-font CascadiaCode CascadiaCode-nerd-font CodeNewRoman-nerd-font ComicShannsMono-nerd-font Cousine-nerd-font DejaVuSansMono-nerd-font DroidSansMono-nerd-font FantasqueSansMono-nerd-font FiraCode-nerd-font Go-Mono-nerd-font Gohu-nerd-font Hack-nerd-font Hasklig-nerd-font iA-Writer-nerd-font IBMPlexMono-nerd-font Inconsolata-nerd-font InconsolataGo-nerd-font Iosevka-nerd-font IosevkaTerm-nerd-font JetBrainsMono-nerd-font LiberationMono-nerd-font Lilex-nerd-font Meslo-nerd-font Overpass-nerd-font Monofur-nerd-font Monoid-nerd-font Mononoki-nerd-font Noto-nerd-font ProFont-nerd-font ProggyClean-nerd-font RobotoMono-nerd-font SourceCodePro-nerd-font SpaceMono-nerd-font ShareTechMono-nerd-font Tinos-nerd-font Terminus-nerd-font UbuntuMono-nerd-font
 sudo Add-MpPreference -ExclusionPath "${env:ProgramData}\Scoop\", "${env:USERPROFILE}\Scoop\" -Force
 
 # Add PyEnv
@@ -25,12 +25,6 @@ New-Item -Path "$HOME\.aliases" -ItemType SymbolicLink -Value "$dotfiles\aliases
 New-Item -Path "$HOME\.gitconfig" -ItemType SymbolicLink -Value "$dotfiles\git.config" -Force
 New-Item -Path "$HOME\.wezterm.lua" -ItemType SymbolicLink -Value "$dotfiles\wezterm.lua" -Force
 New-Item -Path "$HOME\.xonshrc" -ItemType SymbolicLink -Value "$dotfiles\xonsh.rc" -Force
-New-Item -Path "$HOME\.bashrc" -ItemType SymbolicLink -Value "$dotfiles\msys\.bashrc" -Force
-New-Item -Path "$HOME\.bash_profile" -ItemType SymbolicLink -Value "$dotfiles\msys\.bash_profile" -Force
-New-Item -Path "$HOME\.profile" -ItemType SymbolicLink -Value "$dotfiles\msys\profile" -Force
-New-Item -Path "$HOME\.zshrc" -ItemType SymbolicLink -Value "$dotfiles\msys\.zshrc" -Force
-New-Item -Path "$HOME\.zshenv" -ItemType SymbolicLink -Value "$dotfiles\msys\zshenv" -Force
-New-Item -Path "$HOME\.oh-my-zsh" -ItemType SymbolicLink -Value "$dotfiles\msys\oh-myzsh" -Force
 
 # Add Links
 New-Item -Path "$env:APPDATA\alacritty\alacritty.yml" -ItemType SymbolicLink -Value "$dotfiles\alacritty.windows.yml" -Force
