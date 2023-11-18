@@ -116,7 +116,7 @@ return {
   },
 
   {
-    'mason-nvim-dap.nvim',
+    'jay-babu/mason-nvim-dap.nvim',
     opts = function(_, opts)
       vim.list_extend(opts.ensure_installed, {
         'bash',
@@ -333,27 +333,155 @@ return {
     opts = function(_, opts)
       local nls = require('null-ls')
       vim.list_extend(opts.sources, {
-        nls.builtins.formatting.dprint.with({
-          condition = function(utils)
-            return utils.root_has_file({ 'dprint.json' }) or vim.loop.fs_stat('dprint.json')
-          end,
+        nls.builtins.code_actions.eslint_d,
+        nls.builtins.code_actions.gitsigns.with({
+          config = {
+            filter_actions = function(title)
+              return title:lower():match("blame") == nil -- filter out blame actions
+            end,
+          },
         }),
-        nls.builtins.formatting.prettier.with({ filetypes = { 'markdown' } }),
-        nls.builtins.diagnostics.markdownlint,
+        nls.builtins.code_actions.gomodifytags,
+        nls.builtins.code_actions.impl,
+        nls.builtins.code_actions.ltrs,
+        nls.builtins.code_actions.proselint,
+        nls.builtins.code_actions.refactoring,
+        nls.builtins.code_actions.shellcheck,
+        nls.builtins.code_actions.statix,
+        nls.builtins.code_actions.ts_node_action,
+        nls.builtins.completion.luasnip,
+        nls.builtins.completion.spell,
+        nls.builtins.completion.tags,
+        nls.builtins.completion.vsnip,
+        nls.builtins.diagnostics.actionlint,
+        nls.builtins.diagnostics.alex,
+        nls.builtins.diagnostics.ansiblelint,
+        nls.builtins.diagnostics.bandit,
+        nls.builtins.diagnostics.buf,
+        nls.builtins.diagnostics.buildifier,
+        nls.builtins.diagnostics.cfn_lint,
+        nls.builtins.diagnostics.checkmake,
+        nls.builtins.diagnostics.checkstyle.with({
+          extra_args = { "-c", "/google_checks.xml" }, -- or "/sun_checks.xml" or path to self written rules
+        }),
+        nls.builtins.diagnostics.chktex,
+        nls.builtins.diagnostics.clang_check,
+        nls.builtins.diagnostics.clj_kondo,
+        nls.builtins.diagnostics.cmake_lint,
+        nls.builtins.diagnostics.codespell,
+        nls.builtins.diagnostics.commitlint,
+        nls.builtins.diagnostics.cppcheck,
+        nls.builtins.diagnostics.cpplint,
+        nls.builtins.diagnostics.credo,
+        nls.builtins.diagnostics.curlylint,
+        nls.builtins.diagnostics.deadnix,
         nls.builtins.diagnostics.deno_lint,
-        nls.builtins.diagnostics.selene.with({
-          condition = function(utils)
-            return utils.root_has_file({ 'selene.toml' })
-          end,
-        }),
-        nls.builtins.formatting.isort,
-        nls.builtins.formatting.black,
+        nls.builtins.diagnostics.djlint,
+        nls.builtins.diagnostics.dotenv_linter,
+        nls.builtins.diagnostics.editorconfig_checker,
+        nls.builtins.diagnostics.erb_lint,
+        nls.builtins.diagnostics.eslint_d,
+        nls.builtins.diagnostics.fish,
         nls.builtins.diagnostics.flake8,
+        nls.builtins.diagnostics.gccdiag,
+        nls.builtins.diagnostics.gdlint,
+        nls.builtins.diagnostics.gitlint,
+        nls.builtins.diagnostics.glslc.with({
+          extra_args = { "--target-env=opengl" }, -- use opengl instead of vulkan1.0
+        }),
+        nls.builtins.diagnostics.golangci_lint,
+        nls.builtins.diagnostics.gospel,
+        nls.builtins.diagnostics.hadolint,
+        nls.builtins.diagnostics.haml_lint,
+        nls.builtins.diagnostics.jshint,
+        nls.builtins.diagnostics.jsonlint,
+        nls.builtins.diagnostics.ktlint,
+        nls.builtins.diagnostics.ltrs,
         nls.builtins.diagnostics.luacheck.with({
           condition = function(utils)
             return utils.root_has_file({ '.luacheckrc' })
           end,
         }),
+        nls.builtins.diagnostics.markdownlint,
+        nls.builtins.diagnostics.markuplint,
+        nls.builtins.diagnostics.mdl,
+        nls.builtins.diagnostics.misspell,
+        nls.builtins.diagnostics.mlint,
+        nls.builtins.diagnostics.npm_groovy_lint,
+        nls.builtins.diagnostics.perlimports,
+        nls.builtins.diagnostics.php,
+        nls.builtins.diagnostics.phpcs,
+        nls.builtins.diagnostics.phpmd,
+        nls.builtins.diagnostics.phpstan,
+        nls.builtins.diagnostics.pmd.with({
+          extra_args = {
+            "--rulesets",
+            "category/java/bestpractices.xml,category/jsp/bestpractices.xml" -- or path to self-written ruleset
+          },
+        }),
+        nls.builtins.diagnostics.proselint,
+        nls.builtins.diagnostics.protoc_gen_lint,
+        nls.builtins.diagnostics.protolint,
+        nls.builtins.diagnostics.psalm,
+        nls.builtins.diagnostics.puglint,
+        nls.builtins.diagnostics.puppet_lint,
+        nls.builtins.diagnostics.pycodestyle,
+        nls.builtins.diagnostics.pydocstyle,
+        nls.builtins.diagnostics.qmllint,
+        nls.builtins.diagnostics.reek,
+        nls.builtins.diagnostics.revive,
+        nls.builtins.diagnostics.rstcheck,
+        nls.builtins.diagnostics.rubocop,
+        nls.builtins.diagnostics.ruff,
+        nls.builtins.diagnostics.semgrep,
+        nls.builtins.diagnostics.semistandardjs,
+        nls.builtins.diagnostics.shellcheck,
+        nls.builtins.diagnostics.solhint,
+        nls.builtins.diagnostics.spectral,
+        nls.builtins.diagnostics.sqlfluff.with({
+          extra_args = { "--dialect", "postgres" }, -- change to your dialect
+        }),
+        nls.builtins.diagnostics.standardjs,
+        nls.builtins.diagnostics.standardrb,
+        nls.builtins.diagnostics.staticcheck,
+        nls.builtins.diagnostics.statix,
+        nls.builtins.diagnostics.stylelint,
+        nls.builtins.diagnostics.stylint,
+        nls.builtins.diagnostics.swiftlint,
+        nls.builtins.diagnostics.teal,
+        nls.builtins.diagnostics.terraform_validate,
+        nls.builtins.diagnostics.textidote,
+        nls.builtins.diagnostics.textlint,
+        nls.builtins.diagnostics.tfsec,
+        nls.builtins.diagnostics.tidy,
+        nls.builtins.diagnostics.todo_comments,
+        nls.builtins.diagnostics.trail_space,
+        nls.builtins.diagnostics.tsc,
+        nls.builtins.diagnostics.twigcs,
+        nls.builtins.diagnostics.typos,
+        nls.builtins.diagnostics.vacuum,
+        nls.builtins.diagnostics.vale,
+        nls.builtins.diagnostics.verilator,
+        nls.builtins.diagnostics.vint,
+        nls.builtins.diagnostics.vulture,
+        nls.builtins.diagnostics.write_good,
+        nls.builtins.diagnostics.yamllint,
+        nls.builtins.diagnostics.zsh,
+        nls.builtins.formatting.black,
+        nls.builtins.formatting.dprint.with({
+          condition = function(utils)
+            return utils.root_has_file({ 'dprint.json' }) or vim.loop.fs_stat('dprint.json')
+          end,
+        }),
+        nls.builtins.formatting.isort,
+        nls.builtins.formatting.prettier.with({ filetypes = { 'markdown' } }),
+        nls.builtins.diagnostics.selene.with({
+          condition = function(utils)
+            return utils.root_has_file({ 'selene.toml' })
+          end,
+        }),
+        nls.builtins.formatting.stylua,
+
       })
     end,
   },

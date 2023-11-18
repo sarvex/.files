@@ -8,8 +8,11 @@ winget upgrade --all
 Invoke-WebRequest get.scoop.sh -UseBasicParsing | Invoke-Expression
 @('extras', 'games', 'java', 'nerd-fonts', 'versions') | ForEach-Object { scoop bucket add $_ }
 scoop bucket add sarvex https://github.com/sarvex/scoop
-scoop install sudo aria2 curl grep sed less touch wget pnpm yarn mingw neovim-nightly gzip aspell search-multisource terminal-icons starship ripgrep deno lazygit bottom bat dust mprocs fd fzf ripgrep helix llvm emacs nodejs ruby perl php julia go mambaforge make cmake premake xmake godot defold ccache sccache bazel bazel-buildtools clangd rustup scala kotlin kotlin-native gradle-bin kotlin-language-server erlang haskell luarocks luacheck luajit lua love elixir elm nim racket lua-language-server ffmpeg yt-dlp godot godot-mono clj-deps clojure-lsp openjdk tree-sitter tree-sitter-langs AurulentSansMono-nerd-font Agave-nerd-font AnonymousPro-nerd-font BitstreamVeraSansMono-nerd-font CascadiaCode CascadiaCode-nerd-font CodeNewRoman-nerd-font ComicShannsMono-nerd-font Cousine-nerd-font DejaVuSansMono-nerd-font DroidSansMono-nerd-font FantasqueSansMono-nerd-font FiraCode-nerd-font Go-Mono-nerd-font Gohu-nerd-font Hack-nerd-font Hasklig-nerd-font iA-Writer-nerd-font IBMPlexMono-nerd-font Inconsolata-nerd-font InconsolataGo-nerd-font Iosevka-nerd-font IosevkaTerm-nerd-font JetBrainsMono-nerd-font LiberationMono-nerd-font Lilex-nerd-font Meslo-nerd-font Overpass-nerd-font Monofur-nerd-font Monoid-nerd-font Mononoki-nerd-font Noto-nerd-font ProFont-nerd-font ProggyClean-nerd-font RobotoMono-nerd-font SourceCodePro-nerd-font SpaceMono-nerd-font ShareTechMono-nerd-font Tinos-nerd-font Terminus-nerd-font UbuntuMono-nerd-font
+scoop install Agave-nerd-font AnonymousPro-nerd-font aria2 aspell AurulentSansMono-nerd-font bat bazel bazel-buildtools BitstreamVeraSansMono-nerd-font bottom CascadiaCode CascadiaCode-nerd-font ccache clangd clj-deps clojure-lsp cmake CodeNewRoman-nerd-font ComicShannsMono-nerd-font composer Cousine-nerd-font crystal curl defold DejaVuSansMono-nerd-font deno DroidSansMono-nerd-font dust elixir elm emacs erlang FantasqueSansMono-nerd-font fd ffmpeg FiraCode-nerd-font fzf go Go-Mono-nerd-font godot Gohu-nerd-font gradle-bin grep gzip Hack-nerd-font haskell Hasklig-nerd-font helix iA-Writer-nerd-font IBMPlexMono-nerd-font Inconsolata-nerd-font InconsolataGo-nerd-font Iosevka-nerd-font IosevkaTerm-nerd-font JetBrainsMono-nerd-font julia kotlin kotlin-language-server kotlin-native lazygit less LiberationMono-nerd-font Lilex-nerd-font llvm love lua lua-language-server luacheck luajit luarocks make mambaforge Meslo-nerd-font miktex mingw Monofur-nerd-font Monoid-nerd-font Mononoki-nerd-font mprocs msys2 neovim-nightly nim nodejs Noto-nerd-font openjdk Overpass-nerd-font php premake ProFont-nerd-font ProggyClean-nerd-font racket ripgrep ripgrep RobotoMono-nerd-font ruby rustup scala sccache search-multisource sed ShareTechMono-nerd-font SourceCodePro-nerd-font SpaceMono-nerd-font starship sudo terminal-icons Terminus-nerd-font terraform tidy Tinos-nerd-font touch tree-sitter tree-sitter-langs UbuntuMono-nerd-font unzip vale wget xmake yt-dlp
 sudo Add-MpPreference -ExclusionPath "${env:ProgramData}\Scoop\", "${env:USERPROFILE}\Scoop\" -Force
+
+# Add global NPM packages
+pnpm install -g '@fsouza/prettierd alex ansible bibtex cfn-lint clj-kondo curlylint djlint dotenv-linter erb-linter eslint_d gdlint golangci-lint haml jshint jsonlint lint-staged markuplint misspell neovim node-actionlint proselint protoc pug-lint remark remark-mdx semgrep semistandard shellcheck solhint spectre standard stylelint swiftlint textlint typescript typos vacuum verilator vint write-good yaml'
 
 # Add PyEnv
 Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1" -OutFile "./install-pyenv-win.ps1"; &"./install-pyenv-win.ps1"
@@ -56,11 +59,12 @@ New-Item -Path "$profile_path" -ItemType SymbolicLink -Value "$dotfiles\Profile.
 . $profile_path
 
 # Install Doom
-$doom_emacs = "$env:APPDATA\.emacs.d"
-git clone --depth 1 https://github.com/doomemacs/doomemacs.git $doom_emacs
-New-Item -Path $HOME\.emacs.d -ItemType SymbolicLink -Value $doom_emacs -Force
+$doom = "$env:APPDATA\.emacs.d"
+git clone --depth 1 https://github.com/doomemacs/doomemacs.git $doom
+New-Item -Path $HOME\.emacs.d -ItemType SymbolicLink -Value $doom -Force
 New-Item -Path "$HOME\.doom.d" -ItemType SymbolicLink -Value "$dotfiles\doom" -Force
 New-Item -Path "$env:APPDATA\.doom.d" -ItemType SymbolicLink -Value "$dotfiles\doom" -Force
+$HOME\.emacs.d\doom sync
 
 # Install SpaceVim
 $space_vim = "$env:LOCALAPPDATA\SpaceVim"
