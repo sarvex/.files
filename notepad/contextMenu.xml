@@ -13,6 +13,12 @@ https://npp-user-manual.org/docs/config-files/#the-context-menu-contextmenu-xml
 		The values should be in English but not in translated language.
 		(You can set Notepad++ language back to English from Preferences dialog via menu "Settings->Preferences...")
 		-->
+        <Item FolderName="C# Intellisense" PluginEntryName="CS-Script" PluginCommandItemName="Go To Definition" ItemNameAs="Go To Definition"/>
+        <Item FolderName="C# Intellisense" PluginEntryName="CS-Script" PluginCommandItemName="Find All References" ItemNameAs="Find All References"/>
+        <Item FolderName="C# Intellisense" PluginEntryName="CS-Script" PluginCommandItemName="Auto-add missing 'usings'" ItemNameAs="Auto-add missing 'usings'"/>
+        <Item FolderName="C# Intellisense" PluginEntryName="CS-Script" PluginCommandItemName="Rename... (Ctrl+R,R)" ItemNameAs="Rename... (Ctrl+R,R)"/>
+        <Item FolderName="C# Intellisense" PluginEntryName="CS-Script" PluginCommandItemName="Format Document" ItemNameAs="Format Document"/>
+        <Item id = "0" />
         <Item MenuEntryName="Edit" MenuItemName="Cut"/>
         <Item MenuEntryName="Edit" MenuItemName="Copy"/>
         <Item MenuEntryName="Edit" MenuItemName="Paste"/>

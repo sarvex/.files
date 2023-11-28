@@ -1,0 +1,37 @@
+[
+  // Toggle the default shell in panel
+  {
+    "keys": [
+      "alt+`"
+    ],
+    "command": "toggle_terminus_panel"
+  },
+  // Open a terminal tab at current file directory
+  {
+    "keys": [
+      "ctrl+alt+t"
+    ],
+    "command": "terminus_open",
+    "args": {
+      "post_window_hooks": [
+        [
+          "carry_file_to_pane",
+          {
+            "direction": "down"
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "keys": [
+      "ctrl+w"
+    ],
+    "command": "terminus_close",
+    "context": [
+      {
+        "key": "terminus_view"
+      }
+    ]
+  }
+]

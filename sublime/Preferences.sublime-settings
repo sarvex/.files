@@ -1,0 +1,55 @@
+{
+  "dark_theme": "Adaptive.sublime-theme",
+  "light_theme": "Adaptive.sublime-theme",
+  "theme": "auto",
+  "font_face": "0xProto Nerd Font",
+  "font_options": ["ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08", "ss09", "ss10"],
+  "rulers": [[80, "stippled"], [120, "solid"]],
+  "spell_check": true,
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true,
+  "highlight_line": true,
+  "caret_extra_top": 2,
+  "caret_extra_bottom": 2,
+  "caret_extra_width": 0,
+  "draw_white_space": ["selection", "trailing", "isolated", "all_tabs"],
+  "draw_unicode_white_space": "all",
+  "control_character_style": "names",
+  "indent_guide_options": ["draw_normal", "draw_active"],
+  "trim_trailing_white_space_on_save": "all",
+  "trim_only_modified_white_space": false,
+  "ensure_newline_at_eof_on_save": true,
+  "default_line_ending": "unix",
+  "auto_complete_commit_on_tab": true,
+  "auto_complete_with_fields": true,
+  "auto_complete_cycle": true,
+  "auto_complete_use_history": true,
+  "auto_complete_trailing_symbols": true,
+  "auto_hide_status_bar": true,
+  "shift_tab_unindent": true,
+  "highlight_modified_tabs": true,
+  "adaptive_dividers": false,
+  "show_encoding": true,
+  "show_line_endings": true,
+  "show_line_column": "compact",
+  "hardware_acceleration": "opengl",
+  "ignored_packages":
+  [
+    "Vintage",
+  ],
+  "color_scheme": "auto",
+  "dark_color_scheme": "Catppuccin Mocha.sublime-color-scheme",
+  "light_color_scheme": "Catppuccin Macchiato.sublime-color-scheme",
+  "mdpopups.sublime_user_lang_map":
+  {
+    "leohover":
+    [
+      [
+        "leohover"
+      ],
+      [
+        "LSP-leo/leoHover"
+      ]
+    ],
+  },
+}

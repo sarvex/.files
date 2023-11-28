@@ -8,7 +8,8 @@ winget upgrade --all
 Invoke-WebRequest get.scoop.sh -UseBasicParsing | Invoke-Expression
 @('extras', 'games', 'java', 'nerd-fonts', 'versions') | ForEach-Object { scoop bucket add $_ }
 scoop bucket add sarvex https://github.com/sarvex/scoop
-scoop install actionlint Agave-nerd-font AnonymousPro-nerd-font aria2 aspell AurulentSansMono-nerd-font bat bazel bazel-buildtools biber BitstreamVeraSansMono-nerd-font bottom CascadiaCode CascadiaCode-nerd-font ccache clangd clj-deps clojure-lsp cmake CodeNewRoman-nerd-font ComicShannsMono-nerd-font composer Cousine-nerd-font crystal curl defold DejaVuSansMono-nerd-font deno deno-lint DroidSansMono-nerd-font dust elixir elm emacs erlang FantasqueSansMono-nerd-font fd ffmpeg FiraCode-nerd-font fzf glslang go golangci-lint Go-Mono-nerd-font godot Gohu-nerd-font gradle-bin grep gzip hadolint Hack-nerd-font haskell Hasklig-nerd-font helix iA-Writer-nerd-font IBMPlexMono-nerd-font Inconsolata-nerd-font InconsolataGo-nerd-font Iosevka-nerd-font IosevkaTerm-nerd-font JetBrainsMono-nerd-font julia kotlin kotlin-language-server kotlin-native ktlint kube-linter lazygit less LiberationMono-nerd-font Lilex-nerd-font llvm love lua lua-language-server luacheck luajit luarocks make mambaforge Meslo-nerd-font miktex mingw Monofur-nerd-font Monoid-nerd-font Mononoki-nerd-font mprocs msys2 neovim-nightly nim nodejs Noto-nerd-font openjdk Overpass-nerd-font php premake ProFont-nerd-font ProggyClean-nerd-font protolint puppet puppet-bolt quick-lint-js racket revive ripgrep ripgrep RobotoMono-nerd-font ruby rustup sbt scala sccache search-multisource sed ShareTechMono-nerd-font SourceCodePro-nerd-font SpaceMono-nerd-font starship sudo swift teal terminal-icons Terminus-nerd-font terraform tflint tidy Tinos-nerd-font touch tree-sitter tree-sitter-langs UbuntuMono-nerd-font unzip vale wget xmake xmllint yt-dlp
+scoop install actionlint aria2 aspell bat bazel bazel-buildtools biber bottom CascadiaCode ccache clj-deps clojure-lsp cmake composer crystal curl defold deno deno-lint dust elixir elm emacs erlang fd ffmpeg fzf glslang go golangci-lint godot gradle-bin grep gzip hadolint haskell helix julia kotlin kotlin-language-server kotlin-native ktlint kube-linter lazygit less llvm love lua lua-language-server luacheck luajit luarocks make mambaforge miktex mingw mprocs msys2 neovim-nightly nim nodejs openjdk php premake protolint puppet puppet-bolt quick-lint-js racket revive ripgrep ripgrep ruby rustup sbt scala sccache search-multisource sed starship sudo swift teal terminal-icons terraform tflint tidy touch tree-sitter tree-sitter-langs UbuntuMono-nerd-font unzip vale wget xmake xmllint yt-dlp
+scoop install 0xProto-nerd-font Agave-nerd-font AnonymousPro-nerd-font AurulentSansMono-nerd-font BitstreamVeraSansMono-nerd-font CascadiaCode-nerd-font CascadiaMono-nerd-font CodeNewRoman-nerd-font ComicShannsMono-nerd-font CommitMono-nerd-font Cousine-nerd-font D2Coding-nerd-font DejaVuSansMono-nerd-font DroidSansMono-nerd-font EnvyCodeR-nerd-font FantasqueSansMono-nerd-font FiraCode-nerd-font GeistMono-nerd-font Go-Mono-nerd-font Gohu-nerd-font Hack-nerd-font Hasklig-nerd-font iA-Writer-nerd-font IBMPlexMono-nerd-font Inconsolata-nerd-font InconsolataGo-nerd-font IntelOneMono-nerd-font Iosevka-nerd-font IosevkaTerm-nerd-font IosevkaTermSlab-nerd-font JetBrainsMono-nerd-font LiberationMono-nerd-font Lilex-nerd-font MartianMono-nerd-font Meslo-nerd-font Monofur-nerd-font Monoid-nerd-font Mononoki-nerd-font Monaspace-nerd-font Noto-nerd-font Overpass-nerd-font ProFont-nerd-font ProggyClean-nerd-font RobotoMono-nerd-font ShareTechMono-nerd-font SourceCodePro-nerd-font SpaceMono-nerd-font Terminus-nerd-font Tinos-nerd-font Ubuntu-nerd-font UbuntuMono-nerd-font VictorMono-nerd-font
 sudo Add-MpPreference -ExclusionPath "${env:ProgramData}\Scoop\", "${env:USERPROFILE}\Scoop\" -Force
 
 # Add global NPM packages
@@ -22,105 +23,106 @@ $dotfiles = "$HOME\.files"
 git clone https://github.com/sarvex/dotfiles $dotfiles
 
 # Add Custom Directories
-New-Item -Path "$HOME\.config" -ItemType SymbolicLink -Value "$dotfiles\config" -Force
-New-Item -Path "$HOME\.cache\starship" -ItemType SymbolicLink -Value "$dotfiles\starship" -Force
-New-Item -Path "$HOME\.aliases" -ItemType SymbolicLink -Value "$dotfiles\aliases" -Force
-New-Item -Path "$HOME\.gitconfig" -ItemType SymbolicLink -Value "$dotfiles\git.config" -Force
-New-Item -Path "$HOME\.wezterm.lua" -ItemType SymbolicLink -Value "$dotfiles\wezterm.lua" -Force
-New-Item -Path "$HOME\.xonshrc" -ItemType SymbolicLink -Value "$dotfiles\xonsh.rc" -Force
+New-Item -Path "$HOME\.config" -ItemType SymbolicLink -Value "$HOME\.files\config" -Force
+New-Item -Path "$HOME\.cache\starship" -ItemType SymbolicLink -Value "$HOME\.files\starship" -Force
+New-Item -Path "$HOME\.aliases" -ItemType SymbolicLink -Value "$HOME\.files\aliases" -Force
+New-Item -Path "$HOME\.gitconfig" -ItemType SymbolicLink -Value "$HOME\.files\git.config" -Force
+New-Item -Path "$HOME\.wezterm.lua" -ItemType SymbolicLink -Value "$HOME\.files\wezterm.lua" -Force
+New-Item -Path "$HOME\.xonshrc" -ItemType SymbolicLink -Value "$HOME\.files\xonsh.rc" -Force
 
 # Add Links
-New-Item -Path "$env:APPDATA\alacritty\alacritty.yml" -ItemType SymbolicLink -Value "$dotfiles\alacritty.windows.yml" -Force
-New-Item -Path "$env:APPDATA\tabby\config.yaml" -ItemType SymbolicLink -Value "$dotfiles\tabby.yaml" -Force
-New-Item -Path "$env:APPDATA\nushell" -ItemType SymbolicLink -Value "$dotfiles\nushell" -Force
-New-Item -Path "$env:APPDATA\elvish\rc.elv" -ItemType SymbolicLink -Value "$dotfiles\rc.elv" -Force
-New-Item -Path "$env:APPDATA\lapce\Lapce-Stable\config" -ItemType SymbolicLink -Value "$dotfiles\lapce" -Force
-New-Item -Path "$env:APPDATA\Code\User\settings.json" -ItemType SymbolicLink -Value "$dotfiles\config\vscode\settings.json" -Force
-New-Item -Path "$env:APPDATA\Code\User\keybindings.json" -ItemType SymbolicLink -Value "$dotfiles\config\vscode\keybindings.json" -Force
-New-Item -Path "$env:APPDATA\Code - Insiders\User\settings.json" -ItemType SymbolicLink -Value "$dotfiles\config\vscode-insiders\settings.json" -Force
-New-Item -Path "$env:APPDATA\Code - Insiders\User\keybindings.json" -ItemType SymbolicLink -Value "$dotfiles\config\vscode-insiders\keybindings.json" -Force
-New-Item -Path "$env:APPDATA\helix" -ItemType SymbolicLink -Value "$dotfiles\helix" -Force
-New-Item -Path "$env:APPDATA\VSCodium\User\settings.json" -ItemType SymbolicLink -Value "$dotfiles\config\vscodium\settings.json" -Force
-New-Item -Path "$env:APPDATA\VSCodium\User\keybindings.json" -ItemType SymbolicLink -Value "$dotfiles\config\vscodium\keybindings.json" -Force
-New-Item -Path "$env:APPDATA\Sublime Text\Packages\User" -ItemType SymbolicLink -Value "$dotfiles\config\sublime" -Force
-New-Item -Path "$env:APPDATA\neovide" -ItemType SymbolicLink -Value "$dotfiles\neovide" -Force
-New-Item -Path "$env:APPDATA\Notepad++" -ItemType SymbolicLink -Value "$dotfiles\notepad" -Force
-New-Item -Path "$env:APPDATA\yt-dlp\config" -ItemType SymbolicLink -Value "$dotfiles\yt-dlp.config" -Force
+New-Item -Path "$env:APPDATA\alacritty\alacritty.yml" -ItemType SymbolicLink -Value "$HOME\.files\alacritty.windows.yml" -Force
+New-Item -Path "$env:APPDATA\tabby\config.yaml" -ItemType SymbolicLink -Value "$HOME\.files\tabby.yaml" -Force
+New-Item -Path "$env:APPDATA\elvish\rc.elv" -ItemType SymbolicLink -Value "$HOME\.files\rc.elv" -Force
+New-Item -Path "$env:APPDATA\lapce\Lapce-Stable\config" -ItemType SymbolicLink -Value "$HOME\.files\lapce" -Force
+New-Item -Path "$env:APPDATA\Code\User\settings.json" -ItemType SymbolicLink -Value "$HOME\.files\vscode\settings.json" -Force
+New-Item -Path "$env:APPDATA\Code\User\keybindings.json" -ItemType SymbolicLink -Value "$HOME\.files\vscode\keybindings.json" -Force
+New-Item -Path "$env:APPDATA\Code - Insiders\User\settings.json" -ItemType SymbolicLink -Value "$HOME\.files\vscode-insiders\settings.json" -Force
+New-Item -Path "$env:APPDATA\Code - Insiders\User\keybindings.json" -ItemType SymbolicLink -Value "$HOME\.files\vscode-insiders\keybindings.json" -Force
+New-Item -Path "$env:APPDATA\VSCodium\User\settings.json" -ItemType SymbolicLink -Value "$HOME\.files\vscodium\settings.json" -Force
+New-Item -Path "$env:APPDATA\VSCodium\User\keybindings.json" -ItemType SymbolicLink -Value "$HOME\.files\vscodium\keybindings.json" -Force
 
-New-Item -Path "$env:LOCALAPPDATA\nvim" -ItemType SymbolicLink -Value "$dotfiles\nvim" -Force
+New-Item -Path "$env:APPDATA\nushell" -ItemType SymbolicLink -Value "$HOME\.files\nushell" -Force
+New-Item -Path "$env:APPDATA\helix" -ItemType SymbolicLink -Value "$HOME\.files\helix" -Force
+New-Item -Path "$env:APPDATA\Sublime Text\Packages\User" -ItemType SymbolicLink -Value "$HOME\.files\sublime" -Force
+New-Item -Path "$env:APPDATA\neovide" -ItemType SymbolicLink -Value "$HOME\.files\neovide" -Force
+New-Item -Path "$env:APPDATA\Notepad++" -ItemType SymbolicLink -Value "$HOME\.files\notepad" -Force
+New-Item -Path "$env:APPDATA\yt-dlp\config" -ItemType SymbolicLink -Value "$HOME\.files\yt-dlp.config" -Force
+
+New-Item -Path "$env:LOCALAPPDATA\nvim" -ItemType SymbolicLink -Value "$HOME\.files\nvim" -Force
 
 # Install LazyVim
 $lazy = "$env:LOCALAPPDATA\nvim"
 # $lazy = "$env:LOCALAPPDATA\lazy"
-New-Item -Path "$lazy" -ItemType SymbolicLink -Value "$dotfiles\lazy" -Force
+New-Item -Path "$lazy" -ItemType SymbolicLink -Value "$HOME\.files\lazy" -Force
 
 $profile_path = $PROFILE.CurrentUserAllHosts
-New-Item -Path "$profile_path" -ItemType SymbolicLink -Value "$dotfiles\Profile.ps1" -Force
+New-Item -Path "$profile_path" -ItemType SymbolicLink -Value "$HOME\.files\Profile.ps1" -Force
 . $profile_path
 
 # Install Doom
 $doom = "$env:APPDATA\.emacs.d"
 git clone --depth 1 https://github.com/doomemacs/doomemacs.git $doom
 New-Item -Path $HOME\.emacs.d -ItemType SymbolicLink -Value $doom -Force
-New-Item -Path "$HOME\.doom.d" -ItemType SymbolicLink -Value "$dotfiles\doom" -Force
-New-Item -Path "$env:APPDATA\.doom.d" -ItemType SymbolicLink -Value "$dotfiles\doom" -Force
+New-Item -Path "$HOME\.doom.d" -ItemType SymbolicLink -Value "$HOME\.files\doom" -Force
+New-Item -Path "$env:APPDATA\.doom.d" -ItemType SymbolicLink -Value "$HOME\.files\doom" -Force
 $HOME\.emacs.d\doom sync
 
 # Install SpaceVim
 $space_vim = "$env:LOCALAPPDATA\SpaceVim"
 git clone https://github.com/SpaceVim/SpaceVim.git $space_vim
 New-Item -Path $HOME\vimfiles -ItemType SymbolicLink -Value $space_vim -Force
-New-Item -Path "$HOME\.SpaceVim.d" -ItemType SymbolicLink -Value "$dotfiles\space" -Force
+New-Item -Path "$HOME\.SpaceVim.d" -ItemType SymbolicLink -Value "$HOME\.files\space" -Force
 
 # Install LunarVim
 $lvim = "$env:LOCALAPPDATA\lvim"
 Invoke-WebRequest https://raw.githubusercontent.com/Lunar/LunarVim/main/utils/installer/install.ps1 -UseBasicParsing | Invoke-Expression
-New-Item -Path "$lvim" -ItemType SymbolicLink -Value "$dotfiles\lunar" -Force
+New-Item -Path "$lvim" -ItemType SymbolicLink -Value "$HOME\.files\lunar" -Force
 
 # Install Nvoid
 $nvoid = "$env:LOCALAPPDATA\nvoid"
 Invoke-WebRequest https://raw.githubusercontent.com/nvoid-lua/nvoid/main/utils/installer/install.ps1 -UseBasicParsing | Invoke-Expression
-New-Item -Path "$nvoid" -ItemType SymbolicLink -Value "$dotfiles\lunar" -Force
+New-Item -Path "$nvoid" -ItemType SymbolicLink -Value "$HOME\.files\lunar" -Force
 
 # Install AstroNvim
 $astro = "$env:LOCALAPPDATA\astro"
 git clone --depth 1 git@github.com:sarvex/AstroNvim.git $astro
-New-Item -Path "$astro\lua\user" -ItemType SymbolicLink -Value "$dotfiles\astro" -Force
+New-Item -Path "$astro\lua\user" -ItemType SymbolicLink -Value "$HOME\.files\astro" -Force
 
 # Install Code Art
 $cart = "$env:LOCALAPPDATA\cart"
 git clone --depth 1 https://github.com/artart222/CodeArt $cart
-New-Item -Path "$cart\lua\user_settings" -ItemType SymbolicLink -Value "$dotfiles\cart" -Force
+New-Item -Path "$cart\lua\user_settings" -ItemType SymbolicLink -Value "$HOME\.files\cart" -Force
 
 # Install Chad
 $chad = "$env:LOCALAPPDATA\chad"
 git clone --depth 1 git@github.com:sarvex/NvChad.git $chad
-New-Item -Path "$chad\lua\custom" -ItemType SymbolicLink -Value "$dotfiles\chad" -Force
+New-Item -Path "$chad\lua\custom" -ItemType SymbolicLink -Value "$HOME\.files\chad" -Force
 
 # Install CosmicNvim
 $cosmic = "$env:LOCALAPPDATA\cosmic"
 git clone --depth 1 git@github.com:sarvex/CosmicNvim.git $cosmic
-New-Item -Path "$cosmic\lua\cosmic\config" -ItemType SymbolicLink -Value "$dotfiles\cosmic" -Force
+New-Item -Path "$cosmic\lua\cosmic\config" -ItemType SymbolicLink -Value "$HOME\.files\cosmic" -Force
 
 # Install Kickstarter
 $kick = "$env:LOCALAPPDATA\kick"
 git clone --depth 1 https://github.com/kickVim/starter $kick
-New-Item -Path "$kick" -ItemType SymbolicLink -Value "$dotfiles\kick" -Force
+New-Item -Path "$kick" -ItemType SymbolicLink -Value "$HOME\.files\kick" -Force
 
 # Install NV-IDE
 $nvide = "$env:LOCALAPPDATA\nvide"
 git clone --depth 1 https://github.com/crivotz/nv-ide.git $nvide
-New-Item -Path "$nvide\lua\nvide\config" -ItemType SymbolicLink -Value "$dotfiles\nvide" -Force
+New-Item -Path "$nvide\lua\nvide\config" -ItemType SymbolicLink -Value "$HOME\.files\nvide" -Force
 
 # Install Nyoom
 $nyoom = "$env:LOCALAPPDATA\nyoom"
 git clone --depth 1 https://github.com/nyoom-engineering/nyoom.nvim $nyoom
-New-Item -Path "$nyoom\lua\custom" -ItemType SymbolicLink -Value "$dotfiles\nyoom" -Force
+New-Item -Path "$nyoom\lua\custom" -ItemType SymbolicLink -Value "$HOME\.files\nyoom" -Force
 
 # Install Nabhi
 $nabhi = "$env:LOCALAPPDATA\nabhi"
 git clone --depth 1 https://github.com/sarvex/nabhi.git $nabhi
-New-Item -Path "$nabhi\lua\user" -ItemType SymbolicLink -Value "$dotfiles\nabhi" -Force
+New-Item -Path "$nabhi\lua\user" -ItemType SymbolicLink -Value "$HOME\.files\nabhi" -Force
 
 ## Additional Steps move Home to D:\
 New-Item -Path "$HOME\Desktop" -ItemType SymbolicLink -Value "D:\Desktop" -Force

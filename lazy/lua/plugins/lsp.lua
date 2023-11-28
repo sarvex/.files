@@ -49,7 +49,7 @@ return {
         'glint',
         'golangci-lint-langserver',
         'gradle-language-server',
-        'graphql-langauge-server-cli',
+        'grammarly',
         'graphql',
         'groovyls',
         'haml-lint',
