@@ -8,7 +8,7 @@ winget upgrade --all
 Invoke-WebRequest get.scoop.sh -UseBasicParsing | Invoke-Expression
 @('extras', 'games', 'java', 'nerd-fonts', 'versions') | ForEach-Object { scoop bucket add $_ }
 scoop bucket add sarvex https://github.com/sarvex/scoop
-scoop install actionlint aria2 aspell bat bazel bazel-buildtools biber bottom ccache clj-deps clojure-lsp cmake composer crystal curl defold deno deno-lint doxygen dust elixir elm emacs erlang fd ffmpeg fzf glslang go golangci-lint godot gradle-bin grep gzip hadolint haskell helix julia kotlin kotlin-language-server kotlin-native ktlint kube-linter lazygit less llvm love lua lua-language-server luacheck luajit luarocks make mambaforge miktex mingw mprocs msys2 neovim-nightly nim ninja nodejs openjdk php premake protolint puppet puppet-bolt quick-lint-js racket revive ripgrep ripgrep ruby rustup sbt scala sccache search-multisource sed starship sudo swift teal terminal-icons terraform tflint tidy touch tree-sitter tree-sitter-langs UbuntuMono-nerd-font unzip vale wget xmake xmllint yt-dlp
+scoop install actionlint aria2 aspell bat bazel bazel-buildtools biber bottom ccache clj-deps clojure-lsp cmake composer conan crystal curl defold deno deno-lint doxygen dust elixir elm emacs erlang fd ffmpeg fzf glslang go golangci-lint godot gradle-bin grep gzip hadolint haskell helix julia kotlin kotlin-language-server kotlin-native ktlint kube-linter lazygit less llvm love lua lua-language-server luacheck luajit luarocks make mambaforge miktex mingw mprocs msys2 neovim-nightly nim ninja nodejs openjdk php premake protolint puppet puppet-bolt quick-lint-js racket revive ripgrep ripgrep ruby rustup sbt scala sccache search-multisource sed starship sudo swift teal terminal-icons terraform tflint tidy touch tree-sitter tree-sitter-langs UbuntuMono-nerd-font unzip vale vcpkg wget xmake xmllint yt-dlp
 scoop install 0xProto-nerd-font Agave-nerd-font AnonymousPro-nerd-font AurulentSansMono-nerd-font BitstreamVeraSansMono-nerd-font CascadiaCode CascadiaCode-nerd-font CascadiaMono-nerd-font CodeNewRoman-nerd-font ComicShannsMono-nerd-font CommitMono-nerd-font Cousine-nerd-font D2Coding-nerd-font DejaVuSansMono-nerd-font DroidSansMono-nerd-font EnvyCodeR-nerd-font FantasqueSansMono-nerd-font FiraCode-nerd-font GeistMono-nerd-font Go-Mono-nerd-font Gohu-nerd-font Hack-nerd-font Hasklig-nerd-font iA-Writer-nerd-font IBMPlexMono-nerd-font Inconsolata-nerd-font InconsolataGo-nerd-font IntelOneMono-nerd-font Iosevka-nerd-font IosevkaTerm-nerd-font IosevkaTermSlab-nerd-font JetBrainsMono-nerd-font LiberationMono-nerd-font Lilex-nerd-font MartianMono-nerd-font Meslo-nerd-font Monofur-nerd-font Monoid-nerd-font Mononoki-nerd-font Monaspace-nerd-font Noto-nerd-font Overpass-nerd-font ProFont-nerd-font ProggyClean-nerd-font RobotoMono-nerd-font ShareTechMono-nerd-font SourceCodePro-nerd-font SpaceMono-nerd-font Terminus-nerd-font Tinos-nerd-font Ubuntu-nerd-font UbuntuMono-nerd-font VictorMono-nerd-font
 sudo Add-MpPreference -ExclusionPath "${env:ProgramData}\Scoop\", "${env:USERPROFILE}\Scoop\" -Force
 
@@ -51,13 +51,6 @@ New-Item -Path "$env:APPDATA\neovide" -ItemType SymbolicLink -Value "$HOME\.file
 New-Item -Path "$env:APPDATA\Notepad++" -ItemType SymbolicLink -Value "$HOME\.files\notepad" -Force
 New-Item -Path "$env:APPDATA\yt-dlp\config" -ItemType SymbolicLink -Value "$HOME\.files\yt-dlp.config" -Force
 
-New-Item -Path "$env:LOCALAPPDATA\nvim" -ItemType SymbolicLink -Value "$HOME\.files\nvim" -Force
-
-# Install LazyVim
-$lazy = "$env:LOCALAPPDATA\nvim"
-# $lazy = "$env:LOCALAPPDATA\lazy"
-New-Item -Path "$lazy" -ItemType SymbolicLink -Value "$HOME\.files\lazy" -Force
-
 $profile_path = $PROFILE.CurrentUserAllHosts
 New-Item -Path "$profile_path" -ItemType SymbolicLink -Value "$HOME\.files\Profile.ps1" -Force
 . $profile_path
@@ -68,13 +61,20 @@ git clone --depth 1 https://github.com/doomemacs/doomemacs.git $doom
 New-Item -Path $HOME\.emacs.d -ItemType SymbolicLink -Value $doom -Force
 New-Item -Path "$HOME\.doom.d" -ItemType SymbolicLink -Value "$HOME\.files\doom" -Force
 New-Item -Path "$env:APPDATA\.doom.d" -ItemType SymbolicLink -Value "$HOME\.files\doom" -Force
-$HOME\.emacs.d\doom sync
+"$HOME\.emacs.d\doom sync"
 
 # Install SpaceVim
 $space_vim = "$env:LOCALAPPDATA\SpaceVim"
-git clone https://github.com/SpaceVim/SpaceVim.git $space_vim
+git clone https://gitlab.com/SpaceVim/SpaceVim.git $space_vim
 New-Item -Path $HOME\vimfiles -ItemType SymbolicLink -Value $space_vim -Force
 New-Item -Path "$HOME\.SpaceVim.d" -ItemType SymbolicLink -Value "$HOME\.files\space" -Force
+
+New-Item -Path "$env:LOCALAPPDATA\nvim" -ItemType SymbolicLink -Value "$HOME\.files\nvim" -Force
+
+# Install LazyVim
+$lazy = "$env:LOCALAPPDATA\nvim"
+# $lazy = "$env:LOCALAPPDATA\lazy"
+New-Item -Path "$lazy" -ItemType SymbolicLink -Value "$HOME\.files\lazy" -Force
 
 # Install LunarVim
 $lvim = "$env:LOCALAPPDATA\lvim"
