@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="2">
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="828" startPos="135" endPos="135" selMode="0" offset="0" wrapCount="1" lang="None (Normal Text)" encoding="-1" userReadOnly="no" filename="C:\Program Files\Notepad++\change.log" backupFilePath="" originalFileLastModifTimestamp="-3804928" originalFileLastModifTimestampHigh="31071617" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="512" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="3835" startPos="30348" endPos="30348" selMode="0" offset="0" wrapCount="1" lang="XML" encoding="1252" userReadOnly="no" filename="C:\Users\Yoga\AppData\Roaming\Notepad++\themes\Dracula.xml" backupFilePath="" originalFileLastModifTimestamp="619225280" originalFileLastModifTimestampHigh="31073198" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="512" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="19971" startPos="35" endPos="35" selMode="0" offset="0" wrapCount="1" lang="XML" encoding="-1" userReadOnly="no" filename="C:\Users\Yoga\AppData\Roaming\Notepad++\themes\Lunar.xml" backupFilePath="" originalFileLastModifTimestamp="2021617382" originalFileLastModifTimestampHigh="31073200" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="512" mapWrapIndentMode="-1" mapIsWrap="no" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>

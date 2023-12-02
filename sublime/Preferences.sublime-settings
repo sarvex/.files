@@ -3,7 +3,6 @@
   "light_theme": "Adaptive.sublime-theme",
   "theme": "auto",
   "font_face": "0xProto Nerd Font",
-  "font_size": 10,
   "font_options": [
     "ss01",
     "ss02",
@@ -63,6 +62,7 @@
   "show_line_column": "compact",
   "hardware_acceleration": "opengl",
   "ignored_packages": [
+    "Clojure Sublimed",
     "Vintage",
   ],
   "color_scheme": "auto",
