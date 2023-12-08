@@ -436,7 +436,6 @@ return {
         nls.builtins.diagnostics.puglint,
         nls.builtins.diagnostics.puppet_lint,
         nls.builtins.diagnostics.pycodestyle,
-        nls.builtins.diagnostics.pydocstyle,
         nls.builtins.diagnostics.qmllint,
         nls.builtins.diagnostics.reek,
         nls.builtins.diagnostics.revive,

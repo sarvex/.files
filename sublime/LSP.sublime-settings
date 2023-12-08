@@ -4,7 +4,7 @@
     "source.fixAll": true,
     "source.organizeImports": true,
   },
-  "show_inlay_hints": true,
+  "show_inlay_hints": false,
   "semantic_highlighting": true,
   "show_code_actions": "bulb",
 }

@@ -44,7 +44,8 @@
 # SpaceVim layer config {{{
 [[layers]]
   name = 'autocomplete'
-  auto_completion_return_key_behavior = 'complete'
+  autocomplete_method = "coc"
+  auto_completion_return_key_behavior = 'smart'
   auto_completion_tab_key_behavior = 'smart'
 
 [[layers]]
@@ -69,7 +70,6 @@
 
 [[layers]]
   name = 'ui'
-  conceallevel = 2
   cursorword_exclude_filetype = ['markdown']
   enable_cursorword = true
   enable_sidebar = true
@@ -332,11 +332,9 @@
     'vim',
     'vue',
   ]
-[layers.override_cmd]
-  rust = ['rls']
 
 [[layers]]
-  name = 'mail' 
+  name = 'mail'
 
 [[layers]]
   name = 'shell'
