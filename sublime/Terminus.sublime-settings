@@ -1,8 +1,7 @@
 {
   "default_config": {
-    "linux": null, // login shell
-    "osx": null, // login shell
+    "linux": "Zsh", // login shell
+    "osx": "Zsh", // login shell
     "windows": "Powershell Core",
   },
-  "theme": "adaptive",
 }

@@ -6,5 +6,5 @@
   },
   "show_inlay_hints": false,
   "semantic_highlighting": true,
-  "show_code_actions": "bulb",
+  // "show_code_actions": "bulb",
 }
