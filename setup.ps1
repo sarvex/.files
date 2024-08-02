@@ -8,15 +8,16 @@ winget upgrade --all
 Invoke-WebRequest get.scoop.sh -UseBasicParsing | Invoke-Expression
 @('extras', 'games', 'java', 'nerd-fonts', 'versions') | ForEach-Object { scoop bucket add $_ }
 scoop bucket add sarvex https://github.com/sarvex/scoop
-scoop install 7zip actionlint aria2 aspell azure-cli azure-functions-core-tools azure-kubelogin azure-ps bat bazel bazel-buildtools biber bottom ccache clj-deps clojure-lsp cmake composer curl dart defold deno deno deno-lint doxygen dust elixir elm emacs emscripten erlang fd ffmpeg flutter fzf git github gitlab-release-cli gitlab-runner glab glslang go godot golangci-lint graalvm gradle gradle-bin grep gzip hadolint haskell haskell-cabal helix jdtls jq julia kafka kafka-exporter kotlin kotlin-language-server kotlin-native ktlint kube-linter lazygit less libxml2 llvm love lua lua-language-server luacheck luajit luarocks make mambaforge mariadb maven meson miktex mingw mprocs msys2 neovim nim ninja nodejs nodejs nu nu openjdk php poetry postgresql postgrest premake protolint psgithub python quick-lint-js racket redis redis-tui revive ripgrep ripgrep ruby rustup sbt scala scala-cli sccache search-multisource sed solidity spark starship sudo swift teal terminal-icons terraform tflint tidy touch tree-sitter tree-sitter-langs unzip vale vcpkg wget xmake xmllint yt-dlp zookeeper
+scoop install 7zip actionlint aria2 aspell azure-cli azure-functions-core-tools azure-kubelogin azure-ps bat bazel bazel-buildtools biber bottom bun ccache clj-deps clojure-lsp cmake composer curl dart defold deno deno deno-lint doxygen dust elixir elm emacs emscripten erlang fd ffmpeg flutter fzf git github gitlab-release-cli gitlab-runner glab glslang go godot golangci-lint graalvm gradle gradle-bin grep gzip hadolint haskell haskell-cabal helix jdtls jq julia kafka kafka-exporter kotlin kotlin-language-server kotlin-native ktlint kube-linter lazygit less libxml2 llvm love lua lua-language-server luacheck luajit luarocks make mambaforge mariadb maven meson miktex mingw mprocs msys2 neovim nim ninja nodejs nodejs nu nu openjdk php poetry postgresql postgrest premake protolint psgithub python quick-lint-js racket redis redis-tui revive ripgrep ripgrep ruby rustup sbt scala scala-cli sccache search-multisource sed solidity spark starship sudo swift teal terminal-icons terraform tflint tidy touch tree-sitter tree-sitter-langs unzip vale vcpkg wget xmake xmllint yt-dlp zookeeper
 scoop install 0xProto-nerd-font Agave-nerd-font AnonymousPro-nerd-font AurulentSansMono-nerd-font BitstreamVeraSansMono-nerd-font CascadiaCode-nerd-font CascadiaMono-nerd-font CodeNewRoman-nerd-font ComicShannsMono-nerd-font CommitMono-nerd-font Cousine-nerd-font D2Coding-nerd-font DejaVuSansMono-nerd-font DroidSansMono-nerd-font EnvyCodeR-nerd-font FantasqueSansMono-nerd-font FiraCode-nerd-font GeistMono-nerd-font Go-Mono-nerd-font Gohu-nerd-font Hack-nerd-font Hasklig-nerd-font iA-Writer-nerd-font IBMPlexMono-nerd-font Inconsolata-nerd-font InconsolataGo-nerd-font IntelOneMono-nerd-font Iosevka-nerd-font IosevkaTerm-nerd-font IosevkaTermSlab-nerd-font JetBrainsMono-nerd-font LiberationMono-nerd-font Lilex-nerd-font MartianMono-nerd-font Meslo-nerd-font Monofur-nerd-font Monoid-nerd-font Mononoki-nerd-font Monaspace-nerd-font Noto-nerd-font Overpass-nerd-font ProFont-nerd-font ProggyClean-nerd-font Recursive-nerd-font RobotoMono-nerd-font ShareTechMono-nerd-font SourceCodePro-nerd-font SpaceMono-nerd-font Terminus-nerd-font Tinos-nerd-font Ubuntu-nerd-font UbuntuMono-nerd-font UbuntuSans-nerd-font VictorMono-nerd-font ZedMono-nerd-font
+scoop install graalvm-oracle-jdk temurin-jdk
 sudo Add-MpPreference -ExclusionPath "${env:ProgramData}\Scoop\", "${env:USERPROFILE}\Scoop\" -Force
 
 # Add global NPM packages
 corepack enable
 pnpm install -g @fsouza/prettierd alex bibtex dotenv-linter eslint_d haml jshint lint-staged neovim node-actionlint protoc semistandard shellcheck solhint spectre standard stylelint swiftlint textlint typescript write-good
 
-python -m pip install --upgrade pip poetry jupyterlab notebook voila pandas
+python -m pip install --upgrade pip poetry jupyterlab notebook voila pandas pyspark
 
 # Add PyEnv
 Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1" -OutFile "./install-pyenv-win.ps1"; &"./install-pyenv-win.ps1"
@@ -75,6 +76,7 @@ New-Item -Path "$env:LOCALAPPDATA\nvim" -ItemType SymbolicLink -Value "$HOME\.fi
 # Install LazyVim
 $lazy = "$env:LOCALAPPDATA\nvim"
 # $lazy = "$env:LOCALAPPDATA\lazy"
+# git clone https://github.com/LazyVim/starter "$env:LOCALAPPDATA\nvim"
 New-Item -Path "$lazy" -ItemType SymbolicLink -Value "$HOME\.files\lazy" -Force
 
 # Install LunarVim
