@@ -5,9 +5,6 @@
   "source": {
     "autoUpdateIntervalInMinutes": 5
   },
-  "visual": {
-    "progressBar": "rainbow"
-  },
   "installBehavior": {
     "portablePackageUserRoot": "C:/Apps",
     "portablePackageMachineRoot": "C:/Tools",
