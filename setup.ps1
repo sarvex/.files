@@ -75,7 +75,7 @@ New-Item -Path "$env:LOCALAPPDATA\nvim" -ItemType SymbolicLink -Value "$HOME\.fi
 # Install LazyVim
 $lazy = "$env:LOCALAPPDATA\nvim"
 # $lazy = "$env:LOCALAPPDATA\lazy"
-# git clone https://github.com/LazyVim/starter "$env:LOCALAPPDATA\nvim"
+git clone https://github.com/LazyVim/starter "$env:LOCALAPPDATA\nvim"
 New-Item -Path "$lazy" -ItemType SymbolicLink -Value "$HOME\.files\lazy" -Force
 
 # Install LunarVim
